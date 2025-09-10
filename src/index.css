@@ -1,0 +1,54 @@
+@import "tailwindcss";
+@plugin "flowbite-react/plugin/tailwindcss";
+@source "../.flowbite-react/class-list.json";
+
+body{
+    background-color: #f0f0f0;
+    color:black;
+      font-family: 'Poppins', sans-serif;
+      /* @apply bg-[url("/src/assets/earth.jpg")] bg-cover bg-center */
+
+}
+.blur-bg{
+    @apply bg-black/10 backdrop-blur-xl
+}
+.primary-bg{
+    @apply bg-rose-800 text-white
+}
+
+.button-style{
+    @apply bg-rose-800 lg:py-4 lg:text-xl  hover:shadow-lg px-4 py-3 md:px-6 md:py-3 h-full  rounded-2xl text-white  font-medium
+}
+.scrollbar-hidden{
+    scrollbar-width: none;
+}
+.scale-transition{
+    @apply hover:scale-[1.03] transition-all ease-in-out will-change-transform duration-300
+}
+
+.title{
+    @apply text-xl w-full font-medium mb-3 
+}
+
+.sidebar-links {
+    @apply flex gap-2 items-center text-lg py-3 rounded-xl px-3
+}
+
+.input-section{
+    @apply p-6 shadow-sm flex gap-3 flex-col
+}
+.form-input-sections{
+    @apply  py-2 rounded-lg transition-all ease-in-out duration-500  bg-blue-200/20 text-lg pl-2  ;  
+}
+
+label{
+    @apply tracking-wide text-gray-600
+}
+
+.chart-card-style {
+    @apply hover:shadow-lg min-w-[600px] transition duration-300 mt-10 h-[400px] grow w-full lg:h-[500px] 2xl:w-[760px] rounded-2xl lg:pb-3 pb-8 pr-3 lg:pr-10
+}
+
+.active-tabs{
+    @apply bg-rose-800/20 text-rose-700
+}
