@@ -9,6 +9,7 @@ import Settings from "./Components/Pages/Settings";
 import Users from "./Components/Pages/Users"
 import Inbox from "./Components/Pages/Inbox";
 import { Spinner } from "flowbite-react";
+import ErrorPage from "./Components/Pages/ErrorPage";
 
 const AddProduct = lazy(() =>
   import("./Components/Pages/AddProduct")
@@ -17,6 +18,7 @@ let route = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement:<ErrorPage />,
     children: [
       {
         index: true,

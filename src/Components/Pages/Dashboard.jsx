@@ -13,7 +13,7 @@ const Dashboard = () => {
 
       {/* This is the Overview Card Container which show KPI's information like Revenue ,Users etc. */}
       <div className="w-full flex gap-8 flex-wrap 2xl:flex-nowrap justify-between">
-        <div className="flex w-full justify-around">
+        <div className="flex w-full gap-3 justify-around">
           <KpiCard
           cash={true}
           icon={<HandCoins />}
@@ -22,7 +22,7 @@ const Dashboard = () => {
         />
         <KpiCard icon={<BookText />} number="2690" title="Total Sales" />
         </div>
-        <div className="flex w-full justify-around">
+        <div className="flex w-full gap-3 justify-around">
           <KpiCard icon={<Users />} number="1453" title="Active Users" />
         <KpiCard icon={<Clock />} number="187" title="Pending Orders" />
         </div>

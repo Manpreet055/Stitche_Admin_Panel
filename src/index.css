@@ -3,15 +3,15 @@
 @source "../.flowbite-react/class-list.json";
 
 body{
-    background-color: #f0f0f0;
-    color:black;
+    background-color: black;
+    color:white;
       font-family: 'Poppins', sans-serif;
       /* @apply bg-[url("/src/assets/earth.jpg")] bg-cover bg-center */
 
 }
-.blur-bg{
+/* .blur-bg{
     @apply bg-black/10 backdrop-blur-xl
-}
+} */
 .primary-bg{
     @apply bg-rose-800 text-white
 }

@@ -5,7 +5,6 @@ import clickEvent from "../../../Utilities/Animations/onClick";
 import UsersData from "../Users/UsersData";
 import SearchContext from "../../../Context/searches/SeachContext";
 
-
 const Filters = () => {
   const { setSearchItems } = useContext(SearchContext);
 
@@ -45,7 +44,7 @@ const Filters = () => {
   };
 
   return (
-    <div className=" absolute top-15 z-90 flex flex-col blur-bg w-full">
+    <div className="bg-black text-white absolute top-15 z-90 flex flex-col blur-bg w-full">
       <h1 className="text-2xl mx-5 px-3 border-b border-gray-400 font-semibold py-4">
         {" "}
         Filters
@@ -71,31 +70,12 @@ const Filters = () => {
               <input type="checkbox" {...register("pending")} /> Pending
             </div>
           </div>
-
-          {/* Dates */}
-          <div className="flex flex-col">
-            <h2 className="text-xl font-medium">Date</h2>
-            <div className="flex gap-5 flex-col">
-              <div className=" flex flex-col">
-                <label htmlFor="from">From</label>
-                <input
-                  id="from"
-                  className="form-input-sections"
-                  {...register("from_date")}
-                  type="date"
-                />
-              </div>
-              <div className=" flex flex-col">
-                <label htmlFor="To">To</label>
-                <input
-                  id="To"
-                  className="form-input-sections"
-                  {...register("to_date")}
-                  type="date"
-                />
-              </div>
-            </div>
-          </div>
+          <input
+            type="text"
+            className="form-input-sections"
+            {...register("city")}
+            placeholder="Search City"
+          />
         </div>
 
         {/* Role */}
@@ -103,7 +83,7 @@ const Filters = () => {
           <div className="flex flex-col gap-6">
             <h2 className="text-2xl font-medium">Role</h2>
             <div className="flex gap-3 items-center text-lg">
-              {" "} 
+              {" "}
               <input type="checkbox" {...register("user")} /> User
             </div>
             <div className="flex gap-3 items-center text-lg">
@@ -120,12 +100,7 @@ const Filters = () => {
               Moderator
             </div>
           </div>
-          <input
-            type="text"
-            className="form-input-sections"
-            {...register("city")}
-            placeholder="Search City"
-          />
+          
 
           <motion.button
             variants={clickEvent}

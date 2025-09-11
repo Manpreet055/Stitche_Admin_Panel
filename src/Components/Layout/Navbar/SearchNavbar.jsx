@@ -3,6 +3,7 @@ import { ListFilter, ChevronUp } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Filters from "./Filters";
 import SearchBar from "./SearchBar";
+import AddUser from "../Users/AddUser";
 
 const SearchNavbar = () => {
   const [filters, showFilters] = useState(false);
@@ -54,6 +55,10 @@ const SearchNavbar = () => {
             </motion.div>
           )}
         </AnimatePresence>
+      </div>
+      <div className="w-full pr-16">
+               <AddUser />
+
       </div>
     </nav>
   );

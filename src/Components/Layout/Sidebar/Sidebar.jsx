@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
+import SidebarContext from "../../../Context/sidebar/SidebarContext";
 import ProductDropdown from "./ProductDropdown";
+import { AnimatePresence,motion } from "framer-motion";
 import {
   House,
   User,
@@ -13,9 +15,15 @@ import {
 } from "lucide-react";
 
 const Sidebar = () => {
+  const {sidebar, showSidebar} = useContext(SidebarContext)
   return (
-    <div
-      className={`bg-black/20 hidden  backdrop-blur-2xl lg:flex z-50 h-screen  flex-col justify-between w-72 max-w-[80vw] md:w-[300px] `}
+   <AnimatePresence>
+     <motion.div
+     initial={{left:100 ,opacity:0}}
+     animate={{left:0 ,opacity:1}}
+     exit={{left:100 ,opacity:0}}
+     transition={{duration:0.4}}
+      className={`blur-bg bg-black text-white z-90 ${sidebar ? "flex" : "hidden"} lg:flex z-50 h-screen  flex-col justify-between w-72 max-w-[80vw] md:w-[300px] absolute lg:relative`}
     >
       <div>
         <div className="flex py-6 px-4 items-center gap-3 text-3xl font-medium">
@@ -128,7 +136,8 @@ const Sidebar = () => {
           </NavLink>
         </li>
       </ul>
-    </div>
+    </motion.div>
+   </AnimatePresence>
   );
 };
 
