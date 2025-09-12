@@ -6,18 +6,10 @@ import { useForm } from "react-hook-form";
 import UsersData from "../Users/UsersData";
 import SearchContext from "../../../Context/searches/SeachContext";
 import SearchValueContext from "../../../Context/searches/SearchValueContext";
+import useDebounce from "../../../Hooks/useDebounce";
 
 const SearchBar = () => {
-  const [showErr, setShowErr] = useState(false);
   const { setSearchItems } = useContext(SearchContext);
-  const { searchValue } = useContext(SearchValueContext);
-
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
 
   // Handling Search queries in future these types of function will be passed as a prop in products and inbox etc. pages for resuability
   const searchData = (data) => {
@@ -39,37 +31,17 @@ const SearchBar = () => {
     searchResults.length != 0
       ? setSearchItems(searchResults)
       : setSearchItems("No results found");
-
-    searchValue == "" && reset();
   };
-  
-
+  const debounceSearch = useDebounce({ callBack: searchData, delay: 1000 });
   return (
-    <form
-      onSubmit={handleSubmit(searchData)}
-      className="h-full w-fit flex items-center gap-2"
-    >
+    <div className="h-full w-fit flex items-center gap-2">
       <div className="relative h-full flex flex-col gap-2">
         <input
-          onFocus={() => setShowErr(true)}
-          onBlur={() => setShowErr(false)}
-          {...register("searches", {
-            required: "Search field cannot be empty",
-            minLength: { value: 4, message: "Minimum 4 letters required " },
-          })}
           type="text"
-          className={`border-b ${
-            errors.searches ? " outline-red-600" : "border-gray-400"
-          } h-full  px-6 focus:border-none`}
+          className={`border-b h-full  px-6 focus:border-none`}
           placeholder="Search Name, Email etc.."
+          onChange={(event)=>debounceSearch({searches:event.target.value})}
         />
-        {errors.searches && showErr ? (
-          <p className=" absolute top-14 left-2 l text-lg text-red-600">
-            *{errors.searches.message}
-          </p>
-        ) : (
-          ""
-        )}
       </div>
       <motion.button
         type="submit"
@@ -82,7 +54,7 @@ const SearchBar = () => {
         <Search size={28} />
         Search
       </motion.button>
-    </form>
+    </div>
   );
 };
 
