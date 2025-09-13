@@ -1,5 +1,5 @@
 const useDebounce = ({ callBack, delay }) => {
-  let timer; // <-- Move timer here, outside the returned function
+  let timer;
   return function (...args) {
     if (timer) clearTimeout(timer);
     timer = setTimeout(() => {
