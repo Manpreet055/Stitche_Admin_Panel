@@ -3,7 +3,7 @@ import orders from "../Utilities/OrdersData.js";
 import ListComp from "./ListComp";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-import { container, item } from "../Utilities/Animations/ListStagger.js";
+import { container, item } from "../Animations/ListStagger.js";
 
 const Orders = () => {
   return (

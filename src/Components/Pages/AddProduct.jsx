@@ -41,10 +41,7 @@ const AddProduct = () => {
   };
 
   return (
-    <section className="w-full max-h-screen blur-bg flex-1 overflow-x-hidden">
-      <h2 className="flex w-full py-8 justify-center text-3xl font-semibold">
-        Add New Product
-      </h2>
+    <section className=" scrollbar-hidden w-full max-h-screen blur-bg flex-1 overflow-x-hidden">
       <form
         action=""
         method="POST"

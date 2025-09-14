@@ -7,7 +7,11 @@ body{
     color:white;
       font-family: 'Poppins', sans-serif;
       /* @apply bg-[url("/src/assets/earth.jpg")] bg-cover bg-center */
+}
 
+
+.theme{
+    @apply bg-white text-black
 }
 /* .blur-bg{
     @apply bg-black/10 backdrop-blur-xl
@@ -51,4 +55,8 @@ label{
 
 .active-tabs{
     @apply bg-rose-800/20 text-rose-700
+}
+
+.profile-card-buttons {
+    @apply text-lg flex gap-3 font-medium items-center hover:bg-gray-300/50 transition duration-300 ease-in-out w-full px-2 py-3 rounded-lg;
 }

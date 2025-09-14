@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronUp } from "lucide-react";
-import { container,item } from "../../../Utilities/Animations/ListStagger";
-
+import { container,item } from "../../../Animations/ListStagger";
 const Dropdown = ({
   textSize,
   children,

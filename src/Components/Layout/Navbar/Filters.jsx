@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import clickEvent from "../../../Utilities/Animations/onClick";
+import clickEvent from "../../../Animations/onClick";
 import UsersData from "../Users/UsersData";
 import SearchContext from "../../../Context/searches/SeachContext";
 

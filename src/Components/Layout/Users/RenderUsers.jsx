@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { container } from "../../../Utilities/Animations/ListStagger";
+import { container } from "../../../Animations/ListStagger"; 
 import { motion } from "framer-motion";
 import UserRow from "../../../ui/UserRow";
 import UsersData from "./UsersData";
@@ -7,7 +7,6 @@ import SearchContext from "../../../Context/searches/SeachContext";
 import Paginate from "../../../Utilities/Pagination";
 
 const RenderUsers = () => {
-  
   const { searchItems } = useContext(SearchContext);
   const dataProviderArray = searchItems ?? UsersData;
 
@@ -17,9 +16,9 @@ const RenderUsers = () => {
         initial="hidden"
         animate="show"
         variants={container}
-        className="px-6 relative flex flex-col"
+        className="relative flex flex-col"
       >
-        <Paginate data={dataProviderArray} ItemsPerPage={15} >
+        <Paginate data={dataProviderArray} ItemsPerPage={15}>
           {typeof searchItems === "string" ? (
             <div className="top-[50%] flex flex-col w-full h-[660px] text-2xl font-medium justify-center items-center">
               {searchItems}

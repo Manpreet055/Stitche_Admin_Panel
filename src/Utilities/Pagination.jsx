@@ -1,5 +1,5 @@
 import { useState } from "react";
-import clickEvent from "./Animations/onClick";
+import clickEvent from "../Animations/onClick";
 import { motion } from "framer-motion";
 
 const Paginate = ({ data, children, ItemsPerPage = 10 }) => {

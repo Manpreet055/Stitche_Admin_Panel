@@ -15,7 +15,7 @@ const ProductDropdown = () => {
                       }}>
           {<Grid />}All Products{" "}
         </NavLink>
-        <NavLink to="product/add" className={({ isActive }) => {
+        <NavLink to="products/add" className={({ isActive }) => {
                 return `w-full flex sidebar-links    ${
                   isActive ? "active-tabs" : ""
                 }`;

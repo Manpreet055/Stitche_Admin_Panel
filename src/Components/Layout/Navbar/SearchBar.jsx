@@ -1,60 +1,118 @@
-import React, { useContext, useState } from "react";
-import clickEvent from "../../../Utilities/Animations/onClick";
+import React, { useContext} from "react";
+import clickEvent from "../../../Animations/onClick";
 import { Search } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useForm } from "react-hook-form";
-import UsersData from "../Users/UsersData";
 import SearchContext from "../../../Context/searches/SeachContext";
-import SearchValueContext from "../../../Context/searches/SearchValueContext";
 import useDebounce from "../../../Hooks/useDebounce";
+import useDebounceSuggestions from "../../../Hooks/Searches/DebounceSuggestions";
+import DebounceContext from "../../../Context/searches/DebounceContext";
+import SearchUsers from "../../../Hooks/Searches/SearchUsers";
+import growVariants from "../../../Animations/growHeight";
 
 const SearchBar = () => {
   const { setSearchItems } = useContext(SearchContext);
+  const debounceSuggestions = useDebounceSuggestions();
+  const { suggestions, setSuggestions } = useContext(DebounceContext);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-  // Handling Search queries in future these types of function will be passed as a prop in products and inbox etc. pages for resuability
-  const searchData = (data) => {
-    const searchterm = data.searches.trim().toLowerCase();
+  const searchData = SearchUsers();
 
-    let searchResults = UsersData.filter((user) => {
-      return (
-        user.Username.toLowerCase().includes(searchterm) ||
-        user.email.toLowerCase().includes(searchterm) ||
-        user.dateJoined.includes(searchterm) ||
-        user.lastLogin.toLowerCase().includes(searchterm) ||
-        user.phone.includes(searchterm) ||
-        user.role.toLowerCase().includes(searchterm) ||
-        user.address.city.toLowerCase().includes(searchterm) ||
-        user.address.country.toLowerCase().includes(searchterm) ||
-        user.status.toLowerCase().includes(searchterm)
-      );
-    });
-    searchResults.length != 0
-      ? setSearchItems(searchResults)
-      : setSearchItems("No results found");
-  };
-  const debounceSearch = useDebounce({ callBack: searchData, delay: 1000 });
+  const debounceSearch = useDebounce({
+    callBack: debounceSuggestions,
+    delay: 500,
+  });
   return (
-    <div className="h-full w-fit flex items-center gap-2">
-      <div className="relative h-full flex flex-col gap-2">
-        <input
-          type="text"
-          className={`border-b h-full  px-6 focus:border-none`}
-          placeholder="Search Name, Email etc.."
-          onChange={(event)=>debounceSearch({searches:event.target.value})}
-        />
+    <form
+      onSubmit={handleSubmit(searchData)}
+      className="relative h-full w-fit flex items-center gap-2"
+    >
+      <div className=" h-full flex gap-2">
+        <div>
+          <input
+            onBlur={() => setSuggestions([])}
+            {...register("searches", {
+              required: "Search field cannot be empty",
+              minLength: {
+                value: 4,
+                message: "Minimum length of 4 is required",
+              },
+            })}
+            type="text"
+            className={`w-[200px] md:w-full border-b h-full z-[99]  ${
+              errors.searches && "focus:outline-red-600 focus:border-red-600"
+            }  px-6 active:border-none`}
+            placeholder="Search here.."
+            onChange={(event) =>
+              event.target.value.length > 2
+                ? debounceSearch(event.target.value)
+                : setSuggestions([])
+            }
+          />
+          {errors.searches && (
+            <p className="text-red-600 absolute top-15">
+              *{errors.searches.message}
+            </p>
+          )}
+        </div>
+        <motion.button
+          onClick={() => setSuggestions([])}
+          type="submit"
+          variants={clickEvent}
+          initial="default"
+          whileHover="hover"
+          whileTap="click"
+          className=" p-3 flex items-center gap-2 text-xl rounded-2xl"
+        >
+          <Search size={28} />
+        </motion.button>
       </div>
-      <motion.button
-        type="submit"
-        variants={clickEvent}
-        initial="default"
-        whileHover="hover"
-        whileTap="click"
-        className=" p-3 flex items-center gap-2 text-xl rounded-2xl"
-      >
-        <Search size={28} />
-        Search
-      </motion.button>
-    </div>
+
+      <AnimatePresence>
+        {suggestions.length > 0 && (
+          <motion.div
+          variants={growVariants}
+            initial="hidden"
+            exit="hidden"
+            animate="grow"
+            transition="delay"
+            className="origin-top absolute border border-gray-600 rounded-lg w-full top-20 min-h-96 max-h-96 text-white bg-black z-20 p-4 lg:text-xl tracking-wide flex flex-col items-center justify-between "
+          >
+            <ul className="overflow-y-scroll scrollbar-hidden  w-full  ">
+              {suggestions.length > 0 ? (
+                suggestions.map((user, index) => (
+                  <li
+                    className="cursor-pointer w-full overflow-x-auto scrollbar-hidden py-3 rounded transtions duration-300 ease-in-out hover:bg-neutral-800"
+                    onClick={() => {
+                      setSearchItems([user]);
+                      setSuggestions([]);
+                    }}
+                    key={index}
+                  >
+                    {user.Username}
+                  </li>
+                ))
+              ) : (
+                <p>No Results Found</p>
+              )}
+            </ul>
+            <button
+              onClick={() => {
+                setSearchItems(suggestions);
+                setSuggestions([]);
+              }}
+              className="w-[80%] rounded-2xl py-3 primary-bg text-center"
+            >
+              Show All{" "}
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </form>
   );
 };
 

@@ -8,9 +8,7 @@ import Orders from "../../ui/Orders";
 
 const Dashboard = () => {
   return (
-    <div className=" w-full px-12 py-6 h-screen overflow-scroll scrollbar-hidden ">
-      <h2 className="text-4xl font-medium mb-6">Dashboard</h2>
-
+    <div className=" w-full lg:px-12 py-6 h-screen overflow-scroll scrollbar-hidden ">
       {/* This is the Overview Card Container which show KPI's information like Revenue ,Users etc. */}
       <div className="w-full flex gap-8 flex-wrap 2xl:flex-nowrap justify-between">
         <div className="flex w-full gap-3 justify-around">

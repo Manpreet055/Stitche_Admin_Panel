@@ -1,5 +1,5 @@
 import React from 'react'
-import DarkMode from '../Layout/Settings/DarkMode'
+// import DarkMode from '../Layout/Settings/DarkMode'
 
 const Settings = () => {
   return (

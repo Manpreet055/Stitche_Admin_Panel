@@ -1,8 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import clickEvent from "../../Utilities/Animations/onClick";
-
+import clickEvent from "../../Animations/onClick";
 const ErrorPage = () => {
   const navigate = useNavigate();
 

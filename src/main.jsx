@@ -29,7 +29,7 @@ let route = createBrowserRouter([
         element: <Products />,
       },
       {
-        path: "product/add",
+        path: "products/add",
         element: (
           <Suspense
             fallback={

@@ -13,7 +13,7 @@ Dashboard page with KPIs, charts, and basic stats
 
 Add Product Form with form handling (react-hook-form)
 
-Users Page with filters, search, and pagination
+Users Page with filters, search, debounce and pagination
 
 Lazy loading implemented for non-critical pages
 
@@ -23,10 +23,7 @@ Lazy loading implemented for non-critical pages
 
 🔨 In Progress
 
-Sorting functionality for users
-
-Table styling alignment (consistent headers & rows)
-
+Final touches in users page
 
 
 ---

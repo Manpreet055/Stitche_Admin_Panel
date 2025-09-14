@@ -3,7 +3,6 @@ import { ListFilter, ChevronUp } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import Filters from "./Filters";
 import SearchBar from "./SearchBar";
-import AddUser from "../Users/AddUser";
 
 const SearchNavbar = () => {
   const [filters, showFilters] = useState(false);
@@ -22,7 +21,7 @@ const SearchNavbar = () => {
   };
 
   return (
-    <nav className="w-full flex gap-10 py-3">
+    <nav className="w-full max-w-screen flex md:gap-10 py-3">
       <SearchBar ></SearchBar>
       <div className="flex items-center relative">
         <motion.button
@@ -55,10 +54,6 @@ const SearchNavbar = () => {
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
-      <div className="w-full pr-16">
-               <AddUser />
-
       </div>
     </nav>
   );
