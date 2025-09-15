@@ -21,7 +21,9 @@ const Users = () => {
   };
   
   return (
-    <section className="w-full p-4 h-screen overflow-y-auto scrollbar-hidden flex flex-col gap-4">
+    <section className="w-full pb-36 scroll-smooth p-4 h-screen overflow-y-auto scrollbar-hidden flex flex-col gap-4">
+
+      {/* Contains Filtes and searchBar etc. buttons */}
       <SearchNavbar />
       {searchItems !== null && (
         <motion.div
@@ -48,7 +50,9 @@ const Users = () => {
           )}
         </motion.div>
       )}
-      <div className="blur-bg px-3 w-full overflow-x-scroll  scrollbar-hidden">
+
+      {/* Table Starts from here */}
+      <div className="blur-bg px-3 w-full  scrollbar-hidden">
         <ul
           className={`min-w-[900px] h-[60px] bg-[#dacaa4] rounded-t-2xl text-neutral-800 px-3 mt-5 grid grid-cols-[60px_1fr_2fr_80px_160px_60px_190px_60px] place-items-center text-xl font-medium border-b border-gray-400 `}
         >

@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { item, container } from "../Animations/ListStagger";
 import { EllipsisVertical, Pen, Trash2, Eye } from "lucide-react";
 const UserRow = ({ serial, user }) => {
+
+  // Destructring User's Info
   const {
     Username,
     role,
@@ -14,8 +16,11 @@ const UserRow = ({ serial, user }) => {
     dateJoined,
     lastLogin,
   } = user;
+
+
   const [fullDetails, showFullDetails] = useState(false);
   const [dropDown, setDropDown] = useState(false);
+  // Using Object Mapping for unique color according to the status of the user
   const statusColor = {
     active: "bg-green-500/40",
     pending: "bg-amber-400/40",
@@ -57,7 +62,7 @@ const UserRow = ({ serial, user }) => {
             <EllipsisVertical />
           </button>
           {dropDown && (
-            <div className="absolute p-4 w-[150px] top-12 right-5 theme  flex flex-col gap-3 items-start">
+            <div className="absolute p-4 w-[150px] top-12 right-5 theme   flex flex-col gap-3 items-start">
               <button className="flex gap-2 items-center z-[999]">
                 <Trash2 />
                 Delete
@@ -77,6 +82,8 @@ const UserRow = ({ serial, user }) => {
           )}
         </li>
       </motion.ul>
+
+      {/* Full Details card */}
       {fullDetails && (
         <motion.ul
           variants={container}

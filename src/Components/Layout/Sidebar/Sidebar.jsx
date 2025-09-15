@@ -3,16 +3,7 @@ import { NavLink } from "react-router-dom";
 import SidebarContext from "../../../Context/sidebar/SidebarContext";
 import ProductDropdown from "./ProductDropdown";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  House,
-  User,
-  Truck,
-  Cog,
-  Users,
-  Power,
-  UserPen,
-  Mail,
-} from "lucide-react";
+import { House, Truck, Users, Mail } from "lucide-react";
 
 const Sidebar = () => {
   const { sidebar } = useContext(SidebarContext);
@@ -103,4 +94,3 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
-  

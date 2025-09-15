@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronUp } from "lucide-react";
-import { container,item } from "../../../Animations/ListStagger";
+import { container, item } from "../Animations/ListStagger";
 const Dropdown = ({
   textSize,
   children,
@@ -10,12 +10,10 @@ const Dropdown = ({
   abso = false,
   buttonBg = null,
   fullWidth = false,
-  listBg
+  listBg,
 }) => {
-
   const [isOpen, setIsOpen] = useState(false);
 
-  
   return (
     <section className={` ${fullWidth && "w-full"} max-w-xl h-fit`}>
       <button
@@ -37,20 +35,24 @@ const Dropdown = ({
       <AnimatePresence mode="wait">
         {isOpen && (
           <motion.div
-            className={`origin-top overflow-hidden p-4 gap-6 transition-all duration-300 ${abso && "absolute"} ease-in-out flex flex-col justify-between text-xl ${listBg}`}
+            className={`origin-top overflow-hidden p-4 gap-6 transition-all duration-300 ${
+              abso && "absolute"
+            } ease-in-out flex flex-col justify-between text-xl ${listBg}`}
             layout
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.25 }}
           >
-            <motion.ul 
-  variants={container}
-            initial="hidden"
-            animate="show"
-            >
+            <motion.ul variants={container} initial="hidden" animate="show">
               {React.Children.map(children, (child, index) => (
-                <motion.li className="w-full text-nowrap " variants={item} key={index}>{child}</motion.li>
+                <motion.li
+                  className="w-full text-nowrap "
+                  variants={item}
+                  key={index}
+                >
+                  {child}
+                </motion.li>
               ))}
             </motion.ul>
           </motion.div>

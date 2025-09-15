@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import clickEvent from "../../../Animations/onClick";
-import UsersData from "../Users/UsersData";
-import SearchContext from "../../../Context/searches/SeachContext";
+import clickEvent from "../Animations/onClick";
+import UsersData from "../Components/Layout/Users/UsersData";
+import SearchContext from "../Context/searches/SeachContext";
 
 const Filters = () => {
   const { setSearchItems } = useContext(SearchContext);
@@ -26,6 +26,7 @@ const Filters = () => {
       key.toLowerCase()
     );
 
+    // Filters the users if no button will be selected than it will allow all
     const filterData = UsersData.filter((user) => {
       let statusMatch =
         activeKeys.includes(user.status.toLowerCase()) ||

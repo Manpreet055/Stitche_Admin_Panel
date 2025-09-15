@@ -15,7 +15,6 @@ function randomDate(start, end) {
 // fixed data
 const statuses = ["active", "suspended", "pending"];
 const roles = ["user", "admin", "moderator"];
-// const keywords = ["React", "Tailwind", "Firebase", "Admin", "Ecommerce"];
 
 // main generator
 function generateUsers(count = 10) {

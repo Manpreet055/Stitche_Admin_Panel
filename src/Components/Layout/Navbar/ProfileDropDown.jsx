@@ -5,6 +5,7 @@ import growVariants from "../../../Animations/growHeight";
 
 const ProfileDropDown = () => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+
   // Show FIlters form on Hover using this function
   const timeref = useRef(null);
   const handleHoverStart = () => {
@@ -19,6 +20,7 @@ const ProfileDropDown = () => {
   };
 
   return (
+    // Profile Button
     <motion.div
     onClick={()=>setIsDropDownOpen(prev=>!prev)}
       onHoverStart={handleHoverStart}
@@ -27,7 +29,7 @@ const ProfileDropDown = () => {
     >
       <img
         className="h-8 rounded-full"
-        src="https://avatar.iran.liara.run/public/37"
+        src="/src/assets/avatar.png"
         alt=""
       />
       <div className="flex w-full justify-between pr-20">
@@ -40,6 +42,8 @@ const ProfileDropDown = () => {
           <ChevronUp />
         </div>
       </div>
+
+      {/* Dropdown Card */}
       <AnimatePresence>
         {isDropDownOpen && (
           <motion.div

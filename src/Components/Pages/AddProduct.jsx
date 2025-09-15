@@ -29,8 +29,8 @@ const AddProduct = () => {
   };
   //  This function handle all uploads of thumnails,images and features and updated the states
   function handleFormArrayChange(setter, fieldName, value) {
-    setter(value); 
-    setValue(fieldName, value); 
+    setter(value);
+    setValue(fieldName, value);
   }
 
   const discount = watch("discount");
@@ -41,12 +41,12 @@ const AddProduct = () => {
   };
 
   return (
-    <section className=" scrollbar-hidden w-full max-h-screen blur-bg flex-1 overflow-x-hidden">
+    <section className=" scrollbar-hidden w-full h-screen blur-bg flex-1 overflow-y- pb-30 overflow-x-hidden">
       <form
         action=""
         method="POST"
         onSubmit={handleSubmit(onsubmit)}
-        className=" rounded-3xl flex gap-y-6 justify-evenly h-full flex-wrap w-full"
+        className=" rounded-3xl flex gap-y-6 justify-evenly flex-wrap w-full"
       >
         {/* This is the first container which includes fields like title,description,price,Inventory etc. */}
         <div className="flex-col gap-6 flex w-full max-w-2xl">

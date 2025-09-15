@@ -7,7 +7,9 @@ import SearchContext from "../../../Context/searches/SeachContext";
 import Paginate from "../../../Utilities/Pagination";
 
 const RenderUsers = () => {
-  const { searchItems } = useContext(SearchContext);
+  const { searchItems } = useContext(SearchContext); 
+  // the searchItems variable contains data about searches and debounce suggestion if it is
+  // null than all users will be shown otherwise searched items will be appear on the web page
   const dataProviderArray = searchItems ?? UsersData;
 
   return (

@@ -5,6 +5,8 @@ import ProfileDropDown from "./ProfileDropDown";
 import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+
+  // Check the current Path and set that path Name to the Navbar
   const location = useLocation();
   const pathName = {
     "/": "Dashboard",
@@ -17,7 +19,7 @@ const Navbar = () => {
   };
   const { sidebar, showSidebar } = useContext(SidebarContext);
   return (
-    <div className="w-full px-2 flex justify-between items-center lg:px-2 py-2">
+    <div className="w-full md:h-20 flex justify-between items-center lg:px-2 py-2">
       <h1 className="text-2xl md:text-4xl font-medium">{pathName[location.pathname]} </h1>
       <div className=" flex items-center"> 
         <div className="border-r mr-5 w-fit px-2 hover:text-gray-300 transition duration-2  00 ease-in-out"><Bell /> </div>

@@ -21,6 +21,7 @@ const useDebounceSuggestions = () => {
       ].some((field) => field.toLowerCase().includes(searchterm))
     );
     setSuggestions(foundUsers);
+  
     return foundUsers;
   };
 };

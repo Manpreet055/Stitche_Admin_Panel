@@ -1,5 +1,5 @@
 import React from "react";
-import Dropdown from "./Dropdown";
+import Dropdown from "../../../ui/Dropdown";
 import { ShoppingBag, ChartBarStacked, Grid, PackagePlus } from "lucide-react";
 import { NavLink } from "react-router-dom";
 

@@ -1,8 +1,8 @@
 import Reac, { useState, useRef } from "react";
 import { ListFilter, ChevronUp } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import Filters from "./Filters";
-import SearchBar from "./SearchBar";
+import Filters from "../../../ui/Filters";
+import SearchBar from "../../../ui/SearchBar";
 
 const SearchNavbar = () => {
   const [filters, showFilters] = useState(false);
