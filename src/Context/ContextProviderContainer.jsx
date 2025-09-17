@@ -1,18 +1,19 @@
-import React from 'react'
-import DebounceContextProvider from './searches/DebounceContextProvider'
-import SideBarContextProvider from './sidebar/SideBarContextProvider'
-import SearchContextProvider from './searches/SearchContextProvider'
+import React from "react";
+import DebounceContextProvider from "./searches/DebounceContextProvider";
+import SideBarContextProvider from "./sidebar/SideBarContextProvider";
+import SearchContextProvider from "./searches/SearchContextProvider";
+import LoadingStateProvider from "./LoadingStates/LoadingStateProvider";
 
-const ContextProviderContainer = ({children}) => {
+const ContextProviderContainer = ({ children }) => {
   return (
-    <DebounceContextProvider>
-      <SearchContextProvider> 
-        <SideBarContextProvider>
-          {children}
-        </SideBarContextProvider>
-      </SearchContextProvider>
-    </DebounceContextProvider>
-  )
-}
+    <LoadingStateProvider>
+      <DebounceContextProvider>
+        <SearchContextProvider>
+          <SideBarContextProvider>{children}</SideBarContextProvider>
+        </SearchContextProvider>
+      </DebounceContextProvider>
+    </LoadingStateProvider>
+  );
+};
 
-export default ContextProviderContainer
+export default ContextProviderContainer;

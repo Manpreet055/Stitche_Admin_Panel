@@ -11,7 +11,7 @@ const Navbar = () => {
   const pathName = {
     "/": "Dashboard",
     "/users": "Users",
-    "/products": "Product",
+    "/products": "Products",
     "/products/add": "Add  Product",
     "/inbox" : "Inbox",
     "orders" : "Orders"

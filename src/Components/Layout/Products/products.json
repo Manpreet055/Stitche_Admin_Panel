@@ -1,0 +1,2562 @@
+[
+  {
+    "id": "1fd03e8b-2fb8-43b5-8cfd-c4f431ac16cd",
+    "title": "Sony Monitor 1",
+    "description": "This is a high-quality monitor by Sony.",
+    "category": "Appliances",
+    "subCategory": "Home",
+    "brand": "Sony",
+    "sku": "SON-1000",
+    "price": 1155.47,
+    "discount": {
+      "percentage": 25,
+      "priceAfterDiscount": 866.6
+    },
+    "stock": 118,
+    "rating": {
+      "average": 1.8,
+      "count": 154
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=759",
+        "https://picsum.photos/600/400?random=436",
+        "https://picsum.photos/600/400?random=316"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-09-15T21:24:59.069268",
+      "updatedAt": "2025-09-28T21:24:59.069268"
+    }
+  },
+  {
+    "id": "de83ff16-6fa9-4594-8d98-6b2a8f0ee425",
+    "title": "HP Camera 2",
+    "description": "This is a high-quality camera by HP.",
+    "category": "Accessories",
+    "subCategory": "Portable",
+    "brand": "HP",
+    "sku": "HP-1001",
+    "price": 951.09,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 808.43
+    },
+    "stock": 109,
+    "rating": {
+      "average": 1.5,
+      "count": 265
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=101",
+        "https://picsum.photos/600/400?random=757",
+        "https://picsum.photos/600/400?random=595"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-12-11T12:26:04.419524",
+      "updatedAt": "2025-01-30T12:26:04.419524"
+    }
+  },
+  {
+    "id": "0be1d234-edfb-4ee5-9dc5-1f8836da41b3",
+    "title": "Samsung Headphones 3",
+    "description": "This is a high-quality headphones by Samsung.",
+    "category": "Accessories",
+    "subCategory": "Gaming",
+    "brand": "Samsung",
+    "sku": "SAM-1002",
+    "price": 1490.27,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 1341.24
+    },
+    "stock": 129,
+    "rating": {
+      "average": 2.5,
+      "count": 81
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=992",
+        "https://picsum.photos/600/400?random=567",
+        "https://picsum.photos/600/400?random=510"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-12-30T17:42:35.580170",
+      "updatedAt": "2025-01-29T17:42:35.580170"
+    }
+  },
+  {
+    "id": "44cf140e-c839-4c48-86de-03d3893b32c2",
+    "title": "Canon Printer 4",
+    "description": "This is a high-quality printer by Canon.",
+    "category": "Electronics",
+    "subCategory": "Office",
+    "brand": "Canon",
+    "sku": "CAN-1003",
+    "price": 688.52,
+    "discount": {
+      "percentage": 0,
+      "priceAfterDiscount": 688.52
+    },
+    "stock": 26,
+    "rating": {
+      "average": 4.3,
+      "count": 945
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=497",
+        "https://picsum.photos/600/400?random=996",
+        "https://picsum.photos/600/400?random=919"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-12-03T20:42:58.433545",
+      "updatedAt": "2024-12-31T20:42:58.433545"
+    }
+  },
+  {
+    "id": "eff50d84-bb7b-4f24-b166-be13d151f829",
+    "title": "Lenovo Keyboard 5",
+    "description": "This is a high-quality keyboard by Lenovo.",
+    "category": "Accessories",
+    "subCategory": "Home",
+    "brand": "Lenovo",
+    "sku": "LEN-1004",
+    "price": 784.7,
+    "discount": {
+      "percentage": 0,
+      "priceAfterDiscount": 784.7
+    },
+    "stock": 63,
+    "rating": {
+      "average": 2.6,
+      "count": 683
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=775",
+        "https://picsum.photos/600/400?random=817",
+        "https://picsum.photos/600/400?random=987"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-10-14T20:45:34.286173",
+      "updatedAt": "2024-11-21T20:45:34.286173"
+    }
+  },
+  {
+    "id": "f87522c7-df4a-45df-9b19-c5d30121c4c8",
+    "title": "Apple Keyboard 6",
+    "description": "This is a high-quality keyboard by Apple.",
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "brand": "Apple",
+    "sku": "APP-1005",
+    "price": 472.37,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 401.51
+    },
+    "stock": 194,
+    "rating": {
+      "average": 2.4,
+      "count": 144
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=113",
+        "https://picsum.photos/600/400?random=178",
+        "https://picsum.photos/600/400?random=499"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-09-28T21:34:11.515833",
+      "updatedAt": "2024-11-02T21:34:11.515833"
+    }
+  },
+  {
+    "id": "302c2664-101e-473f-9c7c-1374aa180408",
+    "title": "Asus Laptop 7",
+    "description": "This is a high-quality laptop by Asus.",
+    "category": "Electronics",
+    "subCategory": "Office",
+    "brand": "Asus",
+    "sku": "ASU-1006",
+    "price": 1416.65,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 1274.99
+    },
+    "stock": 10,
+    "rating": {
+      "average": 3.8,
+      "count": 202
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=274",
+        "https://picsum.photos/600/400?random=639",
+        "https://picsum.photos/600/400?random=664"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-08-10T09:17:26.487260",
+      "updatedAt": "2025-10-22T09:17:26.487260"
+    }
+  },
+  {
+    "id": "54fa33e9-32e8-4086-a475-e90ec319905b",
+    "title": "Lenovo Laptop 8",
+    "description": "This is a high-quality laptop by Lenovo.",
+    "category": "Accessories",
+    "subCategory": "Office",
+    "brand": "Lenovo",
+    "sku": "LEN-1007",
+    "price": 951.95,
+    "discount": {
+      "percentage": 0,
+      "priceAfterDiscount": 951.95
+    },
+    "stock": 199,
+    "rating": {
+      "average": 2.0,
+      "count": 686
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=458",
+        "https://picsum.photos/600/400?random=73",
+        "https://picsum.photos/600/400?random=301"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-03-15T03:16:13.959609",
+      "updatedAt": "2025-04-10T03:16:13.959609"
+    }
+  },
+  {
+    "id": "cba31859-794f-4e60-8d72-20b0ec5c8213",
+    "title": "Samsung Smartwatch 9",
+    "description": "This is a high-quality smartwatch by Samsung.",
+    "category": "Appliances",
+    "subCategory": "Portable",
+    "brand": "Samsung",
+    "sku": "SAM-1008",
+    "price": 206.13,
+    "discount": {
+      "percentage": 25,
+      "priceAfterDiscount": 154.6
+    },
+    "stock": 40,
+    "rating": {
+      "average": 1.8,
+      "count": 754
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=809",
+        "https://picsum.photos/600/400?random=997",
+        "https://picsum.photos/600/400?random=229"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-04-20T05:23:43.836372",
+      "updatedAt": "2025-05-08T05:23:43.836372"
+    }
+  },
+  {
+    "id": "63f5118c-73c0-4803-9bc0-e5a119a165e7",
+    "title": "Dell Camera 10",
+    "description": "This is a high-quality camera by Dell.",
+    "category": "Appliances",
+    "subCategory": "Office",
+    "brand": "Dell",
+    "sku": "DEL-1009",
+    "price": 86.62,
+    "discount": {
+      "percentage": 0,
+      "priceAfterDiscount": 86.62
+    },
+    "stock": 86,
+    "rating": {
+      "average": 2.6,
+      "count": 189
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=514",
+        "https://picsum.photos/600/400?random=352",
+        "https://picsum.photos/600/400?random=890"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-09-02T17:32:32.942814",
+      "updatedAt": "2025-09-25T17:32:32.942814"
+    }
+  },
+  {
+    "id": "18f66404-b4e2-4743-84ef-05e541f998ad",
+    "title": "Sony Tablet 11",
+    "description": "This is a high-quality tablet by Sony.",
+    "category": "Accessories",
+    "subCategory": "Office",
+    "brand": "Sony",
+    "sku": "SON-1010",
+    "price": 486.89,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 462.55
+    },
+    "stock": 181,
+    "rating": {
+      "average": 3.1,
+      "count": 5
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=409",
+        "https://picsum.photos/600/400?random=474",
+        "https://picsum.photos/600/400?random=77"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-06-08T16:13:14.125613",
+      "updatedAt": "2025-07-23T16:13:14.125613"
+    }
+  },
+  {
+    "id": "b5d608d4-8a96-44e8-84b5-fa800323c73a",
+    "title": "Asus Phone 12",
+    "description": "This is a high-quality phone by Asus.",
+    "category": "Accessories",
+    "subCategory": "Home",
+    "brand": "Asus",
+    "sku": "ASU-1011",
+    "price": 1259.38,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 1133.44
+    },
+    "stock": 58,
+    "rating": {
+      "average": 1.5,
+      "count": 364
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=719",
+        "https://picsum.photos/600/400?random=849",
+        "https://picsum.photos/600/400?random=124"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-04-02T09:14:00.731162",
+      "updatedAt": "2025-07-02T09:14:00.731162"
+    }
+  },
+  {
+    "id": "43ab6caf-3b5a-4d72-91ad-e38fdc41fd7e",
+    "title": "HP Monitor 13",
+    "description": "This is a high-quality monitor by HP.",
+    "category": "Electronics",
+    "subCategory": "Home",
+    "brand": "HP",
+    "sku": "HP-1012",
+    "price": 418.28,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 397.37
+    },
+    "stock": 73,
+    "rating": {
+      "average": 3.5,
+      "count": 885
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=714",
+        "https://picsum.photos/600/400?random=789",
+        "https://picsum.photos/600/400?random=616"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-11-22T11:45:49.161943",
+      "updatedAt": "2024-12-11T11:45:49.161943"
+    }
+  },
+  {
+    "id": "d3f47f87-41eb-4609-a0a6-7d0033debeaa",
+    "title": "Logitech Headphones 14",
+    "description": "This is a high-quality headphones by Logitech.",
+    "category": "Accessories",
+    "subCategory": "Gaming",
+    "brand": "Logitech",
+    "sku": "LOG-1013",
+    "price": 586.65,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 498.65
+    },
+    "stock": 5,
+    "rating": {
+      "average": 4.2,
+      "count": 940
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=502",
+        "https://picsum.photos/600/400?random=574",
+        "https://picsum.photos/600/400?random=485"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-03-07T19:25:13.941627",
+      "updatedAt": "2025-03-23T19:25:13.941627"
+    }
+  },
+  {
+    "id": "087c2d65-e52e-49d1-9ad3-be6a1e4d35aa",
+    "title": "Sony Mouse 15",
+    "description": "This is a high-quality mouse by Sony.",
+    "category": "Electronics",
+    "subCategory": "Office",
+    "brand": "Sony",
+    "sku": "SON-1014",
+    "price": 1288.64,
+    "discount": {
+      "percentage": 30,
+      "priceAfterDiscount": 902.05
+    },
+    "stock": 108,
+    "rating": {
+      "average": 1.2,
+      "count": 706
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=233",
+        "https://picsum.photos/600/400?random=325",
+        "https://picsum.photos/600/400?random=855"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-07-23T02:51:16.463928",
+      "updatedAt": "2025-08-13T02:51:16.463928"
+    }
+  },
+  {
+    "id": "ae031215-bc43-47ae-80b1-77860f831793",
+    "title": "Asus Tablet 16",
+    "description": "This is a high-quality tablet by Asus.",
+    "category": "Appliances",
+    "subCategory": "Photography",
+    "brand": "Asus",
+    "sku": "ASU-1015",
+    "price": 1791.39,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 1612.25
+    },
+    "stock": 124,
+    "rating": {
+      "average": 3.5,
+      "count": 845
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=565",
+        "https://picsum.photos/600/400?random=874",
+        "https://picsum.photos/600/400?random=977"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-07-16T05:00:42.430268",
+      "updatedAt": "2025-08-08T05:00:42.430268"
+    }
+  },
+  {
+    "id": "03066752-a4eb-4628-a97c-33ec55708426",
+    "title": "Logitech Camera 17",
+    "description": "This is a high-quality camera by Logitech.",
+    "category": "Accessories",
+    "subCategory": "Photography",
+    "brand": "Logitech",
+    "sku": "LOG-1016",
+    "price": 713.59,
+    "discount": {
+      "percentage": 30,
+      "priceAfterDiscount": 499.51
+    },
+    "stock": 198,
+    "rating": {
+      "average": 2.4,
+      "count": 379
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=293",
+        "https://picsum.photos/600/400?random=654",
+        "https://picsum.photos/600/400?random=600"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-05-03T04:46:51.306521",
+      "updatedAt": "2025-05-21T04:46:51.306521"
+    }
+  },
+  {
+    "id": "3bc41fee-38af-4be4-b451-f77238bc688c",
+    "title": "Apple Tablet 18",
+    "description": "This is a high-quality tablet by Apple.",
+    "category": "Accessories",
+    "subCategory": "Gaming",
+    "brand": "Apple",
+    "sku": "APP-1017",
+    "price": 1380.43,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 1311.41
+    },
+    "stock": 155,
+    "rating": {
+      "average": 4.1,
+      "count": 119
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=461",
+        "https://picsum.photos/600/400?random=962",
+        "https://picsum.photos/600/400?random=867"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-05-06T14:38:51.894426",
+      "updatedAt": "2025-07-19T14:38:51.894426"
+    }
+  },
+  {
+    "id": "31fb8d2b-d0ea-4f76-9e04-dc8a1ba4c8a5",
+    "title": "Sony Laptop 19",
+    "description": "This is a high-quality laptop by Sony.",
+    "category": "Electronics",
+    "subCategory": "Home",
+    "brand": "Sony",
+    "sku": "SON-1018",
+    "price": 195.49,
+    "discount": {
+      "percentage": 25,
+      "priceAfterDiscount": 146.62
+    },
+    "stock": 194,
+    "rating": {
+      "average": 1.1,
+      "count": 57
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=452",
+        "https://picsum.photos/600/400?random=829",
+        "https://picsum.photos/600/400?random=348"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-07-11T21:43:50.259077",
+      "updatedAt": "2025-08-06T21:43:50.259077"
+    }
+  },
+  {
+    "id": "b663e63c-dbfa-44fa-85a5-e71fb4831b75",
+    "title": "Lenovo Smartwatch 20",
+    "description": "This is a high-quality smartwatch by Lenovo.",
+    "category": "Electronics",
+    "subCategory": "Home",
+    "brand": "Lenovo",
+    "sku": "LEN-1019",
+    "price": 770.4,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 731.88
+    },
+    "stock": 147,
+    "rating": {
+      "average": 4.4,
+      "count": 998
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=119",
+        "https://picsum.photos/600/400?random=749",
+        "https://picsum.photos/600/400?random=822"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-02-19T10:54:53.352230",
+      "updatedAt": "2025-04-04T10:54:53.352230"
+    }
+  },
+  {
+    "id": "4decb988-2e30-4017-8e0f-2e705a5c5547",
+    "title": "Asus Mouse 21",
+    "description": "This is a high-quality mouse by Asus.",
+    "category": "Accessories",
+    "subCategory": "Photography",
+    "brand": "Asus",
+    "sku": "ASU-1020",
+    "price": 1453.6,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 1162.88
+    },
+    "stock": 58,
+    "rating": {
+      "average": 3.1,
+      "count": 226
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=371",
+        "https://picsum.photos/600/400?random=781",
+        "https://picsum.photos/600/400?random=856"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-11-26T05:49:13.541601",
+      "updatedAt": "2025-01-22T05:49:13.541601"
+    }
+  },
+  {
+    "id": "2e1528c7-c3e9-4270-996e-1d90681182c5",
+    "title": "Logitech Mouse 22",
+    "description": "This is a high-quality mouse by Logitech.",
+    "category": "Appliances",
+    "subCategory": "Photography",
+    "brand": "Logitech",
+    "sku": "LOG-1021",
+    "price": 455.76,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 364.61
+    },
+    "stock": 47,
+    "rating": {
+      "average": 4.5,
+      "count": 883
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=323",
+        "https://picsum.photos/600/400?random=486",
+        "https://picsum.photos/600/400?random=961"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-07-13T20:12:21.819477",
+      "updatedAt": "2025-07-15T20:12:21.819477"
+    }
+  },
+  {
+    "id": "c89f8a5e-d99d-4298-b85e-14f460be8664",
+    "title": "Sony Monitor 23",
+    "description": "This is a high-quality monitor by Sony.",
+    "category": "Accessories",
+    "subCategory": "Gaming",
+    "brand": "Sony",
+    "sku": "SON-1022",
+    "price": 229.8,
+    "discount": {
+      "percentage": 25,
+      "priceAfterDiscount": 172.35
+    },
+    "stock": 167,
+    "rating": {
+      "average": 4.5,
+      "count": 218
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=871",
+        "https://picsum.photos/600/400?random=895",
+        "https://picsum.photos/600/400?random=31"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-08-25T13:10:15.965370",
+      "updatedAt": "2025-10-23T13:10:15.965370"
+    }
+  },
+  {
+    "id": "a742c180-e959-4035-b278-89d6b547df71",
+    "title": "Xiaomi Laptop 24",
+    "description": "This is a high-quality laptop by Xiaomi.",
+    "category": "Appliances",
+    "subCategory": "Gaming",
+    "brand": "Xiaomi",
+    "sku": "XIA-1023",
+    "price": 445.55,
+    "discount": {
+      "percentage": 30,
+      "priceAfterDiscount": 311.88
+    },
+    "stock": 158,
+    "rating": {
+      "average": 3.1,
+      "count": 853
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=612",
+        "https://picsum.photos/600/400?random=283",
+        "https://picsum.photos/600/400?random=42"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-05-13T21:32:42.994562",
+      "updatedAt": "2025-06-15T21:32:42.994562"
+    }
+  },
+  {
+    "id": "a7bf422f-8232-450a-a9ae-73210948f054",
+    "title": "Lenovo Laptop 25",
+    "description": "This is a high-quality laptop by Lenovo.",
+    "category": "Appliances",
+    "subCategory": "Office",
+    "brand": "Lenovo",
+    "sku": "LEN-1024",
+    "price": 636.99,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 509.59
+    },
+    "stock": 77,
+    "rating": {
+      "average": 2.8,
+      "count": 354
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=155",
+        "https://picsum.photos/600/400?random=475",
+        "https://picsum.photos/600/400?random=23"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-01-06T06:53:06.511720",
+      "updatedAt": "2025-04-10T06:53:06.511720"
+    }
+  },
+  {
+    "id": "87d992e6-dc77-4d6a-be7e-d9ca198f7df5",
+    "title": "Apple Laptop 26",
+    "description": "This is a high-quality laptop by Apple.",
+    "category": "Electronics",
+    "subCategory": "Office",
+    "brand": "Apple",
+    "sku": "APP-1025",
+    "price": 1686.88,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 1518.19
+    },
+    "stock": 173,
+    "rating": {
+      "average": 4.9,
+      "count": 487
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=17",
+        "https://picsum.photos/600/400?random=311",
+        "https://picsum.photos/600/400?random=572"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-01-26T22:44:30.749902",
+      "updatedAt": "2025-05-04T22:44:30.749902"
+    }
+  },
+  {
+    "id": "bb9bb91d-15c5-4a72-ae7a-b69596f94519",
+    "title": "Logitech Laptop 27",
+    "description": "This is a high-quality laptop by Logitech.",
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "brand": "Logitech",
+    "sku": "LOG-1026",
+    "price": 1726.53,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 1467.55
+    },
+    "stock": 73,
+    "rating": {
+      "average": 1.0,
+      "count": 618
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=531",
+        "https://picsum.photos/600/400?random=203",
+        "https://picsum.photos/600/400?random=819"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-11-09T10:50:53.648429",
+      "updatedAt": "2025-02-16T10:50:53.648429"
+    }
+  },
+  {
+    "id": "e9a1308b-1353-44aa-96a6-1abfa7ece468",
+    "title": "Xiaomi Monitor 28",
+    "description": "This is a high-quality monitor by Xiaomi.",
+    "category": "Appliances",
+    "subCategory": "Gaming",
+    "brand": "Xiaomi",
+    "sku": "XIA-1027",
+    "price": 344.65,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 310.19
+    },
+    "stock": 135,
+    "rating": {
+      "average": 2.8,
+      "count": 927
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=789",
+        "https://picsum.photos/600/400?random=764",
+        "https://picsum.photos/600/400?random=966"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-12-27T06:02:08.388113",
+      "updatedAt": "2025-04-06T06:02:08.388113"
+    }
+  },
+  {
+    "id": "c0e49b76-2811-4dd2-a979-319a818771da",
+    "title": "Xiaomi Laptop 29",
+    "description": "This is a high-quality laptop by Xiaomi.",
+    "category": "Electronics",
+    "subCategory": "Portable",
+    "brand": "Xiaomi",
+    "sku": "XIA-1028",
+    "price": 1338.46,
+    "discount": {
+      "percentage": 25,
+      "priceAfterDiscount": 1003.85
+    },
+    "stock": 133,
+    "rating": {
+      "average": 4.3,
+      "count": 192
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=219",
+        "https://picsum.photos/600/400?random=695",
+        "https://picsum.photos/600/400?random=574"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-06-04T00:57:03.092537",
+      "updatedAt": "2025-07-10T00:57:03.092537"
+    }
+  },
+  {
+    "id": "5724618d-6fc8-4598-a8b6-c553b283d7b9",
+    "title": "HP Tablet 30",
+    "description": "This is a high-quality tablet by HP.",
+    "category": "Appliances",
+    "subCategory": "Photography",
+    "brand": "HP",
+    "sku": "HP-1029",
+    "price": 1123.43,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 1067.26
+    },
+    "stock": 115,
+    "rating": {
+      "average": 4.3,
+      "count": 805
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=760",
+        "https://picsum.photos/600/400?random=102",
+        "https://picsum.photos/600/400?random=664"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-02-12T16:47:41.708292",
+      "updatedAt": "2025-05-06T16:47:41.708292"
+    }
+  },
+  {
+    "id": "269b3c3f-fc86-460d-b1b1-541cfec3f363",
+    "title": "Asus Headphones 31",
+    "description": "This is a high-quality headphones by Asus.",
+    "category": "Accessories",
+    "subCategory": "Office",
+    "brand": "Asus",
+    "sku": "ASU-1030",
+    "price": 644.42,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 547.76
+    },
+    "stock": 116,
+    "rating": {
+      "average": 3.3,
+      "count": 390
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=594",
+        "https://picsum.photos/600/400?random=624",
+        "https://picsum.photos/600/400?random=386"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-12-17T23:43:32.652714",
+      "updatedAt": "2025-01-24T23:43:32.652714"
+    }
+  },
+  {
+    "id": "2704a30c-439b-4d0d-b6dd-b789e1be42cf",
+    "title": "Dell Laptop 32",
+    "description": "This is a high-quality laptop by Dell.",
+    "category": "Appliances",
+    "subCategory": "Gaming",
+    "brand": "Dell",
+    "sku": "DEL-1031",
+    "price": 1701.26,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 1446.07
+    },
+    "stock": 113,
+    "rating": {
+      "average": 3.1,
+      "count": 64
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=874",
+        "https://picsum.photos/600/400?random=175",
+        "https://picsum.photos/600/400?random=278"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-05-10T15:33:20.292934",
+      "updatedAt": "2025-06-27T15:33:20.292934"
+    }
+  },
+  {
+    "id": "dbe47df8-1950-41ee-ba33-14069dec3f44",
+    "title": "HP Keyboard 33",
+    "description": "This is a high-quality keyboard by HP.",
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "brand": "HP",
+    "sku": "HP-1032",
+    "price": 786.62,
+    "discount": {
+      "percentage": 0,
+      "priceAfterDiscount": 786.62
+    },
+    "stock": 37,
+    "rating": {
+      "average": 2.2,
+      "count": 24
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=923",
+        "https://picsum.photos/600/400?random=346",
+        "https://picsum.photos/600/400?random=603"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-05-05T11:24:04.988756",
+      "updatedAt": "2025-06-03T11:24:04.988756"
+    }
+  },
+  {
+    "id": "9c1dfd1a-3fb2-40d8-91d0-a7ebf559067d",
+    "title": "Asus Phone 34",
+    "description": "This is a high-quality phone by Asus.",
+    "category": "Accessories",
+    "subCategory": "Gaming",
+    "brand": "Asus",
+    "sku": "ASU-1033",
+    "price": 1403.55,
+    "discount": {
+      "percentage": 25,
+      "priceAfterDiscount": 1052.66
+    },
+    "stock": 145,
+    "rating": {
+      "average": 3.3,
+      "count": 437
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=228",
+        "https://picsum.photos/600/400?random=286",
+        "https://picsum.photos/600/400?random=38"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-10-31T13:38:24.121686",
+      "updatedAt": "2024-11-23T13:38:24.121686"
+    }
+  },
+  {
+    "id": "dd28d1d8-1bf3-453b-a24d-dc7b4147d124",
+    "title": "Samsung Smartwatch 35",
+    "description": "This is a high-quality smartwatch by Samsung.",
+    "category": "Electronics",
+    "subCategory": "Portable",
+    "brand": "Samsung",
+    "sku": "SAM-1034",
+    "price": 812.5,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 771.88
+    },
+    "stock": 172,
+    "rating": {
+      "average": 2.5,
+      "count": 515
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=382",
+        "https://picsum.photos/600/400?random=227",
+        "https://picsum.photos/600/400?random=859"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-06-20T02:42:42.690025",
+      "updatedAt": "2025-09-26T02:42:42.690025"
+    }
+  },
+  {
+    "id": "958f7fae-f0ae-4a46-bc78-bf919558f4bf",
+    "title": "Samsung Smartwatch 36",
+    "description": "This is a high-quality smartwatch by Samsung.",
+    "category": "Accessories",
+    "subCategory": "Gaming",
+    "brand": "Samsung",
+    "sku": "SAM-1035",
+    "price": 1946.84,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 1557.47
+    },
+    "stock": 85,
+    "rating": {
+      "average": 2.7,
+      "count": 329
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=639",
+        "https://picsum.photos/600/400?random=209",
+        "https://picsum.photos/600/400?random=457"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-01-31T17:59:57.621052",
+      "updatedAt": "2025-03-11T17:59:57.621052"
+    }
+  },
+  {
+    "id": "d6e5fa3c-d4cd-475a-8667-bd45baa45bee",
+    "title": "Apple Phone 37",
+    "description": "This is a high-quality phone by Apple.",
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "brand": "Apple",
+    "sku": "APP-1036",
+    "price": 1357.81,
+    "discount": {
+      "percentage": 0,
+      "priceAfterDiscount": 1357.81
+    },
+    "stock": 63,
+    "rating": {
+      "average": 3.2,
+      "count": 26
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=413",
+        "https://picsum.photos/600/400?random=467",
+        "https://picsum.photos/600/400?random=763"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-01-11T12:15:47.802575",
+      "updatedAt": "2025-03-09T12:15:47.802575"
+    }
+  },
+  {
+    "id": "a7fb9ec4-d3e8-4780-8b95-65e31b50fa91",
+    "title": "Sony Keyboard 38",
+    "description": "This is a high-quality keyboard by Sony.",
+    "category": "Accessories",
+    "subCategory": "Gaming",
+    "brand": "Sony",
+    "sku": "SON-1037",
+    "price": 139.92,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 132.92
+    },
+    "stock": 172,
+    "rating": {
+      "average": 2.4,
+      "count": 14
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=185",
+        "https://picsum.photos/600/400?random=868",
+        "https://picsum.photos/600/400?random=123"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-08-09T05:49:02.558213",
+      "updatedAt": "2025-08-14T05:49:02.558213"
+    }
+  },
+  {
+    "id": "ca66f527-2737-4593-8ab8-3995307a1883",
+    "title": "Canon Mouse 39",
+    "description": "This is a high-quality mouse by Canon.",
+    "category": "Accessories",
+    "subCategory": "Gaming",
+    "brand": "Canon",
+    "sku": "CAN-1038",
+    "price": 408.82,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 347.5
+    },
+    "stock": 101,
+    "rating": {
+      "average": 4.9,
+      "count": 646
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=764",
+        "https://picsum.photos/600/400?random=511",
+        "https://picsum.photos/600/400?random=57"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-07-01T11:46:02.420080",
+      "updatedAt": "2025-09-24T11:46:02.420080"
+    }
+  },
+  {
+    "id": "486c4e34-e5c8-47ad-ab49-4e75434c18d8",
+    "title": "Dell Printer 40",
+    "description": "This is a high-quality printer by Dell.",
+    "category": "Accessories",
+    "subCategory": "Portable",
+    "brand": "Dell",
+    "sku": "DEL-1039",
+    "price": 1853.75,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 1575.69
+    },
+    "stock": 95,
+    "rating": {
+      "average": 2.6,
+      "count": 234
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=391",
+        "https://picsum.photos/600/400?random=721",
+        "https://picsum.photos/600/400?random=943"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-04-18T10:14:07.621363",
+      "updatedAt": "2025-06-14T10:14:07.621363"
+    }
+  },
+  {
+    "id": "9b1be6fa-b548-4e68-9077-fe2c848253ec",
+    "title": "Dell Tablet 41",
+    "description": "This is a high-quality tablet by Dell.",
+    "category": "Appliances",
+    "subCategory": "Photography",
+    "brand": "Dell",
+    "sku": "DEL-1040",
+    "price": 606.37,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 545.73
+    },
+    "stock": 30,
+    "rating": {
+      "average": 2.5,
+      "count": 347
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=709",
+        "https://picsum.photos/600/400?random=535",
+        "https://picsum.photos/600/400?random=484"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-05-10T05:12:12.267975",
+      "updatedAt": "2025-07-21T05:12:12.267975"
+    }
+  },
+  {
+    "id": "c4ea6662-a8e9-4528-971e-b7c9060dd73e",
+    "title": "Asus Laptop 42",
+    "description": "This is a high-quality laptop by Asus.",
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "brand": "Asus",
+    "sku": "ASU-1041",
+    "price": 1694.46,
+    "discount": {
+      "percentage": 30,
+      "priceAfterDiscount": 1186.12
+    },
+    "stock": 95,
+    "rating": {
+      "average": 4.8,
+      "count": 409
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=420",
+        "https://picsum.photos/600/400?random=333",
+        "https://picsum.photos/600/400?random=822"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-10-01T21:39:59.195759",
+      "updatedAt": "2025-01-03T21:39:59.195759"
+    }
+  },
+  {
+    "id": "dd4f8ec7-1677-40d0-813e-5a155bab8efc",
+    "title": "Lenovo Tablet 43",
+    "description": "This is a high-quality tablet by Lenovo.",
+    "category": "Appliances",
+    "subCategory": "Photography",
+    "brand": "Lenovo",
+    "sku": "LEN-1042",
+    "price": 1378.13,
+    "discount": {
+      "percentage": 30,
+      "priceAfterDiscount": 964.69
+    },
+    "stock": 118,
+    "rating": {
+      "average": 3.5,
+      "count": 229
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=938",
+        "https://picsum.photos/600/400?random=403",
+        "https://picsum.photos/600/400?random=289"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-11-14T11:21:36.879195",
+      "updatedAt": "2025-01-01T11:21:36.879195"
+    }
+  },
+  {
+    "id": "fedfd5d8-e8f0-4e6c-bc0b-321e879c16ac",
+    "title": "Apple Laptop 44",
+    "description": "This is a high-quality laptop by Apple.",
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "brand": "Apple",
+    "sku": "APP-1043",
+    "price": 109.55,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 93.12
+    },
+    "stock": 104,
+    "rating": {
+      "average": 4.9,
+      "count": 378
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=619",
+        "https://picsum.photos/600/400?random=397",
+        "https://picsum.photos/600/400?random=940"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-05-04T10:07:57.480317",
+      "updatedAt": "2025-07-13T10:07:57.480317"
+    }
+  },
+  {
+    "id": "87a3185e-6e25-4d4b-8aa1-7f1d1bd8713a",
+    "title": "Sony Mouse 45",
+    "description": "This is a high-quality mouse by Sony.",
+    "category": "Appliances",
+    "subCategory": "Gaming",
+    "brand": "Sony",
+    "sku": "SON-1044",
+    "price": 319.27,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 255.42
+    },
+    "stock": 105,
+    "rating": {
+      "average": 3.3,
+      "count": 273
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=842",
+        "https://picsum.photos/600/400?random=558",
+        "https://picsum.photos/600/400?random=195"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-12-11T07:45:09.460398",
+      "updatedAt": "2025-02-28T07:45:09.460398"
+    }
+  },
+  {
+    "id": "69cf6ba4-534d-46f9-b047-b8094b4336bc",
+    "title": "Asus Smartwatch 46",
+    "description": "This is a high-quality smartwatch by Asus.",
+    "category": "Appliances",
+    "subCategory": "Home",
+    "brand": "Asus",
+    "sku": "ASU-1045",
+    "price": 1658.4,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 1492.56
+    },
+    "stock": 78,
+    "rating": {
+      "average": 4.8,
+      "count": 535
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=674",
+        "https://picsum.photos/600/400?random=500",
+        "https://picsum.photos/600/400?random=764"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-01-28T22:23:44.519785",
+      "updatedAt": "2025-02-18T22:23:44.519785"
+    }
+  },
+  {
+    "id": "9a134de0-232c-433c-910c-c36e06be8849",
+    "title": "Asus Smartwatch 47",
+    "description": "This is a high-quality smartwatch by Asus.",
+    "category": "Appliances",
+    "subCategory": "Portable",
+    "brand": "Asus",
+    "sku": "ASU-1046",
+    "price": 1191.4,
+    "discount": {
+      "percentage": 25,
+      "priceAfterDiscount": 893.55
+    },
+    "stock": 178,
+    "rating": {
+      "average": 2.5,
+      "count": 95
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=490",
+        "https://picsum.photos/600/400?random=268",
+        "https://picsum.photos/600/400?random=459"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-02-27T09:46:42.362377",
+      "updatedAt": "2025-04-10T09:46:42.362377"
+    }
+  },
+  {
+    "id": "5882e5a2-11f1-4220-89e3-5dbd47f8ead3",
+    "title": "Logitech Phone 48",
+    "description": "This is a high-quality phone by Logitech.",
+    "category": "Appliances",
+    "subCategory": "Portable",
+    "brand": "Logitech",
+    "sku": "LOG-1047",
+    "price": 1020.94,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 816.75
+    },
+    "stock": 35,
+    "rating": {
+      "average": 2.3,
+      "count": 445
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=382",
+        "https://picsum.photos/600/400?random=877",
+        "https://picsum.photos/600/400?random=319"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-10-18T10:33:33.792603",
+      "updatedAt": "2024-11-02T10:33:33.792603"
+    }
+  },
+  {
+    "id": "1938174b-88a1-40bd-b22c-217865eba875",
+    "title": "Apple Phone 49",
+    "description": "This is a high-quality phone by Apple.",
+    "category": "Electronics",
+    "subCategory": "Photography",
+    "brand": "Apple",
+    "sku": "APP-1048",
+    "price": 1783.46,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 1426.77
+    },
+    "stock": 6,
+    "rating": {
+      "average": 4.9,
+      "count": 199
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=954",
+        "https://picsum.photos/600/400?random=595",
+        "https://picsum.photos/600/400?random=330"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-05-09T17:33:04.080550",
+      "updatedAt": "2025-07-03T17:33:04.080550"
+    }
+  },
+  {
+    "id": "ae76aec2-b4d2-40c7-8492-080691db7f15",
+    "title": "Canon Smartwatch 50",
+    "description": "This is a high-quality smartwatch by Canon.",
+    "category": "Electronics",
+    "subCategory": "Portable",
+    "brand": "Canon",
+    "sku": "CAN-1049",
+    "price": 1035.31,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 931.78
+    },
+    "stock": 191,
+    "rating": {
+      "average": 1.1,
+      "count": 171
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=962",
+        "https://picsum.photos/600/400?random=779",
+        "https://picsum.photos/600/400?random=79"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-06-21T05:23:42.996280",
+      "updatedAt": "2025-07-18T05:23:42.996280"
+    }
+  },
+  {
+    "id": "b19f2ae0-a663-4345-8e39-b54c19bee5c5",
+    "title": "Lenovo Tablet 51",
+    "description": "This is a high-quality tablet by Lenovo.",
+    "category": "Appliances",
+    "subCategory": "Gaming",
+    "brand": "Lenovo",
+    "sku": "LEN-1050",
+    "price": 466.91,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 373.53
+    },
+    "stock": 76,
+    "rating": {
+      "average": 4.4,
+      "count": 62
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=156",
+        "https://picsum.photos/600/400?random=339",
+        "https://picsum.photos/600/400?random=459"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-03-31T01:10:23.230743",
+      "updatedAt": "2025-06-27T01:10:23.230743"
+    }
+  },
+  {
+    "id": "795bea2f-3379-4235-9768-e758738957ea",
+    "title": "Apple Mouse 52",
+    "description": "This is a high-quality mouse by Apple.",
+    "category": "Appliances",
+    "subCategory": "Portable",
+    "brand": "Apple",
+    "sku": "APP-1051",
+    "price": 829.06,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 746.15
+    },
+    "stock": 106,
+    "rating": {
+      "average": 4.1,
+      "count": 246
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=996",
+        "https://picsum.photos/600/400?random=979",
+        "https://picsum.photos/600/400?random=908"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-09-01T08:38:23.069893",
+      "updatedAt": "2025-11-23T08:38:23.069893"
+    }
+  },
+  {
+    "id": "7c0b549a-ae4c-4894-b8c4-ef3abb9d502f",
+    "title": "Asus Tablet 53",
+    "description": "This is a high-quality tablet by Asus.",
+    "category": "Electronics",
+    "subCategory": "Photography",
+    "brand": "Asus",
+    "sku": "ASU-1052",
+    "price": 302.85,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 257.42
+    },
+    "stock": 38,
+    "rating": {
+      "average": 1.6,
+      "count": 129
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=483",
+        "https://picsum.photos/600/400?random=78",
+        "https://picsum.photos/600/400?random=966"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-12-26T04:07:01.483539",
+      "updatedAt": "2025-02-26T04:07:01.483539"
+    }
+  },
+  {
+    "id": "73839053-48f2-45b8-89fc-77fb3c4adda0",
+    "title": "Samsung Camera 54",
+    "description": "This is a high-quality camera by Samsung.",
+    "category": "Electronics",
+    "subCategory": "Portable",
+    "brand": "Samsung",
+    "sku": "SAM-1053",
+    "price": 1219.49,
+    "discount": {
+      "percentage": 30,
+      "priceAfterDiscount": 853.64
+    },
+    "stock": 76,
+    "rating": {
+      "average": 2.2,
+      "count": 415
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=107",
+        "https://picsum.photos/600/400?random=497",
+        "https://picsum.photos/600/400?random=314"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-02-26T08:37:43.393363",
+      "updatedAt": "2025-04-24T08:37:43.393363"
+    }
+  },
+  {
+    "id": "7c31bec3-8932-485b-8fbb-cdd7a0036e7c",
+    "title": "Sony Monitor 55",
+    "description": "This is a high-quality monitor by Sony.",
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "brand": "Sony",
+    "sku": "SON-1054",
+    "price": 922.24,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 783.9
+    },
+    "stock": 89,
+    "rating": {
+      "average": 1.4,
+      "count": 734
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=114",
+        "https://picsum.photos/600/400?random=689",
+        "https://picsum.photos/600/400?random=466"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-10-24T00:14:50.502680",
+      "updatedAt": "2025-01-30T00:14:50.502680"
+    }
+  },
+  {
+    "id": "0991350f-f566-4d7f-85cc-ce90aab32e77",
+    "title": "Xiaomi Keyboard 56",
+    "description": "This is a high-quality keyboard by Xiaomi.",
+    "category": "Accessories",
+    "subCategory": "Portable",
+    "brand": "Xiaomi",
+    "sku": "XIA-1055",
+    "price": 1083.83,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 921.26
+    },
+    "stock": 31,
+    "rating": {
+      "average": 4.0,
+      "count": 373
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=634",
+        "https://picsum.photos/600/400?random=435",
+        "https://picsum.photos/600/400?random=931"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-09-19T16:00:28.230165",
+      "updatedAt": "2024-09-26T16:00:28.230165"
+    }
+  },
+  {
+    "id": "87e97f5c-a036-4355-b8ec-b6fc5772fc7c",
+    "title": "Logitech Laptop 57",
+    "description": "This is a high-quality laptop by Logitech.",
+    "category": "Accessories",
+    "subCategory": "Office",
+    "brand": "Logitech",
+    "sku": "LOG-1056",
+    "price": 903.28,
+    "discount": {
+      "percentage": 0,
+      "priceAfterDiscount": 903.28
+    },
+    "stock": 194,
+    "rating": {
+      "average": 1.9,
+      "count": 261
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=109",
+        "https://picsum.photos/600/400?random=7",
+        "https://picsum.photos/600/400?random=668"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-12-29T07:19:52.143317",
+      "updatedAt": "2025-03-07T07:19:52.143317"
+    }
+  },
+  {
+    "id": "a90d1168-66df-4468-a461-c5e980b4e925",
+    "title": "Lenovo Smartwatch 58",
+    "description": "This is a high-quality smartwatch by Lenovo.",
+    "category": "Appliances",
+    "subCategory": "Office",
+    "brand": "Lenovo",
+    "sku": "LEN-1057",
+    "price": 1365.48,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 1160.66
+    },
+    "stock": 119,
+    "rating": {
+      "average": 1.7,
+      "count": 631
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=763",
+        "https://picsum.photos/600/400?random=59",
+        "https://picsum.photos/600/400?random=93"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-08-23T11:17:19.840812",
+      "updatedAt": "2025-10-26T11:17:19.840812"
+    }
+  },
+  {
+    "id": "28992927-78bc-4d98-9ea0-96f4a17b49c9",
+    "title": "Samsung Camera 59",
+    "description": "This is a high-quality camera by Samsung.",
+    "category": "Accessories",
+    "subCategory": "Office",
+    "brand": "Samsung",
+    "sku": "SAM-1058",
+    "price": 1568.63,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 1490.2
+    },
+    "stock": 119,
+    "rating": {
+      "average": 2.9,
+      "count": 395
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=569",
+        "https://picsum.photos/600/400?random=240",
+        "https://picsum.photos/600/400?random=8"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-04-11T13:16:25.366783",
+      "updatedAt": "2025-04-15T13:16:25.366783"
+    }
+  },
+  {
+    "id": "730d1a7f-67a7-492e-b634-1f804f9a398f",
+    "title": "Canon Phone 60",
+    "description": "This is a high-quality phone by Canon.",
+    "category": "Electronics",
+    "subCategory": "Home",
+    "brand": "Canon",
+    "sku": "CAN-1059",
+    "price": 207.05,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 175.99
+    },
+    "stock": 72,
+    "rating": {
+      "average": 2.0,
+      "count": 28
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=652",
+        "https://picsum.photos/600/400?random=962",
+        "https://picsum.photos/600/400?random=738"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-10-29T05:28:27.962545",
+      "updatedAt": "2024-11-02T05:28:27.962545"
+    }
+  },
+  {
+    "id": "3e99232d-3d3f-47de-8886-e491e7943a78",
+    "title": "Sony Keyboard 61",
+    "description": "This is a high-quality keyboard by Sony.",
+    "category": "Electronics",
+    "subCategory": "Gaming",
+    "brand": "Sony",
+    "sku": "SON-1060",
+    "price": 1330.08,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 1064.06
+    },
+    "stock": 25,
+    "rating": {
+      "average": 1.9,
+      "count": 310
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=136",
+        "https://picsum.photos/600/400?random=156",
+        "https://picsum.photos/600/400?random=331"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-11-19T12:01:30.084453",
+      "updatedAt": "2024-11-22T12:01:30.084453"
+    }
+  },
+  {
+    "id": "83f592d0-8f69-4116-909a-3fbb0d2bc43f",
+    "title": "Apple Monitor 62",
+    "description": "This is a high-quality monitor by Apple.",
+    "category": "Electronics",
+    "subCategory": "Portable",
+    "brand": "Apple",
+    "sku": "APP-1061",
+    "price": 765.69,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 612.55
+    },
+    "stock": 124,
+    "rating": {
+      "average": 4.0,
+      "count": 406
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=74",
+        "https://picsum.photos/600/400?random=848",
+        "https://picsum.photos/600/400?random=114"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-03-08T21:26:18.714130",
+      "updatedAt": "2025-06-05T21:26:18.714130"
+    }
+  },
+  {
+    "id": "e0ef0bac-d3e8-4cc4-9294-9f44925754a5",
+    "title": "Logitech Monitor 63",
+    "description": "This is a high-quality monitor by Logitech.",
+    "category": "Appliances",
+    "subCategory": "Office",
+    "brand": "Logitech",
+    "sku": "LOG-1062",
+    "price": 704.73,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 599.02
+    },
+    "stock": 95,
+    "rating": {
+      "average": 2.3,
+      "count": 454
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=578",
+        "https://picsum.photos/600/400?random=694",
+        "https://picsum.photos/600/400?random=554"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-10-30T20:04:54.275757",
+      "updatedAt": "2024-12-21T20:04:54.275757"
+    }
+  },
+  {
+    "id": "049e6a72-a04e-48d2-9ed4-18c38fc9991b",
+    "title": "Dell Laptop 64",
+    "description": "This is a high-quality laptop by Dell.",
+    "category": "Electronics",
+    "subCategory": "Portable",
+    "brand": "Dell",
+    "sku": "DEL-1063",
+    "price": 552.12,
+    "discount": {
+      "percentage": 30,
+      "priceAfterDiscount": 386.48
+    },
+    "stock": 13,
+    "rating": {
+      "average": 4.5,
+      "count": 691
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=809",
+        "https://picsum.photos/600/400?random=539",
+        "https://picsum.photos/600/400?random=608"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-09-02T00:35:22.723409",
+      "updatedAt": "2025-12-05T00:35:22.723409"
+    }
+  },
+  {
+    "id": "28eab3a7-b884-4254-8ce6-d89d511d342d",
+    "title": "Logitech Laptop 65",
+    "description": "This is a high-quality laptop by Logitech.",
+    "category": "Appliances",
+    "subCategory": "Gaming",
+    "brand": "Logitech",
+    "sku": "LOG-1064",
+    "price": 193.99,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 164.89
+    },
+    "stock": 144,
+    "rating": {
+      "average": 2.8,
+      "count": 749
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=634",
+        "https://picsum.photos/600/400?random=229",
+        "https://picsum.photos/600/400?random=736"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-06-12T21:09:43.028995",
+      "updatedAt": "2025-08-18T21:09:43.028995"
+    }
+  },
+  {
+    "id": "a31ffcff-c835-459c-bd63-faf407843a72",
+    "title": "Logitech Camera 66",
+    "description": "This is a high-quality camera by Logitech.",
+    "category": "Appliances",
+    "subCategory": "Gaming",
+    "brand": "Logitech",
+    "sku": "LOG-1065",
+    "price": 94.89,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 80.66
+    },
+    "stock": 41,
+    "rating": {
+      "average": 2.3,
+      "count": 902
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=337",
+        "https://picsum.photos/600/400?random=86",
+        "https://picsum.photos/600/400?random=248"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-07-06T20:28:33.948125",
+      "updatedAt": "2025-10-05T20:28:33.948125"
+    }
+  },
+  {
+    "id": "e994cab3-b91b-4789-a237-07829efadea1",
+    "title": "Sony Phone 67",
+    "description": "This is a high-quality phone by Sony.",
+    "category": "Electronics",
+    "subCategory": "Photography",
+    "brand": "Sony",
+    "sku": "SON-1066",
+    "price": 550.77,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 523.23
+    },
+    "stock": 79,
+    "rating": {
+      "average": 1.4,
+      "count": 301
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=941",
+        "https://picsum.photos/600/400?random=264",
+        "https://picsum.photos/600/400?random=40"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-05-03T09:59:11.859538",
+      "updatedAt": "2025-07-24T09:59:11.859538"
+    }
+  },
+  {
+    "id": "633cca24-bb04-48a8-ab77-b595825d7409",
+    "title": "Canon Keyboard 68",
+    "description": "This is a high-quality keyboard by Canon.",
+    "category": "Appliances",
+    "subCategory": "Home",
+    "brand": "Canon",
+    "sku": "CAN-1067",
+    "price": 662.43,
+    "discount": {
+      "percentage": 30,
+      "priceAfterDiscount": 463.7
+    },
+    "stock": 177,
+    "rating": {
+      "average": 1.9,
+      "count": 857
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=628",
+        "https://picsum.photos/600/400?random=708",
+        "https://picsum.photos/600/400?random=402"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-06-26T01:10:38.403789",
+      "updatedAt": "2025-07-08T01:10:38.403789"
+    }
+  },
+  {
+    "id": "ff2a110b-4701-4d9c-8b6a-cf0e2d0ae69c",
+    "title": "Dell Mouse 69",
+    "description": "This is a high-quality mouse by Dell.",
+    "category": "Accessories",
+    "subCategory": "Portable",
+    "brand": "Dell",
+    "sku": "DEL-1068",
+    "price": 537.95,
+    "discount": {
+      "percentage": 5,
+      "priceAfterDiscount": 511.05
+    },
+    "stock": 77,
+    "rating": {
+      "average": 1.8,
+      "count": 366
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=145",
+        "https://picsum.photos/600/400?random=37",
+        "https://picsum.photos/600/400?random=712"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-10-14T12:20:46.686764",
+      "updatedAt": "2025-01-14T12:20:46.686764"
+    }
+  },
+  {
+    "id": "eb736fc3-6278-4487-aa3e-fa8746b7d064",
+    "title": "HP Phone 70",
+    "description": "This is a high-quality phone by HP.",
+    "category": "Electronics",
+    "subCategory": "Home",
+    "brand": "HP",
+    "sku": "HP-1069",
+    "price": 1501.11,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 1275.94
+    },
+    "stock": 34,
+    "rating": {
+      "average": 2.6,
+      "count": 308
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=346",
+        "https://picsum.photos/600/400?random=992",
+        "https://picsum.photos/600/400?random=635"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-01-13T22:54:11.735754",
+      "updatedAt": "2025-04-17T22:54:11.735754"
+    }
+  },
+  {
+    "id": "868f1d73-115e-42b5-b449-6cd66168e795",
+    "title": "Sony Laptop 71",
+    "description": "This is a high-quality laptop by Sony.",
+    "category": "Electronics",
+    "subCategory": "Home",
+    "brand": "Sony",
+    "sku": "SON-1070",
+    "price": 1711.45,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 1454.73
+    },
+    "stock": 66,
+    "rating": {
+      "average": 3.6,
+      "count": 442
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=528",
+        "https://picsum.photos/600/400?random=86",
+        "https://picsum.photos/600/400?random=347"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-03-21T06:20:14.390422",
+      "updatedAt": "2025-04-17T06:20:14.390422"
+    }
+  },
+  {
+    "id": "18328436-2e96-416c-a5d3-b92237661014",
+    "title": "Sony Smartwatch 72",
+    "description": "This is a high-quality smartwatch by Sony.",
+    "category": "Appliances",
+    "subCategory": "Home",
+    "brand": "Sony",
+    "sku": "SON-1071",
+    "price": 1275.9,
+    "discount": {
+      "percentage": 30,
+      "priceAfterDiscount": 893.13
+    },
+    "stock": 69,
+    "rating": {
+      "average": 3.7,
+      "count": 245
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=971",
+        "https://picsum.photos/600/400?random=501",
+        "https://picsum.photos/600/400?random=710"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-03-04T09:27:37.098765",
+      "updatedAt": "2025-03-06T09:27:37.098765"
+    }
+  },
+  {
+    "id": "a60ecb7f-bfe3-4ff3-96a8-86fe61778637",
+    "title": "Samsung Smartwatch 73",
+    "description": "This is a high-quality smartwatch by Samsung.",
+    "category": "Appliances",
+    "subCategory": "Photography",
+    "brand": "Samsung",
+    "sku": "SAM-1072",
+    "price": 518.13,
+    "discount": {
+      "percentage": 10,
+      "priceAfterDiscount": 466.32
+    },
+    "stock": 103,
+    "rating": {
+      "average": 2.1,
+      "count": 332
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=941",
+        "https://picsum.photos/600/400?random=407",
+        "https://picsum.photos/600/400?random=134"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-10-06T23:44:30.939638",
+      "updatedAt": "2024-12-31T23:44:30.939638"
+    }
+  },
+  {
+    "id": "fa3799f5-9dbf-46a6-a04a-c69d08932015",
+    "title": "Samsung Smartwatch 74",
+    "description": "This is a high-quality smartwatch by Samsung.",
+    "category": "Accessories",
+    "subCategory": "Home",
+    "brand": "Samsung",
+    "sku": "SAM-1073",
+    "price": 1644.16,
+    "discount": {
+      "percentage": 25,
+      "priceAfterDiscount": 1233.12
+    },
+    "stock": 43,
+    "rating": {
+      "average": 4.2,
+      "count": 25
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=948",
+        "https://picsum.photos/600/400?random=6",
+        "https://picsum.photos/600/400?random=74"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-12-06T10:45:59.286403",
+      "updatedAt": "2024-12-11T10:45:59.286403"
+    }
+  },
+  {
+    "id": "9d6a02a9-0acd-4194-a140-1bb5fed9740c",
+    "title": "Canon Printer 75",
+    "description": "This is a high-quality printer by Canon.",
+    "category": "Accessories",
+    "subCategory": "Office",
+    "brand": "Canon",
+    "sku": "CAN-1074",
+    "price": 1900.07,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 1520.06
+    },
+    "stock": 188,
+    "rating": {
+      "average": 1.9,
+      "count": 416
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=826",
+        "https://picsum.photos/600/400?random=902",
+        "https://picsum.photos/600/400?random=55"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-11-05T22:33:16.708558",
+      "updatedAt": "2025-02-11T22:33:16.708558"
+    }
+  },
+  {
+    "id": "3220a5e6-8ac9-4238-ac92-afdcb9cfa22c",
+    "title": "Canon Camera 76",
+    "description": "This is a high-quality camera by Canon.",
+    "category": "Accessories",
+    "subCategory": "Home",
+    "brand": "Canon",
+    "sku": "CAN-1075",
+    "price": 1104.85,
+    "discount": {
+      "percentage": 15,
+      "priceAfterDiscount": 939.12
+    },
+    "stock": 17,
+    "rating": {
+      "average": 2.8,
+      "count": 106
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=81",
+        "https://picsum.photos/600/400?random=993",
+        "https://picsum.photos/600/400?random=981"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-02-21T15:59:50.631073",
+      "updatedAt": "2025-04-27T15:59:50.631073"
+    }
+  },
+  {
+    "id": "832e4e11-de84-4b0c-8284-c22623b9392a",
+    "title": "Asus Printer 77",
+    "description": "This is a high-quality printer by Asus.",
+    "category": "Electronics",
+    "subCategory": "Photography",
+    "brand": "Asus",
+    "sku": "ASU-1076",
+    "price": 584.18,
+    "discount": {
+      "percentage": 0,
+      "priceAfterDiscount": 584.18
+    },
+    "stock": 128,
+    "rating": {
+      "average": 3.9,
+      "count": 483
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=2",
+      "images": [
+        "https://picsum.photos/600/400?random=159",
+        "https://picsum.photos/600/400?random=892",
+        "https://picsum.photos/600/400?random=237"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-03-12T03:19:46.854039",
+      "updatedAt": "2025-03-18T03:19:46.854039"
+    }
+  },
+  {
+    "id": "019f0a07-db81-4b6b-8fad-f5d794389b11",
+    "title": "Asus Laptop 78",
+    "description": "This is a high-quality laptop by Asus.",
+    "category": "Appliances",
+    "subCategory": "Gaming",
+    "brand": "Asus",
+    "sku": "ASU-1077",
+    "price": 345.97,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 276.78
+    },
+    "stock": 122,
+    "rating": {
+      "average": 4.3,
+      "count": 116
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "images": [
+        "https://picsum.photos/600/400?random=140",
+        "https://picsum.photos/600/400?random=688",
+        "https://picsum.photos/600/400?random=451"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-09-16T00:43:06.537244",
+      "updatedAt": "2025-12-17T00:43:06.537244"
+    }
+  },
+  {
+    "id": "8b0b50b4-8e77-4331-9672-853f0c5d25b3",
+    "title": "Lenovo Smartwatch 79",
+    "description": "This is a high-quality smartwatch by Lenovo.",
+    "category": "Appliances",
+    "subCategory": "Portable",
+    "brand": "Lenovo",
+    "sku": "LEN-1078",
+    "price": 482.71,
+    "discount": {
+      "percentage": 20,
+      "priceAfterDiscount": 386.17
+    },
+    "stock": 186,
+    "rating": {
+      "average": 3.0,
+      "count": 722
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=113",
+        "https://picsum.photos/600/400?random=576",
+        "https://picsum.photos/600/400?random=53"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-03-23T14:41:29.373259",
+      "updatedAt": "2025-06-18T14:41:29.373259"
+    }
+  },
+  {
+    "id": "57ae12a5-e5d0-4886-97c4-952ac2f05496",
+    "title": "Logitech Smartwatch 80",
+    "description": "This is a high-quality smartwatch by Logitech.",
+    "category": "Electronics",
+    "subCategory": "Photography",
+    "brand": "Logitech",
+    "sku": "LOG-1079",
+    "price": 1294.3,
+    "discount": {
+      "percentage": 25,
+      "priceAfterDiscount": 970.72
+    },
+    "stock": 170,
+    "rating": {
+      "average": 4.1,
+      "count": 700
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=750",
+        "https://picsum.photos/600/400?random=53",
+        "https://picsum.photos/600/400?random=338"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-09-20T07:02:53.161612",
+      "updatedAt": "2024-10-30T07:02:53.161612"
+    }
+  }
+]

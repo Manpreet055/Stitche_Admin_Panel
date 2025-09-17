@@ -13,7 +13,7 @@ function randomDate(start, end) {
 }
 
 // fixed data
-const statuses = ["active", "suspended", "pending"];
+const ProductCategory = ["Printer", "suspended", "pending"];
 const roles = ["user", "admin", "moderator"];
 
 // main generator

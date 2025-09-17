@@ -4,10 +4,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import Filters from "../../../ui/Filters";
 import SearchBar from "../../../ui/SearchBar";
 
-const SearchNavbar = () => {
+const SearchNavbar = ({ children }) => {
   const [filters, showFilters] = useState(false);
-  
-  // Show FIlters form on Hover using this function 
+
+  // Show FIlters form on Hover using this function
   const timeref = useRef(null);
   const handleHoverStart = () => {
     clearTimeout(timeref.current);
@@ -21,9 +21,9 @@ const SearchNavbar = () => {
   };
 
   return (
-    <nav className="w-full max-w-screen flex md:gap-10 py-3">
-      <SearchBar ></SearchBar>
-      <div className="flex items-center relative">
+    <nav className="w-full max-w-screen justify-between items-center lg:pr-20 flex md:gap-10 py-3">
+      <div className="flex items-center gap-5 relative">
+        <SearchBar></SearchBar>
         <motion.button
           onHoverStart={handleHoverStart}
           onHoverEnd={handleHoverEnd}
@@ -55,6 +55,7 @@ const SearchNavbar = () => {
           )}
         </AnimatePresence>
       </div>
+      {children}{" "}
     </nav>
   );
 };
