@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import Images from "../Layout/AddProduct/HandleImages";
+import HandleImages from "../Layout/AddProduct/HandleImages";
 import KeyFeature from "../Layout/AddProduct/AddKeyFeatures";
 import { useState } from "react";
 
@@ -233,7 +233,7 @@ const AddProduct = () => {
 
         {/* This is a second Container which contains Input Fields Like Image Uploadings */}
         <div className="w-full  gap-6 max-w-2xl flex flex-col">
-          <Images
+          <HandleImages
             imgs={(data) => handleFormArrayChange(setimages, "images", data)}
             thumbnails={(data) =>
               handleFormArrayChange(setThumbnails, "thumbnails", data)

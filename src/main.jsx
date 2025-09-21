@@ -4,15 +4,15 @@ import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./Components/Pages/Dashboard";
-import Products from "./Components/Pages/Products";
 import Settings from "./Components/Pages/Settings";
 import { Spinner } from "flowbite-react";
 import ErrorPage from "./Components/Pages/ErrorPage";
 
+const Products = lazy(() => import("./Components/Pages/Products"));
 const Users = lazy(() => import("./Components/Pages/Users"));
 const AddProduct = lazy(() => import("./Components/Pages/AddProduct"));
 const Inbox = lazy(() => import("./Components/Pages/Inbox"));
-
+const Orders = lazy(() => import("./Components/Pages/Orders"));
 let route = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +25,18 @@ let route = createBrowserRouter([
       },
       {
         path: "products",
-        element: <Products />,
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex justify-center items-center text-xl blur-bg p-10 rounded flex-col w-full h-screen">
+                <Spinner size="xl" />
+                Loading...
+              </div>
+            }
+          >
+            <Products />
+          </Suspense>
+        ),
       },
       {
         path: "products/add",
@@ -73,6 +84,21 @@ let route = createBrowserRouter([
             }
           >
             <Inbox />
+          </Suspense>
+        ),
+      },
+      {
+        path: "orders",
+        element: (
+          <Suspense
+            fallback={
+              <div className="flex justify-center items-center text-xl blur-bg p-10 rounded flex-col w-full h-screen">
+                <Spinner size="xl" />
+                Loading...
+              </div>
+            }
+          >
+            <Orders />
           </Suspense>
         ),
       },

@@ -1,30 +1,18 @@
-import { useContext } from "react";
-import UsersData from "../../Components/Layout/Users/UsersData";
-import SearchContext from "../../Context/searches/SeachContext";
-import React from "react";
+export const searchItems = (fields, data, dataSet, setItems) => {
+  const searchterm = data.searches.trim().toLowerCase();
 
-const SearchUsers = () => {
-  const { setSearchItems } = useContext(SearchContext);
-  return (data) => {
-    const searchterm = data.searches.trim().toLowerCase();
-
-    let searchResults = UsersData.filter((user) => {
-      return [
-        user.Username,
-        user.email,
-        user.address.city,
-        user.address.country,
-        user.phone,
-        user.dateJoined,
-        user.lastLogin,
-        user.role,
-        user.status,
-      ].some((field) => field.toLowerCase().includes(searchterm));
+  let searchResults = dataSet.filter((item) => {
+    return fields.some((field) => {
+      // support nested fields like address.city
+      const value = field.split(".").reduce((acc, key) => acc?.[key], item);
+      return String(value).toLowerCase().includes(searchterm);
     });
-    searchResults.length != 0
-      ? setSearchItems(searchResults)
-      : setSearchItems("No results found");
-  };
-};
+  });
 
-export default SearchUsers;
+  if (searchResults.length !== 0) {
+    setItems(searchResults);
+  } else {
+    setItems("No results found");
+  }
+};
+  

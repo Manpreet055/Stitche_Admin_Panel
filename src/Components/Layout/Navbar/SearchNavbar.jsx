@@ -1,10 +1,7 @@
 import Reac, { useState, useRef } from "react";
 import { ListFilter, ChevronUp } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import Filters from "../../../ui/Filters";
-import SearchBar from "../../../ui/SearchBar";
-
-const SearchNavbar = ({ children }) => {
+const SearchNavbar = ({ children, searchBar, filter }) => {
   const [filters, showFilters] = useState(false);
 
   // Show FIlters form on Hover using this function
@@ -23,7 +20,7 @@ const SearchNavbar = ({ children }) => {
   return (
     <nav className="w-full max-w-screen justify-between items-center lg:pr-20 flex md:gap-10 py-3">
       <div className="flex items-center gap-5 relative">
-        <SearchBar></SearchBar>
+        {searchBar}
         <motion.button
           onHoverStart={handleHoverStart}
           onHoverEnd={handleHoverEnd}
@@ -50,7 +47,7 @@ const SearchNavbar = ({ children }) => {
               onMouseLeave={handleHoverEnd}
               className="min-w-2xl"
             >
-              <Filters></Filters>
+              {filter}{" "}
             </motion.div>
           )}
         </AnimatePresence>

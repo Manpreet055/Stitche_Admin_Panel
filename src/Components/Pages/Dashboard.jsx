@@ -1,11 +1,10 @@
 import React from "react";
 import SalesOverview from "../Layout/Dashboard/SalesOverview";
-import KpiCard from "../../ui/KpiCard";
-import Analytics from "../Layout/Dashboard/Analytics";
+import KpiCard from "../Layout/Dashboard/KpiCard";
+import Analytics from "../Layout/Dashboard/Analytics"
 import Revenue from "../Layout/Dashboard/Revenue";
 import { HandCoins, BookText, Users, Clock } from "lucide-react";
-import Orders from "../../ui/Orders";
-
+import Orders from "../Layout/Dashboard/Orders";
 const Dashboard = () => {
   return (
     <div className=" w-full pb-20 lg:px-12 py-6 h-screen overflow-scroll scrollbar-hidden ">

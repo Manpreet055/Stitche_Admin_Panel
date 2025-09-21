@@ -1,42 +1,53 @@
-import React, { useContext } from "react";
-import clickEvent from "../Animations/onClick";
-import { Search } from "lucide-react";
+import React from "react";
+import clickEvent from "../../../Animations/onClick";
+import { Search, User } from "lucide-react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import useDebounce from "../Hooks/useDebounce";
-import useDebounceSuggestions from "../Hooks/Searches/DebounceSuggestions";
-import DebounceContext from "../Context/searches/DebounceContext";
-import SearchUsers from "../Hooks/Searches/SearchUsers";
-import Suggestions from "./Suggestions";
+import useDebounce from "../../../Hooks/useDebounce";
+import axios from "axios";
 
-const SearchBar = () => {
-  const debounceSuggestions = useDebounceSuggestions();
-  const { setSuggestions } = useContext(DebounceContext);
-
+const SearchBar = ({ ApiPath }) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const searchData = SearchUsers();
-
+  const handleSearches = async (formData) => {
+    try {
+      const response = await axios.post(
+        ApiPath || "https://jsonplaceholder.typicode.com/posts",
+        {
+          search: formData.searches,
+        }
+      );
+      const data = response.data;
+      console.log(data);
+    } catch (error) {
+      if (error.response) {
+        console.log("Server Error : ", error.response);
+      } else if (error.request) {
+        console.log("Network Error : ", error.request);
+      } else {
+        console.log(error.message);
+      }
+    }
+  };
   // Creating Debounce Variable function
   const debounceSearch = useDebounce({
-    callBack: debounceSuggestions,
+    callBack: handleSearches,
     delay: 500,
   });
 
   return (
     <form
-      onSubmit={handleSubmit(searchData)}
+      onSubmit={handleSubmit(handleSearches)}
       className="relative h-full w-fit flex items-center gap-2"
     >
       <div className=" h-full flex gap-2">
         <div>
           <input
             autoComplete="off"
-            onBlur={() => setSuggestions([])}
             {...register("searches", {
               required: "Search field cannot be empty",
               minLength: {
@@ -50,9 +61,8 @@ const SearchBar = () => {
             }  px-6 active:border-none`}
             placeholder="Search here.."
             onChange={(event) =>
-              event.target.value.length > 2
-                ? debounceSearch(event.target.value)
-                : setSuggestions([])
+              event.target.value.length > 2 &&
+              debounceSearch({ searches: event.target.value })
             }
           />
           {errors.searches && (
@@ -62,7 +72,6 @@ const SearchBar = () => {
           )}
         </div>
         <motion.button
-          onClick={() => setSuggestions([])}
           type="submit"
           variants={clickEvent}
           initial="default"
@@ -73,7 +82,6 @@ const SearchBar = () => {
           <Search size={28} />
         </motion.button>
       </div>
-      <Suggestions></Suggestions>
     </form>
   );
 };

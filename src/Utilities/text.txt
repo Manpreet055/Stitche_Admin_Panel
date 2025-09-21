@@ -1,0 +1,29 @@
+const fieldArr = [
+    {Status:[
+        {
+            label:"pending",
+            keyname:"pending"
+        },
+        {
+            label:"suspended",
+            keyname:"suspended"
+        },
+        {
+            label:"active",
+            keyname:"active"
+        },
+        
+    ]}
+]
+
+fieldArr.map((field,index)=>(
+    <div key={index} >
+    <label>{field}</label>
+    {
+        field.map((item,index)=>{
+            <label>{item.label}</label>
+            <input type='checkBox {...item.keyname} />
+        })
+    }
+    </div>
+))

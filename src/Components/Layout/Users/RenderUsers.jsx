@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { container } from "../../../Animations/ListStagger"; 
 import { motion } from "framer-motion";
-import UserRow from "../../../ui/UserRow";
+import UserRow from "./UserRow" 
 import UsersData from "./UsersData";
 import SearchContext from "../../../Context/searches/SeachContext";
 import Paginate from "../../../Utilities/Pagination";

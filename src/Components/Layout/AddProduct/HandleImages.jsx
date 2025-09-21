@@ -1,12 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const Images = ({ imgs, thumbnails }) => {
+const HandleImages = ({
+  imgs,
+  thumbnails,
+  defaultImgs = null,
+  defaultThumbnails = null,
+}) => {
   // Handle Images Upload
   const [imageArr, setImageArr] = useState([]);
   const [images, setimages] = useState([]);
 
   const [thumbnailArr, setthumbnailArr] = useState([]);
   const [thumbnail, setThumbnails] = useState([]);
+
+  useEffect(() => {
+    if (defaultImgs && defaultThumbnails) {
+      setimages(defaultImgs);
+      setImageArr(defaultImgs);
+      setThumbnails(defaultThumbnails);
+      setthumbnailArr(defaultThumbnails);
+    }
+  }, [defaultImgs, defaultThumbnails]);
 
   // This Single function handles everythings including images and thumbnail's preview, sending files to the form using props , updating the value etc.
   const getFiles = (event, state, array, setState, setArr, setProp) => {
@@ -92,4 +106,4 @@ const Images = ({ imgs, thumbnails }) => {
   );
 };
 
-export default Images;
+export default HandleImages;

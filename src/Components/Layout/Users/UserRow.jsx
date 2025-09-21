@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { item, container } from "../Animations/ListStagger";
+import { item, container } from "../../../Animations/ListStagger";
 import { EllipsisVertical, Pen, Trash2, Eye } from "lucide-react";
 const UserRow = ({ serial, user }) => {
 
