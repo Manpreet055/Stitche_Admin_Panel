@@ -10,7 +10,7 @@ const SearchBar = ({ ApiPath }) => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm();
 
   const handleSearches = async (formData) => {
@@ -72,6 +72,7 @@ const SearchBar = ({ ApiPath }) => {
           )}
         </div>
         <motion.button
+          disabled={isSubmitting ? true : false}
           type="submit"
           variants={clickEvent}
           initial="default"

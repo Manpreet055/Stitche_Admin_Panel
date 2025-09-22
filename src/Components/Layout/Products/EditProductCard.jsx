@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import HandleImages from "../AddProduct/HandleImages";
 import AddKeyFeatures from "../AddProduct/AddKeyFeatures";
+import axios from "axios";
 
 const EditProductCard = () => {
   const [images, setimages] = useState([]);
@@ -42,9 +43,10 @@ const EditProductCard = () => {
 
   const {
     register,
+    watch,
     handleSubmit,
     setValue,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm({
     defaultValues: {
       title: product.title,
@@ -53,6 +55,8 @@ const EditProductCard = () => {
       subCategory: product.subCategory,
       brand: product.brand,
       price: product.price,
+      images: product.media.images,
+      thumbnail: product.media.thumbnail,
       discountPercentage: product.discount.percentage,
       priceAfterDiscount: product.discount.priceAfterDiscount,
       stock: product.stock,
@@ -61,21 +65,42 @@ const EditProductCard = () => {
     },
   });
 
-  function handleFormArrayChange(setter, fieldName, value) {
-    setter(value);
-    setValue(fieldName, value);
-  }
-
-  const editProduct = (data) => {
-    console.log(data);
-    // send updated data to backend here
+  const watchPrice = watch("price");
+  const watchDiscount = watch("discountPercentage");
+  // useEffect(() => {
+  //   setValue(
+  //     "priceAfterDiscount",
+  //     watchPrice - (watchDiscount * watchPrice) / 100
+  //   ).toFixed(2);
+  // });
+  const editProduct = async (data) => {
+    try {
+      const response = await axios.patch(
+        "https://jsonplaceholder.typicode.com/posts/1",
+        {
+          productId: product.id,
+          title: product.title,
+          updateData: data,
+        }
+      );
+      const responseData = response.data;
+      console.log(responseData);
+    } catch (error) {
+      if (error.response) {
+        console.log("Server Error : ", error.response);
+      } else if (error.request) {
+        console.log("Network Error : ", error.request);
+      } else {
+        console.log("Something Went wrong..", error.message);
+      }
+    }
   };
 
   return (
     <div className="overflow-y-scroll  h-screen pb-56 w-full">
       <form
         onSubmit={handleSubmit(editProduct)}
-        className=" flex w-fullflex-wrap   md:gap-4"
+        className=" flex w-full flex-wrap   md:gap-4"
       >
         <div className="flex flex-col gap-5 w-full">
           <label htmlFor="title">Title</label>
@@ -116,10 +141,7 @@ const EditProductCard = () => {
           <input
             id="discounted-price"
             className="form-input-sections"
-            value={(
-              product.price -
-              (product.discount.percentage * product.price) / 100
-            ).toFixed(2)}
+            value={(watchPrice - (watchDiscount * watchPrice) / 100).toFixed(2)}
             {...register("priceAfterDiscount")}
             readOnly
           />
@@ -151,18 +173,18 @@ const EditProductCard = () => {
         <div className="flex flex-col w-full">
           <div className="w-full flex flex-wrap gap-3">
             <HandleImages
-              imgs={(data) => handleFormArrayChange(setimages, "images", data)}
-              thumbnails={(data) =>
-                handleFormArrayChange(setThumbnails, "thumbnails", data)
-              }
+              imgs={(data) => setValue("images", data)}
+              thumbnails={(data) => setValue("thumbnail", data)}
               defaultImgs={product.media.images}
-              defaultThumbnails={Array.from(product.media.thumbnail)}
+              defaultThumbnails={Array.of(product.media.thumbnail)}
             />
           </div>
 
           <button
-            className="bg-rose-800 w-fit px-6 py-4 rounded-2xl"
+            className={` w-fit px-6 py-4 rounded-2xl
+             ${isSubmitting ? "bg-rose-950 text-neutral-400" : "bg-rose-800"}`}
             type="submit"
+            disabled={isSubmitting ? true : false}
           >
             Save
           </button>

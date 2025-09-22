@@ -98,7 +98,7 @@ const HandleImages = ({
           }}
           id="thumbnails"
           type="file"
-          accept="image/png"
+          accept="image/*"
           className="hidden"
         />
       </div>

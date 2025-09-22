@@ -51,7 +51,7 @@ const FilterComp = ({ fieldArr, ApiPath }) => {
             </li>
           ))}
         </ul>
-        <button type="submit" className={`${isSubmitting ? " bg-rose-900" :"bg-rose-600"} p-4 rounded-2xl`}>
+        <button disabled={isSubmitting ? true : false} type="submit" className={`${isSubmitting ? " bg-rose-900" :"bg-rose-600"} p-4 rounded-2xl`}>
           {
             isSubmitting ? (<Spinner />) : "Submit"
           }
