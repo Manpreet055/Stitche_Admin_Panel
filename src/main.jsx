@@ -7,12 +7,13 @@ import Dashboard from "./Components/Pages/Dashboard";
 import Settings from "./Components/Pages/Settings";
 import { Spinner } from "flowbite-react";
 import ErrorPage from "./Components/Pages/ErrorPage";
-
+import EditProductPage from "./Components/Layout/Products/EditProductPage";
 const Products = lazy(() => import("./Components/Pages/Products"));
 const Users = lazy(() => import("./Components/Pages/Users"));
 const AddProduct = lazy(() => import("./Components/Pages/AddProduct"));
 const Inbox = lazy(() => import("./Components/Pages/Inbox"));
 const Orders = lazy(() => import("./Components/Pages/Orders"));
+import RenderProducts from "./Components/Layout/Products/RenderProducts";
 let route = createBrowserRouter([
   {
     path: "/",
@@ -37,6 +38,16 @@ let route = createBrowserRouter([
             <Products />
           </Suspense>
         ),
+        children: [
+          {
+            path: "",
+            element: <RenderProducts />,
+          },
+          {
+            path: "product/:productId/edit",
+            element: <EditProductPage />,
+          },
+        ],
       },
       {
         path: "products/add",

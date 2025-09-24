@@ -18,7 +18,7 @@ const SearchNavbar = ({ children, searchBar, filter }) => {
   };
 
   return (
-    <nav className="w-full max-w-screen justify-between items-center lg:pr-20 flex md:gap-10 py-3">
+    <nav className="w-full max-w-screen justify-between mx-5 items-center lg:pr-20 flex md:gap-10 py-3">
       <div className="flex items-center gap-5 relative">
         {searchBar}
         <motion.button

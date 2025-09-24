@@ -1,7 +1,7 @@
 import React from "react";
 import RenderProducts from "../Layout/Products/RenderProducts";
 import SearchNavbar from "../Layout/Navbar/SearchNavbar";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import SearchBar from "../Layout/Navbar/SearchBar";
 import Filters from "../Layout/Navbar/Filters";
 const Products = () => {
@@ -17,7 +17,7 @@ const Products = () => {
           fieldName: "Accessories",
           keyname: "accessories",
         },
-        { 
+        {
           fieldName: "Electronics",
           keyname: "electronics",
         },
@@ -61,7 +61,7 @@ const Products = () => {
           </NavLink>
         }
       </SearchNavbar>
-      <RenderProducts />
+      <Outlet />
     </section>
   );
 };
