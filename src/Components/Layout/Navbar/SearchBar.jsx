@@ -13,6 +13,8 @@ const SearchBar = ({ ApiPath }) => {
     formState: { errors, isSubmitting },
   } = useForm();
 
+  // This function is responsible for sending the request using searchbarData to the backend
+  //This function will be also fired up when user stop typing (debounce logic)
   const handleSearches = async (formData) => {
     try {
       const response = await axios.post(
@@ -33,6 +35,7 @@ const SearchBar = ({ ApiPath }) => {
       }
     }
   };
+
   // Creating Debounce Variable function
   const debounceSearch = useDebounce({
     callBack: handleSearches,

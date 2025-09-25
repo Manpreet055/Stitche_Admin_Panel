@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import clickEvent from "../../Animations/onClick";
 const ErrorPage = () => {
 
-// Navigation buttons Functions
+// Navigation button's Functions
   const navigate = useNavigate();
   const GoBack = () => {
     navigate(-1);

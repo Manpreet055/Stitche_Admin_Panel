@@ -5,6 +5,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import SearchBar from "../Layout/Navbar/SearchBar";
 import Filters from "../Layout/Navbar/Filters";
 const Products = () => {
+
+   // Filters options array for "Filters" componenet 
   const filterUsers = [
     {
       name: "Category",

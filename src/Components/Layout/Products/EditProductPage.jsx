@@ -6,10 +6,12 @@ import Products from "./products.json";
 import { useNavigate, useParams } from "react-router-dom";
 
 const EditProductPage = () => {
-  const navigate = useNavigate();
-  const { productId } = useParams();
-  const product = Products.find((p) => String(p.id) === String(productId));
+  const navigate = useNavigate(); // For navigate to the prev page
 
+  const { productId } = useParams(); //destructring the product id from url
+  const product = Products.find((p) => String(p.id) === String(productId)); // finding the product using Id provided from url
+
+  // Destructring the react-hook-form variable and setting the default values dynamically
   const {
     register,
     watch,
@@ -34,14 +36,20 @@ const EditProductPage = () => {
     },
   });
 
+  //This block handle the price after discount section using useEffect hook
   const watchPrice = watch("price");
   const watchDiscount = watch("discountPercentage");
-  // useEffect(() => {
-  //   setValue(
-  //     "priceAfterDiscount",
-  //     watchPrice - (watchDiscount * watchPrice) / 100
-  //   ).toFixed(2);
-  // });
+  useEffect(() => {
+    if (watchDiscount && watchPrice >= 0) {
+      const discountedPrice = (
+        watchPrice -
+        (watchDiscount * watchPrice) / 100
+      ).toFixed(2);
+      setValue("priceAfterDiscount", discountedPrice);
+    }
+  }, [watchDiscount, watchPrice, setValue]);
+
+  //This function is responsible for succesfully sending the patch request to the backend
   const editProduct = async (data) => {
     try {
       const response = await axios.patch(
@@ -176,13 +184,6 @@ const EditProductPage = () => {
             <input
               id="discounted-price"
               className="form-input-sections"
-              onChange={setValue(
-                "priceAfterDiscount",
-                (watchPrice - (watchDiscount * watchPrice) / 100).toFixed(2)
-              )}
-              value={(watchPrice - (watchDiscount * watchPrice) / 100).toFixed(
-                2
-              )}
               {...register("priceAfterDiscount")}
               readOnly
             />
@@ -200,12 +201,15 @@ const EditProductPage = () => {
 
         <div className="flex flex-col md:w-[49%]">
           <div className="w-full flex flex-wrap gap-3">
+        
+        {/* Images and thumnail upload section*/}
             <HandleImages
               imgs={(data) => setValue("images", data)}
               thumbnails={(data) => setValue("thumbnail", data)}
               defaultImgs={product.media.images}
               defaultThumbnails={Array.of(product.media.thumbnail)}
             />
+
           </div>
 
           <button

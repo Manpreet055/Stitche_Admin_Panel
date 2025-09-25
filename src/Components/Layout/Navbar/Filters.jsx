@@ -4,7 +4,13 @@ import { useForm } from "react-hook-form";
 import { Spinner } from "flowbite-react";
 
 const FilterComp = ({ fieldArr, ApiPath }) => {
-  const { register, handleSubmit,formState:{isSubmitting} } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm();
+
+  // This function is responible for sending the filter form data to the backend
 
   const filters = async (data) => {
     try {
@@ -34,6 +40,10 @@ const FilterComp = ({ fieldArr, ApiPath }) => {
         onSubmit={handleSubmit(filters)}
         className="overflow-auto w-fit p-4 flex flex-col gap-10"
       >
+        {/*
+        This renders the items which is provided diffrently according to the page
+        form data and its key is also dynamic we only had to provide array of listed items
+        */}
         <ul className="flex gap-5 px-6 py-3 flex-wrap">
           {fieldArr.map((group, index) => (
             <li key={index}>
@@ -51,10 +61,15 @@ const FilterComp = ({ fieldArr, ApiPath }) => {
             </li>
           ))}
         </ul>
-        <button disabled={isSubmitting ? true : false} type="submit" className={`${isSubmitting ? " bg-rose-900" :"bg-rose-600"} p-4 rounded-2xl`}>
-          {
-            isSubmitting ? (<Spinner />) : "Submit"
-          }
+
+        <button
+          disabled={isSubmitting ? true : false}
+          type="submit"
+          className={`${
+            isSubmitting ? " bg-rose-900" : "bg-rose-600"
+          } p-4 rounded-2xl`}
+        >
+          {isSubmitting ? <Spinner /> : "Submit"}
         </button>
       </form>
     </div>

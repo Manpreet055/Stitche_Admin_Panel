@@ -22,14 +22,18 @@ const HandleImages = ({
     }
   }, [defaultImgs, defaultThumbnails]);
 
-  // This Single function handles everythings including images and thumbnail's preview, sending files to the form using props , updating the value etc.
-  const getFiles = (event, state, array, setState, setArr, setProp) => {
+  // This Single function handles everythings including images and thumbnail's preview,
+  // sending files to the form using props , updating the value etc.
+  const getFiles = (event, state, array, setState, setArr, onChange) => {
     const newFile = event.target.files[0];
+    const previewUrl = URL.createObjectURL(newFile);
     if (newFile) {
-      setState([...state, URL.createObjectURL(newFile)]);
+      setState([...state, previewUrl]);
       const updatedArr = [...array, newFile];
       setArr(updatedArr);
-      setProp(updatedArr);
+      if (onChange) {
+        onChange(updatedArr);
+      }
     }
   };
 
@@ -79,6 +83,7 @@ const HandleImages = ({
             </div>
           ))}
         </div>
+
         <label
           htmlFor="thumbnails"
           className=" bg-rose-400/30 rounded-2xl hover:border-rose-700 border-2 border-rose-400 transition-all duration-300 ease-in-out px-7 py-5 block text-white cursor-pointer"

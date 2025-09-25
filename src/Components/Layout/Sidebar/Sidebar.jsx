@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import SidebarContext from "../../../Context/sidebar/SidebarContext";
 import { AnimatePresence, motion } from "framer-motion";
-import { House, Truck, Users, Mail,ShoppingBag } from "lucide-react";
+import { House, Truck, Users, Mail, ShoppingBag } from "lucide-react";
 
 const Sidebar = () => {
   const { sidebar } = useContext(SidebarContext);

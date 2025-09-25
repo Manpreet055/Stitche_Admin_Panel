@@ -3,7 +3,7 @@ import React from 'react'
 
 const Orders = () => {
   return (
-    // <div><EditProductCard/></div>
+    <div>Under development</div>
   )
 }
 

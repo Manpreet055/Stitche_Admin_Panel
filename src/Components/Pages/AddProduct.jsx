@@ -138,7 +138,7 @@ const AddProduct = () => {
                 <input
                   type="number"
                   {...register("discount", {
-                    valueAsNumber: "Please enter an number ",
+                    valueAsNumber: true,
                   })}
                   id="discount"
                   className={`form-input-sections mt-2 ${
@@ -186,7 +186,7 @@ const AddProduct = () => {
                 <input
                   {...register("barcode", {
                     required: "Barcode is required",
-                    valueAsNumber: "Please enter a number",
+                    valueAsNumber: true,
                     pattern: {
                       value: /^\d{6}$/,
                       message: "Barcode must be atleast 6 digits",
