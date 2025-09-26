@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import LoadingStateContext from "./LoadingStateContext";
 
 const LoadingStateProvider = ({ children }) => {
-  const [loadingState, setLoadingState] = useState(true);
+  const [loadingState, setLoadingState] = useState();
   return (
     <LoadingStateContext.Provider value={{ loadingState, setLoadingState }}>
       {children}

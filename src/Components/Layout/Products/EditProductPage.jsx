@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
+import { ChevronLeft } from "lucide-react";
 import HandleImages from "../AddProduct/HandleImages";
 import axios from "axios";
 import Products from "./products.json";
@@ -101,8 +102,11 @@ const EditProductPage = () => {
       <div className="w-full flex justify-start ">
         <button
           onClick={() => navigate(-1)}
-          className="primary-bg px-5 py-4 my-4 rounded-2xl"
+          className="px-5 flex justify-between items-center scale-transition hover:underline py-4 my-4 rounded-2xl"
         >
+          <span>
+            <ChevronLeft size={20} />
+          </span>{" "}
           Back
         </button>
       </div>
@@ -117,16 +121,26 @@ const EditProductPage = () => {
             <input
               id="title"
               className="form-input-sections"
-              {...register("title")}
+              {...register("title", {
+                required: { value: true, message: "This cannot be empty" },
+              })}
             />
+            {errors.title && (
+              <p className="text-red-600">*{errors.title.message}</p>
+            )}
           </div>
           <div className="flex flex-col gap-1">
             <label htmlFor="brand">Brand</label>
             <input
               id="brand"
               className="form-input-sections"
-              {...register("brand")}
+              {...register("brand", {
+                required: { value: true, message: "This cannot be empty" },
+              })}
             />
+            {errors.brand && (
+              <p className="text-red-600">*{errors.brand.message}</p>
+            )}
           </div>
 
           <div className="flex flex-col gap-1">
@@ -134,8 +148,13 @@ const EditProductPage = () => {
             <textarea
               className="form-input-sections"
               id="description"
-              {...register("description")}
+              {...register("description", {
+                required: { value: true, message: "This cannot be empty" },
+              })}
             />
+            {errors.description && (
+              <p className="text-red-600">*{errors.description.message}</p>
+            )}
           </div>
 
           <div className="flex flex-col gap-1">
@@ -143,8 +162,13 @@ const EditProductPage = () => {
             <input
               className="form-input-sections"
               id="category"
-              {...register("category")}
+              {...register("category", {
+                required: { value: true, message: "This cannot be empty" },
+              })}
             />
+            {errors.category && (
+              <p className="text-red-600">*{errors.category.message}</p>
+            )}
           </div>
 
           <div className="flex flex-col gap-1">
@@ -152,8 +176,13 @@ const EditProductPage = () => {
             <input
               id="sub-category"
               className="form-input-sections"
-              {...register("subCategory")}
+              {...register("subCategory", {
+                required: { value: true, message: "This cannot be empty" },
+              })}
             />
+            {errors.subCategory && (
+              <p className="text-red-600">*{errors.subCategory.message}</p>
+            )}
           </div>
 
           <div className="flex w-full justify-between">
@@ -164,18 +193,32 @@ const EditProductPage = () => {
               <input
                 id="price"
                 className="form-input-sections"
-                {...register("price")}
+                {...register("price", {
+                  required: { value: true, message: "This cannot be empty" },
+                  valueAsNumber: true,
+                })}
                 type="text"
               />
+              {errors.price && (
+                <p className="text-red-600">*{errors.price.message}</p>
+              )}
             </div>
             <div className=" flex max-w-[48%]  flex-col gap-1">
               <label htmlFor="discount">Discount Percentage</label>
               <input
                 id="discount"
                 className="form-input-sections"
-                {...register("discountPercentage")}
+                {...register("discountPercentage", {
+                  required: { value: true, message: "This cannot be empty" },
+                  valueAsNumber: true,
+                })}
                 type="number"
               />
+              {errors.discountPercentage && (
+                <p className="text-red-600">
+                  *{errors.discountPercentage.message}
+                </p>
+              )}
             </div>
           </div>
 
@@ -193,23 +236,27 @@ const EditProductPage = () => {
             <input
               id="stock"
               className="form-input-sections"
-              {...register("stock")}
+              {...register("stock", {
+                required: { value: true, message: "This cannot be empty" },
+                valueAsNumber: true,
+              })}
               type="number"
             />
+            {errors.stock && (
+              <p className="text-red-600">*{errors.stock.message}</p>
+            )}
           </div>
         </div>
 
         <div className="flex flex-col md:w-[49%]">
           <div className="w-full flex flex-wrap gap-3">
-        
-        {/* Images and thumnail upload section*/}
+            {/* Images and thumnail upload section*/}
             <HandleImages
               imgs={(data) => setValue("images", data)}
               thumbnails={(data) => setValue("thumbnail", data)}
               defaultImgs={product.media.images}
               defaultThumbnails={Array.of(product.media.thumbnail)}
             />
-
           </div>
 
           <button
