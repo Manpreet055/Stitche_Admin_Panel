@@ -53,26 +53,15 @@ const SearchBar = ({ ApiPath }) => {
             autoComplete="off"
             {...register("searches", {
               required: "Search field cannot be empty",
-              minLength: {
-                value: 4,
-                message: "Minimum length of 4 is required",
-              },
             })}
             type="text"
-            className={`w-[200px] md:w-full border-b h-full z-[99]  ${
-              errors.searches && "focus:outline-red-600 focus:border-red-600"
-            }  px-6 active:border-none`}
+            className={`w-[200px] md:w-full border-b h-full z-[99]  px-6 active:border-none`}
             placeholder="Search here.."
             onChange={(event) =>
               event.target.value.length > 2 &&
               debounceSearch({ searches: event.target.value })
             }
           />
-          {errors.searches && (
-            <p className="text-red-600 absolute top-15">
-              *{errors.searches.message}
-            </p>
-          )}
         </div>
         <motion.button
           disabled={isSubmitting ? true : false}

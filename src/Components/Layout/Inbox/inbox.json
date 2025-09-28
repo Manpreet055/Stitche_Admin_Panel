@@ -1,0 +1,1404 @@
+[
+  {
+    "id": "1",
+    "senderName": "Bob Smith",
+    "senderEmail": "bob.smith@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.This is a dummy message content for Meeting Schedule.This is a dummy message content for Meeting Schedule.This is a dummy message content for Meeting Schedule.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-27T19:50:31.128235"
+  },
+  {
+    "id": "2",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Feedback Request",
+    "message": "This is a dummy message content for Feedback Request.",
+    "attachments": [
+      {
+        "fileName": "feedback-request.pdf",
+        "fileSize": "384KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "HR",
+      "Personal"
+    ],
+    "dateSent": "2025-09-16T04:41:31.128280"
+  },
+  {
+    "id": "3",
+    "senderName": "Jack Sparrow",
+    "senderEmail": "jack.sparrow@example.com",
+    "recipientName": "Admin",
+    "subject": "Action Required",
+    "message": "This is a dummy message content for Action Required.",
+    "attachments": [
+      {
+        "fileName": "action-required.pdf",
+        "fileSize": "325KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-25T04:01:31.128296"
+  },
+  {
+    "id": "4",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.",
+    "attachments": [
+      {
+        "fileName": "meeting-schedule.pdf",
+        "fileSize": "154KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Finance"
+    ],
+    "dateSent": "2025-09-22T23:28:31.128311"
+  },
+  {
+    "id": "5",
+    "senderName": "Hannah Baker",
+    "senderEmail": "hannah.baker@example.com",
+    "recipientName": "Admin",
+    "subject": "New Assignment",
+    "message": "This is a dummy message content for New Assignment.",
+    "attachments": [
+      {
+        "fileName": "new-assignment.pdf",
+        "fileSize": "390KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-21T00:02:31.128328"
+  },
+  {
+    "id": "6",
+    "senderName": "Ian Malcolm",
+    "senderEmail": "ian.malcolm@example.com",
+    "recipientName": "Admin",
+    "subject": "Follow Up",
+    "message": "This is a dummy message content for Follow Up.",
+    "attachments": [
+      {
+        "fileName": "follow-up.pdf",
+        "fileSize": "264KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Travel",
+      "HR"
+    ],
+    "dateSent": "2025-09-16T22:16:31.128343"
+  },
+  {
+    "id": "7",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "HR",
+      "Personal"
+    ],
+    "dateSent": "2025-09-07T19:15:31.128355"
+  },
+  {
+    "id": "8",
+    "senderName": "Jack Sparrow",
+    "senderEmail": "jack.sparrow@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Work",
+      "Personal"
+    ],
+    "dateSent": "2025-09-08T23:44:31.128369"
+  },
+  {
+    "id": "9",
+    "senderName": "Hannah Baker",
+    "senderEmail": "hannah.baker@example.com",
+    "recipientName": "Admin",
+    "subject": "Event Invitation",
+    "message": "This is a dummy message content for Event Invitation.",
+    "attachments": [
+      {
+        "fileName": "event-invitation.pdf",
+        "fileSize": "289KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [
+      "Finance",
+      "Urgent"
+    ],
+    "dateSent": "2025-09-10T23:27:31.128384"
+  },
+  {
+    "id": "10",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Action Required",
+    "message": "This is a dummy message content for Action Required.",
+    "attachments": [
+      {
+        "fileName": "action-required.pdf",
+        "fileSize": "374KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Urgent"
+    ],
+    "dateSent": "2025-09-24T11:28:31.128397"
+  },
+  {
+    "id": "11",
+    "senderName": "Ethan Hunt",
+    "senderEmail": "ethan.hunt@example.com",
+    "recipientName": "Admin",
+    "subject": "Project Update",
+    "message": "This is a dummy message content for Project Update.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-12T13:35:31.128409"
+  },
+  {
+    "id": "12",
+    "senderName": "Fiona Gallagher",
+    "senderEmail": "fiona.gallagher@example.com",
+    "recipientName": "Admin",
+    "subject": "Event Invitation",
+    "message": "This is a dummy message content for Event Invitation.",
+    "attachments": [
+      {
+        "fileName": "event-invitation.pdf",
+        "fileSize": "166KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Urgent"
+    ],
+    "dateSent": "2025-09-12T10:36:31.128428"
+  },
+  {
+    "id": "13",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Follow Up",
+    "message": "This is a dummy message content for Follow Up.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [
+      "Urgent"
+    ],
+    "dateSent": "2025-09-14T03:52:31.128446"
+  },
+  {
+    "id": "14",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "Weekly Report",
+    "message": "This is a dummy message content for Weekly Report.",
+    "attachments": [
+      {
+        "fileName": "weekly-report.pdf",
+        "fileSize": "183KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [
+      "Travel",
+      "HR"
+    ],
+    "dateSent": "2025-09-26T22:47:31.128465"
+  },
+  {
+    "id": "15",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.",
+    "attachments": [
+      {
+        "fileName": "meeting-schedule.pdf",
+        "fileSize": "261KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-20T02:46:31.128496"
+  },
+  {
+    "id": "16",
+    "senderName": "Bob Smith",
+    "senderEmail": "bob.smith@example.com",
+    "recipientName": "Admin",
+    "subject": "Project Update",
+    "message": "This is a dummy message content for Project Update.",
+    "attachments": [
+      {
+        "fileName": "project-update.pdf",
+        "fileSize": "352KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Urgent",
+      "Finance"
+    ],
+    "dateSent": "2025-09-07T06:03:31.128509"
+  },
+  {
+    "id": "17",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.",
+    "attachments": [
+      {
+        "fileName": "meeting-schedule.pdf",
+        "fileSize": "447KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "HR",
+      "Urgent"
+    ],
+    "dateSent": "2025-09-18T04:52:31.128520"
+  },
+  {
+    "id": "18",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Event Invitation",
+    "message": "This is a dummy message content for Event Invitation.",
+    "attachments": [
+      {
+        "fileName": "event-invitation.pdf",
+        "fileSize": "307KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Travel"
+    ],
+    "dateSent": "2025-09-06T19:01:31.128532"
+  },
+  {
+    "id": "19",
+    "senderName": "Fiona Gallagher",
+    "senderEmail": "fiona.gallagher@example.com",
+    "recipientName": "Admin",
+    "subject": "Follow Up",
+    "message": "This is a dummy message content for Follow Up.",
+    "attachments": [
+      {
+        "fileName": "follow-up.pdf",
+        "fileSize": "125KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Work"
+    ],
+    "dateSent": "2025-09-24T09:32:31.128544"
+  },
+  {
+    "id": "20",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-01T19:15:31.128554"
+  },
+  {
+    "id": "21",
+    "senderName": "Bob Smith",
+    "senderEmail": "bob.smith@example.com",
+    "recipientName": "Admin",
+    "subject": "Invoice Reminder",
+    "message": "This is a dummy message content for Invoice Reminder.",
+    "attachments": [
+      {
+        "fileName": "invoice-reminder.pdf",
+        "fileSize": "401KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-25T04:05:31.128570"
+  },
+  {
+    "id": "22",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "Follow Up",
+    "message": "This is a dummy message content for Follow Up.",
+    "attachments": [
+      {
+        "fileName": "follow-up.pdf",
+        "fileSize": "278KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-19T04:00:31.128588"
+  },
+  {
+    "id": "23",
+    "senderName": "Fiona Gallagher",
+    "senderEmail": "fiona.gallagher@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Work"
+    ],
+    "dateSent": "2025-09-17T00:49:31.128610"
+  },
+  {
+    "id": "24",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "Event Invitation",
+    "message": "This is a dummy message content for Event Invitation.",
+    "attachments": [
+      {
+        "fileName": "event-invitation.pdf",
+        "fileSize": "197KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-08-28T22:59:31.128621"
+  },
+  {
+    "id": "25",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "New Assignment",
+    "message": "This is a dummy message content for New Assignment.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [
+      "Travel",
+      "Urgent"
+    ],
+    "dateSent": "2025-09-11T08:27:31.128632"
+  },
+  {
+    "id": "26",
+    "senderName": "Bob Smith",
+    "senderEmail": "bob.smith@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Personal",
+      "Travel"
+    ],
+    "dateSent": "2025-09-10T03:50:31.128643"
+  },
+  {
+    "id": "27",
+    "senderName": "Hannah Baker",
+    "senderEmail": "hannah.baker@example.com",
+    "recipientName": "Admin",
+    "subject": "Weekly Report",
+    "message": "This is a dummy message content for Weekly Report.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Travel",
+      "HR"
+    ],
+    "dateSent": "2025-09-27T09:14:31.128657"
+  },
+  {
+    "id": "28",
+    "senderName": "Fiona Gallagher",
+    "senderEmail": "fiona.gallagher@example.com",
+    "recipientName": "Admin",
+    "subject": "Weekly Report",
+    "message": "This is a dummy message content for Weekly Report.",
+    "attachments": [
+      {
+        "fileName": "weekly-report.pdf",
+        "fileSize": "324KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Travel"
+    ],
+    "dateSent": "2025-09-18T09:29:31.128669"
+  },
+  {
+    "id": "29",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [
+      {
+        "fileName": "policy-change.pdf",
+        "fileSize": "134KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-21T11:15:31.128680"
+  },
+  {
+    "id": "30",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "New Assignment",
+    "message": "This is a dummy message content for New Assignment.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-03T12:59:31.128690"
+  },
+  {
+    "id": "31",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "Weekly Report",
+    "message": "This is a dummy message content for Weekly Report.",
+    "attachments": [
+      {
+        "fileName": "weekly-report.pdf",
+        "fileSize": "158KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-15T07:33:31.128700"
+  },
+  {
+    "id": "32",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Finance",
+      "HR"
+    ],
+    "dateSent": "2025-09-13T22:08:31.128711"
+  },
+  {
+    "id": "33",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "Invoice Reminder",
+    "message": "This is a dummy message content for Invoice Reminder.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "HR",
+      "Personal"
+    ],
+    "dateSent": "2025-09-05T04:14:31.128721"
+  },
+  {
+    "id": "34",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [
+      {
+        "fileName": "policy-change.pdf",
+        "fileSize": "118KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [
+      "Urgent",
+      "Work"
+    ],
+    "dateSent": "2025-09-19T03:36:31.128733"
+  },
+  {
+    "id": "35",
+    "senderName": "Bob Smith",
+    "senderEmail": "bob.smith@example.com",
+    "recipientName": "Admin",
+    "subject": "Follow Up",
+    "message": "This is a dummy message content for Follow Up.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Work"
+    ],
+    "dateSent": "2025-09-18T08:02:31.128744"
+  },
+  {
+    "id": "36",
+    "senderName": "Bob Smith",
+    "senderEmail": "bob.smith@example.com",
+    "recipientName": "Admin",
+    "subject": "Invoice Reminder",
+    "message": "This is a dummy message content for Invoice Reminder.",
+    "attachments": [
+      {
+        "fileName": "invoice-reminder.pdf",
+        "fileSize": "63KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-08-29T10:00:31.128756"
+  },
+  {
+    "id": "37",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "Project Update",
+    "message": "This is a dummy message content for Project Update.",
+    "attachments": [
+      {
+        "fileName": "project-update.pdf",
+        "fileSize": "483KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Work"
+    ],
+    "dateSent": "2025-09-04T13:40:31.128770"
+  },
+  {
+    "id": "38",
+    "senderName": "Ethan Hunt",
+    "senderEmail": "ethan.hunt@example.com",
+    "recipientName": "Admin",
+    "subject": "Feedback Request",
+    "message": "This is a dummy message content for Feedback Request.",
+    "attachments": [
+      {
+        "fileName": "feedback-request.pdf",
+        "fileSize": "496KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Work"
+    ],
+    "dateSent": "2025-09-07T10:18:31.128781"
+  },
+  {
+    "id": "39",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "Weekly Report",
+    "message": "This is a dummy message content for Weekly Report.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-19T01:42:31.128791"
+  },
+  {
+    "id": "40",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Weekly Report",
+    "message": "This is a dummy message content for Weekly Report.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Urgent",
+      "Personal"
+    ],
+    "dateSent": "2025-09-25T12:02:31.128802"
+  },
+  {
+    "id": "41",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [
+      {
+        "fileName": "policy-change.pdf",
+        "fileSize": "148KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [
+      "Travel"
+    ],
+    "dateSent": "2025-08-31T22:09:31.128814"
+  },
+  {
+    "id": "42",
+    "senderName": "Ethan Hunt",
+    "senderEmail": "ethan.hunt@example.com",
+    "recipientName": "Admin",
+    "subject": "Event Invitation",
+    "message": "This is a dummy message content for Event Invitation.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-26T06:19:31.128825"
+  },
+  {
+    "id": "43",
+    "senderName": "Jack Sparrow",
+    "senderEmail": "jack.sparrow@example.com",
+    "recipientName": "Admin",
+    "subject": "New Assignment",
+    "message": "This is a dummy message content for New Assignment.",
+    "attachments": [
+      {
+        "fileName": "new-assignment.pdf",
+        "fileSize": "356KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Personal",
+      "HR"
+    ],
+    "dateSent": "2025-08-30T03:15:31.128836"
+  },
+  {
+    "id": "44",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Invoice Reminder",
+    "message": "This is a dummy message content for Invoice Reminder.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Personal"
+    ],
+    "dateSent": "2025-09-26T18:23:31.128847"
+  },
+  {
+    "id": "45",
+    "senderName": "Bob Smith",
+    "senderEmail": "bob.smith@example.com",
+    "recipientName": "Admin",
+    "subject": "Follow Up",
+    "message": "This is a dummy message content for Follow Up.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [
+      "HR",
+      "Finance"
+    ],
+    "dateSent": "2025-08-30T15:28:31.128857"
+  },
+  {
+    "id": "46",
+    "senderName": "Fiona Gallagher",
+    "senderEmail": "fiona.gallagher@example.com",
+    "recipientName": "Admin",
+    "subject": "Project Update",
+    "message": "This is a dummy message content for Project Update.",
+    "attachments": [
+      {
+        "fileName": "project-update.pdf",
+        "fileSize": "278KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Work",
+      "Personal"
+    ],
+    "dateSent": "2025-09-10T23:21:31.128868"
+  },
+  {
+    "id": "47",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "New Assignment",
+    "message": "This is a dummy message content for New Assignment.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Work"
+    ],
+    "dateSent": "2025-09-25T00:30:31.128878"
+  },
+  {
+    "id": "48",
+    "senderName": "Ethan Hunt",
+    "senderEmail": "ethan.hunt@example.com",
+    "recipientName": "Admin",
+    "subject": "Event Invitation",
+    "message": "This is a dummy message content for Event Invitation.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Personal"
+    ],
+    "dateSent": "2025-09-08T16:34:31.128891"
+  },
+  {
+    "id": "49",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Follow Up",
+    "message": "This is a dummy message content for Follow Up.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Urgent",
+      "HR"
+    ],
+    "dateSent": "2025-09-23T23:42:31.128909"
+  },
+  {
+    "id": "50",
+    "senderName": "Jack Sparrow",
+    "senderEmail": "jack.sparrow@example.com",
+    "recipientName": "Admin",
+    "subject": "Project Update",
+    "message": "This is a dummy message content for Project Update.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-05T20:24:31.128925"
+  },
+  {
+    "id": "51",
+    "senderName": "Jack Sparrow",
+    "senderEmail": "jack.sparrow@example.com",
+    "recipientName": "Admin",
+    "subject": "Follow Up",
+    "message": "This is a dummy message content for Follow Up.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [
+      "HR"
+    ],
+    "dateSent": "2025-09-20T02:31:31.128944"
+  },
+  {
+    "id": "52",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [
+      {
+        "fileName": "policy-change.pdf",
+        "fileSize": "370KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-03T05:52:31.128955"
+  },
+  {
+    "id": "53",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "Invoice Reminder",
+    "message": "This is a dummy message content for Invoice Reminder.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Personal",
+      "HR"
+    ],
+    "dateSent": "2025-09-24T12:11:31.128966"
+  },
+  {
+    "id": "54",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Project Update",
+    "message": "This is a dummy message content for Project Update.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [
+      "Urgent",
+      "HR"
+    ],
+    "dateSent": "2025-09-06T02:54:31.128976"
+  },
+  {
+    "id": "55",
+    "senderName": "Ethan Hunt",
+    "senderEmail": "ethan.hunt@example.com",
+    "recipientName": "Admin",
+    "subject": "Invoice Reminder",
+    "message": "This is a dummy message content for Invoice Reminder.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-01T03:56:31.128986"
+  },
+  {
+    "id": "56",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "Weekly Report",
+    "message": "This is a dummy message content for Weekly Report.",
+    "attachments": [
+      {
+        "fileName": "weekly-report.pdf",
+        "fileSize": "294KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [
+      "Urgent",
+      "Travel"
+    ],
+    "dateSent": "2025-09-23T21:56:31.128997"
+  },
+  {
+    "id": "57",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "New Assignment",
+    "message": "This is a dummy message content for New Assignment.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-22T14:13:31.129007"
+  },
+  {
+    "id": "58",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "Feedback Request",
+    "message": "This is a dummy message content for Feedback Request.",
+    "attachments": [
+      {
+        "fileName": "feedback-request.pdf",
+        "fileSize": "150KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Travel"
+    ],
+    "dateSent": "2025-09-22T13:26:31.129021"
+  },
+  {
+    "id": "59",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [
+      "HR",
+      "Finance"
+    ],
+    "dateSent": "2025-09-11T04:48:31.129031"
+  },
+  {
+    "id": "60",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Event Invitation",
+    "message": "This is a dummy message content for Event Invitation.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "HR",
+      "Finance"
+    ],
+    "dateSent": "2025-09-12T15:13:31.129041"
+  },
+  {
+    "id": "61",
+    "senderName": "Fiona Gallagher",
+    "senderEmail": "fiona.gallagher@example.com",
+    "recipientName": "Admin",
+    "subject": "Feedback Request",
+    "message": "This is a dummy message content for Feedback Request.",
+    "attachments": [
+      {
+        "fileName": "feedback-request.pdf",
+        "fileSize": "154KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Finance"
+    ],
+    "dateSent": "2025-09-19T21:56:31.129054"
+  },
+  {
+    "id": "62",
+    "senderName": "Fiona Gallagher",
+    "senderEmail": "fiona.gallagher@example.com",
+    "recipientName": "Admin",
+    "subject": "Event Invitation",
+    "message": "This is a dummy message content for Event Invitation.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [
+      "Travel",
+      "Personal"
+    ],
+    "dateSent": "2025-09-16T08:28:31.129065"
+  },
+  {
+    "id": "63",
+    "senderName": "Jack Sparrow",
+    "senderEmail": "jack.sparrow@example.com",
+    "recipientName": "Admin",
+    "subject": "Weekly Report",
+    "message": "This is a dummy message content for Weekly Report.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-24T10:09:31.129077"
+  },
+  {
+    "id": "64",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "New Assignment",
+    "message": "This is a dummy message content for New Assignment.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Work",
+      "HR"
+    ],
+    "dateSent": "2025-09-12T18:54:31.129087"
+  },
+  {
+    "id": "65",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Invoice Reminder",
+    "message": "This is a dummy message content for Invoice Reminder.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Finance",
+      "Work"
+    ],
+    "dateSent": "2025-09-11T08:27:31.129098"
+  },
+  {
+    "id": "66",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Travel",
+      "Urgent"
+    ],
+    "dateSent": "2025-09-12T16:17:31.129108"
+  },
+  {
+    "id": "67",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.",
+    "attachments": [
+      {
+        "fileName": "meeting-schedule.pdf",
+        "fileSize": "223KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [
+      "Travel",
+      "Finance"
+    ],
+    "dateSent": "2025-08-31T07:53:31.129120"
+  },
+  {
+    "id": "68",
+    "senderName": "Hannah Baker",
+    "senderEmail": "hannah.baker@example.com",
+    "recipientName": "Admin",
+    "subject": "Project Update",
+    "message": "This is a dummy message content for Project Update.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-17T14:56:31.129231"
+  },
+  {
+    "id": "69",
+    "senderName": "Ian Malcolm",
+    "senderEmail": "ian.malcolm@example.com",
+    "recipientName": "Admin",
+    "subject": "Action Required",
+    "message": "This is a dummy message content for Action Required.",
+    "attachments": [
+      {
+        "fileName": "action-required.pdf",
+        "fileSize": "210KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Urgent"
+    ],
+    "dateSent": "2025-09-06T07:42:31.129246"
+  },
+  {
+    "id": "70",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Feedback Request",
+    "message": "This is a dummy message content for Feedback Request.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-04T04:06:31.129256"
+  },
+  {
+    "id": "71",
+    "senderName": "Charlie Davis",
+    "senderEmail": "charlie.davis@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": false,
+    "labels": [],
+    "dateSent": "2025-09-17T20:38:31.129266"
+  },
+  {
+    "id": "72",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "New Assignment",
+    "message": "This is a dummy message content for New Assignment.",
+    "attachments": [
+      {
+        "fileName": "new-assignment.pdf",
+        "fileSize": "127KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [
+      "Travel"
+    ],
+    "dateSent": "2025-09-13T21:31:31.129278"
+  },
+  {
+    "id": "73",
+    "senderName": "Alice Johnson",
+    "senderEmail": "alice.johnson@example.com",
+    "recipientName": "Admin",
+    "subject": "Meeting Schedule",
+    "message": "This is a dummy message content for Meeting Schedule.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-18T03:57:31.129287"
+  },
+  {
+    "id": "74",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "Weekly Report",
+    "message": "This is a dummy message content for Weekly Report.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [
+      "HR",
+      "Urgent"
+    ],
+    "dateSent": "2025-08-29T08:56:31.129297"
+  },
+  {
+    "id": "75",
+    "senderName": "Jack Sparrow",
+    "senderEmail": "jack.sparrow@example.com",
+    "recipientName": "Admin",
+    "subject": "New Assignment",
+    "message": "This is a dummy message content for New Assignment.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-09T02:23:31.129307"
+  },
+  {
+    "id": "76",
+    "senderName": "Hannah Baker",
+    "senderEmail": "hannah.baker@example.com",
+    "recipientName": "Admin",
+    "subject": "Policy Change",
+    "message": "This is a dummy message content for Policy Change.",
+    "attachments": [],
+    "isRead": true,
+    "isStarred": true,
+    "labels": [],
+    "dateSent": "2025-09-16T10:39:31.129320"
+  },
+  {
+    "id": "77",
+    "senderName": "Fiona Gallagher",
+    "senderEmail": "fiona.gallagher@example.com",
+    "recipientName": "Admin",
+    "subject": "Event Invitation",
+    "message": "This is a dummy message content for Event Invitation.",
+    "attachments": [],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [
+      "Finance",
+      "Personal"
+    ],
+    "dateSent": "2025-09-21T16:08:31.129331"
+  },
+  {
+    "id": "78",
+    "senderName": "George Clooney",
+    "senderEmail": "george.clooney@example.com",
+    "recipientName": "Admin",
+    "subject": "Action Required",
+    "message": "This is a dummy message content for Action Required.",
+    "attachments": [
+      {
+        "fileName": "action-required.pdf",
+        "fileSize": "474KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": false,
+    "labels": [
+      "Finance",
+      "Travel"
+    ],
+    "dateSent": "2025-09-09T19:45:31.129343"
+  },
+  {
+    "id": "79",
+    "senderName": "Diana Prince",
+    "senderEmail": "diana.prince@example.com",
+    "recipientName": "Admin",
+    "subject": "Invoice Reminder",
+    "message": "This is a dummy message content for Invoice Reminder.",
+    "attachments": [
+      {
+        "fileName": "invoice-reminder.pdf",
+        "fileSize": "222KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Personal"
+    ],
+    "dateSent": "2025-09-10T11:14:31.129355"
+  },
+  {
+    "id": "80",
+    "senderName": "Ian Malcolm",
+    "senderEmail": "ian.malcolm@example.com",
+    "recipientName": "Admin",
+    "subject": "Action Required",
+    "message": "This is a dummy message content for Action Required.",
+    "attachments": [
+      {
+        "fileName": "action-required.pdf",
+        "fileSize": "224KB",
+        "fileType": "pdf"
+      }
+    ],
+    "isRead": false,
+    "isStarred": true,
+    "labels": [
+      "Work"
+    ],
+    "dateSent": "2025-09-11T03:33:31.129366"
+  }
+]
