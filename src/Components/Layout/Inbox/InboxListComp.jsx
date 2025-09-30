@@ -1,18 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import toggleStarred from "../../../Utilities/inbox/ToggleStarred";
+import deleteRequest from "../../../Utilities/DeleteRequest";
+import readMessage from "../../../Utilities/inbox/ReadMessage";
+import { Trash2, Mail, MailOpen, Eye, EllipsisVertical } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
-import ToggleStarred from "../../../Utilities/inbox/ToggleStarred";
-import {
-  EllipsisVertical,
-  Reply,
-  Eye,
-  Trash2,
-  Mail,
-  MailOpen,
-} from "lucide-react";
-import axios from "axios";
-
 const InboxListComp = ({ inbox, serial }) => {
-  const [loadingState, setLoadingState] = React.useState();
+  const [loadingState, setLoadingState] = React.useState(false);
   const {
     id,
     senderEmail,
@@ -20,19 +13,32 @@ const InboxListComp = ({ inbox, serial }) => {
     message,
     recipientName,
     subject,
-    isRead,
+    isRead: initialState,
     isStarred: initialStarred,
   } = inbox;
 
+  const [read, setRead] = useState(initialState);
   const [starred, setStarred] = useState(initialStarred);
-
   const [options, showOptions] = React.useState(false);
+
+  // to show option on hiver
+  const timeref = useRef(null);
+  const handleHoverStart = () => {
+    clearTimeout(timeref.current);
+    showOptions(true);
+  };
+
+  const handleHoverEnd = () => {
+    timeref.current = setTimeout(() => {
+      showOptions(false);
+    }, 500);
+  };
 
   return (
     <ul
       className={`py-2 w-full ${
         serial % 2 == 0 && "bg-[#dacaa4]/40"
-      }  grid grid-cols-[50px_150px_250px_300px_1fr_80px_100px_50px] px-6 place-items-center  cursor-pointer text-lg`}
+      }  grid grid-cols-[50px_150px_250px_300px_1fr_80px_100px_100px] px-6 place-items-center  cursor-pointer text-lg`}
     >
       <li>{serial}</li>
       <li>
@@ -42,7 +48,7 @@ const InboxListComp = ({ inbox, serial }) => {
           className={`${loadingState ? "cursor-progress" : "cursor-pointer"} `}
           id="starred"
           onChange={(event) =>
-            ToggleStarred(event.target.checked, id, setStarred, setLoadingState)
+            toggleStarred(event.target.checked, id, setStarred, setLoadingState)
           }
         />
       </li>
@@ -57,7 +63,7 @@ const InboxListComp = ({ inbox, serial }) => {
       </li>
 
       <li>
-        {isRead ? (
+        {read ? (
           <div className="flex flex-col place-items-center">
             <MailOpen />
             <p className="text-sm text-neutral-300">Read</p>
@@ -71,30 +77,49 @@ const InboxListComp = ({ inbox, serial }) => {
       </li>
       <li>{recipientName}</li>
       <li className="relative">
-        <button onClick={() => showOptions((prev) => !prev)}>
+        <motion.button
+          onHoverStart={handleHoverStart}
+          onHoverEnd={handleHoverEnd}
+          onClick={() => showOptions((prev) => !prev)}
+        >
           <EllipsisVertical />
-        </button>
-        {options && (
-          <ul className="absolute flex flex-col gap-3 right-10 top-10 bg-white text-black z-90 pr-6 pl-3 py-4">
-            <li className=" flex gap-2 items-center">
-              <button className=" flex gap-2 items-center">
-                <Reply />
-                Reply
-              </button>
-            </li>
-            <li>
-              <button className=" flex gap-2 items-center">
-                {" "}
-                <Trash2 />
-                Delete
-              </button>
-            </li>
-            <li className=" flex gap-2 items-center">
-              <Eye />
-              View
-            </li>
-          </ul>
-        )}
+        </motion.button>
+        <AnimatePresence>
+          {options && (
+            <motion.ul
+              onMouseEnter={handleHoverStart}
+              onMouseLeave={handleHoverEnd}
+              className="absolute flex flex-col  gap-3 right-3 top-8 rounded-2xl theme z-90 pr-6 pl-3 py-4"
+            >
+              <li>
+                <button
+                  onClick={() => deleteRequest(id, setLoadingState)}
+                  className={`flex gap-2 items-center ${
+                    loadingState ? "cursor-progress" : "cursor-pointer"
+                  } `}
+                >
+                  {" "}
+                  <Trash2 />
+                  Delete
+                </button>
+              </li>
+              <li>
+                <button
+                  className={`flex gap-2 items-center ${
+                    loadingState ? "cursor-progress" : "cursor-pointer"
+                  } `}
+                  onClick={() =>
+                    readMessage(read, id, setLoadingState, setRead)
+                  }
+                >
+                  {" "}
+                  <Eye />
+                  View
+                </button>
+              </li>
+            </motion.ul>
+          )}
+        </AnimatePresence>
       </li>
     </ul>
   );

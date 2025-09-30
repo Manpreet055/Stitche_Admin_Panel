@@ -1,11 +1,28 @@
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { item, container } from "../../../Animations/ListStagger";
-import { EllipsisVertical, Pen, Trash2, Eye } from "lucide-react";
-const UserRow = ({ serial, user }) => {
+import { EllipsisVertical, Trash2, Eye } from "lucide-react";
+import deleteRequest from "../../../Utilities/DeleteRequest";
 
+const UserRow = ({ serial, user }) => {
+  const [loadingState, setLoadingState] = useState(false);
+  const [options, showOptions] = useState(false);
+
+  // to show option on hiver
+  const timeref = useRef(null);
+  const handleHoverStart = () => {
+    clearTimeout(timeref.current);
+    showOptions(true);
+  };
+
+  const handleHoverEnd = () => {
+    timeref.current = setTimeout(() => {
+      showOptions(false);
+    }, 500);
+  };
   // Destructring User's Info
   const {
+    id,
     Username,
     role,
     email,
@@ -17,9 +34,7 @@ const UserRow = ({ serial, user }) => {
     lastLogin,
   } = user;
 
-
   const [fullDetails, showFullDetails] = useState(false);
-  const [dropDown, setDropDown] = useState(false);
   // Using Object Mapping for unique color according to the status of the user
   const statusColor = {
     active: "bg-green-500/40",
@@ -52,34 +67,40 @@ const UserRow = ({ serial, user }) => {
         <li>{orders}</li>
         <li className="text-nowrap">{lastLogin}</li>
         <li className="flex flex-col">
-          <button
-            onClick={(event) => {
-              event.stopPropagation();
-              setDropDown((prev) => !prev);
-            }}
+          <motion.button
+            onHoverStart={handleHoverStart}
+            onHoverEnd={handleHoverEnd}
+            onClick={() => showOptions((prev) => !prev)}
             className="relative z-30"
           >
             <EllipsisVertical />
-          </button>
-          {dropDown && (
-            <div className="absolute p-4 w-[150px] top-12 right-5 theme   flex flex-col gap-3 items-start">
-              <button className="flex gap-2 items-center z-[999]">
-                <Trash2 />
-                Delete
-              </button>
-              <button className="flex gap-2 items-center z-[999]">
-                <Pen />
-                Edit
-              </button>
-              <button
-                onClick={() => showFullDetails((prev) => !prev)}
-                className="flex gap-2 items-center z-[999]"
+          </motion.button>
+          <AnimatePresence>
+            {options && (
+              <motion.div
+                onMouseEnter={handleHoverStart}
+                onMouseLeave={handleHoverEnd}
+                className="absolute rounded-2xl theme p-4 w-[150px] top-10 right-5  theme   flex flex-col gap-3 items-start"
               >
-                <Eye />
-                Details
-              </button>
-            </div>
-          )}
+                <button
+                  onClick={() => deleteRequest(id, setLoadingState)}
+                  className={`${
+                    loadingState ? "cursor-progress" : "cursor-pointer"
+                  } flex gap-2 items-center z-[999]`}
+                >
+                  <Trash2 />
+                  Delete
+                </button>
+                <button
+                  onClick={() => showFullDetails((prev) => !prev)}
+                  className="flex gap-2 items-center z-[999]"
+                >
+                  <Eye />
+                  Details
+                </button>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </li>
       </motion.ul>
 

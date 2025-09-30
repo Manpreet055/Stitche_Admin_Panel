@@ -1,32 +1,31 @@
 import axios from "axios";
 
-const ToggleStarred = async (checked, id, state, loadingState) => {
+const readMessage = async (isRead, id, loadingState, setRead) => {
+  if (isRead) return;
   try {
-    state(checked);
-    loadingState(true)
+    loadingState(true);
     const response = await axios.patch(
       "https://jsonplaceholder.typicode.com/posts/1",
       {
         id,
-        isStarred: checked,
+        isRead: true,
       }
     );
-    const data = response.data;
-    console.log(data);
+    console.log("Marked as Read.", response.data);
+    setRead(true);
   } catch (error) {
     if (error.response) {
       console.log("Server Error : ", error.response);
-      state(!checked);
+      setRead(false);
     } else if (error.request) {
       console.log("Network Error : ", error.request);
-      state(!checked);
+      setRead(false);
     } else {
       console.log("Something went wrong..", error.message);
-      state(!checked);
+      setRead(false);
     }
   } finally {
     loadingState(false);
   }
-  return null;
 };
-export default ToggleStarred;
+export default readMessage;

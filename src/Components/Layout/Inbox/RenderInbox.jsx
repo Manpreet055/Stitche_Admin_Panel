@@ -14,7 +14,7 @@ const RenderInbox = () => {
       className="h-screen pb-56 w-full overflow-scroll pt-10 scrollbar-hidden"
     >
       <header className="text-lg w-full ">
-        <ul className="grid text-xl font-semibold border border-gray-500 px-4 py-6 rounded-t-2xl grid-cols-[100px_220px_250px_300px_1fr_100px_80px_50px] w-full">
+        <ul className="grid text-xl font-semibold border border-gray-500 px-4 py-6 rounded-t-2xl grid-cols-[100px_220px_250px_300px_1fr_100px_80px_100px] w-full">
           <li>Serial</li>
           <li>Favourites</li>
           <li>Name</li>
