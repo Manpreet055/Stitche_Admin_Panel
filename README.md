@@ -24,7 +24,7 @@ Inbox management page
 
 🔨 In Progress
 
-Final touches in inbox page
+Chat Page functionality 
 
 ---
 
