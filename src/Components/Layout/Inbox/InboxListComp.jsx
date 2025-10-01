@@ -2,26 +2,31 @@ import React, { useState, useRef } from "react";
 import toggleStarred from "../../../Utilities/inbox/ToggleStarred";
 import deleteRequest from "../../../Utilities/DeleteRequest";
 import readMessage from "../../../Utilities/inbox/ReadMessage";
-import { Trash2, Mail, MailOpen, Eye, EllipsisVertical } from "lucide-react";
+import { Trash2, Eye, EllipsisVertical } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 const InboxListComp = ({ inbox, serial }) => {
   const [loadingState, setLoadingState] = React.useState(false);
+  const navigate = useNavigate();
   const {
-    id,
-    senderEmail,
-    senderName,
-    message,
-    recipientName,
+    conversationId,
+    user,
+    messages,
     subject,
-    isRead: initialState,
     isStarred: initialStarred,
   } = inbox;
+  const { email: senderEmail, name: senderName } = user;
+  const totalUnreadMessages = messages.filter((text) => text.isRead === false);
 
-  const [read, setRead] = useState(initialState);
+  const isRead = messages.some((text) => text.isRead === false);
+  const [read, setRead] = useState(isRead);
   const [starred, setStarred] = useState(initialStarred);
   const [options, showOptions] = React.useState(false);
 
-  // to show option on hiver
+  const navigateToConvo = () => {
+    navigate(`chats/${conversationId}/chat`);
+  };
+  // to show option on hover
   const timeref = useRef(null);
   const handleHoverStart = () => {
     clearTimeout(timeref.current);
@@ -36,9 +41,10 @@ const InboxListComp = ({ inbox, serial }) => {
 
   return (
     <ul
+      onClick={navigateToConvo}
       className={`py-2 w-full ${
         serial % 2 == 0 && "bg-[#dacaa4]/40"
-      }  grid grid-cols-[50px_150px_250px_300px_1fr_80px_100px_100px] px-6 place-items-center  cursor-pointer text-lg`}
+      }  grid grid-cols-[50px_150px_250px_300px_1fr_80px_100px] px-6 place-items-center  cursor-pointer text-lg`}
     >
       <li>{serial}</li>
       <li>
@@ -58,24 +64,15 @@ const InboxListComp = ({ inbox, serial }) => {
       <li className="w-full justify-self-start pl-10">
         <div className="w-full ">
           <h2 className="w-full">{subject}</h2>
-          <p className={`text-neutral-300 max-w-lg truncate `}>{message}</p>
+          <p className={`text-neutral-300 max-w-lg truncate `}>
+            {messages[0].text}
+          </p>
         </div>
       </li>
 
-      <li>
-        {read ? (
-          <div className="flex flex-col place-items-center">
-            <MailOpen />
-            <p className="text-sm text-neutral-300">Read</p>
-          </div>
-        ) : (
-          <div className="flex flex-col place-items-center">
-            <Mail />
-            <p className="text-sm text-neutral-300">Unread</p>
-          </div>
-        )}
+      <li className="bg-red-600 px-2 rounded-full text-center red text-white">
+        {Number(totalUnreadMessages.length) !== 0 && totalUnreadMessages.length}
       </li>
-      <li>{recipientName}</li>
       <li className="relative">
         <motion.button
           onHoverStart={handleHoverStart}

@@ -1,9 +1,8 @@
 import React from 'react'
-// import EditProductCard from '../Layout /Products/EditProductCard'
-
+import ChatPage from '../Layout/Inbox/ChatPage'
 const Orders = () => {
   return (
-    <div>Under development</div>
+    <div><ChatPage></ChatPage></div>
   )
 }
 

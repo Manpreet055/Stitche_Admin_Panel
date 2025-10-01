@@ -14,6 +14,7 @@ const AddProduct = lazy(() => import("./Components/Pages/AddProduct"));
 const Inbox = lazy(() => import("./Components/Pages/Inbox"));
 const Orders = lazy(() => import("./Components/Pages/Orders"));
 import RenderProducts from "./Components/Layout/Products/RenderProducts";
+import ChatPage from "./Components/Layout/Inbox/ChatPage";
 let route = createBrowserRouter([
   {
     path: "/",
@@ -83,6 +84,7 @@ let route = createBrowserRouter([
           </Suspense>
         ),
       },
+
       {
         path: "inbox",
         element: (
@@ -97,6 +99,10 @@ let route = createBrowserRouter([
             <Inbox />
           </Suspense>
         ),
+      },
+      {
+        path: "chats/:converstaionId/chat",
+        element: <ChatPage />,
       },
       {
         path: "orders",
