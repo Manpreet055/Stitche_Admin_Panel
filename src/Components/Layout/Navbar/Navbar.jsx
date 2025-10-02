@@ -23,7 +23,7 @@ const Navbar = () => {
       <h1 className="text-2xl md:text-4xl font-medium">{pathName[location.pathname]} </h1>
       <div className=" flex items-center"> 
         <div className="border-r mr-5 w-fit px-2 hover:text-gray-300 transition duration-2  00 ease-in-out"><Bell /> </div>
-        <ProfileDropDown></ProfileDropDown>
+        <ProfileDropDown options={true} userEmail="manpreetuae4@gmail.com"></ProfileDropDown>
         <button
           onClick={() => showSidebar((prev) => !prev)}
           className="p-4 transition duration-300 ease-in-out lg:hidden "

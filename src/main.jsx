@@ -101,7 +101,7 @@ let route = createBrowserRouter([
         ),
       },
       {
-        path: "chats/:conversationId/chat",
+        path: "chats/:id",
         element: <ChatPage />,
       },
       {

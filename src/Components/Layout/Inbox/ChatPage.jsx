@@ -1,15 +1,29 @@
 import React from "react";
 import SendMessages from "./SendMessages";
-import { EllipsisVertical } from "lucide-react";
-import { useParams } from "react-router-dom";
-import inboxData from "./inbox.json"
+import { Star, ChevronLeft } from "lucide-react";
+import { useNavigate, useParams } from "react-router-dom";
+import inboxData from "./inbox.json";
+import ProfileDropDown from "../Navbar/ProfileDropDown";
+import ChatDropdown from "./ChatDropdown";
+
 const ChatPage = () => {
-  const {conversationId} = useParams();
-  const conversation = inboxData.find((convo)=>(
-      String(convo.conversationId) === String(conversationId)
-  ))
- 
-  const { user, messages } = conversation;
+  const { id } = useParams();
+  const navigate = useNavigate();
+
+  if (!id) {
+    console.log("Id is not valid or found...");
+    return;
+  }
+
+  // ---------------------------------
+  // This entire block fetch users info
+  const conversation = inboxData.find((c) => String(c.conversationId) == id); //Finding the chat
+  const {
+    user,
+    messages,
+    isStarred: initialStarred,
+    conversationId,
+  } = conversation;
   const { email: senderEmail, name: senderName, profilePic } = user;
 
   // Extract the latest message timestamp
@@ -35,29 +49,38 @@ const ChatPage = () => {
     month: "short",
     day: "numeric",
   });
-
+  // ------------------------------------------------
   return (
     <div className="h-screen flex flex-col  w-full p-4 ">
+      {!id && <div className="absolute inset-0">Loading</div>}
       <div className="flex items-center justify-between  border-b border-gray-500 w-full p-2">
-        {/* Navbar container userInfo */}
-        <div className="flex items-center gap-6">
-          <img
-            src={profilePic}
-            alt="ProfilePic"
-            className="h-8 rounded-full "
-          />
-          <span className="text-xl font-medium">{senderName}</span>
-        </div>
         <div className="flex items-center gap-4">
+          <button
+            onClick={() => navigate(-1)}
+            className="flex items-center scale-transition hover:underline text-lg"
+          >
+            <ChevronLeft size={20} />
+            Back
+          </button>
+          <ProfileDropDown
+            userEmail={senderEmail}
+            userName={senderName}
+            profilePic={profilePic}
+          />
+        </div>
+
+        <div className="flex items-center gap-4">
+          {initialStarred && <Star />}
           <div className="text-sm flex flex-col">
             <div className="text-lg">Last seen</div>
             {latestDate}
             {", "}
             {latestTime}
           </div>
-          <button>
-            <EllipsisVertical />
-          </button>
+          <ChatDropdown
+            conversationId={conversationId}
+            initialStarred={initialStarred}
+          />
         </div>
       </div>
       <div className="h-full pb-56 pt-6 flex-1 scrollbar-hidden overflow-scroll">
@@ -83,7 +106,7 @@ const ChatPage = () => {
         </ul>
       </div>
       <div className="w-full flex justify-center relative">
-        <SendMessages />
+        <SendMessages id={conversationId} />
       </div>
     </div>
   );
