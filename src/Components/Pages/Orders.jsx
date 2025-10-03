@@ -1,9 +1,19 @@
-import React from 'react'
-import ChatPage from '../Layout/Inbox/ChatPage'
+import React from "react";
+import SearchNavbar from "../Layout/Navbar/SearchNavbar";
+import SearchBar from "../Layout/Navbar/SearchBar";
+import Filters from "../Layout/Navbar/Filters";
+import RenderOrders from "../Layout/Orders/RenderOrders";
 const Orders = () => {
+  
   return (
-    <div></div>
-  )
-}
+    <div>
+      <SearchNavbar
+        searchBar={<SearchBar />}
+        filter={<Filters />}
+      ></SearchNavbar>
+      <RenderOrders></RenderOrders>
+    </div>
+  );
+};
 
-export default Orders
+export default Orders;

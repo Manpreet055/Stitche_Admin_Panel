@@ -37,7 +37,7 @@ const InboxListComp = ({ inbox, serial }) => {
         <div className="w-full ">
           <h2 className="w-full">{subject}</h2>
           <p className={`text-neutral-300 max-w-lg truncate `}>
-            {messages[0].text}
+            {messages.at(-1).text}
           </p>
         </div>
       </li>
