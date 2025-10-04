@@ -15,6 +15,7 @@ const Inbox = lazy(() => import("./Components/Pages/Inbox"));
 const Orders = lazy(() => import("./Components/Pages/Orders"));
 import RenderProducts from "./Components/Layout/Products/RenderProducts";
 import ChatPage from "./Components/Layout/Inbox/ChatPage";
+import OrderDetails from "./Components/Layout/Orders/OrderDetails";
 let route = createBrowserRouter([
   {
     path: "/",
@@ -118,6 +119,10 @@ let route = createBrowserRouter([
             <Orders />
           </Suspense>
         ),
+      },
+      {
+        path: "order/:id",
+        element: <OrderDetails />,
       },
     ],
   },

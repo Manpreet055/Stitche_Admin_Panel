@@ -30,6 +30,10 @@ const RenderOrders = () => {
       city: "Address",
       country: "",
     },
+    user:{
+      firstName:"User",
+      lastName:""
+    }
   };
   return (
     <ul className="flex flex-col w-full h-screen pb-56 overflow-y-scroll scrollbar-hidden">
