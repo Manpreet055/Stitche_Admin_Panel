@@ -24,7 +24,7 @@ const InboxListComp = ({ inbox, serial }) => {
         }
       }}
       className={`py-2 w-full ${
-        serial % 2 == 0 && "bg-[#dacaa4]/40"
+        serial % 2 == 0 && "list-card"
       }  grid grid-cols-[80px_250px_300px_1fr_80px_100px] px-6 place-items-start  ${
         loadingState ? "cursor-progress" : "cursor-pointer"
       } text-lg`}
@@ -36,13 +36,13 @@ const InboxListComp = ({ inbox, serial }) => {
       <li className="w-full justify-self-start pl-10">
         <div className="w-full ">
           <h2 className="w-full">{subject}</h2>
-          <p className={`text-neutral-300 max-w-lg truncate `}>
+          <p className={`text-neutral-500 max-w-lg truncate `}>
             {messages.at(-1).text}
           </p>
         </div>
       </li>
 
-      <li className="bg-red-600 px-2 rounded-full text-center red text-white">
+      <li className="primary-bg px-2 rounded-full text-center ">
         {Number(totalUnreadMessages.length) !== 0 && totalUnreadMessages.length}
       </li>
     </ul>

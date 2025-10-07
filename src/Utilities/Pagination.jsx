@@ -32,7 +32,7 @@ const Paginate = ({ data, children, ItemsPerPage = 10 }) => {
           initial="default"
           whileHover="hover"
           whileTap="click"
-          className="button-style"
+          className="button-style primary-bg"
           onClick={prevPage}
         >
           Prev
@@ -45,7 +45,7 @@ const Paginate = ({ data, children, ItemsPerPage = 10 }) => {
           initial="default"
           whileHover="hover"
           whileTap="click"
-          className="button-style "
+          className="button-style primary-bg"
           onClick={nextPage}
         >
           Next

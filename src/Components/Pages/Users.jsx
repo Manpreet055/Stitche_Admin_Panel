@@ -48,7 +48,7 @@ const Users = () => {
   ];
     
   return (
-    <section className="w-full pb-36 scroll-smooth p-4 h-screen overflow-y-auto scrollbar-hidden flex flex-col gap-4">
+    <section className="w-full pb-36 scroll-smooth p-4 h-screen flex flex-col gap-4">
       {/* Contains Filtes and searchBar etc. buttons */}
       <SearchNavbar
         searchBar={<SearchBar />}

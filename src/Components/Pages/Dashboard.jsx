@@ -4,7 +4,7 @@ import KpiCard from "../Layout/Dashboard/KpiCard";
 import Analytics from "../Layout/Dashboard/Analytics"
 import Revenue from "../Layout/Dashboard/Revenue";
 import { HandCoins, BookText, Users, Clock } from "lucide-react";
-import Orders from "../Layout/Dashboard/Orders";
+import RecentOrders from "../Layout/Dashboard/RecentOrders"
 const Dashboard = () => {
   return (
     <div className=" w-full pb-20 lg:px-12 py-6 h-screen overflow-scroll scrollbar-hidden ">
@@ -35,7 +35,7 @@ const Dashboard = () => {
       {/* This Container Contains revenue and order's List */}
       <div className="flex flex-col items-center  w-full">
         <Revenue />
-        <Orders />
+        <RecentOrders />
       </div>
     </div>
   );

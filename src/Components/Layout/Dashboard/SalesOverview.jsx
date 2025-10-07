@@ -32,7 +32,7 @@ const SalesOverview = () => {
       <ResponsiveContainer width="100%" height="85%">
         <AreaChart margin={{ bottom: 20,right:20 }} data={data}>
           <CartesianGrid vertical={false} strokeDasharray="3 3" />
-          <Area  stroke="#9F1239" fill="#9F1239" fillOpacity={0.3} strokeWidth={3} dataKey="Sales" />
+          <Area  stroke="#554840" fill="#edcfb1" fillOpacity={0.3} strokeWidth={3} dataKey="Sales" />
 
           <XAxis dataKey="day" tick={{ dy: 15 }} />
           <YAxis />

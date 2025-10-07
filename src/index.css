@@ -2,62 +2,72 @@
 @plugin "flowbite-react/plugin/tailwindcss";
 @source "../.flowbite-react/class-list.json";
 
-body{
-    background-color: black;
-    color:white;
-      font-family: 'Poppins', sans-serif;
-      overflow: hidden;
-      /* @apply bg-[url("/src/assets/earth.jpg")] bg-cover bg-center */
+body {
+  background-color: #f8f8f8;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  /* @apply bg-[url("/src/assets/earth.jpg")] bg-cover bg-center */
+}
+.sidebar,
+.filters,
+.profile-card {
+  @apply bg-[#f8f8f8] text-black;
 }
 
-
-.theme{
-    @apply bg-white text-black
+.dark-theme {
+  @apply bg-black text-white;
 }
-/* .blur-bg{
-    @apply bg-black/10 backdrop-blur-xl
-} */
-.primary-bg{
-    @apply bg-rose-800 text-white
+.dark-theme .sidebar,
+.dark-theme .filters,
+.dark-theme .profile-card {
+  @apply bg-black text-white;
 }
 
-.button-style{
-    @apply bg-rose-800 lg:py-4 lg:text-xl  hover:shadow-lg px-4 py-3 md:px-6 md:py-3 h-full  rounded-2xl text-white  font-medium
+.primary-bg {
+  @apply bg-[#edcfb1] text-[#554840];
 }
-.scrollbar-hidden{
-    scrollbar-width: none;
-}
-.scale-transition{
-    @apply hover:scale-[1.03] transition-all ease-in-out will-change-transform duration-300
+.list-card{
+  @apply bg-[#ae9985] text-[#554840];
 }
 
-.title{
-    @apply text-xl w-full font-medium mb-3 
+.button-style {
+  @apply lg:py-4 lg:text-xl  hover:shadow-lg px-4 py-3 md:px-6 md:py-3 h-full  rounded-2xl font-medium;
+}
+.scrollbar-hidden {
+  scrollbar-width: none;
+}
+.scale-transition {
+  @apply hover:scale-[1.03] transition-all ease-in-out will-change-transform duration-300;
+}
+
+.title {
+  @apply text-xl w-full font-medium mb-3;
 }
 
 .sidebar-links {
-    @apply flex gap-2 items-center text-lg py-3 rounded-xl px-3
+  @apply flex gap-2 items-center text-lg py-3 rounded-xl px-3;
 }
 
-.input-section{
-    @apply p-6 shadow-sm flex gap-3 flex-col
+.input-section {
+  @apply p-6 shadow-sm flex gap-3 flex-col;
 }
-.form-input-sections{
-    @apply  py-2 rounded-lg transition-all ease-in-out duration-500  bg-blue-200/20 text-lg pl-2  ;  
+.form-input-sections {
+  @apply py-2 rounded-lg transition-all ease-in-out duration-500  bg-blue-200/20 text-lg pl-2;
 }
 
-label{
-    @apply tracking-wide text-gray-600
+label {
+  @apply tracking-wide text-gray-600;
 }
 
 .chart-card-style {
-    @apply hover:shadow-lg min-w-[600px] transition duration-300 mt-10 h-[400px] grow w-full lg:h-[500px] 2xl:w-[760px] rounded-2xl lg:pb-3 pb-8 pr-3 lg:pr-10
+  @apply hover:shadow-lg min-w-[600px] transition duration-300 mt-10 h-[400px] grow w-full lg:h-[500px] 2xl:w-[760px] rounded-2xl lg:pb-3 pb-8 pr-3 lg:pr-10;
 }
 
-.active-tabs{
-    @apply bg-rose-800/20 text-rose-700
+.active-tabs {
+  @apply bg-rose-800/20 text-rose-700;
 }
 
 .profile-card-buttons {
-    @apply text-lg flex gap-3 font-medium items-center hover:bg-gray-300/50 transition duration-300 ease-in-out w-full px-2 py-3 rounded-lg;
+  @apply text-lg flex gap-3 font-medium items-center hover:bg-gray-300/50 transition duration-300 ease-in-out w-full px-2 py-3 rounded-lg;
 }

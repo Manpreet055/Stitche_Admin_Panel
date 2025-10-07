@@ -35,8 +35,8 @@ const Revenue = () => {
           <CartesianGrid vertical={false} strokeDasharray="3 3" />
             <Area
               dataKey="Revenue"
-              stroke="#9F1239"
-              fill="#9F1239"
+              stroke="#554840"
+              fill="#edcfb1"
               fillOpacity={0.4}
               // type="monotone"
             />

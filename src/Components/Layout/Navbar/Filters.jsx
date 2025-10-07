@@ -32,8 +32,8 @@ const FilterComp = ({ fieldArr, ApiPath }) => {
   };
 
   return (
-    <div className="bg-black text-white absolute top-15 left-50 lg:left-120  z-90 flex flex-col blur-bg w-fit border border-gray-400 rounded-xl">
-      <h1 className="text-2xl mx-5 px-3 border-b border-gray-400 font-semibold py-4">
+    <div className="bg-black filters text-white absolute top-15 left-50 lg:left-120  z-90 flex flex-col blur-bg w-fit border border-gray-400 rounded-xl">
+      <h1 className="text-2xl mx-5 px-3 border-b border-gray-300 font-semibold py-4">
         Filters
       </h1>
       <form
@@ -65,9 +65,7 @@ const FilterComp = ({ fieldArr, ApiPath }) => {
         <button
           disabled={isSubmitting ? true : false}
           type="submit"
-          className={`${
-            isSubmitting ? " bg-rose-900" : "bg-rose-600"
-          } p-4 rounded-2xl`}
+          className={`p-4 rounded-2xl primary-bg`}
         >
           {isSubmitting ? <Spinner /> : "Submit"}
         </button>

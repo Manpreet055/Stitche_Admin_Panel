@@ -39,8 +39,8 @@ const Analytics = () => {
           <BarChart data={data} margin={{ bottom: 20, right: 20 }}>
             {/* Grids */}
             <CartesianGrid vertical={false} strokeDasharray="3 3" /> 
-            <Bar fill="#9F1239" dataKey="InStore" />
-            <Bar fill="#E3DAB7" dataKey="Sales" />
+            <Bar fill="#edcfb1" dataKey="InStore" />
+            <Bar fill="#554840" dataKey="Sales" />
             <XAxis tick={{ dy: 15 }} dataKey="day" />
             <YAxis />
             <Legend

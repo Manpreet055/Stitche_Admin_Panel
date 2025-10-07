@@ -95,7 +95,7 @@ const ChatPage = () => {
               <div
                 className={`w-fit flex flex-col justify-start max-w-[50%] p-4 rounded-2xl ${
                   msg.sender.includes("admin")
-                    ? "bg-blue-600 text-white"
+                    ? "primary-bg"
                     : "bg-gray-300 text-black"
                 }`}
               >

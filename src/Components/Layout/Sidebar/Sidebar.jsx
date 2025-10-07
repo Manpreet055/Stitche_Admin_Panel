@@ -13,15 +13,15 @@ const Sidebar = () => {
         // animate={{ width: "auto", opacity: 1 }}
         // exit={{ width:0, opacity: 0 }}
         // transition={{ duration: 0.4 }}
-        className={`blur-bg origin-left bg-black fixed lg:relative text-white z-90 ${
+        className={`blur-bg origin-left sidebar fixed lg:relative z-90 ${
           sidebar ? "flex" : "hidden"
         } z-50 h-screen max-h-[100%] lg:flex  flex-col justify-between w-72 max-w-[80vw] md:w-[300px]`}
       >
         <div>
           <div className="flex py-6 px-4 md:justify-center items-center gap-3 ">
             <img
-              className=" w-[45%] md:w-[70%]"
-              src="/src/assets/CompanyLogo.webp"
+              className=" w-[45]z md:w-[20%]"
+              src="/src/assets/logo.png"
               alt="Componylogo"
             />
           </div>
@@ -30,7 +30,7 @@ const Sidebar = () => {
               <NavLink
                 className={({ isActive }) => {
                   return `w-full flex sidebar-links    ${
-                    isActive ? "bg-rose-800/20 text-rose-600" : ""
+                    isActive &&  "primary-bg"
                   }`;
                 }}
                 to="/"
@@ -44,7 +44,7 @@ const Sidebar = () => {
               <NavLink
                 className={({ isActive }) => {
                   return ` w-full flex sidebar-links   ${
-                    isActive ? "bg-rose-800/20 text-rose-600" : ""
+                    isActive &&  "primary-bg"
                   }`;
                 }}
                 to="/inbox"
@@ -58,7 +58,7 @@ const Sidebar = () => {
               <NavLink
                 className={({ isActive }) => {
                   return ` w-full flex sidebar-links   ${
-                    isActive ? "bg-rose-800/20 text-rose-600" : ""
+                    isActive &&  "primary-bg"
                   }`;
                 }}
                 to="/products"
@@ -72,7 +72,7 @@ const Sidebar = () => {
               <NavLink
                 className={({ isActive }) => {
                   return ` w-full flex sidebar-links   ${
-                    isActive ? "bg-rose-800/20 text-rose-600" : ""
+                    isActive &&  "primary-bg"
                   }`;
                 }}
                 to="/orders"
@@ -86,7 +86,7 @@ const Sidebar = () => {
               <NavLink
                 className={({ isActive }) => {
                   return ` w-full flex sidebar-links   ${
-                    isActive ? "bg-rose-800/20 text-rose-600" : ""
+                    isActive &&  "primary-bg"
                   }`;
                 }}
                 to="/users"

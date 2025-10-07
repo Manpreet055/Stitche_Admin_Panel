@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { item, container } from "../../../Animations/ListStagger";
 import { EllipsisVertical, Trash2, Eye } from "lucide-react";
 import deleteRequest from "../../../Utilities/DeleteRequest";
+import CapitalizeFirstLetter from "../../../Utilities/CapitalizeLetter";
 
 const UserRow = ({ serial, user }) => {
   const [loadingState, setLoadingState] = useState(false);
@@ -37,9 +38,9 @@ const UserRow = ({ serial, user }) => {
   const [fullDetails, showFullDetails] = useState(false);
   // Using Object Mapping for unique color according to the status of the user
   const statusColor = {
-    active: "bg-green-500/40",
-    pending: "bg-amber-400/40",
-    suspended: "bg-red-500/40",
+    active: "bg-green-100 text-green-800",
+    pending: "bg-amber-100 text-amber-800",
+    suspended: "bg-red-100 text-red-800",
   };
   return (
     <div className="w-full">
@@ -57,11 +58,11 @@ const UserRow = ({ serial, user }) => {
           {email}
         </li>
         <li
-          className={`px-2 py-2  rounded ${
+          className={`px-2 py-2 w-[90%] text-center  rounded ${
             statusColor[status].toLowerCase() || "bg-gray-400"
           }`}
         >
-          {status}
+          {CapitalizeFirstLetter(status)}
         </li>
         <li>{role}</li>
         <li>{orders}</li>

@@ -4,12 +4,38 @@ import SearchBar from "../Layout/Navbar/SearchBar";
 import Filters from "../Layout/Navbar/Filters";
 import RenderOrders from "../Layout/Orders/RenderOrders";
 const Orders = () => {
-  
+  const filterOrders = [
+    {
+      name: "Status",
+      fields: [
+        {
+          fieldName: "Shipped",
+          keyname: "shipped",
+        },
+        {
+          fieldName: "Confirmed",
+          keyname: "confirmed",
+        },
+        {
+          fieldName: "Pending",
+          keyname: "pending",
+        },
+        {
+          fieldName: "Delivered",
+          keyname: "delivered",
+        },
+        {
+          fieldName: "Cancelled",
+          keyname: "cancelled",
+        },
+      ],
+    },
+  ];
   return (
     <div>
       <SearchNavbar
         searchBar={<SearchBar />}
-        filter={<Filters />}
+        filter={<Filters fieldArr={filterOrders} />}
       ></SearchNavbar>
       <RenderOrders></RenderOrders>
     </div>

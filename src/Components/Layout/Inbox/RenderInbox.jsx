@@ -15,7 +15,7 @@ const RenderInbox = () => {
     >
       {/* Table headings */}
       <header className="text-lg w-full ">
-        <ul className="grid text-xl font-semibold border border-gray-500 px-4 py-6 rounded-t-2xl grid-cols-[100px_250px_340px_1fr_230px] w-full">
+        <ul className="grid text-xl font-semibold border primary-bg border-gray-500 px-4 py-6 rounded-t-2xl grid-cols-[100px_250px_340px_1fr_230px] w-full">
           <li>Serial</li>
           <li>From</li>
           <li>Email</li>

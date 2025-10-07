@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { ChevronUp, Settings2, LogOut, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import growVariants from "../../../Animations/growHeight";
@@ -9,7 +9,21 @@ const ProfileDropDown = ({
   profilePic = "/src/assets/avatar.png",
   options = false,
 }) => {
+  const isDark = localStorage.getItem("darkTheme");
+  const [theme, setTheme] = useState(isDark === "true");
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
+
+ useEffect(()=>{
+   if (theme) {
+    document.body.classList.add("dark-theme");
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
+  localStorage.setItem(
+    "darkTheme",
+    document.body.classList.contains("dark-theme")
+  );
+ },[theme])
 
   // Show FIlters form on Hover using this function
   const timeref = useRef(null);
@@ -30,7 +44,7 @@ const ProfileDropDown = ({
       onClick={() => setIsDropDownOpen((prev) => !prev)}
       onHoverStart={handleHoverStart}
       onHoverEnd={handleHoverEnd}
-      className="relative lg:w-xs  flex gap-2 jus items-center"
+      className="relative lg:w-xs  flex gap-2 items-center"
     >
       <img className="h-8 rounded-full" src={profilePic} alt="" />
       <div className="flex w-full justify-between pr-20">
@@ -53,7 +67,9 @@ const ProfileDropDown = ({
             animate="grow"
             transition="delay"
             exit="hidden"
-            className={`origin-top p-4 absolute rounded-2xl top-15 flex flex-col w-full ${options ? "min-h-65" : "min-h-fit"} z-[99]  theme`}
+            className={`origin-top p-4 absolute  rounded-2xl top-15 flex flex-col w-full ${
+              options ? "min-h-65" : "min-h-fit"
+            } z-[99]  profile-card`}
           >
             <div className="relative flex gap-2 items-center">
               {" "}
@@ -74,7 +90,10 @@ const ProfileDropDown = ({
                     <Settings2 />
                     Profile Settings
                   </button>
-                  <button className="profile-card-buttons">
+                  <button
+                    onClick={() => setTheme((prev) => !prev)}
+                    className="profile-card-buttons"
+                  >
                     <Sun />
                     Light Mode
                   </button>
