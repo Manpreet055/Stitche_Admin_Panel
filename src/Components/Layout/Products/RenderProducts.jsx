@@ -18,7 +18,7 @@ const RenderProducts = () => {
   };
   return (
     <motion.ul initial="hidden" animate="show" variants={container} className="h-screen pb-56 w-full overflow-scroll pt-10 scrollbar-hidden ">
-      <li className="text-xl font-semibold">
+      <li className="text-xl font-semibold primary-bg rounded-t-2xl">
         {" "}
         <ProductList isHeader={true} product={header}></ProductList>
       </li>

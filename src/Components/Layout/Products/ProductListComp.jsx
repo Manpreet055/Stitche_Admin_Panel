@@ -32,7 +32,7 @@ const ProductList = ({ product, serial = "Serial No.", isHeader = false }) => {
   };
 
   return (
-    <ul className="grid grid-cols-[100px_1fr__200px_150px_160px_200px_160px_180px_40px] place-items-center w-full p-4 relative">
+    <ul className="px-4 py-5 grid grid-cols-[100px_1fr__200px_150px_160px_200px_160px_180px] place-items-center w-full p-4 border-b border-gray-300 relative">
       <li>{serial}</li>
       <li className={`place-self-start pl-10`}>{title}</li>
       <li>{brand}</li>
@@ -41,7 +41,7 @@ const ProductList = ({ product, serial = "Serial No.", isHeader = false }) => {
       <li>{category}</li>
       <li>{rating.average}</li>
       <li>{rating.count}</li>
-      <li className="">
+      {/* <li className="">
         {!isHeader && (
           <motion.button
             onHoverStart={handleHoverStart}
@@ -86,7 +86,7 @@ const ProductList = ({ product, serial = "Serial No.", isHeader = false }) => {
             </motion.ul>
           )}
         </AnimatePresence>
-      </li>
+      </li> */}
     </ul>
   );
 };

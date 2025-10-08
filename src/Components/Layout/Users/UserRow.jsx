@@ -1,41 +1,12 @@
-import React, { useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
-import { item, container } from "../../../Animations/ListStagger";
-import { EllipsisVertical, Trash2, Eye } from "lucide-react";
-import deleteRequest from "../../../Utilities/DeleteRequest";
+import React, { useState } from "react";
+import { item } from "../../../Animations/ListStagger";
+import { motion } from "framer-motion";
 import CapitalizeFirstLetter from "../../../Utilities/CapitalizeLetter";
 
 const UserRow = ({ serial, user }) => {
-  const [loadingState, setLoadingState] = useState(false);
-  const [options, showOptions] = useState(false);
-
-  // to show option on hiver
-  const timeref = useRef(null);
-  const handleHoverStart = () => {
-    clearTimeout(timeref.current);
-    showOptions(true);
-  };
-
-  const handleHoverEnd = () => {
-    timeref.current = setTimeout(() => {
-      showOptions(false);
-    }, 500);
-  };
   // Destructring User's Info
-  const {
-    id,
-    Username,
-    role,
-    email,
-    status,
-    orders,
-    phone,
-    verified,
-    dateJoined,
-    lastLogin,
-  } = user;
+  const { Username, role, email, status, orders, lastLogin } = user;
 
-  const [fullDetails, showFullDetails] = useState(false);
   // Using Object Mapping for unique color according to the status of the user
   const statusColor = {
     active: "bg-green-100 text-green-800",
@@ -43,12 +14,9 @@ const UserRow = ({ serial, user }) => {
     suspended: "bg-red-100 text-red-800",
   };
   return (
-    <div className="w-full">
       <motion.ul
         variants={item}
-        className={`w-full cursor-pointer ${
-          serial % 2 == 0 && "bg-[#dacaa4]/40"
-        }  grid grid-cols-[60px_1fr_1fr_130px_120px_100px_150px_30px] px-3 md:text-lg items-center justify-items-start h-[60px] `}
+        className={`w-full cursor-pointer border-b border-gray-300 grid grid-cols-[100px_300px_1fr_160px_120px_100px_150px] px-3 md:text-lg place-items-center h-[70px] `}
       >
         <li>{serial}</li>
         <li className="lg:pl-14 max-w-[90px] md:max-w-max scrollbar-hidden overflow-x-scroll">
@@ -67,71 +35,8 @@ const UserRow = ({ serial, user }) => {
         <li>{role}</li>
         <li>{orders}</li>
         <li className="text-nowrap">{lastLogin}</li>
-        <li className="flex flex-col">
-          <motion.button
-            onHoverStart={handleHoverStart}
-            onHoverEnd={handleHoverEnd}
-            onClick={() => showOptions((prev) => !prev)}
-            className="relative z-30"
-          >
-            <EllipsisVertical />
-          </motion.button>
-          <AnimatePresence>
-            {options && (
-              <motion.div
-                onMouseEnter={handleHoverStart}
-                onMouseLeave={handleHoverEnd}
-                className="absolute rounded-2xl theme p-4 w-[150px] top-10 right-5  theme   flex flex-col gap-3 items-start"
-              >
-                <button
-                  onClick={() => deleteRequest(id, setLoadingState)}
-                  className={`${
-                    loadingState ? "cursor-progress" : "cursor-pointer"
-                  } flex gap-2 items-center z-[999]`}
-                >
-                  <Trash2 />
-                  Delete
-                </button>
-                <button
-                  onClick={() => showFullDetails((prev) => !prev)}
-                  className="flex gap-2 items-center z-[999]"
-                >
-                  <Eye />
-                  Details
-                </button>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </li>
       </motion.ul>
-
-      {/* Full Details card */}
-      {fullDetails && (
-        <motion.ul
-          variants={container}
-          initial="hidden"
-          animate="show"
-          className="w-full max-h-40 rounded-2xl flex-wrap flex flex-col gap-4 bg-gray-400/40 p-6 text-lg py-3 "
-        >
-          <motion.li variants={item}>Username : {Username}</motion.li>
-          <motion.li variants={item}>Email Address : {email}</motion.li>
-          <motion.li variants={item}>Phone Number : {phone}</motion.li>
-          <motion.li variants={item}>Status : {status}</motion.li>
-          <motion.li variants={item}>Role : {role}</motion.li>
-          <motion.li variants={item}>Total Orders : {orders}</motion.li>
-          <motion.li variants={item}>Joining Date : {dateJoined}</motion.li>
-          <motion.li variants={item}>Last Login : {lastLogin}</motion.li>
-          <motion.li variants={item}>
-            Verified : {verified.toString()}
-          </motion.li>
-          <motion.li variants={item}>City : {user.address.city}</motion.li>
-          <motion.li variants={item}>
-            Country : {user.address.country}
-          </motion.li>
-        </motion.ul>
-      )}
-    </div>
-  );
+  );  
 };
 
 export default UserRow;

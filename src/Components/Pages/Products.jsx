@@ -52,7 +52,7 @@ const Products = () => {
     },
   ];
   return (
-    <section className="overlflow-scroll h-screen w-full scrollbar-hidden">
+    <section className="overlflow-scroll h-screen p-4 w-full scrollbar-hidden">
       <SearchNavbar
         searchBar={<SearchBar />}
         filter={<Filters fieldArr={filterUsers} />}

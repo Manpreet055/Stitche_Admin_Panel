@@ -34,7 +34,7 @@ const OrdersListComp = ({ order }) => {
       }}
       className={`h-[70px]  grid grid-cols-[200px_200px_250px_200px_200px_100px_1fr] place-items-center text-lg border-b ${
         loadingState ? "cursor-progress" : "cursor-pointer"
-      } border-neutral-600 `}
+      } border-gray-300 `}
     >
       <li>{orderId}</li>
       <li>

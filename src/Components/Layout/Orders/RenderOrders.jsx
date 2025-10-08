@@ -36,8 +36,8 @@ const RenderOrders = () => {
     }
   };
   return (
-    <ul className="flex flex-col w-full h-screen pb-56 overflow-y-scroll scrollbar-hidden">
-      <li className="text-2xl font-semibold">
+    <ul className="flex flex-col w-full h-screen pb-56 pt-10 overflow-y-scroll scrollbar-hidden">
+      <li className="text-2xl md:text-3xl font-semibold primary-bg rounded-t-2xl">
         {" "}
         <OrdersListComp order={header}></OrdersListComp>
       </li>

@@ -23,9 +23,7 @@ const InboxListComp = ({ inbox, serial }) => {
           goToChat();
         }
       }}
-      className={`py-2 w-full ${
-        serial % 2 == 0 && "list-card"
-      }  grid grid-cols-[80px_250px_300px_1fr_80px_100px] px-6 place-items-start  ${
+      className={`py-2 w-full border-b border-gray-300 grid grid-cols-[80px_250px_300px_1fr_80px_100px] px-6 place-items-start  ${
         loadingState ? "cursor-progress" : "cursor-pointer"
       } text-lg`}
     >
@@ -42,7 +40,7 @@ const InboxListComp = ({ inbox, serial }) => {
         </div>
       </li>
 
-      <li className="primary-bg px-2 rounded-full text-center ">
+      <li className="primary-bg w-7 rounded-full text-center ">
         {Number(totalUnreadMessages.length) !== 0 && totalUnreadMessages.length}
       </li>
     </ul>

@@ -32,7 +32,7 @@ const Orders = () => {
     },
   ];
   return (
-    <div>
+    <div className="px-4 py-5">
       <SearchNavbar
         searchBar={<SearchBar />}
         filter={<Filters fieldArr={filterOrders} />}

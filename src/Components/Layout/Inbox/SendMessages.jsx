@@ -18,11 +18,11 @@ const SendMessages = ({ id }) => {
   return (
     <form
       onSubmit={handleSubmit(submitChat)}
-      className="bg-gray-900 rounded-2xl w-full max-w-7xl  fixed bottom-0 border border-gray-500 p-6"
+      className="border-b w-full max-w-7xl fixed bottom-0  p-6"
     >
       <div className="w-full place-items-center grid grid-cols-[1fr_100px]  h-full">
         <input
-          className="text-white text-wrap h-full w-full text-lg focus:outline-none"
+          className="text-wrap h-full w-full text-lg focus:outline-none"
           {...register("text", {
             required: true,
           })}

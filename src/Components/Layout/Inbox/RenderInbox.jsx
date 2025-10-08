@@ -11,11 +11,11 @@ const RenderInbox = () => {
       initial="hidden"
       animate="show"
       variants={container}
-      className="h-screen pb-56 w-full overflow-scroll pt-10 scrollbar-hidden"
+      className="h-screen pb-56 w-full overflow-scroll pt-11 scrollbar-hidden"
     >
       {/* Table headings */}
       <header className="text-lg w-full ">
-        <ul className="grid text-xl font-semibold border primary-bg border-gray-500 px-4 py-6 rounded-t-2xl grid-cols-[100px_250px_340px_1fr_230px] w-full">
+        <ul className="grid text-xl font-semibold primary-bg px-4 py-5 rounded-t-2xl grid-cols-[100px_250px_340px_1fr_230px] w-full">
           <li>Serial</li>
           <li>From</li>
           <li>Email</li>

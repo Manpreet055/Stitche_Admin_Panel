@@ -46,37 +46,16 @@ const Users = () => {
       ],
     },
   ];
-    
+
   return (
-    <section className="w-full pb-36 scroll-smooth p-4 h-screen flex flex-col gap-4">
+    <section className="w-full pb-36 scroll-smooth px-4 h-screen flex flex-col gap-4">
       {/* Contains Filtes and searchBar etc. buttons */}
       <SearchNavbar
         searchBar={<SearchBar />}
         filter={<Filters fieldArr={fieldArr} />}
       />
 
-      {/* Table Starts from here */}
-      <div className="blur-bg px-3 w-full  scrollbar-hidden">
-        <ul
-          className={`min-w-[900px] h-[60px] bg-[#dacaa4] rounded-t-2xl text-neutral-800 px-3 mt-5 grid grid-cols-[60px_1fr_2fr_80px_160px_60px_190px_60px] place-items-center text-xl font-medium border-b border-gray-400 `}
-        >
-          <li>Sr No.</li>
-          <li>User</li>
-          <li>Email</li>
-          <li>Status</li>
-          <li>Role</li>
-          <li>Orders</li>
-          <li>Last login</li>
-          <li>Action</li>
-        </ul>
-        <Suspense
-          fallback={
-            <Skeleton height={60} count={15} baseColor="#818181"></Skeleton>
-          }
-        >
-          <RenderUsers />
-        </Suspense>
-      </div>
+        <RenderUsers />
     </section>
   );
 };

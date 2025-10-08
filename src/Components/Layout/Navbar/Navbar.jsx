@@ -14,7 +14,7 @@ const Navbar = () => {
     "/products": "Products",
     "/products/add": "Add  Product",
     "/inbox" : "Inbox",
-    "orders" : "Orders"
+    "/orders" : "Orders"
 
   };
   const { sidebar, showSidebar } = useContext(SidebarContext);

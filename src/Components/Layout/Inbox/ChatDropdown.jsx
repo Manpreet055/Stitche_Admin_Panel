@@ -36,10 +36,10 @@ const ChatDropdown = ({ conversationId, initialStarred }) => {
             <motion.ul
               onMouseEnter={handleHoverStart}
               onMouseLeave={handleHoverEnd}
-              className="absolute flex flex-col  gap-3 right-3 top-8 h-44 w-44 text-lg rounded-2xl theme z-90 pr-6 pl-3 py-4"
+              className="absolute flex flex-col profile-card  gap-3 right-3 top-8 h-44 w-44 text-lg rounded-2xl theme z-90 pr-6 pl-3 py-4"
             >
               <button
-                className={`flex gap-2 items-center ${
+                className={`flex gap-2 items-center border-b py-2 ${
                   loadingState ? "cursor-progress" : "cursor-pointer"
                 } `}
                 onClick={() =>
@@ -56,7 +56,7 @@ const ChatDropdown = ({ conversationId, initialStarred }) => {
               </button>
               <button
                 onClick={() => deleteRequest(conversationId, setLoadingState)}
-                className={`flex gap-2 items-center ${
+                className={`flex gap-2 items-center    ${
                   loadingState ? "cursor-progress" : "cursor-pointer"
                 } `}
               >

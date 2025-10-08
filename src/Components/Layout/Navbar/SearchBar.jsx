@@ -4,7 +4,7 @@ import { Search, User } from "lucide-react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import useDebounce from "../../../Hooks/useDebounce";
-import axios from "axios";
+import handleSearches from "../../../Utilities/HandleSearches";
 
 const SearchBar = ({ ApiPath }) => {
   const {
@@ -12,29 +12,6 @@ const SearchBar = ({ ApiPath }) => {
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm();
-
-  // This function is responsible for sending the request using searchbarData to the backend
-  //This function will be also fired up when user stop typing (debounce logic)
-  const handleSearches = async (formData) => {
-    try {
-      const response = await axios.post(
-        ApiPath || "https://jsonplaceholder.typicode.com/posts",
-        {
-          search: formData.searches,
-        }
-      );
-      const data = response.data;
-      console.log(data);
-    } catch (error) {
-      if (error.response) {
-        console.log("Server Error : ", error.response);
-      } else if (error.request) {
-        console.log("Network Error : ", error.request);
-      } else {
-        console.log(error.message);
-      }
-    }
-  };
 
   // Creating Debounce Variable function
   const debounceSearch = useDebounce({

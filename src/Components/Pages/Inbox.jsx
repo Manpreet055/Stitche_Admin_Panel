@@ -43,7 +43,7 @@ const Inbox = () => {
     },
   ];
   return (
-    <div className='mx-4'>
+    <div className='px-4 py-5'>
       <SearchNavbar searchBar={<SearchBar />} filter={<FilterComp fieldArr={filterMessages}/>} />
       <RenderInbox></RenderInbox>
     </div>
