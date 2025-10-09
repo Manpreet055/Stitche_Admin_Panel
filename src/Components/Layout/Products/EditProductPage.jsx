@@ -99,17 +99,12 @@ const EditProductPage = () => {
 
   return (
     <div className="overflow-y-scroll scrollbar-hidden px-5  h-screen pb-56 w-full">
-      <div className="w-full flex justify-start ">
-        <button
+       <button
           onClick={() => navigate(-1)}
-          className="px-5 flex justify-between items-center scale-transition hover:underline py-4 my-4 rounded-2xl"
+          className="hover:underline p-4 border mb-6 border-gray-400 rounded-2xl"
         >
-          <span>
-            <ChevronLeft size={20} />
-          </span>{" "}
           Back
         </button>
-      </div>
       <form
         onSubmit={handleSubmit(editProduct)}
         className=" flex w-full flex-wrap justify-between   md:gap-4"
@@ -261,7 +256,8 @@ const EditProductPage = () => {
 
           <button
             className={` w-fit px-6 py-4 rounded-2xl
-             ${isSubmitting ? "bg-rose-950 text-neutral-400" : "bg-rose-800"}`}
+              primary-bg mt-5
+             ${isSubmitting ? "cursor-progress" :"cursor-pointer"}`}
             type="submit"
             disabled={isSubmitting ? true : false}
           >

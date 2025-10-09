@@ -63,7 +63,7 @@ const Products = () => {
           </NavLink>
         }
       </SearchNavbar>
-      <Outlet />
+      <RenderProducts />
     </section>
   );
 };

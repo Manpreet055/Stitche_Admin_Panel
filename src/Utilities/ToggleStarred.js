@@ -16,7 +16,7 @@ const toggleStarred = async (checked, id, state, loadingState) => {
   } catch (error) {
     if (error.response) {
       console.log("Server Error : ", error.response);
-      state(!checked); // rpll back to prev state on error
+      state(!checked); // roll back to prev state on error
     } else if (error.request) {
       console.log("Network Error : ", error.request);
       state(!checked);

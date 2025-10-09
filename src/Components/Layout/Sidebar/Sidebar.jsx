@@ -20,8 +20,8 @@ const Sidebar = () => {
         <div>
           <div className="flex py-6 px-4 md:justify-center items-center gap-3 ">
             <img
-              className=" w-[45]z md:w-[20%]"
-              src="/src/assets/logo.png"
+              className=" w-[45]z md:w-[40%]"
+              src="/src/assets/companyLogo-removebg-preview.png"
               alt="Componylogo"
             />
           </div>

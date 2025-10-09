@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import toggleStarred from "../../../Utilities/inbox/ToggleStarred";
+import toggleStarred from "../../../Utilities/ToggleStarred";
 import deleteRequest from "../../../Utilities/DeleteRequest";
 import { Trash2, EllipsisVertical, Star, StarOff } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";

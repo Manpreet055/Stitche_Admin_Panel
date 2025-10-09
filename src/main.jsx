@@ -13,9 +13,9 @@ const Users = lazy(() => import("./Components/Pages/Users"));
 const AddProduct = lazy(() => import("./Components/Pages/AddProduct"));
 const Inbox = lazy(() => import("./Components/Pages/Inbox"));
 const Orders = lazy(() => import("./Components/Pages/Orders"));
-import RenderProducts from "./Components/Layout/Products/RenderProducts";
 import ChatPage from "./Components/Layout/Inbox/ChatPage";
-import OrderDetails from "./Components/Layout/Orders/OrderDetails";
+import OrderDetails from "./Components/Pages/OrderDetails";
+import ProductDetails from "./Components/Pages/ProductDetails";
 let route = createBrowserRouter([
   {
     path: "/",
@@ -40,16 +40,14 @@ let route = createBrowserRouter([
             <Products />
           </Suspense>
         ),
-        children: [
-          {
-            path: "",
-            element: <RenderProducts />,
-          },
-          {
-            path: "product/:productId/edit",
-            element: <EditProductPage />,
-          },
-        ],
+      },
+      {
+        path: "product/:productId/edit",
+        element: <EditProductPage />,
+      },
+      {
+        path: "products/:productId",
+        element: <ProductDetails />,
       },
       {
         path: "products/add",
