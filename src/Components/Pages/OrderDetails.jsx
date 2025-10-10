@@ -21,14 +21,14 @@ const OrderDetails = () => {
 
 
   return (
-    <div className="h-screen overflow-y-scroll scrollbar-hidden pb-56 md:px-12 p-3 w-full flex flex-col gap-10">
+    <div className="h-screen overflow-y-scroll scrollbar-hidden pb-56 p-4 w-full flex flex-col gap-10">
       <OrderHeader
         orderId={orderId}
         createdAt={createdAt}
         orderStatus={orderStatus}
       />
-      <CustomerInfo order={order} />
       <OrderGallery products={products} />
+      <CustomerInfo order={order} />
     <PaymentInfo discount={discount} payment={payment} products={products} />
     </div>
   );

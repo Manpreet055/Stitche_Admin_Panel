@@ -7,9 +7,9 @@ const CustomerInfo = ({ order }) => {
   const { method, transactionId } = payment;
   return (
     <>
-      <div className="w-full flex gap-y-5 flex-wrap py-4 border border-gray-300 rounded-lg  ">
+      <div className="w-full flex gap-y-5 flex-wrap py-4 items-center justify-between ">
         {/* Customer Info */}
-        <div className="flex flex-col text-lg gap-2 w-full max-w-3xl ">
+        <div className="flex flex-col text-lg gap-2 border border-gray-300 rounded-lg p-4  w-full max-w-3xl ">
           <h3 className="title">Customer Info</h3>
           <div className="text-lg font-medium">
             Name : {firstName} {lastName}
@@ -22,7 +22,7 @@ const CustomerInfo = ({ order }) => {
         </div>
 
         {/* Shipping Info */}
-        <div className="flex flex-col text-lg gap-2 w-full max-w-3xl ">
+        <div className="flex flex-col text-lg gap-2 h-full w-full border border-gray-300 rounded-lg p-4 max-w-3xl ">
           <h3 className="title">Order Info</h3>
           <div className="text-lg font-medium">Tracking Id : {trackingId}</div>
           <div className="text-lg font-medium">City : {city}</div>

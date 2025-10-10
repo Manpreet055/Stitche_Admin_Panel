@@ -1,9 +1,12 @@
 import React from "react";
 import SideBarContextProvider from "./sidebar/SideBarContextProvider";
+import UserDetailsProvider from "./UserDetailsProvider";
 
 const ContextProviderContainer = ({ children }) => {
   return (
-      <SideBarContextProvider>{children}</SideBarContextProvider>
+    <SideBarContextProvider>
+      <UserDetailsProvider>{children}</UserDetailsProvider>
+    </SideBarContextProvider>
   );
 };
 

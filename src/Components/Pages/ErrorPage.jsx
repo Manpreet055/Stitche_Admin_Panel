@@ -33,7 +33,7 @@ const ErrorPage = () => {
             whileHover="hover"
             whileTap="click"
             onClick={GoBack}
-            className="button-style"
+            className="button-style primary-bg"
           >
             Go Back
           </motion.button>
@@ -43,7 +43,7 @@ const ErrorPage = () => {
             whileHover="hover"
             whileTap="click"
             onClick={GoHome}
-            className="button-style"
+            className="button-style primary-bg"
           >
             Go Home
           </motion.button>
