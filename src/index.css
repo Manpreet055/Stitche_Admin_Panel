@@ -24,11 +24,15 @@ body {
   @apply bg-black text-white;
 }
 
+.dark-theme .user-card{
+  @apply bg-black/30
+}
+
 .primary-bg {
   @apply bg-[#edcfb1] text-[#554840];
 }
 .list-card{
-  @apply bg-[#ae9985] text-[#554840];
+  @apply bg-[#ae9985]  text-[#554840];
 }
 
 .button-style {

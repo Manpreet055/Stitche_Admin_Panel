@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./Components/Pages/Dashboard";
-import Settings from "./Components/Pages/Settings";
 import { Spinner } from "flowbite-react";
 import ErrorPage from "./Components/Pages/ErrorPage";
 import EditProductPage from "./Components/Layout/Products/EditProductPage";
@@ -16,6 +15,7 @@ const Orders = lazy(() => import("./Components/Pages/Orders"));
 import ChatPage from "./Components/Layout/Inbox/ChatPage";
 import OrderDetails from "./Components/Pages/OrderDetails";
 import ProductDetails from "./Components/Pages/ProductDetails";
+import ProfilePage from "./Components/Pages/ProfilePage";
 let route = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +25,7 @@ let route = createBrowserRouter([
       {
         index: true,
         element: <Dashboard />,
-      },
+      },//Dashboard
       {
         path: "products",
         element: (
@@ -40,15 +40,15 @@ let route = createBrowserRouter([
             <Products />
           </Suspense>
         ),
-      },
+      },//All Products
       {
         path: "product/:productId/edit",
         element: <EditProductPage />,
-      },
+      },//Edit product
       {
         path: "products/:productId",
         element: <ProductDetails />,
-      },
+      },//PDP
       {
         path: "products/add",
         element: (
@@ -63,11 +63,7 @@ let route = createBrowserRouter([
             <AddProduct />
           </Suspense>
         ),
-      },
-      {
-        path: "settings",
-        element: <Settings />,
-      },
+      },//Add Product
       {
         path: "users",
         element: (
@@ -82,8 +78,7 @@ let route = createBrowserRouter([
             <Users />
           </Suspense>
         ),
-      },
-
+      },//All Users
       {
         path: "inbox",
         element: (
@@ -98,11 +93,11 @@ let route = createBrowserRouter([
             <Inbox />
           </Suspense>
         ),
-      },
+      },//All Inbox
       {
         path: "chats/:id",
         element: <ChatPage />,
-      },
+      },//Chat Page
       {
         path: "orders",
         element: (
@@ -117,11 +112,15 @@ let route = createBrowserRouter([
             <Orders />
           </Suspense>
         ),
-      },
+      },//All Orders
       {
         path: "order/:id",
         element: <OrderDetails />,
-      },
+      },//Order Detail Page (ODP)
+      {
+        path: "user/profile",
+        element: <ProfilePage />,
+      },//Profile Edit 
     ],
   },
 ]);

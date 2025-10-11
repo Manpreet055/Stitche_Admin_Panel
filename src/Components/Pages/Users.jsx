@@ -10,7 +10,6 @@ import { X } from "lucide-react";
 
 const Users = () => {
   const {details,showDetails} = useContext(UserDetailsContext)
-  console.log(details)
   const fieldArr = [
     {
       name: "Status",
@@ -51,7 +50,7 @@ const Users = () => {
   return (
     <section className="w-full pb-36 scroll-smooth px-4 h-screen flex flex-col gap-4">
       {/* Contains Filtes and searchBar etc. buttons */}
-      {details.value && (<div className="fixed z-[999] flex flex-col h-screen w-screen justify-center items-center lg:items-start lg:pl-120 bg-white/30 backdrop-blur-lg">
+      {details.value && (<div className="fixed z-[999] flex user-card flex-col h-screen w-screen justify-center items-center lg:items-start lg:pl-120 bg-white/30 backdrop-blur-lg">
   <button
     onClick={() => showDetails({ value: false, Info: {} })}
     className="absolute top-0 right-100"

@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { ChevronUp, Settings2, LogOut, Sun } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import growVariants from "../../../Animations/growHeight";
+import { NavLink } from "react-router-dom";
 
 const ProfileDropDown = ({
   userName = "Manpreet",
@@ -86,10 +87,10 @@ const ProfileDropDown = ({
                 <div className="h-fit mt-3 border-t border-gray-400 w-full"></div>
 
                 <div className="flex mt-1 h-full flex-col w-full justify-between items-start">
-                  <button className="profile-card-buttons">
+                  <NavLink to="/user/profile" className="profile-card-buttons">
                     <Settings2 />
                     Profile Settings
-                  </button>
+                  </NavLink>
                   <button
                     onClick={() => setTheme((prev) => !prev)}
                     className="profile-card-buttons"

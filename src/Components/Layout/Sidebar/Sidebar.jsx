@@ -18,9 +18,9 @@ const Sidebar = () => {
         } z-50 h-screen max-h-[100%] lg:flex  flex-col justify-between w-72 max-w-[80vw] md:w-[300px]`}
       >
         <div>
-          <div className="flex py-6 px-4 md:justify-center items-center gap-3 ">
+          <div className="flex py-6 px-4 justify-center items-center gap-3 ">
             <img
-              className=" w-[45]z md:w-[40%]"
+              className=" w-30   md:w-[40%]"
               src="/src/assets/companyLogo-removebg-preview.png"
               alt="Componylogo"
             />
