@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import toggleStarred from "../../../Utilities/ToggleStarred";
-import deleteRequest from "../../../Utilities/DeleteRequest";
+import toggleStarred from "../../../Utilities/toggleStarred";
+import deleteRequest from "../../../Utilities/deleteRequest";
 import { Trash2, EllipsisVertical, Star, StarOff } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -9,6 +9,7 @@ const ChatDropdown = ({ conversationId, initialStarred }) => {
 
   const [starred, setStarred] = useState(initialStarred);
   const [options, showOptions] = React.useState(false);
+  
   // to show option on hover
   const timeref = useRef(null);
   const handleHoverStart = () => {

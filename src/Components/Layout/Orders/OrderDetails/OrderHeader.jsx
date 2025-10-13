@@ -1,9 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import CapitalizeFirstLetter from "../../../../Utilities/CapitalizeLetter";
-
+import CapitalizeFirstLetter from "../../../../Utilities/capitalizeLetter";
+import BackButton from "../../../../ui/BackButton";
 const OrderHeader = ({ orderId, createdAt, orderStatus }) => {
-  const navigate = useNavigate();
   const statusColor = {
     cancelled: "bg-red-100 text-red-800",
     pending: "bg-yellow-100 text-yellow-800",
@@ -13,14 +11,7 @@ const OrderHeader = ({ orderId, createdAt, orderStatus }) => {
   };
   return (
     <>
-      <div className="relative flex justify-start">
-        <button
-          className="border sticky top-0  p-3 scale-transition px-6 rounded-2xl"
-          onClick={() => navigate(-1)}
-        >
-          Back
-        </button>
-      </div>
+      <BackButton />
       <div className="flex justify-between w-full ">
         <h2 className="text-3xl flex gap-3 flex-col">
           Order #{orderId}{" "}

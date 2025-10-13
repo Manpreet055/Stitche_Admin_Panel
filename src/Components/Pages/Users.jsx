@@ -1,15 +1,14 @@
 import React, { useContext } from "react";
 import SearchNavbar from "../Layout/Navbar/SearchNavbar";
-import RenderUsers from "../Layout/Users/RenderUsers";
-import "react-loading-skeleton/dist/skeleton.css";
+import AllUsers from "../Layout/Users/AllUsers";
 import SearchBar from "../Layout/Navbar/SearchBar";
-import Filters from "../Layout/Navbar/Filters";
+import FilterItems from "../Layout/Navbar/FilterItems";
 import UserDetailsContext from "../../Context/UserDetailsContext";
 import UserDetailsCard from "../Layout/Users/UserDetailsCard";
 import { X } from "lucide-react";
 
 const Users = () => {
-  const {details,showDetails} = useContext(UserDetailsContext)
+  const { details, showDetails } = useContext(UserDetailsContext);
   const fieldArr = [
     {
       name: "Status",
@@ -48,23 +47,25 @@ const Users = () => {
   ];
 
   return (
-    <section className="w-full pb-36 scroll-smooth px-4 h-screen flex flex-col gap-4">
+    <section className="w-full pb-36 scroll-smooth px-4 h-screen py-5  flex flex-col gap-4">
       {/* Contains Filtes and searchBar etc. buttons */}
-      {details.value && (<div className="fixed z-[999] flex user-card flex-col h-screen w-screen justify-center items-center lg:items-start lg:pl-120 bg-white/30 backdrop-blur-lg">
-  <button
-    onClick={() => showDetails({ value: false, Info: {} })}
-    className="absolute top-0 right-100"
-  >
-    <X size={28} />
-  </button>
-  <UserDetailsCard user={details.Info} />
-</div>)}
       <SearchNavbar
         searchBar={<SearchBar />}
-        filter={<Filters fieldArr={fieldArr} />}
+        filter={<FilterItems fieldArr={fieldArr} />}
       />
 
-      <RenderUsers />
+      <AllUsers />
+      {details.value && (
+        <div className="fixed z-[999] flex user-card flex-col h-screen w-screen justify-center items-center lg:items-start lg:pl-120 bg-white/30 backdrop-blur-lg">
+          <button
+            onClick={() => showDetails({ value: false, Info: {} })}
+            className="absolute top-0 right-100"
+          >
+            <X size={28} />
+          </button>
+          <UserDetailsCard user={details.Info} />
+        </div>
+      )}
     </section>
   );
 };

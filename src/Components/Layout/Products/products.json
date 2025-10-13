@@ -1,2562 +1,2882 @@
 [
   {
-    "id": "1fd03e8b-2fb8-43b5-8cfd-c4f431ac16cd",
-    "title": "Sony Monitor 1",
-    "description": "This is a high-quality monitor by Sony.",
-    "category": "Appliances",
-    "subCategory": "Home",
-    "brand": "Sony",
-    "sku": "SON-1000",
-    "price": 1155.47,
+    "id": "90b5fb6b-ef46-4f72-8947-9705af4f9489",
+    "barcode": "985553",
+    "title": "Nike Skirts",
+    "name": "Nike Skirts",
+    "description": "High-quality skirts from Nike. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Skirts",
+    "brand": "Nike",
+    "sku": "NIK-1123",
+    "price": 361.97,
     "discount": {
-      "percentage": 25,
-      "priceAfterDiscount": 866.6
+      "percentage": 13,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 314.91
     },
-    "stock": 118,
-    "rating": {
-      "average": 1.8,
-      "count": 154
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=759",
-        "https://picsum.photos/600/400?random=436",
-        "https://picsum.photos/600/400?random=316"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-09-15T21:24:59.069268",
-      "updatedAt": "2025-09-28T21:24:59.069268"
-    }
-  },
-  {
-    "id": "de83ff16-6fa9-4594-8d98-6b2a8f0ee425",
-    "title": "HP Camera 2",
-    "description": "This is a high-quality camera by HP.",
-    "category": "Accessories",
-    "subCategory": "Portable",
-    "brand": "HP",
-    "sku": "HP-1001",
-    "price": 951.09,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 808.43
-    },
-    "stock": 109,
-    "rating": {
-      "average": 1.5,
-      "count": 265
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=101",
-        "https://picsum.photos/600/400?random=757",
-        "https://picsum.photos/600/400?random=595"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-12-11T12:26:04.419524",
-      "updatedAt": "2025-01-30T12:26:04.419524"
-    }
-  },
-  {
-    "id": "0be1d234-edfb-4ee5-9dc5-1f8836da41b3",
-    "title": "Samsung Headphones 3",
-    "description": "This is a high-quality headphones by Samsung.",
-    "category": "Accessories",
-    "subCategory": "Gaming",
-    "brand": "Samsung",
-    "sku": "SAM-1002",
-    "price": 1490.27,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 1341.24
-    },
-    "stock": 129,
-    "rating": {
-      "average": 2.5,
-      "count": 81
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=992",
-        "https://picsum.photos/600/400?random=567",
-        "https://picsum.photos/600/400?random=510"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-12-30T17:42:35.580170",
-      "updatedAt": "2025-01-29T17:42:35.580170"
-    }
-  },
-  {
-    "id": "44cf140e-c839-4c48-86de-03d3893b32c2",
-    "title": "Canon Printer 4",
-    "description": "This is a high-quality printer by Canon.",
-    "category": "Electronics",
-    "subCategory": "Office",
-    "brand": "Canon",
-    "sku": "CAN-1003",
-    "price": 688.52,
-    "discount": {
-      "percentage": 0,
-      "priceAfterDiscount": 688.52
-    },
-    "stock": 26,
-    "rating": {
-      "average": 4.3,
-      "count": 945
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=497",
-        "https://picsum.photos/600/400?random=996",
-        "https://picsum.photos/600/400?random=919"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-12-03T20:42:58.433545",
-      "updatedAt": "2024-12-31T20:42:58.433545"
-    }
-  },
-  {
-    "id": "eff50d84-bb7b-4f24-b166-be13d151f829",
-    "title": "Lenovo Keyboard 5",
-    "description": "This is a high-quality keyboard by Lenovo.",
-    "category": "Accessories",
-    "subCategory": "Home",
-    "brand": "Lenovo",
-    "sku": "LEN-1004",
-    "price": 784.7,
-    "discount": {
-      "percentage": 0,
-      "priceAfterDiscount": 784.7
-    },
-    "stock": 63,
-    "rating": {
-      "average": 2.6,
-      "count": 683
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=775",
-        "https://picsum.photos/600/400?random=817",
-        "https://picsum.photos/600/400?random=987"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-10-14T20:45:34.286173",
-      "updatedAt": "2024-11-21T20:45:34.286173"
-    }
-  },
-  {
-    "id": "f87522c7-df4a-45df-9b19-c5d30121c4c8",
-    "title": "Apple Keyboard 6",
-    "description": "This is a high-quality keyboard by Apple.",
-    "category": "Electronics",
-    "subCategory": "Gaming",
-    "brand": "Apple",
-    "sku": "APP-1005",
-    "price": 472.37,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 401.51
-    },
-    "stock": 194,
+    "quantity": 70,
+    "stock": 499,
     "rating": {
       "average": 2.4,
-      "count": 144
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=113",
-        "https://picsum.photos/600/400?random=178",
-        "https://picsum.photos/600/400?random=499"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-09-28T21:34:11.515833",
-      "updatedAt": "2024-11-02T21:34:11.515833"
-    }
-  },
-  {
-    "id": "302c2664-101e-473f-9c7c-1374aa180408",
-    "title": "Asus Laptop 7",
-    "description": "This is a high-quality laptop by Asus.",
-    "category": "Electronics",
-    "subCategory": "Office",
-    "brand": "Asus",
-    "sku": "ASU-1006",
-    "price": 1416.65,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 1274.99
-    },
-    "stock": 10,
-    "rating": {
-      "average": 3.8,
-      "count": 202
+      "count": 236
     },
     "media": {
       "thumbnail": "https://picsum.photos/200/200?random=1",
       "images": [
-        "https://picsum.photos/600/400?random=274",
-        "https://picsum.photos/600/400?random=639",
-        "https://picsum.photos/600/400?random=664"
+        "https://picsum.photos/600/400?random=3",
+        "https://picsum.photos/600/400?random=4",
+        "https://picsum.photos/600/400?random=5"
       ]
     },
     "isFeatured": false,
     "timestamps": {
-      "createdAt": "2025-08-10T09:17:26.487260",
-      "updatedAt": "2025-10-22T09:17:26.487260"
+      "createdAt": "2025-06-03T17:17:34",
+      "updatedAt": "2025-09-24T17:17:34"
     }
   },
   {
-    "id": "54fa33e9-32e8-4086-a475-e90ec319905b",
-    "title": "Lenovo Laptop 8",
-    "description": "This is a high-quality laptop by Lenovo.",
-    "category": "Accessories",
-    "subCategory": "Office",
-    "brand": "Lenovo",
-    "sku": "LEN-1007",
-    "price": 951.95,
+    "id": "1233c1b6-c804-4aa4-b28c-c50e2c1af4c0",
+    "barcode": "107753",
+    "title": "Louis Vuitton Tops",
+    "name": "Louis Vuitton Tops",
+    "description": "High-quality tops from Louis Vuitton. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Tops",
+    "brand": "Louis Vuitton",
+    "sku": "LOU-2123",
+    "price": 175.03,
     "discount": {
       "percentage": 0,
-      "priceAfterDiscount": 951.95
+      "type": "no-offers",
+      "priceAfterDiscount": 175.03
     },
-    "stock": 199,
-    "rating": {
-      "average": 2.0,
-      "count": 686
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=458",
-        "https://picsum.photos/600/400?random=73",
-        "https://picsum.photos/600/400?random=301"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-03-15T03:16:13.959609",
-      "updatedAt": "2025-04-10T03:16:13.959609"
-    }
-  },
-  {
-    "id": "cba31859-794f-4e60-8d72-20b0ec5c8213",
-    "title": "Samsung Smartwatch 9",
-    "description": "This is a high-quality smartwatch by Samsung.",
-    "category": "Appliances",
-    "subCategory": "Portable",
-    "brand": "Samsung",
-    "sku": "SAM-1008",
-    "price": 206.13,
-    "discount": {
-      "percentage": 25,
-      "priceAfterDiscount": 154.6
-    },
-    "stock": 40,
-    "rating": {
-      "average": 1.8,
-      "count": 754
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=809",
-        "https://picsum.photos/600/400?random=997",
-        "https://picsum.photos/600/400?random=229"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-04-20T05:23:43.836372",
-      "updatedAt": "2025-05-08T05:23:43.836372"
-    }
-  },
-  {
-    "id": "63f5118c-73c0-4803-9bc0-e5a119a165e7",
-    "title": "Dell Camera 10",
-    "description": "This is a high-quality camera by Dell.",
-    "category": "Appliances",
-    "subCategory": "Office",
-    "brand": "Dell",
-    "sku": "DEL-1009",
-    "price": 86.62,
-    "discount": {
-      "percentage": 0,
-      "priceAfterDiscount": 86.62
-    },
-    "stock": 86,
-    "rating": {
-      "average": 2.6,
-      "count": 189
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=514",
-        "https://picsum.photos/600/400?random=352",
-        "https://picsum.photos/600/400?random=890"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-09-02T17:32:32.942814",
-      "updatedAt": "2025-09-25T17:32:32.942814"
-    }
-  },
-  {
-    "id": "18f66404-b4e2-4743-84ef-05e541f998ad",
-    "title": "Sony Tablet 11",
-    "description": "This is a high-quality tablet by Sony.",
-    "category": "Accessories",
-    "subCategory": "Office",
-    "brand": "Sony",
-    "sku": "SON-1010",
-    "price": 486.89,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 462.55
-    },
-    "stock": 181,
-    "rating": {
-      "average": 3.1,
-      "count": 5
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=409",
-        "https://picsum.photos/600/400?random=474",
-        "https://picsum.photos/600/400?random=77"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-06-08T16:13:14.125613",
-      "updatedAt": "2025-07-23T16:13:14.125613"
-    }
-  },
-  {
-    "id": "b5d608d4-8a96-44e8-84b5-fa800323c73a",
-    "title": "Asus Phone 12",
-    "description": "This is a high-quality phone by Asus.",
-    "category": "Accessories",
-    "subCategory": "Home",
-    "brand": "Asus",
-    "sku": "ASU-1011",
-    "price": 1259.38,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 1133.44
-    },
-    "stock": 58,
-    "rating": {
-      "average": 1.5,
-      "count": 364
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=719",
-        "https://picsum.photos/600/400?random=849",
-        "https://picsum.photos/600/400?random=124"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-04-02T09:14:00.731162",
-      "updatedAt": "2025-07-02T09:14:00.731162"
-    }
-  },
-  {
-    "id": "43ab6caf-3b5a-4d72-91ad-e38fdc41fd7e",
-    "title": "HP Monitor 13",
-    "description": "This is a high-quality monitor by HP.",
-    "category": "Electronics",
-    "subCategory": "Home",
-    "brand": "HP",
-    "sku": "HP-1012",
-    "price": 418.28,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 397.37
-    },
-    "stock": 73,
-    "rating": {
-      "average": 3.5,
-      "count": 885
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=714",
-        "https://picsum.photos/600/400?random=789",
-        "https://picsum.photos/600/400?random=616"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-11-22T11:45:49.161943",
-      "updatedAt": "2024-12-11T11:45:49.161943"
-    }
-  },
-  {
-    "id": "d3f47f87-41eb-4609-a0a6-7d0033debeaa",
-    "title": "Logitech Headphones 14",
-    "description": "This is a high-quality headphones by Logitech.",
-    "category": "Accessories",
-    "subCategory": "Gaming",
-    "brand": "Logitech",
-    "sku": "LOG-1013",
-    "price": 586.65,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 498.65
-    },
-    "stock": 5,
-    "rating": {
-      "average": 4.2,
-      "count": 940
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=502",
-        "https://picsum.photos/600/400?random=574",
-        "https://picsum.photos/600/400?random=485"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-03-07T19:25:13.941627",
-      "updatedAt": "2025-03-23T19:25:13.941627"
-    }
-  },
-  {
-    "id": "087c2d65-e52e-49d1-9ad3-be6a1e4d35aa",
-    "title": "Sony Mouse 15",
-    "description": "This is a high-quality mouse by Sony.",
-    "category": "Electronics",
-    "subCategory": "Office",
-    "brand": "Sony",
-    "sku": "SON-1014",
-    "price": 1288.64,
-    "discount": {
-      "percentage": 30,
-      "priceAfterDiscount": 902.05
-    },
+    "quantity": 77,
     "stock": 108,
     "rating": {
-      "average": 1.2,
-      "count": 706
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=233",
-        "https://picsum.photos/600/400?random=325",
-        "https://picsum.photos/600/400?random=855"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-07-23T02:51:16.463928",
-      "updatedAt": "2025-08-13T02:51:16.463928"
-    }
-  },
-  {
-    "id": "ae031215-bc43-47ae-80b1-77860f831793",
-    "title": "Asus Tablet 16",
-    "description": "This is a high-quality tablet by Asus.",
-    "category": "Appliances",
-    "subCategory": "Photography",
-    "brand": "Asus",
-    "sku": "ASU-1015",
-    "price": 1791.39,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 1612.25
-    },
-    "stock": 124,
-    "rating": {
-      "average": 3.5,
-      "count": 845
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=565",
-        "https://picsum.photos/600/400?random=874",
-        "https://picsum.photos/600/400?random=977"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-07-16T05:00:42.430268",
-      "updatedAt": "2025-08-08T05:00:42.430268"
-    }
-  },
-  {
-    "id": "03066752-a4eb-4628-a97c-33ec55708426",
-    "title": "Logitech Camera 17",
-    "description": "This is a high-quality camera by Logitech.",
-    "category": "Accessories",
-    "subCategory": "Photography",
-    "brand": "Logitech",
-    "sku": "LOG-1016",
-    "price": 713.59,
-    "discount": {
-      "percentage": 30,
-      "priceAfterDiscount": 499.51
-    },
-    "stock": 198,
-    "rating": {
-      "average": 2.4,
-      "count": 379
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=293",
-        "https://picsum.photos/600/400?random=654",
-        "https://picsum.photos/600/400?random=600"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-05-03T04:46:51.306521",
-      "updatedAt": "2025-05-21T04:46:51.306521"
-    }
-  },
-  {
-    "id": "3bc41fee-38af-4be4-b451-f77238bc688c",
-    "title": "Apple Tablet 18",
-    "description": "This is a high-quality tablet by Apple.",
-    "category": "Accessories",
-    "subCategory": "Gaming",
-    "brand": "Apple",
-    "sku": "APP-1017",
-    "price": 1380.43,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 1311.41
-    },
-    "stock": 155,
-    "rating": {
-      "average": 4.1,
-      "count": 119
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=461",
-        "https://picsum.photos/600/400?random=962",
-        "https://picsum.photos/600/400?random=867"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-05-06T14:38:51.894426",
-      "updatedAt": "2025-07-19T14:38:51.894426"
-    }
-  },
-  {
-    "id": "31fb8d2b-d0ea-4f76-9e04-dc8a1ba4c8a5",
-    "title": "Sony Laptop 19",
-    "description": "This is a high-quality laptop by Sony.",
-    "category": "Electronics",
-    "subCategory": "Home",
-    "brand": "Sony",
-    "sku": "SON-1018",
-    "price": 195.49,
-    "discount": {
-      "percentage": 25,
-      "priceAfterDiscount": 146.62
-    },
-    "stock": 194,
-    "rating": {
       "average": 1.1,
-      "count": 57
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=452",
-        "https://picsum.photos/600/400?random=829",
-        "https://picsum.photos/600/400?random=348"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-07-11T21:43:50.259077",
-      "updatedAt": "2025-08-06T21:43:50.259077"
-    }
-  },
-  {
-    "id": "b663e63c-dbfa-44fa-85a5-e71fb4831b75",
-    "title": "Lenovo Smartwatch 20",
-    "description": "This is a high-quality smartwatch by Lenovo.",
-    "category": "Electronics",
-    "subCategory": "Home",
-    "brand": "Lenovo",
-    "sku": "LEN-1019",
-    "price": 770.4,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 731.88
-    },
-    "stock": 147,
-    "rating": {
-      "average": 4.4,
-      "count": 998
+      "count": 73
     },
     "media": {
       "thumbnail": "https://picsum.photos/200/200?random=2",
       "images": [
-        "https://picsum.photos/600/400?random=119",
-        "https://picsum.photos/600/400?random=749",
-        "https://picsum.photos/600/400?random=822"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-02-19T10:54:53.352230",
-      "updatedAt": "2025-04-04T10:54:53.352230"
-    }
-  },
-  {
-    "id": "4decb988-2e30-4017-8e0f-2e705a5c5547",
-    "title": "Asus Mouse 21",
-    "description": "This is a high-quality mouse by Asus.",
-    "category": "Accessories",
-    "subCategory": "Photography",
-    "brand": "Asus",
-    "sku": "ASU-1020",
-    "price": 1453.6,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 1162.88
-    },
-    "stock": 58,
-    "rating": {
-      "average": 3.1,
-      "count": 226
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=371",
-        "https://picsum.photos/600/400?random=781",
-        "https://picsum.photos/600/400?random=856"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-11-26T05:49:13.541601",
-      "updatedAt": "2025-01-22T05:49:13.541601"
-    }
-  },
-  {
-    "id": "2e1528c7-c3e9-4270-996e-1d90681182c5",
-    "title": "Logitech Mouse 22",
-    "description": "This is a high-quality mouse by Logitech.",
-    "category": "Appliances",
-    "subCategory": "Photography",
-    "brand": "Logitech",
-    "sku": "LOG-1021",
-    "price": 455.76,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 364.61
-    },
-    "stock": 47,
-    "rating": {
-      "average": 4.5,
-      "count": 883
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=323",
-        "https://picsum.photos/600/400?random=486",
-        "https://picsum.photos/600/400?random=961"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-07-13T20:12:21.819477",
-      "updatedAt": "2025-07-15T20:12:21.819477"
-    }
-  },
-  {
-    "id": "c89f8a5e-d99d-4298-b85e-14f460be8664",
-    "title": "Sony Monitor 23",
-    "description": "This is a high-quality monitor by Sony.",
-    "category": "Accessories",
-    "subCategory": "Gaming",
-    "brand": "Sony",
-    "sku": "SON-1022",
-    "price": 229.8,
-    "discount": {
-      "percentage": 25,
-      "priceAfterDiscount": 172.35
-    },
-    "stock": 167,
-    "rating": {
-      "average": 4.5,
-      "count": 218
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=871",
-        "https://picsum.photos/600/400?random=895",
-        "https://picsum.photos/600/400?random=31"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-08-25T13:10:15.965370",
-      "updatedAt": "2025-10-23T13:10:15.965370"
-    }
-  },
-  {
-    "id": "a742c180-e959-4035-b278-89d6b547df71",
-    "title": "Xiaomi Laptop 24",
-    "description": "This is a high-quality laptop by Xiaomi.",
-    "category": "Appliances",
-    "subCategory": "Gaming",
-    "brand": "Xiaomi",
-    "sku": "XIA-1023",
-    "price": 445.55,
-    "discount": {
-      "percentage": 30,
-      "priceAfterDiscount": 311.88
-    },
-    "stock": 158,
-    "rating": {
-      "average": 3.1,
-      "count": 853
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=612",
-        "https://picsum.photos/600/400?random=283",
-        "https://picsum.photos/600/400?random=42"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-05-13T21:32:42.994562",
-      "updatedAt": "2025-06-15T21:32:42.994562"
-    }
-  },
-  {
-    "id": "a7bf422f-8232-450a-a9ae-73210948f054",
-    "title": "Lenovo Laptop 25",
-    "description": "This is a high-quality laptop by Lenovo.",
-    "category": "Appliances",
-    "subCategory": "Office",
-    "brand": "Lenovo",
-    "sku": "LEN-1024",
-    "price": 636.99,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 509.59
-    },
-    "stock": 77,
-    "rating": {
-      "average": 2.8,
-      "count": 354
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=155",
-        "https://picsum.photos/600/400?random=475",
-        "https://picsum.photos/600/400?random=23"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-01-06T06:53:06.511720",
-      "updatedAt": "2025-04-10T06:53:06.511720"
-    }
-  },
-  {
-    "id": "87d992e6-dc77-4d6a-be7e-d9ca198f7df5",
-    "title": "Apple Laptop 26",
-    "description": "This is a high-quality laptop by Apple.",
-    "category": "Electronics",
-    "subCategory": "Office",
-    "brand": "Apple",
-    "sku": "APP-1025",
-    "price": 1686.88,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 1518.19
-    },
-    "stock": 173,
-    "rating": {
-      "average": 4.9,
-      "count": 487
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=17",
-        "https://picsum.photos/600/400?random=311",
-        "https://picsum.photos/600/400?random=572"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-01-26T22:44:30.749902",
-      "updatedAt": "2025-05-04T22:44:30.749902"
-    }
-  },
-  {
-    "id": "bb9bb91d-15c5-4a72-ae7a-b69596f94519",
-    "title": "Logitech Laptop 27",
-    "description": "This is a high-quality laptop by Logitech.",
-    "category": "Electronics",
-    "subCategory": "Gaming",
-    "brand": "Logitech",
-    "sku": "LOG-1026",
-    "price": 1726.53,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 1467.55
-    },
-    "stock": 73,
-    "rating": {
-      "average": 1.0,
-      "count": 618
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=531",
-        "https://picsum.photos/600/400?random=203",
-        "https://picsum.photos/600/400?random=819"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-11-09T10:50:53.648429",
-      "updatedAt": "2025-02-16T10:50:53.648429"
-    }
-  },
-  {
-    "id": "e9a1308b-1353-44aa-96a6-1abfa7ece468",
-    "title": "Xiaomi Monitor 28",
-    "description": "This is a high-quality monitor by Xiaomi.",
-    "category": "Appliances",
-    "subCategory": "Gaming",
-    "brand": "Xiaomi",
-    "sku": "XIA-1027",
-    "price": 344.65,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 310.19
-    },
-    "stock": 135,
-    "rating": {
-      "average": 2.8,
-      "count": 927
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=789",
-        "https://picsum.photos/600/400?random=764",
-        "https://picsum.photos/600/400?random=966"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-12-27T06:02:08.388113",
-      "updatedAt": "2025-04-06T06:02:08.388113"
-    }
-  },
-  {
-    "id": "c0e49b76-2811-4dd2-a979-319a818771da",
-    "title": "Xiaomi Laptop 29",
-    "description": "This is a high-quality laptop by Xiaomi.",
-    "category": "Electronics",
-    "subCategory": "Portable",
-    "brand": "Xiaomi",
-    "sku": "XIA-1028",
-    "price": 1338.46,
-    "discount": {
-      "percentage": 25,
-      "priceAfterDiscount": 1003.85
-    },
-    "stock": 133,
-    "rating": {
-      "average": 4.3,
-      "count": 192
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=219",
-        "https://picsum.photos/600/400?random=695",
-        "https://picsum.photos/600/400?random=574"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-06-04T00:57:03.092537",
-      "updatedAt": "2025-07-10T00:57:03.092537"
-    }
-  },
-  {
-    "id": "5724618d-6fc8-4598-a8b6-c553b283d7b9",
-    "title": "HP Tablet 30",
-    "description": "This is a high-quality tablet by HP.",
-    "category": "Appliances",
-    "subCategory": "Photography",
-    "brand": "HP",
-    "sku": "HP-1029",
-    "price": 1123.43,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 1067.26
-    },
-    "stock": 115,
-    "rating": {
-      "average": 4.3,
-      "count": 805
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=760",
-        "https://picsum.photos/600/400?random=102",
-        "https://picsum.photos/600/400?random=664"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-02-12T16:47:41.708292",
-      "updatedAt": "2025-05-06T16:47:41.708292"
-    }
-  },
-  {
-    "id": "269b3c3f-fc86-460d-b1b1-541cfec3f363",
-    "title": "Asus Headphones 31",
-    "description": "This is a high-quality headphones by Asus.",
-    "category": "Accessories",
-    "subCategory": "Office",
-    "brand": "Asus",
-    "sku": "ASU-1030",
-    "price": 644.42,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 547.76
-    },
-    "stock": 116,
-    "rating": {
-      "average": 3.3,
-      "count": 390
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=594",
-        "https://picsum.photos/600/400?random=624",
-        "https://picsum.photos/600/400?random=386"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-12-17T23:43:32.652714",
-      "updatedAt": "2025-01-24T23:43:32.652714"
-    }
-  },
-  {
-    "id": "2704a30c-439b-4d0d-b6dd-b789e1be42cf",
-    "title": "Dell Laptop 32",
-    "description": "This is a high-quality laptop by Dell.",
-    "category": "Appliances",
-    "subCategory": "Gaming",
-    "brand": "Dell",
-    "sku": "DEL-1031",
-    "price": 1701.26,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 1446.07
-    },
-    "stock": 113,
-    "rating": {
-      "average": 3.1,
-      "count": 64
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=874",
-        "https://picsum.photos/600/400?random=175",
-        "https://picsum.photos/600/400?random=278"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-05-10T15:33:20.292934",
-      "updatedAt": "2025-06-27T15:33:20.292934"
-    }
-  },
-  {
-    "id": "dbe47df8-1950-41ee-ba33-14069dec3f44",
-    "title": "HP Keyboard 33",
-    "description": "This is a high-quality keyboard by HP.",
-    "category": "Electronics",
-    "subCategory": "Gaming",
-    "brand": "HP",
-    "sku": "HP-1032",
-    "price": 786.62,
-    "discount": {
-      "percentage": 0,
-      "priceAfterDiscount": 786.62
-    },
-    "stock": 37,
-    "rating": {
-      "average": 2.2,
-      "count": 24
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=923",
-        "https://picsum.photos/600/400?random=346",
-        "https://picsum.photos/600/400?random=603"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-05-05T11:24:04.988756",
-      "updatedAt": "2025-06-03T11:24:04.988756"
-    }
-  },
-  {
-    "id": "9c1dfd1a-3fb2-40d8-91d0-a7ebf559067d",
-    "title": "Asus Phone 34",
-    "description": "This is a high-quality phone by Asus.",
-    "category": "Accessories",
-    "subCategory": "Gaming",
-    "brand": "Asus",
-    "sku": "ASU-1033",
-    "price": 1403.55,
-    "discount": {
-      "percentage": 25,
-      "priceAfterDiscount": 1052.66
-    },
-    "stock": 145,
-    "rating": {
-      "average": 3.3,
-      "count": 437
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=228",
-        "https://picsum.photos/600/400?random=286",
-        "https://picsum.photos/600/400?random=38"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-10-31T13:38:24.121686",
-      "updatedAt": "2024-11-23T13:38:24.121686"
-    }
-  },
-  {
-    "id": "dd28d1d8-1bf3-453b-a24d-dc7b4147d124",
-    "title": "Samsung Smartwatch 35",
-    "description": "This is a high-quality smartwatch by Samsung.",
-    "category": "Electronics",
-    "subCategory": "Portable",
-    "brand": "Samsung",
-    "sku": "SAM-1034",
-    "price": 812.5,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 771.88
-    },
-    "stock": 172,
-    "rating": {
-      "average": 2.5,
-      "count": 515
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=382",
-        "https://picsum.photos/600/400?random=227",
-        "https://picsum.photos/600/400?random=859"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-06-20T02:42:42.690025",
-      "updatedAt": "2025-09-26T02:42:42.690025"
-    }
-  },
-  {
-    "id": "958f7fae-f0ae-4a46-bc78-bf919558f4bf",
-    "title": "Samsung Smartwatch 36",
-    "description": "This is a high-quality smartwatch by Samsung.",
-    "category": "Accessories",
-    "subCategory": "Gaming",
-    "brand": "Samsung",
-    "sku": "SAM-1035",
-    "price": 1946.84,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 1557.47
-    },
-    "stock": 85,
-    "rating": {
-      "average": 2.7,
-      "count": 329
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=639",
-        "https://picsum.photos/600/400?random=209",
-        "https://picsum.photos/600/400?random=457"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-01-31T17:59:57.621052",
-      "updatedAt": "2025-03-11T17:59:57.621052"
-    }
-  },
-  {
-    "id": "d6e5fa3c-d4cd-475a-8667-bd45baa45bee",
-    "title": "Apple Phone 37",
-    "description": "This is a high-quality phone by Apple.",
-    "category": "Electronics",
-    "subCategory": "Gaming",
-    "brand": "Apple",
-    "sku": "APP-1036",
-    "price": 1357.81,
-    "discount": {
-      "percentage": 0,
-      "priceAfterDiscount": 1357.81
-    },
-    "stock": 63,
-    "rating": {
-      "average": 3.2,
-      "count": 26
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=413",
-        "https://picsum.photos/600/400?random=467",
-        "https://picsum.photos/600/400?random=763"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-01-11T12:15:47.802575",
-      "updatedAt": "2025-03-09T12:15:47.802575"
-    }
-  },
-  {
-    "id": "a7fb9ec4-d3e8-4780-8b95-65e31b50fa91",
-    "title": "Sony Keyboard 38",
-    "description": "This is a high-quality keyboard by Sony.",
-    "category": "Accessories",
-    "subCategory": "Gaming",
-    "brand": "Sony",
-    "sku": "SON-1037",
-    "price": 139.92,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 132.92
-    },
-    "stock": 172,
-    "rating": {
-      "average": 2.4,
-      "count": 14
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=185",
-        "https://picsum.photos/600/400?random=868",
-        "https://picsum.photos/600/400?random=123"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-08-09T05:49:02.558213",
-      "updatedAt": "2025-08-14T05:49:02.558213"
-    }
-  },
-  {
-    "id": "ca66f527-2737-4593-8ab8-3995307a1883",
-    "title": "Canon Mouse 39",
-    "description": "This is a high-quality mouse by Canon.",
-    "category": "Accessories",
-    "subCategory": "Gaming",
-    "brand": "Canon",
-    "sku": "CAN-1038",
-    "price": 408.82,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 347.5
-    },
-    "stock": 101,
-    "rating": {
-      "average": 4.9,
-      "count": 646
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=764",
-        "https://picsum.photos/600/400?random=511",
-        "https://picsum.photos/600/400?random=57"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-07-01T11:46:02.420080",
-      "updatedAt": "2025-09-24T11:46:02.420080"
-    }
-  },
-  {
-    "id": "486c4e34-e5c8-47ad-ab49-4e75434c18d8",
-    "title": "Dell Printer 40",
-    "description": "This is a high-quality printer by Dell.",
-    "category": "Accessories",
-    "subCategory": "Portable",
-    "brand": "Dell",
-    "sku": "DEL-1039",
-    "price": 1853.75,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 1575.69
-    },
-    "stock": 95,
-    "rating": {
-      "average": 2.6,
-      "count": 234
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=391",
-        "https://picsum.photos/600/400?random=721",
-        "https://picsum.photos/600/400?random=943"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-04-18T10:14:07.621363",
-      "updatedAt": "2025-06-14T10:14:07.621363"
-    }
-  },
-  {
-    "id": "9b1be6fa-b548-4e68-9077-fe2c848253ec",
-    "title": "Dell Tablet 41",
-    "description": "This is a high-quality tablet by Dell.",
-    "category": "Appliances",
-    "subCategory": "Photography",
-    "brand": "Dell",
-    "sku": "DEL-1040",
-    "price": 606.37,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 545.73
-    },
-    "stock": 30,
-    "rating": {
-      "average": 2.5,
-      "count": 347
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=709",
-        "https://picsum.photos/600/400?random=535",
-        "https://picsum.photos/600/400?random=484"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-05-10T05:12:12.267975",
-      "updatedAt": "2025-07-21T05:12:12.267975"
-    }
-  },
-  {
-    "id": "c4ea6662-a8e9-4528-971e-b7c9060dd73e",
-    "title": "Asus Laptop 42",
-    "description": "This is a high-quality laptop by Asus.",
-    "category": "Electronics",
-    "subCategory": "Gaming",
-    "brand": "Asus",
-    "sku": "ASU-1041",
-    "price": 1694.46,
-    "discount": {
-      "percentage": 30,
-      "priceAfterDiscount": 1186.12
-    },
-    "stock": 95,
-    "rating": {
-      "average": 4.8,
-      "count": 409
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=420",
-        "https://picsum.photos/600/400?random=333",
-        "https://picsum.photos/600/400?random=822"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-10-01T21:39:59.195759",
-      "updatedAt": "2025-01-03T21:39:59.195759"
-    }
-  },
-  {
-    "id": "dd4f8ec7-1677-40d0-813e-5a155bab8efc",
-    "title": "Lenovo Tablet 43",
-    "description": "This is a high-quality tablet by Lenovo.",
-    "category": "Appliances",
-    "subCategory": "Photography",
-    "brand": "Lenovo",
-    "sku": "LEN-1042",
-    "price": 1378.13,
-    "discount": {
-      "percentage": 30,
-      "priceAfterDiscount": 964.69
-    },
-    "stock": 118,
-    "rating": {
-      "average": 3.5,
-      "count": 229
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=938",
-        "https://picsum.photos/600/400?random=403",
-        "https://picsum.photos/600/400?random=289"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-11-14T11:21:36.879195",
-      "updatedAt": "2025-01-01T11:21:36.879195"
-    }
-  },
-  {
-    "id": "fedfd5d8-e8f0-4e6c-bc0b-321e879c16ac",
-    "title": "Apple Laptop 44",
-    "description": "This is a high-quality laptop by Apple.",
-    "category": "Electronics",
-    "subCategory": "Gaming",
-    "brand": "Apple",
-    "sku": "APP-1043",
-    "price": 109.55,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 93.12
-    },
-    "stock": 104,
-    "rating": {
-      "average": 4.9,
-      "count": 378
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=619",
-        "https://picsum.photos/600/400?random=397",
-        "https://picsum.photos/600/400?random=940"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-05-04T10:07:57.480317",
-      "updatedAt": "2025-07-13T10:07:57.480317"
-    }
-  },
-  {
-    "id": "87a3185e-6e25-4d4b-8aa1-7f1d1bd8713a",
-    "title": "Sony Mouse 45",
-    "description": "This is a high-quality mouse by Sony.",
-    "category": "Appliances",
-    "subCategory": "Gaming",
-    "brand": "Sony",
-    "sku": "SON-1044",
-    "price": 319.27,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 255.42
-    },
-    "stock": 105,
-    "rating": {
-      "average": 3.3,
-      "count": 273
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=842",
-        "https://picsum.photos/600/400?random=558",
-        "https://picsum.photos/600/400?random=195"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-12-11T07:45:09.460398",
-      "updatedAt": "2025-02-28T07:45:09.460398"
-    }
-  },
-  {
-    "id": "69cf6ba4-534d-46f9-b047-b8094b4336bc",
-    "title": "Asus Smartwatch 46",
-    "description": "This is a high-quality smartwatch by Asus.",
-    "category": "Appliances",
-    "subCategory": "Home",
-    "brand": "Asus",
-    "sku": "ASU-1045",
-    "price": 1658.4,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 1492.56
-    },
-    "stock": 78,
-    "rating": {
-      "average": 4.8,
-      "count": 535
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=674",
-        "https://picsum.photos/600/400?random=500",
-        "https://picsum.photos/600/400?random=764"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-01-28T22:23:44.519785",
-      "updatedAt": "2025-02-18T22:23:44.519785"
-    }
-  },
-  {
-    "id": "9a134de0-232c-433c-910c-c36e06be8849",
-    "title": "Asus Smartwatch 47",
-    "description": "This is a high-quality smartwatch by Asus.",
-    "category": "Appliances",
-    "subCategory": "Portable",
-    "brand": "Asus",
-    "sku": "ASU-1046",
-    "price": 1191.4,
-    "discount": {
-      "percentage": 25,
-      "priceAfterDiscount": 893.55
-    },
-    "stock": 178,
-    "rating": {
-      "average": 2.5,
-      "count": 95
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=490",
-        "https://picsum.photos/600/400?random=268",
-        "https://picsum.photos/600/400?random=459"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-02-27T09:46:42.362377",
-      "updatedAt": "2025-04-10T09:46:42.362377"
-    }
-  },
-  {
-    "id": "5882e5a2-11f1-4220-89e3-5dbd47f8ead3",
-    "title": "Logitech Phone 48",
-    "description": "This is a high-quality phone by Logitech.",
-    "category": "Appliances",
-    "subCategory": "Portable",
-    "brand": "Logitech",
-    "sku": "LOG-1047",
-    "price": 1020.94,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 816.75
-    },
-    "stock": 35,
-    "rating": {
-      "average": 2.3,
-      "count": 445
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=382",
-        "https://picsum.photos/600/400?random=877",
-        "https://picsum.photos/600/400?random=319"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-10-18T10:33:33.792603",
-      "updatedAt": "2024-11-02T10:33:33.792603"
-    }
-  },
-  {
-    "id": "1938174b-88a1-40bd-b22c-217865eba875",
-    "title": "Apple Phone 49",
-    "description": "This is a high-quality phone by Apple.",
-    "category": "Electronics",
-    "subCategory": "Photography",
-    "brand": "Apple",
-    "sku": "APP-1048",
-    "price": 1783.46,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 1426.77
-    },
-    "stock": 6,
-    "rating": {
-      "average": 4.9,
-      "count": 199
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=954",
-        "https://picsum.photos/600/400?random=595",
-        "https://picsum.photos/600/400?random=330"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-05-09T17:33:04.080550",
-      "updatedAt": "2025-07-03T17:33:04.080550"
-    }
-  },
-  {
-    "id": "ae76aec2-b4d2-40c7-8492-080691db7f15",
-    "title": "Canon Smartwatch 50",
-    "description": "This is a high-quality smartwatch by Canon.",
-    "category": "Electronics",
-    "subCategory": "Portable",
-    "brand": "Canon",
-    "sku": "CAN-1049",
-    "price": 1035.31,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 931.78
-    },
-    "stock": 191,
-    "rating": {
-      "average": 1.1,
-      "count": 171
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=962",
-        "https://picsum.photos/600/400?random=779",
-        "https://picsum.photos/600/400?random=79"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-06-21T05:23:42.996280",
-      "updatedAt": "2025-07-18T05:23:42.996280"
-    }
-  },
-  {
-    "id": "b19f2ae0-a663-4345-8e39-b54c19bee5c5",
-    "title": "Lenovo Tablet 51",
-    "description": "This is a high-quality tablet by Lenovo.",
-    "category": "Appliances",
-    "subCategory": "Gaming",
-    "brand": "Lenovo",
-    "sku": "LEN-1050",
-    "price": 466.91,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 373.53
-    },
-    "stock": 76,
-    "rating": {
-      "average": 4.4,
-      "count": 62
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=156",
-        "https://picsum.photos/600/400?random=339",
-        "https://picsum.photos/600/400?random=459"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-03-31T01:10:23.230743",
-      "updatedAt": "2025-06-27T01:10:23.230743"
-    }
-  },
-  {
-    "id": "795bea2f-3379-4235-9768-e758738957ea",
-    "title": "Apple Mouse 52",
-    "description": "This is a high-quality mouse by Apple.",
-    "category": "Appliances",
-    "subCategory": "Portable",
-    "brand": "Apple",
-    "sku": "APP-1051",
-    "price": 829.06,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 746.15
-    },
-    "stock": 106,
-    "rating": {
-      "average": 4.1,
-      "count": 246
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=996",
-        "https://picsum.photos/600/400?random=979",
-        "https://picsum.photos/600/400?random=908"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-09-01T08:38:23.069893",
-      "updatedAt": "2025-11-23T08:38:23.069893"
-    }
-  },
-  {
-    "id": "7c0b549a-ae4c-4894-b8c4-ef3abb9d502f",
-    "title": "Asus Tablet 53",
-    "description": "This is a high-quality tablet by Asus.",
-    "category": "Electronics",
-    "subCategory": "Photography",
-    "brand": "Asus",
-    "sku": "ASU-1052",
-    "price": 302.85,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 257.42
-    },
-    "stock": 38,
-    "rating": {
-      "average": 1.6,
-      "count": 129
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=483",
-        "https://picsum.photos/600/400?random=78",
-        "https://picsum.photos/600/400?random=966"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-12-26T04:07:01.483539",
-      "updatedAt": "2025-02-26T04:07:01.483539"
-    }
-  },
-  {
-    "id": "73839053-48f2-45b8-89fc-77fb3c4adda0",
-    "title": "Samsung Camera 54",
-    "description": "This is a high-quality camera by Samsung.",
-    "category": "Electronics",
-    "subCategory": "Portable",
-    "brand": "Samsung",
-    "sku": "SAM-1053",
-    "price": 1219.49,
-    "discount": {
-      "percentage": 30,
-      "priceAfterDiscount": 853.64
-    },
-    "stock": 76,
-    "rating": {
-      "average": 2.2,
-      "count": 415
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=107",
-        "https://picsum.photos/600/400?random=497",
-        "https://picsum.photos/600/400?random=314"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-02-26T08:37:43.393363",
-      "updatedAt": "2025-04-24T08:37:43.393363"
-    }
-  },
-  {
-    "id": "7c31bec3-8932-485b-8fbb-cdd7a0036e7c",
-    "title": "Sony Monitor 55",
-    "description": "This is a high-quality monitor by Sony.",
-    "category": "Electronics",
-    "subCategory": "Gaming",
-    "brand": "Sony",
-    "sku": "SON-1054",
-    "price": 922.24,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 783.9
-    },
-    "stock": 89,
-    "rating": {
-      "average": 1.4,
-      "count": 734
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=114",
-        "https://picsum.photos/600/400?random=689",
-        "https://picsum.photos/600/400?random=466"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-10-24T00:14:50.502680",
-      "updatedAt": "2025-01-30T00:14:50.502680"
-    }
-  },
-  {
-    "id": "0991350f-f566-4d7f-85cc-ce90aab32e77",
-    "title": "Xiaomi Keyboard 56",
-    "description": "This is a high-quality keyboard by Xiaomi.",
-    "category": "Accessories",
-    "subCategory": "Portable",
-    "brand": "Xiaomi",
-    "sku": "XIA-1055",
-    "price": 1083.83,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 921.26
-    },
-    "stock": 31,
-    "rating": {
-      "average": 4.0,
-      "count": 373
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=634",
-        "https://picsum.photos/600/400?random=435",
-        "https://picsum.photos/600/400?random=931"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-09-19T16:00:28.230165",
-      "updatedAt": "2024-09-26T16:00:28.230165"
-    }
-  },
-  {
-    "id": "87e97f5c-a036-4355-b8ec-b6fc5772fc7c",
-    "title": "Logitech Laptop 57",
-    "description": "This is a high-quality laptop by Logitech.",
-    "category": "Accessories",
-    "subCategory": "Office",
-    "brand": "Logitech",
-    "sku": "LOG-1056",
-    "price": 903.28,
-    "discount": {
-      "percentage": 0,
-      "priceAfterDiscount": 903.28
-    },
-    "stock": 194,
-    "rating": {
-      "average": 1.9,
-      "count": 261
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=109",
+        "https://picsum.photos/600/400?random=6",
         "https://picsum.photos/600/400?random=7",
-        "https://picsum.photos/600/400?random=668"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-12-29T07:19:52.143317",
-      "updatedAt": "2025-03-07T07:19:52.143317"
-    }
-  },
-  {
-    "id": "a90d1168-66df-4468-a461-c5e980b4e925",
-    "title": "Lenovo Smartwatch 58",
-    "description": "This is a high-quality smartwatch by Lenovo.",
-    "category": "Appliances",
-    "subCategory": "Office",
-    "brand": "Lenovo",
-    "sku": "LEN-1057",
-    "price": 1365.48,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 1160.66
-    },
-    "stock": 119,
-    "rating": {
-      "average": 1.7,
-      "count": 631
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=763",
-        "https://picsum.photos/600/400?random=59",
-        "https://picsum.photos/600/400?random=93"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-08-23T11:17:19.840812",
-      "updatedAt": "2025-10-26T11:17:19.840812"
-    }
-  },
-  {
-    "id": "28992927-78bc-4d98-9ea0-96f4a17b49c9",
-    "title": "Samsung Camera 59",
-    "description": "This is a high-quality camera by Samsung.",
-    "category": "Accessories",
-    "subCategory": "Office",
-    "brand": "Samsung",
-    "sku": "SAM-1058",
-    "price": 1568.63,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 1490.2
-    },
-    "stock": 119,
-    "rating": {
-      "average": 2.9,
-      "count": 395
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=569",
-        "https://picsum.photos/600/400?random=240",
         "https://picsum.photos/600/400?random=8"
       ]
     },
     "isFeatured": true,
     "timestamps": {
-      "createdAt": "2025-04-11T13:16:25.366783",
-      "updatedAt": "2025-04-15T13:16:25.366783"
+      "createdAt": "2024-09-14T09:40:35",
+      "updatedAt": "2024-10-01T09:40:35"
     }
   },
   {
-    "id": "730d1a7f-67a7-492e-b634-1f804f9a398f",
-    "title": "Canon Phone 60",
-    "description": "This is a high-quality phone by Canon.",
-    "category": "Electronics",
-    "subCategory": "Home",
-    "brand": "Canon",
-    "sku": "CAN-1059",
-    "price": 207.05,
+    "id": "6c77ed5f-147c-446c-8384-060abe7675c5",
+    "barcode": "773633",
+    "title": "Levi's kids Jackets",
+    "name": "Levi's kids Jackets",
+    "description": "High-quality kids jackets from Levi's. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "kids Jackets",
+    "brand": "Levi's",
+    "sku": "LEV-7817",
+    "price": 565.07,
     "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 175.99
+      "percentage": 13,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 491.61
     },
-    "stock": 72,
+    "quantity": 14,
+    "stock": 30,
     "rating": {
-      "average": 2.0,
+      "average": 1.8,
+      "count": 267
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "images": [
+        "https://picsum.photos/600/400?random=9",
+        "https://picsum.photos/600/400?random=10",
+        "https://picsum.photos/600/400?random=11"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-09-14T02:58:47",
+      "updatedAt": "2025-10-03T02:58:47"
+    }
+  },
+  {
+    "id": "bc7d02ac-37bb-456d-9017-2b0a4f476431",
+    "barcode": "337690",
+    "title": "Louis Vuitton Shorts",
+    "name": "Louis Vuitton Shorts",
+    "description": "High-quality shorts from Louis Vuitton. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Shorts",
+    "brand": "Louis Vuitton",
+    "sku": "LOU-4625",
+    "price": 1134.76,
+    "discount": {
+      "percentage": 5,
+      "type": "percentage",
+      "priceAfterDiscount": 1078.02
+    },
+    "quantity": 96,
+    "stock": 133,
+    "rating": {
+      "average": 2.1,
+      "count": 549
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "images": [
+        "https://picsum.photos/600/400?random=12",
+        "https://picsum.photos/600/400?random=13",
+        "https://picsum.photos/600/400?random=14"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-09-24T10:55:47",
+      "updatedAt": "2026-03-03T10:55:47"
+    }
+  },
+  {
+    "id": "6460c426-e566-4550-8cad-18899527cb6e",
+    "barcode": "617230",
+    "title": "Louis Vuitton Scarves",
+    "name": "Louis Vuitton Scarves",
+    "description": "High-quality scarves from Louis Vuitton. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Scarves",
+    "brand": "Louis Vuitton",
+    "sku": "LOU-1203",
+    "price": 764.75,
+    "discount": {
+      "percentage": 14,
+      "type": "percentage",
+      "priceAfterDiscount": 657.68
+    },
+    "quantity": 58,
+    "stock": 15,
+    "rating": {
+      "average": 1.4,
+      "count": 197
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=5",
+      "images": [
+        "https://picsum.photos/600/400?random=15",
+        "https://picsum.photos/600/400?random=16",
+        "https://picsum.photos/600/400?random=17"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-03-18T10:30:23",
+      "updatedAt": "2025-10-01T10:30:23"
+    }
+  },
+  {
+    "id": "96c83e97-6a00-43b0-ae97-97f9887e9d88",
+    "barcode": "593971",
+    "title": "The North Face Tops",
+    "name": "The North Face Tops",
+    "description": "High-quality tops from The North Face. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Tops",
+    "brand": "The North Face",
+    "sku": "THE-6447",
+    "price": 656.71,
+    "discount": {
+      "percentage": 7,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 610.74
+    },
+    "quantity": 14,
+    "stock": 483,
+    "rating": {
+      "average": 4.1,
+      "count": 579
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=6",
+      "images": [
+        "https://picsum.photos/600/400?random=18",
+        "https://picsum.photos/600/400?random=19",
+        "https://picsum.photos/600/400?random=20"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-01-12T20:54:39",
+      "updatedAt": "2024-01-21T20:54:39"
+    }
+  },
+  {
+    "id": "4531c667-9864-4e9b-9865-31440055cd60",
+    "barcode": "116103",
+    "title": "Reebok Watches",
+    "name": "Reebok Watches",
+    "description": "High-quality watches from Reebok. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Watches",
+    "brand": "Reebok",
+    "sku": "REE-2450",
+    "price": 1352.99,
+    "discount": {
+      "percentage": 10,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 1217.69
+    },
+    "quantity": 49,
+    "stock": 453,
+    "rating": {
+      "average": 1.7,
       "count": 28
     },
     "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "thumbnail": "https://picsum.photos/200/200?random=7",
       "images": [
-        "https://picsum.photos/600/400?random=652",
-        "https://picsum.photos/600/400?random=962",
-        "https://picsum.photos/600/400?random=738"
+        "https://picsum.photos/600/400?random=21",
+        "https://picsum.photos/600/400?random=22",
+        "https://picsum.photos/600/400?random=23"
       ]
     },
-    "isFeatured": true,
+    "isFeatured": false,
     "timestamps": {
-      "createdAt": "2024-10-29T05:28:27.962545",
-      "updatedAt": "2024-11-02T05:28:27.962545"
+      "createdAt": "2025-08-14T04:16:51",
+      "updatedAt": "2025-08-23T04:16:51"
     }
   },
   {
-    "id": "3e99232d-3d3f-47de-8886-e491e7943a78",
-    "title": "Sony Keyboard 61",
-    "description": "This is a high-quality keyboard by Sony.",
-    "category": "Electronics",
-    "subCategory": "Gaming",
-    "brand": "Sony",
-    "sku": "SON-1060",
-    "price": 1330.08,
+    "id": "6b6b1ffa-812e-491d-bc6c-e98478de4c40",
+    "barcode": "798799",
+    "title": "Fila Heels",
+    "name": "Fila Heels",
+    "description": "High-quality heels from Fila. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Heels",
+    "brand": "Fila",
+    "sku": "FIL-4324",
+    "price": 1405.86,
     "discount": {
       "percentage": 20,
-      "priceAfterDiscount": 1064.06
+      "type": "bundle-discount",
+      "priceAfterDiscount": 1124.69
     },
-    "stock": 25,
+    "quantity": 75,
+    "stock": 251,
     "rating": {
-      "average": 1.9,
-      "count": 310
+      "average": 1.0,
+      "count": 859
     },
     "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "thumbnail": "https://picsum.photos/200/200?random=8",
       "images": [
-        "https://picsum.photos/600/400?random=136",
-        "https://picsum.photos/600/400?random=156",
-        "https://picsum.photos/600/400?random=331"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-11-19T12:01:30.084453",
-      "updatedAt": "2024-11-22T12:01:30.084453"
-    }
-  },
-  {
-    "id": "83f592d0-8f69-4116-909a-3fbb0d2bc43f",
-    "title": "Apple Monitor 62",
-    "description": "This is a high-quality monitor by Apple.",
-    "category": "Electronics",
-    "subCategory": "Portable",
-    "brand": "Apple",
-    "sku": "APP-1061",
-    "price": 765.69,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 612.55
-    },
-    "stock": 124,
-    "rating": {
-      "average": 4.0,
-      "count": 406
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=74",
-        "https://picsum.photos/600/400?random=848",
-        "https://picsum.photos/600/400?random=114"
+        "https://picsum.photos/600/400?random=24",
+        "https://picsum.photos/600/400?random=25",
+        "https://picsum.photos/600/400?random=26"
       ]
     },
     "isFeatured": true,
     "timestamps": {
-      "createdAt": "2025-03-08T21:26:18.714130",
-      "updatedAt": "2025-06-05T21:26:18.714130"
+      "createdAt": "2024-01-20T04:01:41",
+      "updatedAt": "2024-07-31T04:01:41"
     }
   },
   {
-    "id": "e0ef0bac-d3e8-4cc4-9294-9f44925754a5",
-    "title": "Logitech Monitor 63",
-    "description": "This is a high-quality monitor by Logitech.",
-    "category": "Appliances",
-    "subCategory": "Office",
-    "brand": "Logitech",
-    "sku": "LOG-1062",
-    "price": 704.73,
+    "id": "1158ffcf-7ab8-4270-a95e-bc3c4c9ba432",
+    "barcode": "629846",
+    "title": "Reebok Skirts",
+    "name": "Reebok Skirts",
+    "description": "High-quality skirts from Reebok. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Skirts",
+    "brand": "Reebok",
+    "sku": "REE-6019",
+    "price": 354.45,
     "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 599.02
+      "percentage": 12,
+      "type": "percentage",
+      "priceAfterDiscount": 311.92
     },
-    "stock": 95,
-    "rating": {
-      "average": 2.3,
-      "count": 454
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=578",
-        "https://picsum.photos/600/400?random=694",
-        "https://picsum.photos/600/400?random=554"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-10-30T20:04:54.275757",
-      "updatedAt": "2024-12-21T20:04:54.275757"
-    }
-  },
-  {
-    "id": "049e6a72-a04e-48d2-9ed4-18c38fc9991b",
-    "title": "Dell Laptop 64",
-    "description": "This is a high-quality laptop by Dell.",
-    "category": "Electronics",
-    "subCategory": "Portable",
-    "brand": "Dell",
-    "sku": "DEL-1063",
-    "price": 552.12,
-    "discount": {
-      "percentage": 30,
-      "priceAfterDiscount": 386.48
-    },
-    "stock": 13,
-    "rating": {
-      "average": 4.5,
-      "count": 691
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=809",
-        "https://picsum.photos/600/400?random=539",
-        "https://picsum.photos/600/400?random=608"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-09-02T00:35:22.723409",
-      "updatedAt": "2025-12-05T00:35:22.723409"
-    }
-  },
-  {
-    "id": "28eab3a7-b884-4254-8ce6-d89d511d342d",
-    "title": "Logitech Laptop 65",
-    "description": "This is a high-quality laptop by Logitech.",
-    "category": "Appliances",
-    "subCategory": "Gaming",
-    "brand": "Logitech",
-    "sku": "LOG-1064",
-    "price": 193.99,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 164.89
-    },
-    "stock": 144,
-    "rating": {
-      "average": 2.8,
-      "count": 749
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=634",
-        "https://picsum.photos/600/400?random=229",
-        "https://picsum.photos/600/400?random=736"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-06-12T21:09:43.028995",
-      "updatedAt": "2025-08-18T21:09:43.028995"
-    }
-  },
-  {
-    "id": "a31ffcff-c835-459c-bd63-faf407843a72",
-    "title": "Logitech Camera 66",
-    "description": "This is a high-quality camera by Logitech.",
-    "category": "Appliances",
-    "subCategory": "Gaming",
-    "brand": "Logitech",
-    "sku": "LOG-1065",
-    "price": 94.89,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 80.66
-    },
-    "stock": 41,
-    "rating": {
-      "average": 2.3,
-      "count": 902
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=337",
-        "https://picsum.photos/600/400?random=86",
-        "https://picsum.photos/600/400?random=248"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-07-06T20:28:33.948125",
-      "updatedAt": "2025-10-05T20:28:33.948125"
-    }
-  },
-  {
-    "id": "e994cab3-b91b-4789-a237-07829efadea1",
-    "title": "Sony Phone 67",
-    "description": "This is a high-quality phone by Sony.",
-    "category": "Electronics",
-    "subCategory": "Photography",
-    "brand": "Sony",
-    "sku": "SON-1066",
-    "price": 550.77,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 523.23
-    },
-    "stock": 79,
-    "rating": {
-      "average": 1.4,
-      "count": 301
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=941",
-        "https://picsum.photos/600/400?random=264",
-        "https://picsum.photos/600/400?random=40"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-05-03T09:59:11.859538",
-      "updatedAt": "2025-07-24T09:59:11.859538"
-    }
-  },
-  {
-    "id": "633cca24-bb04-48a8-ab77-b595825d7409",
-    "title": "Canon Keyboard 68",
-    "description": "This is a high-quality keyboard by Canon.",
-    "category": "Appliances",
-    "subCategory": "Home",
-    "brand": "Canon",
-    "sku": "CAN-1067",
-    "price": 662.43,
-    "discount": {
-      "percentage": 30,
-      "priceAfterDiscount": 463.7
-    },
-    "stock": 177,
-    "rating": {
-      "average": 1.9,
-      "count": 857
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
-      "images": [
-        "https://picsum.photos/600/400?random=628",
-        "https://picsum.photos/600/400?random=708",
-        "https://picsum.photos/600/400?random=402"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-06-26T01:10:38.403789",
-      "updatedAt": "2025-07-08T01:10:38.403789"
-    }
-  },
-  {
-    "id": "ff2a110b-4701-4d9c-8b6a-cf0e2d0ae69c",
-    "title": "Dell Mouse 69",
-    "description": "This is a high-quality mouse by Dell.",
-    "category": "Accessories",
-    "subCategory": "Portable",
-    "brand": "Dell",
-    "sku": "DEL-1068",
-    "price": 537.95,
-    "discount": {
-      "percentage": 5,
-      "priceAfterDiscount": 511.05
-    },
-    "stock": 77,
-    "rating": {
-      "average": 1.8,
-      "count": 366
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=145",
-        "https://picsum.photos/600/400?random=37",
-        "https://picsum.photos/600/400?random=712"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-10-14T12:20:46.686764",
-      "updatedAt": "2025-01-14T12:20:46.686764"
-    }
-  },
-  {
-    "id": "eb736fc3-6278-4487-aa3e-fa8746b7d064",
-    "title": "HP Phone 70",
-    "description": "This is a high-quality phone by HP.",
-    "category": "Electronics",
-    "subCategory": "Home",
-    "brand": "HP",
-    "sku": "HP-1069",
-    "price": 1501.11,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 1275.94
-    },
-    "stock": 34,
-    "rating": {
-      "average": 2.6,
-      "count": 308
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=346",
-        "https://picsum.photos/600/400?random=992",
-        "https://picsum.photos/600/400?random=635"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-01-13T22:54:11.735754",
-      "updatedAt": "2025-04-17T22:54:11.735754"
-    }
-  },
-  {
-    "id": "868f1d73-115e-42b5-b449-6cd66168e795",
-    "title": "Sony Laptop 71",
-    "description": "This is a high-quality laptop by Sony.",
-    "category": "Electronics",
-    "subCategory": "Home",
-    "brand": "Sony",
-    "sku": "SON-1070",
-    "price": 1711.45,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 1454.73
-    },
-    "stock": 66,
-    "rating": {
-      "average": 3.6,
-      "count": 442
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=528",
-        "https://picsum.photos/600/400?random=86",
-        "https://picsum.photos/600/400?random=347"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-03-21T06:20:14.390422",
-      "updatedAt": "2025-04-17T06:20:14.390422"
-    }
-  },
-  {
-    "id": "18328436-2e96-416c-a5d3-b92237661014",
-    "title": "Sony Smartwatch 72",
-    "description": "This is a high-quality smartwatch by Sony.",
-    "category": "Appliances",
-    "subCategory": "Home",
-    "brand": "Sony",
-    "sku": "SON-1071",
-    "price": 1275.9,
-    "discount": {
-      "percentage": 30,
-      "priceAfterDiscount": 893.13
-    },
-    "stock": 69,
-    "rating": {
-      "average": 3.7,
-      "count": 245
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=971",
-        "https://picsum.photos/600/400?random=501",
-        "https://picsum.photos/600/400?random=710"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-03-04T09:27:37.098765",
-      "updatedAt": "2025-03-06T09:27:37.098765"
-    }
-  },
-  {
-    "id": "a60ecb7f-bfe3-4ff3-96a8-86fe61778637",
-    "title": "Samsung Smartwatch 73",
-    "description": "This is a high-quality smartwatch by Samsung.",
-    "category": "Appliances",
-    "subCategory": "Photography",
-    "brand": "Samsung",
-    "sku": "SAM-1072",
-    "price": 518.13,
-    "discount": {
-      "percentage": 10,
-      "priceAfterDiscount": 466.32
-    },
-    "stock": 103,
-    "rating": {
-      "average": 2.1,
-      "count": 332
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=941",
-        "https://picsum.photos/600/400?random=407",
-        "https://picsum.photos/600/400?random=134"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-10-06T23:44:30.939638",
-      "updatedAt": "2024-12-31T23:44:30.939638"
-    }
-  },
-  {
-    "id": "fa3799f5-9dbf-46a6-a04a-c69d08932015",
-    "title": "Samsung Smartwatch 74",
-    "description": "This is a high-quality smartwatch by Samsung.",
-    "category": "Accessories",
-    "subCategory": "Home",
-    "brand": "Samsung",
-    "sku": "SAM-1073",
-    "price": 1644.16,
-    "discount": {
-      "percentage": 25,
-      "priceAfterDiscount": 1233.12
-    },
-    "stock": 43,
-    "rating": {
-      "average": 4.2,
-      "count": 25
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
-      "images": [
-        "https://picsum.photos/600/400?random=948",
-        "https://picsum.photos/600/400?random=6",
-        "https://picsum.photos/600/400?random=74"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2024-12-06T10:45:59.286403",
-      "updatedAt": "2024-12-11T10:45:59.286403"
-    }
-  },
-  {
-    "id": "9d6a02a9-0acd-4194-a140-1bb5fed9740c",
-    "title": "Canon Printer 75",
-    "description": "This is a high-quality printer by Canon.",
-    "category": "Accessories",
-    "subCategory": "Office",
-    "brand": "Canon",
-    "sku": "CAN-1074",
-    "price": 1900.07,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 1520.06
-    },
-    "stock": 188,
-    "rating": {
-      "average": 1.9,
-      "count": 416
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=5",
-      "images": [
-        "https://picsum.photos/600/400?random=826",
-        "https://picsum.photos/600/400?random=902",
-        "https://picsum.photos/600/400?random=55"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2024-11-05T22:33:16.708558",
-      "updatedAt": "2025-02-11T22:33:16.708558"
-    }
-  },
-  {
-    "id": "3220a5e6-8ac9-4238-ac92-afdcb9cfa22c",
-    "title": "Canon Camera 76",
-    "description": "This is a high-quality camera by Canon.",
-    "category": "Accessories",
-    "subCategory": "Home",
-    "brand": "Canon",
-    "sku": "CAN-1075",
-    "price": 1104.85,
-    "discount": {
-      "percentage": 15,
-      "priceAfterDiscount": 939.12
-    },
-    "stock": 17,
-    "rating": {
-      "average": 2.8,
-      "count": 106
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
-      "images": [
-        "https://picsum.photos/600/400?random=81",
-        "https://picsum.photos/600/400?random=993",
-        "https://picsum.photos/600/400?random=981"
-      ]
-    },
-    "isFeatured": true,
-    "timestamps": {
-      "createdAt": "2025-02-21T15:59:50.631073",
-      "updatedAt": "2025-04-27T15:59:50.631073"
-    }
-  },
-  {
-    "id": "832e4e11-de84-4b0c-8284-c22623b9392a",
-    "title": "Asus Printer 77",
-    "description": "This is a high-quality printer by Asus.",
-    "category": "Electronics",
-    "subCategory": "Photography",
-    "brand": "Asus",
-    "sku": "ASU-1076",
-    "price": 584.18,
-    "discount": {
-      "percentage": 0,
-      "priceAfterDiscount": 584.18
-    },
-    "stock": 128,
-    "rating": {
-      "average": 3.9,
-      "count": 483
-    },
-    "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=2",
-      "images": [
-        "https://picsum.photos/600/400?random=159",
-        "https://picsum.photos/600/400?random=892",
-        "https://picsum.photos/600/400?random=237"
-      ]
-    },
-    "isFeatured": false,
-    "timestamps": {
-      "createdAt": "2025-03-12T03:19:46.854039",
-      "updatedAt": "2025-03-18T03:19:46.854039"
-    }
-  },
-  {
-    "id": "019f0a07-db81-4b6b-8fad-f5d794389b11",
-    "title": "Asus Laptop 78",
-    "description": "This is a high-quality laptop by Asus.",
-    "category": "Appliances",
-    "subCategory": "Gaming",
-    "brand": "Asus",
-    "sku": "ASU-1077",
-    "price": 345.97,
-    "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 276.78
-    },
-    "stock": 122,
+    "quantity": 72,
+    "stock": 483,
     "rating": {
       "average": 4.3,
-      "count": 116
+      "count": 996
     },
     "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=1",
+      "thumbnail": "https://picsum.photos/200/200?random=9",
       "images": [
-        "https://picsum.photos/600/400?random=140",
-        "https://picsum.photos/600/400?random=688",
-        "https://picsum.photos/600/400?random=451"
+        "https://picsum.photos/600/400?random=27",
+        "https://picsum.photos/600/400?random=28",
+        "https://picsum.photos/600/400?random=29"
       ]
     },
     "isFeatured": false,
     "timestamps": {
-      "createdAt": "2025-09-16T00:43:06.537244",
-      "updatedAt": "2025-12-17T00:43:06.537244"
+      "createdAt": "2025-04-28T23:26:58",
+      "updatedAt": "2025-05-04T23:26:58"
     }
   },
   {
-    "id": "8b0b50b4-8e77-4331-9672-853f0c5d25b3",
-    "title": "Lenovo Smartwatch 79",
-    "description": "This is a high-quality smartwatch by Lenovo.",
-    "category": "Appliances",
-    "subCategory": "Portable",
-    "brand": "Lenovo",
-    "sku": "LEN-1078",
-    "price": 482.71,
+    "id": "9d71373f-7411-403f-bf87-9d5a9c72c184",
+    "barcode": "223597",
+    "title": "Fila Shorts",
+    "name": "Fila Shorts",
+    "description": "High-quality shorts from Fila. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Shorts",
+    "brand": "Fila",
+    "sku": "FIL-6422",
+    "price": 869.14,
     "discount": {
-      "percentage": 20,
-      "priceAfterDiscount": 386.17
+      "percentage": 5,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 825.68
     },
-    "stock": 186,
+    "quantity": 46,
+    "stock": 495,
     "rating": {
-      "average": 3.0,
-      "count": 722
+      "average": 4.2,
+      "count": 886
     },
     "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=3",
+      "thumbnail": "https://picsum.photos/200/200?random=10",
       "images": [
-        "https://picsum.photos/600/400?random=113",
-        "https://picsum.photos/600/400?random=576",
+        "https://picsum.photos/600/400?random=30",
+        "https://picsum.photos/600/400?random=31",
+        "https://picsum.photos/600/400?random=32"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-05-08T12:45:49",
+      "updatedAt": "2025-06-16T12:45:49"
+    }
+  },
+  {
+    "id": "e972c218-be21-42b8-90fd-93990afe932e",
+    "barcode": "996789",
+    "title": "Fila Baby Rompers",
+    "name": "Fila Baby Rompers",
+    "description": "High-quality baby rompers from Fila. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Baby Rompers",
+    "brand": "Fila",
+    "sku": "FIL-2893",
+    "price": 978.37,
+    "discount": {
+      "percentage": 15,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 831.61
+    },
+    "quantity": 81,
+    "stock": 90,
+    "rating": {
+      "average": 1.8,
+      "count": 547
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=11",
+      "images": [
+        "https://picsum.photos/600/400?random=33",
+        "https://picsum.photos/600/400?random=34",
+        "https://picsum.photos/600/400?random=35"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-07-25T02:31:40",
+      "updatedAt": "2025-10-05T02:31:40"
+    }
+  },
+  {
+    "id": "40dcda6e-c3a3-486d-b92f-5c2ca1ef386a",
+    "barcode": "905331",
+    "title": "Puma Shorts",
+    "name": "Puma Shorts",
+    "description": "High-quality shorts from Puma. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Shorts",
+    "brand": "Puma",
+    "sku": "PUM-6588",
+    "price": 705.87,
+    "discount": {
+      "percentage": 19,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 571.75
+    },
+    "quantity": 47,
+    "stock": 280,
+    "rating": {
+      "average": 2.8,
+      "count": 929
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=12",
+      "images": [
+        "https://picsum.photos/600/400?random=36",
+        "https://picsum.photos/600/400?random=37",
+        "https://picsum.photos/600/400?random=38"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-01-17T01:51:28",
+      "updatedAt": "2025-03-10T01:51:28"
+    }
+  },
+  {
+    "id": "f1c9868f-958e-4f71-a46c-514cc9273b61",
+    "barcode": "992709",
+    "title": "Adidas Boys T-Shirts",
+    "name": "Adidas Boys T-Shirts",
+    "description": "High-quality boys t-shirts from Adidas. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Boys T-Shirts",
+    "brand": "Adidas",
+    "sku": "ADI-6021",
+    "price": 263.66,
+    "discount": {
+      "percentage": 27,
+      "type": "percentage",
+      "priceAfterDiscount": 192.47
+    },
+    "quantity": 53,
+    "stock": 360,
+    "rating": {
+      "average": 4.5,
+      "count": 309
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=13",
+      "images": [
+        "https://picsum.photos/600/400?random=39",
+        "https://picsum.photos/600/400?random=40",
+        "https://picsum.photos/600/400?random=41"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-09-14T10:28:36",
+      "updatedAt": "2026-01-24T10:28:36"
+    }
+  },
+  {
+    "id": "7ee8f5ae-429e-4f1a-bbef-774ab86c590d",
+    "barcode": "411937",
+    "title": "Versace Shorts",
+    "name": "Versace Shorts",
+    "description": "High-quality shorts from Versace. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Shorts",
+    "brand": "Versace",
+    "sku": "VER-8998",
+    "price": 606.09,
+    "discount": {
+      "percentage": 18,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 496.99
+    },
+    "quantity": 21,
+    "stock": 7,
+    "rating": {
+      "average": 4.1,
+      "count": 491
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=14",
+      "images": [
+        "https://picsum.photos/600/400?random=42",
+        "https://picsum.photos/600/400?random=43",
+        "https://picsum.photos/600/400?random=44"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-08-02T18:33:58",
+      "updatedAt": "2025-02-06T18:33:58"
+    }
+  },
+  {
+    "id": "61fc72c9-1f02-453a-9327-32a0b23be317",
+    "barcode": "440208",
+    "title": "Fila Kurtis",
+    "name": "Fila Kurtis",
+    "description": "High-quality kurtis from Fila. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Kurtis",
+    "brand": "Fila",
+    "sku": "FIL-1419",
+    "price": 1361.31,
+    "discount": {
+      "percentage": 12,
+      "type": "percentage",
+      "priceAfterDiscount": 1197.95
+    },
+    "quantity": 15,
+    "stock": 196,
+    "rating": {
+      "average": 4.0,
+      "count": 551
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=15",
+      "images": [
+        "https://picsum.photos/600/400?random=45",
+        "https://picsum.photos/600/400?random=46",
+        "https://picsum.photos/600/400?random=47"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-06-25T19:57:19",
+      "updatedAt": "2024-10-20T19:57:19"
+    }
+  },
+  {
+    "id": "c35e7c6a-49af-43bd-8f95-94229de45944",
+    "barcode": "375295",
+    "title": "Balenciaga kids Jackets",
+    "name": "Balenciaga kids Jackets",
+    "description": "High-quality kids jackets from Balenciaga. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "kids Jackets",
+    "brand": "Balenciaga",
+    "sku": "BAL-1303",
+    "price": 1045.8,
+    "discount": {
+      "percentage": 6,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 983.05
+    },
+    "quantity": 74,
+    "stock": 303,
+    "rating": {
+      "average": 1.3,
+      "count": 987
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=16",
+      "images": [
+        "https://picsum.photos/600/400?random=48",
+        "https://picsum.photos/600/400?random=49",
+        "https://picsum.photos/600/400?random=50"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-04-01T02:18:34",
+      "updatedAt": "2025-09-11T02:18:34"
+    }
+  },
+  {
+    "id": "d2c19a34-f248-4e3c-ba84-7615d8a603b1",
+    "barcode": "647723",
+    "title": "Adidas Baby Rompers",
+    "name": "Adidas Baby Rompers",
+    "description": "High-quality baby rompers from Adidas. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Baby Rompers",
+    "brand": "Adidas",
+    "sku": "ADI-8566",
+    "price": 832.92,
+    "discount": {
+      "percentage": 145,
+      "type": "amount",
+      "priceAfterDiscount": 687.92
+    },
+    "quantity": 38,
+    "stock": 477,
+    "rating": {
+      "average": 3.2,
+      "count": 478
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=17",
+      "images": [
+        "https://picsum.photos/600/400?random=51",
+        "https://picsum.photos/600/400?random=52",
         "https://picsum.photos/600/400?random=53"
       ]
     },
     "isFeatured": true,
     "timestamps": {
-      "createdAt": "2025-03-23T14:41:29.373259",
-      "updatedAt": "2025-06-18T14:41:29.373259"
+      "createdAt": "2025-01-14T21:34:54",
+      "updatedAt": "2025-03-14T21:34:54"
     }
   },
   {
-    "id": "57ae12a5-e5d0-4886-97c4-952ac2f05496",
-    "title": "Logitech Smartwatch 80",
-    "description": "This is a high-quality smartwatch by Logitech.",
-    "category": "Electronics",
-    "subCategory": "Photography",
-    "brand": "Logitech",
-    "sku": "LOG-1079",
-    "price": 1294.3,
+    "id": "1e4e87e5-b478-49b0-8fd7-de5ce29496d5",
+    "barcode": "545780",
+    "title": "The North Face Bags",
+    "name": "The North Face Bags",
+    "description": "High-quality bags from The North Face. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Bags",
+    "brand": "The North Face",
+    "sku": "THE-1751",
+    "price": 308.92,
     "discount": {
-      "percentage": 25,
-      "priceAfterDiscount": 970.72
+      "percentage": 6,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 290.38
     },
-    "stock": 170,
+    "quantity": 28,
+    "stock": 206,
     "rating": {
-      "average": 4.1,
-      "count": 700
+      "average": 4.2,
+      "count": 565
     },
     "media": {
-      "thumbnail": "https://picsum.photos/200/200?random=4",
+      "thumbnail": "https://picsum.photos/200/200?random=18",
       "images": [
-        "https://picsum.photos/600/400?random=750",
-        "https://picsum.photos/600/400?random=53",
-        "https://picsum.photos/600/400?random=338"
+        "https://picsum.photos/600/400?random=54",
+        "https://picsum.photos/600/400?random=55",
+        "https://picsum.photos/600/400?random=56"
       ]
     },
     "isFeatured": true,
     "timestamps": {
-      "createdAt": "2024-09-20T07:02:53.161612",
-      "updatedAt": "2024-10-30T07:02:53.161612"
+      "createdAt": "2024-02-28T06:34:39",
+      "updatedAt": "2024-04-05T06:34:39"
+    }
+  },
+  {
+    "id": "d7b91555-2ee2-4bea-a5f0-88a5f8cc7758",
+    "barcode": "307948",
+    "title": "Uniqlo Sandals",
+    "name": "Uniqlo Sandals",
+    "description": "High-quality sandals from Uniqlo. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Sandals",
+    "brand": "Uniqlo",
+    "sku": "UNI-8380",
+    "price": 640.07,
+    "discount": {
+      "percentage": 16,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 537.66
+    },
+    "quantity": 70,
+    "stock": 92,
+    "rating": {
+      "average": 3.7,
+      "count": 260
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=19",
+      "images": [
+        "https://picsum.photos/600/400?random=57",
+        "https://picsum.photos/600/400?random=58",
+        "https://picsum.photos/600/400?random=59"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-03-13T20:38:06",
+      "updatedAt": "2025-05-30T20:38:06"
+    }
+  },
+  {
+    "id": "2d8ed4ba-1b71-4423-88a1-56f765826793",
+    "barcode": "257725",
+    "title": "H&M Girls Dresses",
+    "name": "H&M Girls Dresses",
+    "description": "High-quality girls dresses from H&M. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Girls Dresses",
+    "brand": "H&M",
+    "sku": "H&M-5111",
+    "price": 1422.73,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 1422.73
+    },
+    "quantity": 83,
+    "stock": 256,
+    "rating": {
+      "average": 4.7,
+      "count": 527
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=20",
+      "images": [
+        "https://picsum.photos/600/400?random=60",
+        "https://picsum.photos/600/400?random=61",
+        "https://picsum.photos/600/400?random=62"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-08-27T06:32:41",
+      "updatedAt": "2024-11-30T06:32:41"
+    }
+  },
+  {
+    "id": "a04d6257-38f3-4423-97a4-e14ceb74abb1",
+    "barcode": "892838",
+    "title": "Balenciaga Bags",
+    "name": "Balenciaga Bags",
+    "description": "High-quality bags from Balenciaga. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Bags",
+    "brand": "Balenciaga",
+    "sku": "BAL-1491",
+    "price": 738.2,
+    "discount": {
+      "percentage": 17,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 612.71
+    },
+    "quantity": 92,
+    "stock": 101,
+    "rating": {
+      "average": 2.0,
+      "count": 523
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=21",
+      "images": [
+        "https://picsum.photos/600/400?random=63",
+        "https://picsum.photos/600/400?random=64",
+        "https://picsum.photos/600/400?random=65"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-12-28T02:45:41",
+      "updatedAt": "2025-04-09T02:45:41"
+    }
+  },
+  {
+    "id": "55feb270-0d44-4024-aec6-213bee652afe",
+    "barcode": "120572",
+    "title": "Balenciaga Jackets",
+    "name": "Balenciaga Jackets",
+    "description": "High-quality jackets from Balenciaga. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Jackets",
+    "brand": "Balenciaga",
+    "sku": "BAL-9544",
+    "price": 50.01,
+    "discount": {
+      "percentage": 8,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 46.01
+    },
+    "quantity": 67,
+    "stock": 355,
+    "rating": {
+      "average": 2.5,
+      "count": 641
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=22",
+      "images": [
+        "https://picsum.photos/600/400?random=66",
+        "https://picsum.photos/600/400?random=67",
+        "https://picsum.photos/600/400?random=68"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-08-27T18:26:17",
+      "updatedAt": "2025-10-16T18:26:17"
+    }
+  },
+  {
+    "id": "27691493-e8e9-4020-bce1-69fbadd3f34b",
+    "barcode": "265742",
+    "title": "Zara Baby Rompers",
+    "name": "Zara Baby Rompers",
+    "description": "High-quality baby rompers from Zara. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Baby Rompers",
+    "brand": "Zara",
+    "sku": "ZAR-6192",
+    "price": 523.88,
+    "discount": {
+      "percentage": 17,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 434.82
+    },
+    "quantity": 15,
+    "stock": 38,
+    "rating": {
+      "average": 1.7,
+      "count": 318
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=23",
+      "images": [
+        "https://picsum.photos/600/400?random=69",
+        "https://picsum.photos/600/400?random=70",
+        "https://picsum.photos/600/400?random=71"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-07-25T17:33:56",
+      "updatedAt": "2025-10-05T17:33:56"
+    }
+  },
+  {
+    "id": "4ae19b20-668e-4eb7-83a2-dc2e84d19a5e",
+    "barcode": "409616",
+    "title": "Fila Scarves",
+    "name": "Fila Scarves",
+    "description": "High-quality scarves from Fila. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Scarves",
+    "brand": "Fila",
+    "sku": "FIL-1231",
+    "price": 1011.52,
+    "discount": {
+      "percentage": 8,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 930.6
+    },
+    "quantity": 60,
+    "stock": 268,
+    "rating": {
+      "average": 2.3,
+      "count": 322
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=24",
+      "images": [
+        "https://picsum.photos/600/400?random=72",
+        "https://picsum.photos/600/400?random=73",
+        "https://picsum.photos/600/400?random=74"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-02-08T11:04:14",
+      "updatedAt": "2024-08-15T11:04:14"
+    }
+  },
+  {
+    "id": "93077c36-c887-44b4-9f1b-def609623814",
+    "barcode": "296133",
+    "title": "Fila Flats",
+    "name": "Fila Flats",
+    "description": "High-quality flats from Fila. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Flats",
+    "brand": "Fila",
+    "sku": "FIL-5762",
+    "price": 731.49,
+    "discount": {
+      "percentage": 5,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 694.92
+    },
+    "quantity": 54,
+    "stock": 12,
+    "rating": {
+      "average": 4.7,
+      "count": 413
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=25",
+      "images": [
+        "https://picsum.photos/600/400?random=75",
+        "https://picsum.photos/600/400?random=76",
+        "https://picsum.photos/600/400?random=77"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-04-25T12:36:59",
+      "updatedAt": "2024-09-29T12:36:59"
+    }
+  },
+  {
+    "id": "ebcf9878-4e9e-42ee-aa98-26d956393687",
+    "barcode": "831780",
+    "title": "Adidas kids Jackets",
+    "name": "Adidas kids Jackets",
+    "description": "High-quality kids jackets from Adidas. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "kids Jackets",
+    "brand": "Adidas",
+    "sku": "ADI-7399",
+    "price": 699.28,
+    "discount": {
+      "percentage": 19,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 566.42
+    },
+    "quantity": 92,
+    "stock": 30,
+    "rating": {
+      "average": 4.6,
+      "count": 175
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=26",
+      "images": [
+        "https://picsum.photos/600/400?random=78",
+        "https://picsum.photos/600/400?random=79",
+        "https://picsum.photos/600/400?random=80"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-02-19T22:53:34",
+      "updatedAt": "2025-04-12T22:53:34"
+    }
+  },
+  {
+    "id": "9b79cce7-6d6d-442d-bb57-bd46021556a9",
+    "barcode": "422679",
+    "title": "Puma Shorts",
+    "name": "Puma Shorts",
+    "description": "High-quality shorts from Puma. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Shorts",
+    "brand": "Puma",
+    "sku": "PUM-9063",
+    "price": 1314.82,
+    "discount": {
+      "percentage": 119,
+      "type": "amount",
+      "priceAfterDiscount": 1195.82
+    },
+    "quantity": 42,
+    "stock": 455,
+    "rating": {
+      "average": 4.1,
+      "count": 743
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=27",
+      "images": [
+        "https://picsum.photos/600/400?random=81",
+        "https://picsum.photos/600/400?random=82",
+        "https://picsum.photos/600/400?random=83"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-03-17T17:06:56",
+      "updatedAt": "2024-04-04T17:06:56"
+    }
+  },
+  {
+    "id": "e348d4f8-997f-4fda-b841-62855228c4dd",
+    "barcode": "946579",
+    "title": "Under Armour Sneakers",
+    "name": "Under Armour Sneakers",
+    "description": "High-quality sneakers from Under Armour. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Sneakers",
+    "brand": "Under Armour",
+    "sku": "UND-9348",
+    "price": 182.79,
+    "discount": {
+      "percentage": 14,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 157.2
+    },
+    "quantity": 26,
+    "stock": 164,
+    "rating": {
+      "average": 1.2,
+      "count": 835
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=28",
+      "images": [
+        "https://picsum.photos/600/400?random=84",
+        "https://picsum.photos/600/400?random=85",
+        "https://picsum.photos/600/400?random=86"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-04-25T02:11:54",
+      "updatedAt": "2024-07-23T02:11:54"
+    }
+  },
+  {
+    "id": "9c649731-feb2-42ad-9e69-4408b9672583",
+    "barcode": "776072",
+    "title": "Gucci Belts",
+    "name": "Gucci Belts",
+    "description": "High-quality belts from Gucci. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Belts",
+    "brand": "Gucci",
+    "sku": "GUC-8723",
+    "price": 112.07,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 112.07
+    },
+    "quantity": 90,
+    "stock": 451,
+    "rating": {
+      "average": 1.6,
+      "count": 613
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=29",
+      "images": [
+        "https://picsum.photos/600/400?random=87",
+        "https://picsum.photos/600/400?random=88",
+        "https://picsum.photos/600/400?random=89"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-08-18T13:15:38",
+      "updatedAt": "2025-09-19T13:15:38"
+    }
+  },
+  {
+    "id": "caf1c416-e45b-4a71-aeb4-4353f62d2c7d",
+    "barcode": "273753",
+    "title": "Levi's Shirts",
+    "name": "Levi's Shirts",
+    "description": "High-quality shirts from Levi's. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Shirts",
+    "brand": "Levi's",
+    "sku": "LEV-5993",
+    "price": 1191.99,
+    "discount": {
+      "percentage": 15,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 1013.19
+    },
+    "quantity": 71,
+    "stock": 302,
+    "rating": {
+      "average": 4.7,
+      "count": 521
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=30",
+      "images": [
+        "https://picsum.photos/600/400?random=90",
+        "https://picsum.photos/600/400?random=91",
+        "https://picsum.photos/600/400?random=92"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-09-14T20:09:59",
+      "updatedAt": "2025-11-15T20:09:59"
+    }
+  },
+  {
+    "id": "3d76083a-a9dd-4d51-9c97-5988a13c2422",
+    "barcode": "164728",
+    "title": "Louis Vuitton Sunglasses",
+    "name": "Louis Vuitton Sunglasses",
+    "description": "High-quality sunglasses from Louis Vuitton. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Sunglasses",
+    "brand": "Louis Vuitton",
+    "sku": "LOU-4787",
+    "price": 1120.19,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 1120.19
+    },
+    "quantity": 59,
+    "stock": 85,
+    "rating": {
+      "average": 3.3,
+      "count": 486
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=31",
+      "images": [
+        "https://picsum.photos/600/400?random=93",
+        "https://picsum.photos/600/400?random=94",
+        "https://picsum.photos/600/400?random=95"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-07-07T19:16:50",
+      "updatedAt": "2025-01-22T19:16:50"
+    }
+  },
+  {
+    "id": "75155d99-8616-48d5-8bb6-9ffab6e4e596",
+    "barcode": "530588",
+    "title": "Puma Boots",
+    "name": "Puma Boots",
+    "description": "High-quality boots from Puma. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Boots",
+    "brand": "Puma",
+    "sku": "PUM-5382",
+    "price": 298.56,
+    "discount": {
+      "percentage": 7,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 277.66
+    },
+    "quantity": 35,
+    "stock": 16,
+    "rating": {
+      "average": 4.1,
+      "count": 366
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=32",
+      "images": [
+        "https://picsum.photos/600/400?random=96",
+        "https://picsum.photos/600/400?random=97",
+        "https://picsum.photos/600/400?random=98"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-08-04T10:41:20",
+      "updatedAt": "2024-08-17T10:41:20"
+    }
+  },
+  {
+    "id": "a166e7ae-c4fd-4dba-b5ee-fb480238cd4a",
+    "barcode": "680946",
+    "title": "Under Armour Girls Dresses",
+    "name": "Under Armour Girls Dresses",
+    "description": "High-quality girls dresses from Under Armour. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Girls Dresses",
+    "brand": "Under Armour",
+    "sku": "UND-1147",
+    "price": 651.29,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 651.29
+    },
+    "quantity": 98,
+    "stock": 347,
+    "rating": {
+      "average": 1.5,
+      "count": 946
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=33",
+      "images": [
+        "https://picsum.photos/600/400?random=99",
+        "https://picsum.photos/600/400?random=100",
+        "https://picsum.photos/600/400?random=101"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-08-17T06:45:47",
+      "updatedAt": "2025-02-15T06:45:47"
+    }
+  },
+  {
+    "id": "5d8ccdfa-5eca-4162-83f2-e78d41f1a074",
+    "barcode": "421493",
+    "title": "Nike Watches",
+    "name": "Nike Watches",
+    "description": "High-quality watches from Nike. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Watches",
+    "brand": "Nike",
+    "sku": "NIK-8120",
+    "price": 917.21,
+    "discount": {
+      "percentage": 20,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 733.77
+    },
+    "quantity": 45,
+    "stock": 393,
+    "rating": {
+      "average": 2.4,
+      "count": 608
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=34",
+      "images": [
+        "https://picsum.photos/600/400?random=102",
+        "https://picsum.photos/600/400?random=103",
+        "https://picsum.photos/600/400?random=104"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-07-21T04:36:40",
+      "updatedAt": "2024-08-26T04:36:40"
+    }
+  },
+  {
+    "id": "11b50a9a-5c2b-4c67-8ce2-d25a2ed59e82",
+    "barcode": "162225",
+    "title": "Reebok Bags",
+    "name": "Reebok Bags",
+    "description": "High-quality bags from Reebok. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Bags",
+    "brand": "Reebok",
+    "sku": "REE-3968",
+    "price": 984.88,
+    "discount": {
+      "percentage": 24,
+      "type": "percentage",
+      "priceAfterDiscount": 748.51
+    },
+    "quantity": 43,
+    "stock": 388,
+    "rating": {
+      "average": 1.2,
+      "count": 959
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=35",
+      "images": [
+        "https://picsum.photos/600/400?random=105",
+        "https://picsum.photos/600/400?random=106",
+        "https://picsum.photos/600/400?random=107"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-11-21T17:34:30",
+      "updatedAt": "2025-06-07T17:34:30"
+    }
+  },
+  {
+    "id": "9642491f-a63e-48da-9b9b-a44b7f175f13",
+    "barcode": "719990",
+    "title": "Nike Belts",
+    "name": "Nike Belts",
+    "description": "High-quality belts from Nike. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Belts",
+    "brand": "Nike",
+    "sku": "NIK-4888",
+    "price": 468.61,
+    "discount": {
+      "percentage": 20,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 374.89
+    },
+    "quantity": 86,
+    "stock": 362,
+    "rating": {
+      "average": 1.9,
+      "count": 746
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=36",
+      "images": [
+        "https://picsum.photos/600/400?random=108",
+        "https://picsum.photos/600/400?random=109",
+        "https://picsum.photos/600/400?random=110"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-04-06T10:13:52",
+      "updatedAt": "2024-08-02T10:13:52"
+    }
+  },
+  {
+    "id": "ca4a2cc7-7490-4545-be8e-5bc1a96f7afe",
+    "barcode": "349936",
+    "title": "H&M Shorts",
+    "name": "H&M Shorts",
+    "description": "High-quality shorts from H&M. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Shorts",
+    "brand": "H&M",
+    "sku": "H&M-3789",
+    "price": 1012.35,
+    "discount": {
+      "percentage": 20,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 809.88
+    },
+    "quantity": 40,
+    "stock": 322,
+    "rating": {
+      "average": 2.4,
+      "count": 679
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=37",
+      "images": [
+        "https://picsum.photos/600/400?random=111",
+        "https://picsum.photos/600/400?random=112",
+        "https://picsum.photos/600/400?random=113"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-09-24T15:53:30",
+      "updatedAt": "2025-11-11T15:53:30"
+    }
+  },
+  {
+    "id": "beeb5d5f-d290-4c0a-864a-9d79dd55ab90",
+    "barcode": "518313",
+    "title": "Fila Belts",
+    "name": "Fila Belts",
+    "description": "High-quality belts from Fila. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Belts",
+    "brand": "Fila",
+    "sku": "FIL-7518",
+    "price": 781.59,
+    "discount": {
+      "percentage": 95,
+      "type": "amount",
+      "priceAfterDiscount": 686.59
+    },
+    "quantity": 82,
+    "stock": 353,
+    "rating": {
+      "average": 1.3,
+      "count": 363
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=38",
+      "images": [
+        "https://picsum.photos/600/400?random=114",
+        "https://picsum.photos/600/400?random=115",
+        "https://picsum.photos/600/400?random=116"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-05-25T16:22:58",
+      "updatedAt": "2024-06-10T16:22:58"
+    }
+  },
+  {
+    "id": "87c9f5e1-6098-491f-8874-056f4f6116b5",
+    "barcode": "746941",
+    "title": "Fila Boys T-Shirts",
+    "name": "Fila Boys T-Shirts",
+    "description": "High-quality boys t-shirts from Fila. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Boys T-Shirts",
+    "brand": "Fila",
+    "sku": "FIL-2554",
+    "price": 766.5,
+    "discount": {
+      "percentage": 146,
+      "type": "amount",
+      "priceAfterDiscount": 620.5
+    },
+    "quantity": 7,
+    "stock": 27,
+    "rating": {
+      "average": 1.8,
+      "count": 255
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=39",
+      "images": [
+        "https://picsum.photos/600/400?random=117",
+        "https://picsum.photos/600/400?random=118",
+        "https://picsum.photos/600/400?random=119"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-07-12T23:56:03",
+      "updatedAt": "2025-01-22T23:56:03"
+    }
+  },
+  {
+    "id": "9c8f425a-2112-47df-b643-5bb32d68bf9a",
+    "barcode": "250377",
+    "title": "Gucci Flats",
+    "name": "Gucci Flats",
+    "description": "High-quality flats from Gucci. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Flats",
+    "brand": "Gucci",
+    "sku": "GUC-2648",
+    "price": 1443.25,
+    "discount": {
+      "percentage": 9,
+      "type": "percentage",
+      "priceAfterDiscount": 1313.36
+    },
+    "quantity": 65,
+    "stock": 341,
+    "rating": {
+      "average": 3.5,
+      "count": 60
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=40",
+      "images": [
+        "https://picsum.photos/600/400?random=120",
+        "https://picsum.photos/600/400?random=121",
+        "https://picsum.photos/600/400?random=122"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-11-15T21:52:37",
+      "updatedAt": "2024-11-22T21:52:37"
+    }
+  },
+  {
+    "id": "e1c0a499-3cf0-445a-832e-979e9440406f",
+    "barcode": "832378",
+    "title": "Uniqlo Jeans",
+    "name": "Uniqlo Jeans",
+    "description": "High-quality jeans from Uniqlo. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Jeans",
+    "brand": "Uniqlo",
+    "sku": "UNI-3165",
+    "price": 879.22,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 879.22
+    },
+    "quantity": 4,
+    "stock": 52,
+    "rating": {
+      "average": 2.6,
+      "count": 41
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=41",
+      "images": [
+        "https://picsum.photos/600/400?random=123",
+        "https://picsum.photos/600/400?random=124",
+        "https://picsum.photos/600/400?random=125"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-08-02T13:25:34",
+      "updatedAt": "2024-12-22T13:25:34"
+    }
+  },
+  {
+    "id": "bd42cd22-b4bd-436b-9e8e-2996e4cb6f22",
+    "barcode": "669841",
+    "title": "Balenciaga Loafers",
+    "name": "Balenciaga Loafers",
+    "description": "High-quality loafers from Balenciaga. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Loafers",
+    "brand": "Balenciaga",
+    "sku": "BAL-8683",
+    "price": 226.69,
+    "discount": {
+      "percentage": 18,
+      "type": "percentage",
+      "priceAfterDiscount": 185.89
+    },
+    "quantity": 33,
+    "stock": 237,
+    "rating": {
+      "average": 4.6,
+      "count": 557
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=42",
+      "images": [
+        "https://picsum.photos/600/400?random=126",
+        "https://picsum.photos/600/400?random=127",
+        "https://picsum.photos/600/400?random=128"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-01-04T00:44:45",
+      "updatedAt": "2024-01-24T00:44:45"
+    }
+  },
+  {
+    "id": "cdb01677-3774-4dfd-a947-60237e3029fd",
+    "barcode": "692327",
+    "title": "Reebok Kurtis",
+    "name": "Reebok Kurtis",
+    "description": "High-quality kurtis from Reebok. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Kurtis",
+    "brand": "Reebok",
+    "sku": "REE-2946",
+    "price": 340.93,
+    "discount": {
+      "percentage": 7,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 317.06
+    },
+    "quantity": 37,
+    "stock": 289,
+    "rating": {
+      "average": 4.8,
+      "count": 350
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=43",
+      "images": [
+        "https://picsum.photos/600/400?random=129",
+        "https://picsum.photos/600/400?random=130",
+        "https://picsum.photos/600/400?random=131"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-11-03T13:42:08",
+      "updatedAt": "2025-02-23T13:42:08"
+    }
+  },
+  {
+    "id": "409b7538-1283-4dde-8d8d-3a45bbd5f556",
+    "barcode": "562143",
+    "title": "Zara Loafers",
+    "name": "Zara Loafers",
+    "description": "High-quality loafers from Zara. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Loafers",
+    "brand": "Zara",
+    "sku": "ZAR-6400",
+    "price": 660.62,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 660.62
+    },
+    "quantity": 5,
+    "stock": 106,
+    "rating": {
+      "average": 4.7,
+      "count": 351
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=44",
+      "images": [
+        "https://picsum.photos/600/400?random=132",
+        "https://picsum.photos/600/400?random=133",
+        "https://picsum.photos/600/400?random=134"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-05-14T01:51:09",
+      "updatedAt": "2025-11-28T01:51:09"
+    }
+  },
+  {
+    "id": "dcc4b267-fd48-40d0-848e-d45ffd33afae",
+    "barcode": "547923",
+    "title": "Nike Sandals",
+    "name": "Nike Sandals",
+    "description": "High-quality sandals from Nike. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Sandals",
+    "brand": "Nike",
+    "sku": "NIK-6519",
+    "price": 1386.85,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 1386.85
+    },
+    "quantity": 82,
+    "stock": 395,
+    "rating": {
+      "average": 3.2,
+      "count": 841
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=45",
+      "images": [
+        "https://picsum.photos/600/400?random=135",
+        "https://picsum.photos/600/400?random=136",
+        "https://picsum.photos/600/400?random=137"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-03-04T12:33:59",
+      "updatedAt": "2025-07-14T12:33:59"
+    }
+  },
+  {
+    "id": "fe096f28-2554-4bdc-93d9-57aa28a9bb4b",
+    "barcode": "329647",
+    "title": "Zara Heels",
+    "name": "Zara Heels",
+    "description": "High-quality heels from Zara. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Heels",
+    "brand": "Zara",
+    "sku": "ZAR-5388",
+    "price": 1495.03,
+    "discount": {
+      "percentage": 10,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 1345.53
+    },
+    "quantity": 5,
+    "stock": 5,
+    "rating": {
+      "average": 1.1,
+      "count": 481
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=46",
+      "images": [
+        "https://picsum.photos/600/400?random=138",
+        "https://picsum.photos/600/400?random=139",
+        "https://picsum.photos/600/400?random=140"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-04-19T07:39:37",
+      "updatedAt": "2025-04-27T07:39:37"
+    }
+  },
+  {
+    "id": "0994124c-a40e-4ec9-b5d8-75dd83afc865",
+    "barcode": "173128",
+    "title": "The North Face Hoodies",
+    "name": "The North Face Hoodies",
+    "description": "High-quality hoodies from The North Face. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Hoodies",
+    "brand": "The North Face",
+    "sku": "THE-1361",
+    "price": 205.98,
+    "discount": {
+      "percentage": 16,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 173.02
+    },
+    "quantity": 27,
+    "stock": 429,
+    "rating": {
+      "average": 1.8,
+      "count": 112
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=47",
+      "images": [
+        "https://picsum.photos/600/400?random=141",
+        "https://picsum.photos/600/400?random=142",
+        "https://picsum.photos/600/400?random=143"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-07-13T09:02:18",
+      "updatedAt": "2026-01-14T09:02:18"
+    }
+  },
+  {
+    "id": "2e37a6d8-1202-41af-a0a7-198249ba27ba",
+    "barcode": "298153",
+    "title": "Levi's Wallets",
+    "name": "Levi's Wallets",
+    "description": "High-quality wallets from Levi's. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Wallets",
+    "brand": "Levi's",
+    "sku": "LEV-1683",
+    "price": 211.18,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 211.18
+    },
+    "quantity": 16,
+    "stock": 182,
+    "rating": {
+      "average": 3.1,
+      "count": 939
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=48",
+      "images": [
+        "https://picsum.photos/600/400?random=144",
+        "https://picsum.photos/600/400?random=145",
+        "https://picsum.photos/600/400?random=146"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-07-08T08:36:38",
+      "updatedAt": "2024-10-27T08:36:38"
+    }
+  },
+  {
+    "id": "45e80b64-1f68-4191-b0ae-7c421bdfb8d0",
+    "barcode": "398479",
+    "title": "Uniqlo Shorts",
+    "name": "Uniqlo Shorts",
+    "description": "High-quality shorts from Uniqlo. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Shorts",
+    "brand": "Uniqlo",
+    "sku": "UNI-3843",
+    "price": 960.79,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 960.79
+    },
+    "quantity": 3,
+    "stock": 76,
+    "rating": {
+      "average": 3.9,
+      "count": 680
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=49",
+      "images": [
+        "https://picsum.photos/600/400?random=147",
+        "https://picsum.photos/600/400?random=148",
+        "https://picsum.photos/600/400?random=149"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-08-05T15:57:52",
+      "updatedAt": "2024-09-12T15:57:52"
+    }
+  },
+  {
+    "id": "ccfa4838-f32d-4a2c-b9e5-26f3c4bd1bf0",
+    "barcode": "736003",
+    "title": "Adidas Trousers",
+    "name": "Adidas Trousers",
+    "description": "High-quality trousers from Adidas. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Trousers",
+    "brand": "Adidas",
+    "sku": "ADI-8205",
+    "price": 973.37,
+    "discount": {
+      "percentage": 19,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 788.43
+    },
+    "quantity": 60,
+    "stock": 118,
+    "rating": {
+      "average": 4.2,
+      "count": 584
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=50",
+      "images": [
+        "https://picsum.photos/600/400?random=150",
+        "https://picsum.photos/600/400?random=151",
+        "https://picsum.photos/600/400?random=152"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-01-17T17:06:01",
+      "updatedAt": "2025-05-29T17:06:01"
+    }
+  },
+  {
+    "id": "85825e3c-85c7-4dc7-8313-77dc185a2c0e",
+    "barcode": "275943",
+    "title": "Puma Heels",
+    "name": "Puma Heels",
+    "description": "High-quality heels from Puma. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Heels",
+    "brand": "Puma",
+    "sku": "PUM-6641",
+    "price": 657.66,
+    "discount": {
+      "percentage": 17,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 545.86
+    },
+    "quantity": 33,
+    "stock": 448,
+    "rating": {
+      "average": 2.1,
+      "count": 873
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=51",
+      "images": [
+        "https://picsum.photos/600/400?random=153",
+        "https://picsum.photos/600/400?random=154",
+        "https://picsum.photos/600/400?random=155"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-11-23T02:00:47",
+      "updatedAt": "2025-03-01T02:00:47"
+    }
+  },
+  {
+    "id": "80dda2d0-819d-4c83-a46e-71dc2bde9a46",
+    "barcode": "266840",
+    "title": "Uniqlo Girls Dresses",
+    "name": "Uniqlo Girls Dresses",
+    "description": "High-quality girls dresses from Uniqlo. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Girls Dresses",
+    "brand": "Uniqlo",
+    "sku": "UNI-1819",
+    "price": 749.22,
+    "discount": {
+      "percentage": 6,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 704.27
+    },
+    "quantity": 61,
+    "stock": 439,
+    "rating": {
+      "average": 4.5,
+      "count": 665
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=52",
+      "images": [
+        "https://picsum.photos/600/400?random=156",
+        "https://picsum.photos/600/400?random=157",
+        "https://picsum.photos/600/400?random=158"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-11-17T20:43:24",
+      "updatedAt": "2024-12-05T20:43:24"
+    }
+  },
+  {
+    "id": "0cc734a8-8d82-4e8a-9dcb-ddc925035edf",
+    "barcode": "242985",
+    "title": "The North Face Sneakers",
+    "name": "The North Face Sneakers",
+    "description": "High-quality sneakers from The North Face. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Sneakers",
+    "brand": "The North Face",
+    "sku": "THE-4293",
+    "price": 485.91,
+    "discount": {
+      "percentage": 294,
+      "type": "amount",
+      "priceAfterDiscount": 191.91
+    },
+    "quantity": 19,
+    "stock": 73,
+    "rating": {
+      "average": 2.2,
+      "count": 391
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=53",
+      "images": [
+        "https://picsum.photos/600/400?random=159",
+        "https://picsum.photos/600/400?random=160",
+        "https://picsum.photos/600/400?random=161"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-06-05T10:31:40",
+      "updatedAt": "2024-06-13T10:31:40"
+    }
+  },
+  {
+    "id": "b95dd0e1-c0db-42f2-a9f8-0e78f50a7103",
+    "barcode": "313620",
+    "title": "Gucci Shorts",
+    "name": "Gucci Shorts",
+    "description": "High-quality shorts from Gucci. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Shorts",
+    "brand": "Gucci",
+    "sku": "GUC-8697",
+    "price": 201.1,
+    "discount": {
+      "percentage": 12,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 176.97
+    },
+    "quantity": 71,
+    "stock": 497,
+    "rating": {
+      "average": 3.8,
+      "count": 21
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=54",
+      "images": [
+        "https://picsum.photos/600/400?random=162",
+        "https://picsum.photos/600/400?random=163",
+        "https://picsum.photos/600/400?random=164"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-08-16T23:10:27",
+      "updatedAt": "2024-10-24T23:10:27"
+    }
+  },
+  {
+    "id": "e998b473-f2f8-49df-ac98-0bb80fb27624",
+    "barcode": "830719",
+    "title": "Under Armour Jackets",
+    "name": "Under Armour Jackets",
+    "description": "High-quality jackets from Under Armour. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Jackets",
+    "brand": "Under Armour",
+    "sku": "UND-5369",
+    "price": 128.4,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 128.4
+    },
+    "quantity": 43,
+    "stock": 140,
+    "rating": {
+      "average": 2.9,
+      "count": 569
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=55",
+      "images": [
+        "https://picsum.photos/600/400?random=165",
+        "https://picsum.photos/600/400?random=166",
+        "https://picsum.photos/600/400?random=167"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-09-12T22:38:05",
+      "updatedAt": "2025-03-01T22:38:05"
+    }
+  },
+  {
+    "id": "e15ca72e-ce17-4a98-ae6b-5f9ae7110d5d",
+    "barcode": "775659",
+    "title": "Nike Hoodies",
+    "name": "Nike Hoodies",
+    "description": "High-quality hoodies from Nike. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Hoodies",
+    "brand": "Nike",
+    "sku": "NIK-2483",
+    "price": 554.71,
+    "discount": {
+      "percentage": 28,
+      "type": "percentage",
+      "priceAfterDiscount": 399.39
+    },
+    "quantity": 43,
+    "stock": 280,
+    "rating": {
+      "average": 1.4,
+      "count": 264
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=56",
+      "images": [
+        "https://picsum.photos/600/400?random=168",
+        "https://picsum.photos/600/400?random=169",
+        "https://picsum.photos/600/400?random=170"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-01-10T12:05:16",
+      "updatedAt": "2024-06-24T12:05:16"
+    }
+  },
+  {
+    "id": "d505a9df-997d-4e86-b8d1-5df3894e6906",
+    "barcode": "514444",
+    "title": "The North Face Bags",
+    "name": "The North Face Bags",
+    "description": "High-quality bags from The North Face. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Bags",
+    "brand": "The North Face",
+    "sku": "THE-4743",
+    "price": 542.54,
+    "discount": {
+      "percentage": 239,
+      "type": "amount",
+      "priceAfterDiscount": 303.54
+    },
+    "quantity": 97,
+    "stock": 419,
+    "rating": {
+      "average": 1.7,
+      "count": 742
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=57",
+      "images": [
+        "https://picsum.photos/600/400?random=171",
+        "https://picsum.photos/600/400?random=172",
+        "https://picsum.photos/600/400?random=173"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-10-20T11:21:34",
+      "updatedAt": "2024-11-26T11:21:34"
+    }
+  },
+  {
+    "id": "4a08126a-cd20-4fe1-b0ca-aecec172ac0f",
+    "barcode": "567105",
+    "title": "Versace Sneakers",
+    "name": "Versace Sneakers",
+    "description": "High-quality sneakers from Versace. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Sneakers",
+    "brand": "Versace",
+    "sku": "VER-2344",
+    "price": 1193.02,
+    "discount": {
+      "percentage": 122,
+      "type": "amount",
+      "priceAfterDiscount": 1071.02
+    },
+    "quantity": 42,
+    "stock": 188,
+    "rating": {
+      "average": 1.3,
+      "count": 695
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=58",
+      "images": [
+        "https://picsum.photos/600/400?random=174",
+        "https://picsum.photos/600/400?random=175",
+        "https://picsum.photos/600/400?random=176"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-07-07T10:28:37",
+      "updatedAt": "2024-12-05T10:28:37"
+    }
+  },
+  {
+    "id": "b8e3ee44-8142-4221-a818-0bb2a95d93a4",
+    "barcode": "204834",
+    "title": "Versace Jeans",
+    "name": "Versace Jeans",
+    "description": "High-quality jeans from Versace. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Jeans",
+    "brand": "Versace",
+    "sku": "VER-5135",
+    "price": 128.06,
+    "discount": {
+      "percentage": 210,
+      "type": "amount",
+      "priceAfterDiscount": 0
+    },
+    "quantity": 91,
+    "stock": 435,
+    "rating": {
+      "average": 4.7,
+      "count": 718
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=59",
+      "images": [
+        "https://picsum.photos/600/400?random=177",
+        "https://picsum.photos/600/400?random=178",
+        "https://picsum.photos/600/400?random=179"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-09-16T13:21:52",
+      "updatedAt": "2025-11-15T13:21:52"
+    }
+  },
+  {
+    "id": "5b632961-07fc-4070-b4cd-b4950067123d",
+    "barcode": "133188",
+    "title": "Levi's Jeans",
+    "name": "Levi's Jeans",
+    "description": "High-quality jeans from Levi's. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Jeans",
+    "brand": "Levi's",
+    "sku": "LEV-9273",
+    "price": 1392.83,
+    "discount": {
+      "percentage": 7,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 1295.33
+    },
+    "quantity": 12,
+    "stock": 336,
+    "rating": {
+      "average": 3.4,
+      "count": 718
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=60",
+      "images": [
+        "https://picsum.photos/600/400?random=180",
+        "https://picsum.photos/600/400?random=181",
+        "https://picsum.photos/600/400?random=182"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-07-16T20:11:41",
+      "updatedAt": "2024-09-27T20:11:41"
+    }
+  },
+  {
+    "id": "658be730-9a10-4e67-b492-d3d1ff0a32bb",
+    "barcode": "917407",
+    "title": "Puma Blouses",
+    "name": "Puma Blouses",
+    "description": "High-quality blouses from Puma. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Blouses",
+    "brand": "Puma",
+    "sku": "PUM-8414",
+    "price": 276.8,
+    "discount": {
+      "percentage": 19,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 224.21
+    },
+    "quantity": 35,
+    "stock": 92,
+    "rating": {
+      "average": 2.9,
+      "count": 980
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=61",
+      "images": [
+        "https://picsum.photos/600/400?random=183",
+        "https://picsum.photos/600/400?random=184",
+        "https://picsum.photos/600/400?random=185"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-05-18T08:38:01",
+      "updatedAt": "2024-09-25T08:38:01"
+    }
+  },
+  {
+    "id": "5cf389f1-89d2-4001-9542-7228cb5b953d",
+    "barcode": "646391",
+    "title": "Under Armour Boys T-Shirts",
+    "name": "Under Armour Boys T-Shirts",
+    "description": "High-quality boys t-shirts from Under Armour. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Boys T-Shirts",
+    "brand": "Under Armour",
+    "sku": "UND-2196",
+    "price": 872.25,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 872.25
+    },
+    "quantity": 32,
+    "stock": 478,
+    "rating": {
+      "average": 1.1,
+      "count": 557
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=62",
+      "images": [
+        "https://picsum.photos/600/400?random=186",
+        "https://picsum.photos/600/400?random=187",
+        "https://picsum.photos/600/400?random=188"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-06-22T17:10:56",
+      "updatedAt": "2024-10-26T17:10:56"
+    }
+  },
+  {
+    "id": "c3effb54-22ca-4ae4-85f6-2ae7d798fe4f",
+    "barcode": "938986",
+    "title": "Gucci Sarees",
+    "name": "Gucci Sarees",
+    "description": "High-quality sarees from Gucci. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Sarees",
+    "brand": "Gucci",
+    "sku": "GUC-9789",
+    "price": 458.76,
+    "discount": {
+      "percentage": 13,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 399.12
+    },
+    "quantity": 78,
+    "stock": 87,
+    "rating": {
+      "average": 1.4,
+      "count": 393
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=63",
+      "images": [
+        "https://picsum.photos/600/400?random=189",
+        "https://picsum.photos/600/400?random=190",
+        "https://picsum.photos/600/400?random=191"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-01-13T03:29:26",
+      "updatedAt": "2025-04-23T03:29:26"
+    }
+  },
+  {
+    "id": "47259047-61fa-4571-bf8b-65e57528e224",
+    "barcode": "856294",
+    "title": "Balenciaga Belts",
+    "name": "Balenciaga Belts",
+    "description": "High-quality belts from Balenciaga. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Belts",
+    "brand": "Balenciaga",
+    "sku": "BAL-1785",
+    "price": 1261.7,
+    "discount": {
+      "percentage": 17,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 1047.21
+    },
+    "quantity": 91,
+    "stock": 153,
+    "rating": {
+      "average": 4.4,
+      "count": 709
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=64",
+      "images": [
+        "https://picsum.photos/600/400?random=192",
+        "https://picsum.photos/600/400?random=193",
+        "https://picsum.photos/600/400?random=194"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-07-08T11:21:01",
+      "updatedAt": "2024-11-15T11:21:01"
+    }
+  },
+  {
+    "id": "2daea2ea-ef08-494f-aeea-fe08f75bf018",
+    "barcode": "576957",
+    "title": "The North Face Kurtis",
+    "name": "The North Face Kurtis",
+    "description": "High-quality kurtis from The North Face. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Kurtis",
+    "brand": "The North Face",
+    "sku": "THE-8435",
+    "price": 1299.01,
+    "discount": {
+      "percentage": 12,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 1143.13
+    },
+    "quantity": 11,
+    "stock": 49,
+    "rating": {
+      "average": 2.9,
+      "count": 463
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=65",
+      "images": [
+        "https://picsum.photos/600/400?random=195",
+        "https://picsum.photos/600/400?random=196",
+        "https://picsum.photos/600/400?random=197"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-05-26T16:49:00",
+      "updatedAt": "2025-05-30T16:49:00"
+    }
+  },
+  {
+    "id": "3d996bf1-7384-4ac5-8548-801ef3a29b0b",
+    "barcode": "191983",
+    "title": "Zara kids Jackets",
+    "name": "Zara kids Jackets",
+    "description": "High-quality kids jackets from Zara. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "kids Jackets",
+    "brand": "Zara",
+    "sku": "ZAR-6755",
+    "price": 738.8,
+    "discount": {
+      "percentage": 24,
+      "type": "percentage",
+      "priceAfterDiscount": 561.49
+    },
+    "quantity": 90,
+    "stock": 114,
+    "rating": {
+      "average": 4.8,
+      "count": 104
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=66",
+      "images": [
+        "https://picsum.photos/600/400?random=198",
+        "https://picsum.photos/600/400?random=199",
+        "https://picsum.photos/600/400?random=200"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-02-17T09:10:49",
+      "updatedAt": "2025-06-21T09:10:49"
+    }
+  },
+  {
+    "id": "21d7c3a1-2bc6-478c-be9c-f4edb77bf12f",
+    "barcode": "366842",
+    "title": "Reebok Sandals",
+    "name": "Reebok Sandals",
+    "description": "High-quality sandals from Reebok. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Sandals",
+    "brand": "Reebok",
+    "sku": "REE-1592",
+    "price": 813.31,
+    "discount": {
+      "percentage": 152,
+      "type": "amount",
+      "priceAfterDiscount": 661.31
+    },
+    "quantity": 18,
+    "stock": 20,
+    "rating": {
+      "average": 3.9,
+      "count": 727
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=67",
+      "images": [
+        "https://picsum.photos/600/400?random=201",
+        "https://picsum.photos/600/400?random=202",
+        "https://picsum.photos/600/400?random=203"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-06-09T17:06:54",
+      "updatedAt": "2024-07-09T17:06:54"
+    }
+  },
+  {
+    "id": "2a5bc847-c5b1-4b00-951f-259351da4b37",
+    "barcode": "501111",
+    "title": "The North Face Bags",
+    "name": "The North Face Bags",
+    "description": "High-quality bags from The North Face. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Bags",
+    "brand": "The North Face",
+    "sku": "THE-3473",
+    "price": 1123.17,
+    "discount": {
+      "percentage": 15,
+      "type": "bundle-discount",
+      "priceAfterDiscount": 954.69
+    },
+    "quantity": 76,
+    "stock": 174,
+    "rating": {
+      "average": 4.5,
+      "count": 262
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=68",
+      "images": [
+        "https://picsum.photos/600/400?random=204",
+        "https://picsum.photos/600/400?random=205",
+        "https://picsum.photos/600/400?random=206"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-02-14T09:19:51",
+      "updatedAt": "2025-05-27T09:19:51"
+    }
+  },
+  {
+    "id": "53ccd834-76bf-4273-89e5-202f6a57ac50",
+    "barcode": "264382",
+    "title": "Puma Girls Dresses",
+    "name": "Puma Girls Dresses",
+    "description": "High-quality girls dresses from Puma. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Girls Dresses",
+    "brand": "Puma",
+    "sku": "PUM-6696",
+    "price": 482.66,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 482.66
+    },
+    "quantity": 7,
+    "stock": 185,
+    "rating": {
+      "average": 3.4,
+      "count": 509
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=69",
+      "images": [
+        "https://picsum.photos/600/400?random=207",
+        "https://picsum.photos/600/400?random=208",
+        "https://picsum.photos/600/400?random=209"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-01-16T03:51:17",
+      "updatedAt": "2025-04-12T03:51:17"
+    }
+  },
+  {
+    "id": "1d74e747-7a7f-4f50-a369-0a94c1973dc4",
+    "barcode": "839437",
+    "title": "Adidas Shorts",
+    "name": "Adidas Shorts",
+    "description": "High-quality shorts from Adidas. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Shorts",
+    "brand": "Adidas",
+    "sku": "ADI-1661",
+    "price": 1219.69,
+    "discount": {
+      "percentage": 156,
+      "type": "amount",
+      "priceAfterDiscount": 1063.69
+    },
+    "quantity": 4,
+    "stock": 352,
+    "rating": {
+      "average": 4.9,
+      "count": 58
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=70",
+      "images": [
+        "https://picsum.photos/600/400?random=210",
+        "https://picsum.photos/600/400?random=211",
+        "https://picsum.photos/600/400?random=212"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2025-02-14T00:33:48",
+      "updatedAt": "2025-07-29T00:33:48"
+    }
+  },
+  {
+    "id": "5a70eb33-098c-409e-8848-db9bc0678d3e",
+    "barcode": "398121",
+    "title": "Balenciaga Shorts",
+    "name": "Balenciaga Shorts",
+    "description": "High-quality shorts from Balenciaga. Perfect for any occasion.",
+    "category": "kids",
+    "subCategory": "Shorts",
+    "brand": "Balenciaga",
+    "sku": "BAL-3219",
+    "price": 875.73,
+    "discount": {
+      "percentage": 8,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 805.67
+    },
+    "quantity": 18,
+    "stock": 86,
+    "rating": {
+      "average": 4.9,
+      "count": 984
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=71",
+      "images": [
+        "https://picsum.photos/600/400?random=213",
+        "https://picsum.photos/600/400?random=214",
+        "https://picsum.photos/600/400?random=215"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-08-02T23:33:36",
+      "updatedAt": "2025-11-10T23:33:36"
+    }
+  },
+  {
+    "id": "f6d0a659-fcae-4509-a02f-dcf72f330061",
+    "barcode": "321300",
+    "title": "Versace Shirts",
+    "name": "Versace Shirts",
+    "description": "High-quality shirts from Versace. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Shirts",
+    "brand": "Versace",
+    "sku": "VER-9977",
+    "price": 987.78,
+    "discount": {
+      "percentage": 15,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 839.61
+    },
+    "quantity": 76,
+    "stock": 325,
+    "rating": {
+      "average": 1.9,
+      "count": 876
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=72",
+      "images": [
+        "https://picsum.photos/600/400?random=216",
+        "https://picsum.photos/600/400?random=217",
+        "https://picsum.photos/600/400?random=218"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-02-07T12:08:05",
+      "updatedAt": "2025-02-22T12:08:05"
+    }
+  },
+  {
+    "id": "ccfc0cbb-cf98-459f-9546-39cddc6594cf",
+    "barcode": "615943",
+    "title": "Louis Vuitton Shirts",
+    "name": "Louis Vuitton Shirts",
+    "description": "High-quality shirts from Louis Vuitton. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Shirts",
+    "brand": "Louis Vuitton",
+    "sku": "LOU-3780",
+    "price": 1175.61,
+    "discount": {
+      "percentage": 209,
+      "type": "amount",
+      "priceAfterDiscount": 966.61
+    },
+    "quantity": 41,
+    "stock": 489,
+    "rating": {
+      "average": 1.6,
+      "count": 20
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=73",
+      "images": [
+        "https://picsum.photos/600/400?random=219",
+        "https://picsum.photos/600/400?random=220",
+        "https://picsum.photos/600/400?random=221"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-03-28T03:59:08",
+      "updatedAt": "2024-05-23T03:59:08"
+    }
+  },
+  {
+    "id": "865668dd-5f20-4eee-85e0-e3380cfdeb30",
+    "barcode": "560956",
+    "title": "Balenciaga Shorts",
+    "name": "Balenciaga Shorts",
+    "description": "High-quality shorts from Balenciaga. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Shorts",
+    "brand": "Balenciaga",
+    "sku": "BAL-7716",
+    "price": 960.14,
+    "discount": {
+      "percentage": 21,
+      "type": "percentage",
+      "priceAfterDiscount": 758.51
+    },
+    "quantity": 10,
+    "stock": 268,
+    "rating": {
+      "average": 4.5,
+      "count": 335
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=74",
+      "images": [
+        "https://picsum.photos/600/400?random=222",
+        "https://picsum.photos/600/400?random=223",
+        "https://picsum.photos/600/400?random=224"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-09-13T20:44:06",
+      "updatedAt": "2025-12-04T20:44:06"
+    }
+  },
+  {
+    "id": "19aebf90-5a99-468a-be2b-d0b404adbb60",
+    "barcode": "594570",
+    "title": "Fila Trousers",
+    "name": "Fila Trousers",
+    "description": "High-quality trousers from Fila. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Trousers",
+    "brand": "Fila",
+    "sku": "FIL-2058",
+    "price": 1303.64,
+    "discount": {
+      "percentage": 0,
+      "type": "no-offers",
+      "priceAfterDiscount": 1303.64
+    },
+    "quantity": 83,
+    "stock": 156,
+    "rating": {
+      "average": 2.5,
+      "count": 449
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=75",
+      "images": [
+        "https://picsum.photos/600/400?random=225",
+        "https://picsum.photos/600/400?random=226",
+        "https://picsum.photos/600/400?random=227"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-04-27T17:29:11",
+      "updatedAt": "2024-06-28T17:29:11"
+    }
+  },
+  {
+    "id": "544a6925-36c4-4568-b5ea-b7a9ac539e98",
+    "barcode": "673256",
+    "title": "H&M Sandals",
+    "name": "H&M Sandals",
+    "description": "High-quality sandals from H&M. Perfect for any occasion.",
+    "category": "footwear",
+    "subCategory": "Sandals",
+    "brand": "H&M",
+    "sku": "H&M-1220",
+    "price": 935.41,
+    "discount": {
+      "percentage": 10,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 841.87
+    },
+    "quantity": 85,
+    "stock": 23,
+    "rating": {
+      "average": 2.8,
+      "count": 560
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=76",
+      "images": [
+        "https://picsum.photos/600/400?random=228",
+        "https://picsum.photos/600/400?random=229",
+        "https://picsum.photos/600/400?random=230"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-02-19T12:52:12",
+      "updatedAt": "2025-03-31T12:52:12"
+    }
+  },
+  {
+    "id": "1ac6f6fa-0b05-4bfa-aed4-b87f0b9468f1",
+    "barcode": "164835",
+    "title": "Louis Vuitton Sarees",
+    "name": "Louis Vuitton Sarees",
+    "description": "High-quality sarees from Louis Vuitton. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Sarees",
+    "brand": "Louis Vuitton",
+    "sku": "LOU-9724",
+    "price": 1001.82,
+    "discount": {
+      "percentage": 89,
+      "type": "amount",
+      "priceAfterDiscount": 912.82
+    },
+    "quantity": 95,
+    "stock": 117,
+    "rating": {
+      "average": 3.1,
+      "count": 534
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=77",
+      "images": [
+        "https://picsum.photos/600/400?random=231",
+        "https://picsum.photos/600/400?random=232",
+        "https://picsum.photos/600/400?random=233"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2025-08-06T00:39:29",
+      "updatedAt": "2026-01-07T00:39:29"
+    }
+  },
+  {
+    "id": "f7f1c3ab-92c1-4738-a074-85ed99efa91a",
+    "barcode": "231417",
+    "title": "Puma Wallets",
+    "name": "Puma Wallets",
+    "description": "High-quality wallets from Puma. Perfect for any occasion.",
+    "category": "accessories",
+    "subCategory": "Wallets",
+    "brand": "Puma",
+    "sku": "PUM-3818",
+    "price": 1390.63,
+    "discount": {
+      "percentage": 18,
+      "type": "Buy One Get 2",
+      "priceAfterDiscount": 1140.32
+    },
+    "quantity": 17,
+    "stock": 36,
+    "rating": {
+      "average": 2.9,
+      "count": 523
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=78",
+      "images": [
+        "https://picsum.photos/600/400?random=234",
+        "https://picsum.photos/600/400?random=235",
+        "https://picsum.photos/600/400?random=236"
+      ]
+    },
+    "isFeatured": true,
+    "timestamps": {
+      "createdAt": "2024-09-28T15:46:42",
+      "updatedAt": "2024-11-22T15:46:42"
+    }
+  },
+  {
+    "id": "f0dc51de-4361-4328-9999-8c3212c5007d",
+    "barcode": "758845",
+    "title": "Zara Kurtis",
+    "name": "Zara Kurtis",
+    "description": "High-quality kurtis from Zara. Perfect for any occasion.",
+    "category": "womens-wear",
+    "subCategory": "Kurtis",
+    "brand": "Zara",
+    "sku": "ZAR-2897",
+    "price": 170.63,
+    "discount": {
+      "percentage": 211,
+      "type": "amount",
+      "priceAfterDiscount": 0
+    },
+    "quantity": 19,
+    "stock": 435,
+    "rating": {
+      "average": 3.4,
+      "count": 495
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=79",
+      "images": [
+        "https://picsum.photos/600/400?random=237",
+        "https://picsum.photos/600/400?random=238",
+        "https://picsum.photos/600/400?random=239"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-06-13T00:00:10",
+      "updatedAt": "2024-07-12T00:00:10"
+    }
+  },
+  {
+    "id": "c6ef9b05-1b88-4003-bb1a-8af76853afb4",
+    "barcode": "883463",
+    "title": "Versace Hoodies",
+    "name": "Versace Hoodies",
+    "description": "High-quality hoodies from Versace. Perfect for any occasion.",
+    "category": "mens-wear",
+    "subCategory": "Hoodies",
+    "brand": "Versace",
+    "sku": "VER-3161",
+    "price": 1024.53,
+    "discount": {
+      "percentage": 8,
+      "type": "Buy One Get 1",
+      "priceAfterDiscount": 942.57
+    },
+    "quantity": 57,
+    "stock": 328,
+    "rating": {
+      "average": 2.4,
+      "count": 332
+    },
+    "media": {
+      "thumbnail": "https://picsum.photos/200/200?random=80",
+      "images": [
+        "https://picsum.photos/600/400?random=240",
+        "https://picsum.photos/600/400?random=241",
+        "https://picsum.photos/600/400?random=242"
+      ]
+    },
+    "isFeatured": false,
+    "timestamps": {
+      "createdAt": "2024-11-29T04:56:41",
+      "updatedAt": "2024-12-17T04:56:41"
     }
   }
 ]

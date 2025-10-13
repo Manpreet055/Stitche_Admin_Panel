@@ -14,7 +14,7 @@ const ErrorPage = () => {
   };
 
   return (
-    <div className="w-full px-12 lg:px-36 flex flex-wrap justify-around  md:items-center h-screen">
+    <section className="w-full px-12 lg:px-36 flex flex-wrap justify-around  md:items-center h-screen">
       <img
         className="w-[50vw] lg:w-[25vw]"
         src="/src/assets/ErrorPageImg.svg"
@@ -49,7 +49,7 @@ const ErrorPage = () => {
           </motion.button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import { Search, User } from "lucide-react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import useDebounce from "../../../Hooks/useDebounce";
-import handleSearches from "../../../Utilities/HandleSearches";
+import handleSearches from "../../../Utilities/handleSearches";
 
 const SearchBar = ({ ApiPath }) => {
   const {

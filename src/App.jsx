@@ -2,11 +2,10 @@ import "./index.css";
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Components/Layout/Sidebar/Sidebar";
 import Navbar from "./Components/Layout/Navbar/Navbar";
-import ContextProviderContainer from "./Context/ContextProviderContainer";
+import ContextProvider from "./Context/ContextProvider";
 function App() {
   return (
-    <div className="flex w-full ">
-      <ContextProviderContainer>
+      <ContextProvider>
         <Sidebar />
         <div className="flex flex-col w-full">
           <header>
@@ -16,8 +15,7 @@ function App() {
             <Outlet></Outlet>
           </main>
         </div>
-      </ContextProviderContainer>
-    </div>
+      </ContextProvider>
   );
 }
 

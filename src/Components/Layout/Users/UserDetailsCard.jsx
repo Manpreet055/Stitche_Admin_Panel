@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Trash2 } from "lucide-react";
-import deleteRequest from "../../../Utilities/DeleteRequest";
+import deleteRequest from "../../../Utilities/deleteRequest";
 
 const UserDetailsCard = ({user}) => {
   const [loadingState,setLoadingState] = useState(false);

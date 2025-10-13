@@ -1,10 +1,9 @@
 import React from "react";
 
 const CustomerInfo = ({ order }) => {
-  const { user, payment, shipping } = order;
+  const { user, shipping } = order;
   const { firstName, lastName, email, phone } = user;
   const { trackingId, city, country } = shipping;
-  const { method, transactionId } = payment;
   return (
     <>
       <div className="w-full flex gap-y-5 flex-wrap py-4 items-center justify-between ">

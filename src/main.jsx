@@ -6,16 +6,17 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./Components/Pages/Dashboard";
 import { Spinner } from "flowbite-react";
 import ErrorPage from "./Components/Pages/ErrorPage";
-import EditProductPage from "./Components/Layout/Products/EditProductPage";
-const Products = lazy(() => import("./Components/Pages/Products"));
+import EditProductPage from "./Components/Pages/Products/EditProductPage";
+const Products = lazy(() => import("./Components/Pages/Products/Products"));
 const Users = lazy(() => import("./Components/Pages/Users"));
-const AddProduct = lazy(() => import("./Components/Pages/AddProduct"));
-const Inbox = lazy(() => import("./Components/Pages/Inbox"));
-const Orders = lazy(() => import("./Components/Pages/Orders"));
-import ChatPage from "./Components/Layout/Inbox/ChatPage";
-import OrderDetails from "./Components/Pages/OrderDetails";
-import ProductDetails from "./Components/Pages/ProductDetails";
-import ProfilePage from "./Components/Pages/ProfilePage";
+const Inbox = lazy (()=>import("./Components/Pages/Inbox/Inbox"))
+import AddProduct from "./Components/Pages/Products/AddProduct";
+const Orders = lazy(() => import("./Components/Pages/Orders/Orders"));
+import ChatPage from "./Components/Pages/Inbox/ChatPage";
+import OrderDetails from "./Components/Pages/Orders/OrderDetails";
+import ProductDetails from "./Components/Pages/Products/ProductDetails";
+import EditProfilePage from "./Components/Pages/EditProfilePage";
+
 let route = createBrowserRouter([
   {
     path: "/",
@@ -25,7 +26,7 @@ let route = createBrowserRouter([
       {
         index: true,
         element: <Dashboard />,
-      },//Dashboard
+      }, //Dashboard
       {
         path: "products",
         element: (
@@ -40,30 +41,19 @@ let route = createBrowserRouter([
             <Products />
           </Suspense>
         ),
-      },//All Products
+      }, //All Products
       {
-        path: "product/:productId/edit",
+        path: "products/:productId/edit",
         element: <EditProductPage />,
-      },//Edit product
+      }, //Edit product
       {
         path: "products/:productId",
         element: <ProductDetails />,
-      },//PDP
+      }, //PDP
       {
         path: "products/add",
-        element: (
-          <Suspense
-            fallback={
-              <div className="flex justify-center items-center text-xl blur-bg p-10 rounded flex-col w-full h-screen">
-                <Spinner size="xl" />
-                Loading...
-              </div>
-            }
-          >
-            <AddProduct />
-          </Suspense>
-        ),
-      },//Add Product
+        element: <AddProduct />,
+      }, //Add Product
       {
         path: "users",
         element: (
@@ -78,7 +68,7 @@ let route = createBrowserRouter([
             <Users />
           </Suspense>
         ),
-      },//All Users
+      }, //All Users
       {
         path: "inbox",
         element: (
@@ -93,11 +83,11 @@ let route = createBrowserRouter([
             <Inbox />
           </Suspense>
         ),
-      },//All Inbox
+      }, //All Inbox
       {
-        path: "chats/:id",
+        path: "inbox/chats/:id",
         element: <ChatPage />,
-      },//Chat Page
+      }, //Chat Page
       {
         path: "orders",
         element: (
@@ -112,15 +102,15 @@ let route = createBrowserRouter([
             <Orders />
           </Suspense>
         ),
-      },//All Orders
+      }, //All Orders
       {
-        path: "order/:id",
+        path: "orders/:id",
         element: <OrderDetails />,
-      },//Order Detail Page (ODP)
+      }, //Order Detail Page (ODP)
       {
         path: "user/profile",
-        element: <ProfilePage />,
-      },//Profile Edit 
+        element: <EditProfilePage />,
+      }, //Profile Edit
     ],
   },
 ]);

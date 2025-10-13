@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
-import { ChevronUp, Settings2, LogOut, Sun } from "lucide-react";
+import { ChevronUp, Settings2, LogOut, Sun, Moon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import growVariants from "../../../Animations/growHeight";
 import { NavLink } from "react-router-dom";
@@ -95,8 +95,8 @@ const ProfileDropDown = ({
                     onClick={() => setTheme((prev) => !prev)}
                     className="profile-card-buttons"
                   >
-                    <Sun />
-                    Light Mode
+                   { theme ? (<><Sun />
+                    Light Mode</>) : (<><Moon/>Dark Mode</>)}
                   </button>
                   <div className="h-fit mt-2 border-t border-gray-400 w-full"></div>
                   <button className=" mt-1 profile-card-buttons">

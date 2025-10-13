@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import OrdersData from "../Orders/OrdersData.json";
-import OrdersListComp from "../Orders/OrdersListComp";
+import OrdersListComp from "../Orders/OrderRow";
 
 const Orders = () => {
   const slicedOrders = OrdersData.slice(1, 10);

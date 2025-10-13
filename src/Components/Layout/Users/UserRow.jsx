@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { item } from "../../../Animations/ListStagger";
 import { motion } from "framer-motion";
-import CapitalizeFirstLetter from "../../../Utilities/CapitalizeLetter";
+import capitalizeFirstLetter from "../../../Utilities/capitalizeLetter";
 import UserDetailsContext from "../../../Context/UserDetailsContext";
 
 const UserRow = ({ serial, user }) => {
@@ -32,7 +32,7 @@ const UserRow = ({ serial, user }) => {
           statusColor[status].toLowerCase() || "bg-gray-400"
         }`}
       >
-        {CapitalizeFirstLetter(status)}
+        {capitalizeFirstLetter(status)}
       </li>
       <li>{role}</li>
       <li>{orders}</li>
