@@ -18,14 +18,14 @@ const SearchNavbar = ({ children, searchBar, filter }) => {
   };
 
   return (
-    <nav className="w-full max-w-screen justify-between mx-5 items-center lg:pr-20 flex md:gap-10 py-3">
-      <div className="flex items-center gap-5 relative">
-        {searchBar}
+    <nav className="relative w-full h-auto min-w-full justify-between mx-5 items-center flex py-3">
+      <div className="flex flex-col md:flex-row items-center gap-y-10">
+        {searchBar} 
         <motion.button
           onHoverStart={handleHoverStart}
           onHoverEnd={handleHoverEnd}
           onClick={() => showFilters((prev) => !prev)}
-          className="flex items-center gap-3 text-xl"
+          className="flex items-center w-full gap-3 text-xl"
         >
           <ListFilter />
           Filters

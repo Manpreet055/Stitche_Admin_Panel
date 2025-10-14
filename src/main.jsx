@@ -7,15 +7,15 @@ import Dashboard from "./Components/Pages/Dashboard";
 import { Spinner } from "flowbite-react";
 import ErrorPage from "./Components/Pages/ErrorPage";
 import EditProductPage from "./Components/Pages/Products/EditProductPage";
-const Products = lazy(() => import("./Components/Pages/Products/Products"));
-const Users = lazy(() => import("./Components/Pages/Users"));
-const Inbox = lazy (()=>import("./Components/Pages/Inbox/Inbox"))
 import AddProduct from "./Components/Pages/Products/AddProduct";
-const Orders = lazy(() => import("./Components/Pages/Orders/Orders"));
 import ChatPage from "./Components/Pages/Inbox/ChatPage";
 import OrderDetails from "./Components/Pages/Orders/OrderDetails";
 import ProductDetails from "./Components/Pages/Products/ProductDetails";
 import EditProfilePage from "./Components/Pages/EditProfilePage";
+const Users = lazy(() => import("./Components/Pages/Users"));
+const Products = lazy(() => import("./Components/Pages/Products/Products"));
+const Inbox = lazy (()=>import("./Components/Pages/Inbox/Inbox"))
+const Orders = lazy(() => import("./Components/Pages/Orders/Orders"));
 
 let route = createBrowserRouter([
   {
@@ -108,7 +108,7 @@ let route = createBrowserRouter([
         element: <OrderDetails />,
       }, //Order Detail Page (ODP)
       {
-        path: "user/profile",
+        path: "profile",
         element: <EditProfilePage />,
       }, //Profile Edit
     ],

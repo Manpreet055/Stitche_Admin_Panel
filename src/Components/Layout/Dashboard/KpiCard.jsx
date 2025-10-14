@@ -13,7 +13,7 @@ const KpiCard = ({ cash = false, icon, number, title }) => {
           <CountUp end={number} />
         </div>
       </div>
-      <div className="pl-16  font-medium text-xl">{title}</div>
+      <div className="pl-16  font-medium text-nowrap md:text-xl">{title}</div>
     </div>
   );
 };

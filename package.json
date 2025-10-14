@@ -12,6 +12,8 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
     "axios": "^1.12.2",
+    "dotenv": "^17.2.3",
+    "env": "^0.0.2",
     "flowbite-react": "^0.12.9",
     "framer-motion": "^12.23.12",
     "lucide-react": "^0.542.0",

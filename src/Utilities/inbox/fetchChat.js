@@ -1,14 +1,13 @@
 import axios from "axios";
 import handleError from "../handleApiError";
+const getChat = import.meta.env.VITE_FETCH_CHAT;
+const markRead = import.meta.env.VITE_MARK_AS_READ;
 // Fetch chat data (GET request)
 const getChatData = async (id) => {
   try {
-    const response = await axios.get(
-      `https://jsonplaceholder.typicode.com/posts/`,
-      {
-        id,
-      }
-    );
+    const response = await axios.get(getChat, {
+      id,
+    });
     console.log("Chat fetched:");
     return response.data;
   } catch (error) {
@@ -21,10 +20,7 @@ const markAsRead = async (isRead, id, setRead) => {
   if (isRead) return;
 
   try {
-    const response = await axios.patch(
-      `https://jsonplaceholder.typicode.com/posts/`,
-      { id, isRead: true }
-    );
+    const response = await axios.patch(markRead, { id, isRead: true });
 
     console.log("Marked as Read:", response.data);
     setRead(true);

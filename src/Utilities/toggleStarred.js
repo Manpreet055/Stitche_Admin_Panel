@@ -1,16 +1,13 @@
 import axios from "axios";
-
+const apiPath = import.meta.env.VITE_TOGGLE_STARRED;
 const toggleStarred = async (checked, id, state, loadingState) => {
   try {
     state(checked); //update UI
     loadingState(true); // for loading spinner
-    const response = await axios.patch(
-      "https://jsonplaceholder.typicode.com/posts/1",
-      {
-        id,
-        isStarred: checked,
-      }
-    );
+    const response = await axios.patch(apiPath, {
+      id,
+      isStarred: checked,
+    });
     const data = response.data;
     console.log(data);
   } catch (error) {

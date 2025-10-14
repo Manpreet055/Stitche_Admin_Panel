@@ -1,15 +1,13 @@
 import axios from "axios";
+const apiPath = import.meta.env.VITE_DELETE_REQUEST_URL;
 
-const deleteRequest = async (id, loadingState ,ApiPath) => {
-  if(!confirm("Do you really want to Delete?")) return
+const deleteRequest = async (id, loadingState) => {
+  if (!confirm("Do you really want to Delete?")) return;
   try {
     loadingState(true);
-    const response = await axios.delete(
-      ApiPath || "https://jsonplaceholder.typicode.com/posts/1",
-      {
-        id,
-      }
-    );
+    const response = await axios.delete(apiPath, {
+      id,
+    });
     console.log("Message deleted...", response.data);
     alert("Item deleted !!");
   } catch (error) {

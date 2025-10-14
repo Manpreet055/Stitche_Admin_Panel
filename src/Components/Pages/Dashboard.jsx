@@ -14,13 +14,13 @@ const Dashboard = () => {
             cash={true}
             icon={<HandCoins />}
             number="23388"
-            title="Total Revenue"
+            title="Revenue"
           />
-          <KpiCard icon={<BookText />} number="2690" title="Total Sales" />
+          <KpiCard icon={<BookText />} number="2690" title="Sales" />
         </div>
         <div className="flex w-full gap-3 justify-around">
-          <KpiCard icon={<Users />} number="1453" title="Active Users" />
-          <KpiCard icon={<Clock />} number="187" title="Pending Orders" />
+          <KpiCard icon={<Users />} number="1453" title="Users" />
+          <KpiCard icon={<Clock />} number="187" title="Orders" />
         </div>
       </div>
 

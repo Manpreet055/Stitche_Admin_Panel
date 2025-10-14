@@ -25,7 +25,7 @@ const MessageRow = ({ inbox, serial }) => {
           goToChat();
         }
       }}
-      className={`py-2 w-full border-b border-gray-300 grid grid-cols-[80px_250px_300px_1fr_80px_100px] px-6 place-items-start  ${
+      className={`py-2 min-w-fit w-full  border-b border-gray-300 grid grid-cols-[80px_250px_300px_1fr_80px_100px] px-6 place-items-start  ${
         loadingState ? "cursor-progress" : "cursor-pointer"
       } text-lg`}
     >
