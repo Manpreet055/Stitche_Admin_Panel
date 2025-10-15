@@ -17,24 +17,26 @@ const AllProducts = () => {
     },
   };
   return (
-    <motion.ul
-      initial="hidden"
-      animate="show"
-      variants={container}
-      className="h-screen pb-56 w-full overflow-scroll pt-10 scrollbar-hidden "
-    >
-      <li className="text-xl font-semibold primary-bg rounded-t-2xl">
-        {" "}
-        <ProductRow isHeader={true} product={header} />
-      </li>
-      <Paginate data={Products} ItemsPerPage={15}>
-        {Products.map((product, index) => (
-          <motion.li variants={item} className="text-lg" key={index}>
-            <ProductRow product={product} serial={index + 1} />
-          </motion.li>
-        ))}
-      </Paginate>
-    </motion.ul>
+    <div className="w-full overflow-auto">
+      <motion.ul
+        initial="hidden"
+        animate="show"
+        variants={container}
+        className="h-screen min-w-fit pb-56 w-full overflow-scroll pt-10 scrollbar-hidden "
+      >
+        <li className="text-xl font-semibold primary-bg rounded-t-2xl">
+          {" "}
+          <ProductRow isHeader={true} product={header} />
+        </li>
+        <Paginate data={Products} ItemsPerPage={15}>
+          {Products.map((product, index) => (
+            <motion.li variants={item} className="text-lg" key={index}>
+              <ProductRow product={product} serial={index + 1} />
+            </motion.li>
+          ))}
+        </Paginate>
+      </motion.ul>
+    </div>
   );
 };
 

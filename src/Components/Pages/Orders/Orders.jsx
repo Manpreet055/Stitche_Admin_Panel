@@ -37,7 +37,9 @@ const Orders = () => {
         searchBar={<SearchBar />}
         filter={<FilterItems fieldArr={filterOrders} />}
       />
-      <AllOrders />
+      <div className="sm:overflow-scroll h-screen scrollbar-hidden sm:pb-56">
+        <AllOrders />
+      </div>
     </section>
   );
 };

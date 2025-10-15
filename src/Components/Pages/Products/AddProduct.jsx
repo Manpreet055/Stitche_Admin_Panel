@@ -14,7 +14,7 @@ const AddProduct = () => {
   };
 
   return (
-    <section className=" scrollbar-hidden w-full h-screen blur-bg flex-1 overflow-y- pb-30 overflow-x-hidden">
+    <section className=" scrollbar-hidden w-full h-screen blur-bg flex-1 overflow-y-auto sm:pb-30 overflow-x-hidden">
       <div className="w-full flex justify-start">
         <BackButton />
       </div>

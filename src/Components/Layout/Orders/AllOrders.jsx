@@ -31,13 +31,14 @@ const AllOrders = () => {
     },
   };
   return (
-    <motion.ul
+    <div className="w-full overflow-x-auto scrollbar-hidden ">
+      <motion.ul
       variants={container}
       initial="hidden"
       animate="show"
-      className="flex flex-col w-full h-screen pb-56 pt-10 overflow-y-scroll scrollbar-hidden"
+      className="flex flex-col min-w-[1350px] h-screen pt-10 overflow-y-auto scrollbar-hidden"
     >
-      <li className="text-2xl md:text-3xl font-semibold primary-bg rounded-t-2xl">
+      <li className="text-2xl md:text-3xl w-full font-semibold primary-bg rounded-t-2xl">
         {" "}
         <OrderRow order={header} />
       </li>
@@ -49,6 +50,7 @@ const AllOrders = () => {
         ))}
       </Pagination>
     </motion.ul>
+    </div>
   );
 };
 

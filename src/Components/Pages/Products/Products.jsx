@@ -1,7 +1,7 @@
 import React from "react";
 import RenderProducts from "../../Layout/Products/AllProducts";
 import SearchNavbar from "../../Layout/Navbar/SearchNavbar";
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import SearchBar from "../../Layout/Navbar/SearchBar";
 import FilterItems from "../../Layout/Navbar/FilterItems";
 const Products = () => {

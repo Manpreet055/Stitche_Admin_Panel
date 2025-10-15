@@ -32,7 +32,7 @@ const OrderRow = ({ order }) => {
           goToProduct();
         }
       }}
-      className={`h-[70px] min-w-max w-full  grid grid-cols-[200px_200px_250px_200px_200px_100px_1fr] place-items-center text-lg border-b ${
+      className={`h-[70px] w-full grid grid-cols-[200px_200px_250px_200px_200px_100px_1fr] place-items-center text-lg border-b ${
         loadingState ? "cursor-progress" : "cursor-pointer"
       } border-gray-300 `}
     >
@@ -50,7 +50,7 @@ const OrderRow = ({ order }) => {
       </li>
       <li>{totalAmount}</li>
       <li>{method}</li>
-      <li>
+      <li className="truncate w-[100px] sm:w-auto">
         {city} {country}
       </li>
     </ul>

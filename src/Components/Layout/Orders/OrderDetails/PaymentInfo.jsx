@@ -2,11 +2,6 @@ import React from "react";
 
 const PaymentInfo = ({ payment,discount,products }) => {
 
-  let totalCost = 0;
-   products.forEach((p) => {
-    totalCost += p.price;
-  });
-  const totalPriceAfterDiscount = totalCost - (discount * totalCost) / 100;
 
   return (
     <div className=" flex  w-full  justify-between items-end flex-wrap">

@@ -6,7 +6,7 @@ import { HandCoins, BookText, Users, Clock } from "lucide-react";
 import RecentOrders from "../Layout/Dashboard/RecentOrders";
 const Dashboard = () => {
   return (
-    <section className=" w-full pb-20 lg:px-12 py-6 h-screen overflow-scroll scrollbar-hidden ">
+    <section className=" w-full lg:px-12 py-6 h-screen overflow-scroll scrollbar-hidden ">
       {/* This is the Overview Card Container which show KPI's information like Revenue ,Users etc. */}
       <div className="w-full flex gap-8 flex-wrap 2xl:flex-nowrap justify-between">
         <div className="flex w-full gap-3 justify-around">
@@ -33,7 +33,10 @@ const Dashboard = () => {
       {/* This Container Contains revenue and order's List */}
       <div className="flex flex-col items-center  w-full">
         <RevenueAreaChart />
-        <RecentOrders />
+        <div className=" overflow-x-auto w-full max-w-screen scrollbar-hidden">
+                  <RecentOrders />
+
+        </div>
       </div>
     </section>
   );

@@ -8,6 +8,7 @@ const ProfileDropDown = ({
   userEmail = "not available",
   profilePic = "/src/assets/avatar.png",
   options = false,
+  children
 }) => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
 
@@ -83,6 +84,7 @@ const ProfileDropDown = ({
                 </div>
               </>
             )}
+            {children}
           </motion.div>
         )}
       </AnimatePresence>

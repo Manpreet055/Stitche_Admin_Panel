@@ -1,15 +1,14 @@
 import React from "react";
 import SendMessagesForm from "../../Layout/Inbox/SendMessagesForm";
-import { Star, ChevronLeft } from "lucide-react";
-import { useNavigate, useParams } from "react-router-dom";
-import inboxData from "../../Layout/Inbox/inbox.json"
+import { Star } from "lucide-react";
+import { useParams } from "react-router-dom";
+import inboxData from "../../Layout/Inbox/inbox.json";
 import ProfileDropDown from "../../Layout/Navbar/ProfileDropDown";
 import ChatDropdown from "../../Layout/Inbox/ChatDropdown";
 import BackButton from "../../../ui/BackButton";
 
 const ChatPage = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
 
   if (!id) {
     console.log("Id is not valid or found...");
@@ -56,23 +55,23 @@ const ChatPage = () => {
       {!id && <div className="absolute inset-0">Loading</div>}
       <div className="flex items-center justify-between  border-b border-gray-500 w-full p-2">
         <div className="flex items-center gap-4">
-         
-         <BackButton />
+          <BackButton />
           <ProfileDropDown
             userEmail={senderEmail}
             userName={senderName}
             profilePic={profilePic}
-          />
+          >
+            <div className="text-sm flex items-center pt-5 flex-col">
+              <div className="text-lg hiddn">Last seen</div>
+              {latestDate}
+              {", "}
+              {latestTime}
+            </div>
+          </ProfileDropDown>
         </div>
 
         <div className="flex items-center gap-4">
           {initialStarred && <Star />}
-          <div className="text-sm flex flex-col">
-            <div className="text-lg">Last seen</div>
-            {latestDate}
-            {", "}
-            {latestTime}
-          </div>
           <ChatDropdown
             conversationId={conversationId}
             initialStarred={initialStarred}
@@ -89,7 +88,7 @@ const ChatPage = () => {
               } `}
             >
               <div
-                className={`w-fit flex flex-col justify-start max-w-[50%] p-4 rounded-2xl ${
+                className={`w-fit flex flex-col justify-start max-w-[70%] sm:max-w-[50%] p-4 rounded-2xl ${
                   msg.sender.includes("admin")
                     ? "primary-bg"
                     : "bg-gray-300 text-black"

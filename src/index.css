@@ -6,8 +6,7 @@ body {
   background-color: #f8f8f8;
   color: black;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
-  /* @apply bg-[url("/src/assets/earth.jpg")] bg-cover bg-center */
+  @apply sm:overflow-hidden
 }
 .sidebar,
 .filters,

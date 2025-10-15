@@ -1,8 +1,8 @@
-import React from 'react'
-import AllMessages from "../../Layout/Inbox/AllMessages"
-import SearchNavbar from "../../Layout/Navbar/SearchNavbar"
-import SearchBar from "../../Layout/Navbar/SearchBar"
-import FilterItems from '../../Layout/Navbar/FilterItems'
+import React from "react";
+import AllMessages from "../../Layout/Inbox/AllMessages";
+import SearchNavbar from "../../Layout/Navbar/SearchNavbar";
+import SearchBar from "../../Layout/Navbar/SearchBar";
+import FilterItems from "../../Layout/Navbar/FilterItems";
 
 const Inbox = () => {
   const filterMessages = [
@@ -38,16 +38,18 @@ const Inbox = () => {
           fieldName: "Low",
           keyname: "low",
         },
-       
       ],
     },
   ];
   return (
-    <section className='px-4 py-5'>
-      <SearchNavbar searchBar={<SearchBar />} filter={<FilterItems fieldArr={filterMessages}/>} />
-      <AllMessages></AllMessages>
+    <section className="px-4 py-5">
+      <SearchNavbar
+        searchBar={<SearchBar />}
+        filter={<FilterItems fieldArr={filterMessages} />}
+      />
+        <AllMessages />
     </section>
-  )
-}
+  );
+};
 
-export default Inbox
+export default Inbox;

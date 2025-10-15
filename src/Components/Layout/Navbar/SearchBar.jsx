@@ -3,7 +3,7 @@ import clickEvent from "../../../Animations/onClick";
 import { Search} from "lucide-react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import useDebounce from "../../../Hooks/useDebounce";
+import useDebounce from "../../../../Hooks/useDebounce";
 import handleSearches from "../../../Utilities/handleSearches";
 
 const SearchBar = ({ ApiPath }) => {
@@ -30,7 +30,7 @@ const SearchBar = ({ ApiPath }) => {
               required: "Search field cannot be empty",
             })}
             type="text"
-            className={`w-full py-3 border-b lg:min-w-xl h-full z-[99]  px-6 active:border-none`}
+            className={`w-full py-3  border-b lg:min-w-xl h-full sm:px-4 px-2 active:border-none`}
             placeholder="Search here.."
             onChange={(event) =>
               event.target.value.length > 2 &&

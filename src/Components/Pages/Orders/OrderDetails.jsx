@@ -1,5 +1,5 @@
 import React from "react";
-import OrderHeader from "../../Layout/Orders/OrderDetails/OrderHeader"
+import OrderHeader from "../../Layout/Orders/OrderDetails/OrderHeader";
 import OrdersData from "../../Layout/Orders/OrdersData.json";
 import { useParams } from "react-router-dom";
 import CustomerInfo from "../../Layout/Orders/OrderDetails/CustomerInfo";
@@ -14,14 +14,11 @@ const OrderDetails = () => {
     return;
   }
 
-  const { orderId, products, discount, status, createdAt,payment } = order;
+  const { orderId, products, status, createdAt } = order;
   const { orderStatus } = status;
 
- 
-
-
   return (
-    <section className="h-screen overflow-y-scroll scrollbar-hidden pb-56 p-4 w-full flex flex-col gap-10">
+    <section className="max-h-screen overflow-y-scroll scrollbar-hidden pb-56 p-4 w-full flex flex-col gap-10">
       <OrderHeader
         orderId={orderId}
         createdAt={createdAt}
@@ -29,7 +26,6 @@ const OrderDetails = () => {
       />
       <OrderGallery products={products} />
       <CustomerInfo order={order} />
-    <PaymentInfo discount={discount} payment={payment} products={products} />
     </section>
   );
 };

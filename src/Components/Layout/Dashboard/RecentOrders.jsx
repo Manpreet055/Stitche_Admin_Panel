@@ -45,7 +45,7 @@ const Orders = () => {
           </div>
         </NavLink>
       </div>
-      <ul className="overflow-x-scroll w-fit min-w-full scrollbar-hidden">
+      <ul className="overflow-x-auto w-fit min-w-full  scrollbar-hidden">
         <li className="text-2xl md:text-3xl font-semibold primary-bg rounded-t-2xl">
           {" "}
           <OrderRow order={header} />

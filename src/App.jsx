@@ -1,8 +1,8 @@
 import "./index.css";
 import { Outlet } from "react-router-dom";
-import Sidebar from "./Components/Layout/Sidebar/Sidebar";
 import Navbar from "./Components/Layout/Navbar/Navbar";
 import ContextProvider from "./Context/ContextProvider";
+import Sidebar from "./Components/Layout/Sidebar/Sidebar"
 function App() {
   return (
       <ContextProvider>

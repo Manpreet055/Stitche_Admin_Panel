@@ -31,8 +31,8 @@ const FilterItems = ({ fieldArr, ApiPath }) => {
   };
 
   return (
-    <div className="bg-black filters text-white absolute top-15 left-50 lg:left-120  z-90 flex flex-col blur-bg w-fit border border-gray-400 rounded-xl">
-      <h1 className="text-2xl mx-5 px-3 border-b border-gray-300 font-semibold py-4">
+    <div className="bg-black filters text-white absolute top-1/3 md:top-30 z-[69] flex flex-col  w-fit border border-gray-400 rounded-xl">
+      <h1 className="sm:text-2xl px-3 border-b border-gray-300 font-semibold py-4">
         Filters
       </h1>
       <form

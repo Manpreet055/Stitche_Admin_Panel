@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-const ProductRow = ({ product, serial = "Serial No." }) => {
+const ProductRow = ({ product, serial = "Sr. No." }) => {
   //Destructring the product data from product prop
   const { id, title, brand, price, stock, category, rating } = product;
 
@@ -13,10 +13,10 @@ const ProductRow = ({ product, serial = "Serial No." }) => {
   return (
     <ul
       onClick={navProduct}
-      className="px-4 py-5 grid grid-cols-[100px_1fr__200px_150px_160px_200px_160px_180px] place-items-center w-full p-4 border-b border-gray-300 relative"
+      className="px-4 py-5 grid grid-cols-[100px_1fr__200px_150px_160px_200px_160px_230px] place-items-center w-full p-4 border-b border-gray-300 relative"
     >
       <li>{serial}</li>
-      <li className={`place-self-start pl-10`}>{title}</li>
+      <li className={`place-self-start  text-nowrap`}>{title}</li>
       <li>{brand}</li>
       <li>{typeof price != "string" ? Math.floor(price) : price}</li>
       <li>{stock}</li>

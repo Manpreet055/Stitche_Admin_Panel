@@ -14,9 +14,9 @@ const Sidebar = () => {
         // animate={{ width: "auto", opacity: 1 }}
         // exit={{ width:0, opacity: 0 }}
         // transition={{ duration: 0.4 }}
-        className={`blur-bg origin-left sidebar fixed lg:relative z-90 ${
+        className={`blur-bg origin-left sidebar fixed lg:relative z-[90] ${
           sidebar ? "flex" : "hidden"
-        } z-50 h-screen max-h-[100%] lg:flex  flex-col justify-between w-72 max-w-[80vw] md:w-[300px]`}
+        } h-screen  max-h-[100%] lg:flex  flex-col justify-between w-72 max-w-[80vw] md:w-[300px]`}
       >
         <div className="flex flex-col h-full justify-between">
           <div className="flex py-6 px-4 justify-center items-center gap-3 ">

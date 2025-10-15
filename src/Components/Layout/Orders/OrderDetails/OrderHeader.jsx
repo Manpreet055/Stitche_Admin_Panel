@@ -12,20 +12,20 @@ const OrderHeader = ({ orderId, createdAt, orderStatus }) => {
   return (
     <>
       <BackButton />
-      <div className="flex justify-between w-full ">
+      <div className="flex justify-between flex-wrap gap-y-6 w-full ">
         <h2 className="text-3xl flex gap-3 flex-col">
           Order #{orderId}{" "}
           <span className="text-lg text-neutral-500">
             Placed on: {createdAt}
           </span>{" "}
         </h2>
-        <div
+        <button
           className={`${
             statusColor[orderStatus.toLowerCase()]
-          } place-content-center w-[150px] h-[70%] rounded-2xl text-center`}
+          } py-4 px-6 h-fit rounded-2xl`}
         >
           {CapitalizeFirstLetter(orderStatus)}
-        </div>
+        </button>
       </div>
     </>
   );
