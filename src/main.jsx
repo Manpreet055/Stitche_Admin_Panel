@@ -3,19 +3,19 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Dashboard from "./Components/Pages/Dashboard";
+import Dashboard from "./Pages/Dashboard";
 import { Spinner } from "flowbite-react";
-import ErrorPage from "./Components/Pages/ErrorPage";
-import EditProductPage from "./Components/Pages/Products/EditProductPage";
-import AddProduct from "./Components/Pages/Products/AddProduct";
-import ChatPage from "./Components/Pages/Inbox/ChatPage";
-import OrderDetails from "./Components/Pages/Orders/OrderDetails";
-import ProductDetails from "./Components/Pages/Products/ProductDetails";
-import EditProfilePage from "./Components/Pages/EditProfilePage";
-const Users = lazy(() => import("./Components/Pages/Users"));
-const Products = lazy(() => import("./Components/Pages/Products/Products"));
-const Inbox = lazy (()=>import("./Components/Pages/Inbox/Inbox"))
-const Orders = lazy(() => import("./Components/Pages/Orders/Orders"));
+import ErrorPage from "./Pages/ErrorPage"
+import EditProductPage from "./Pages/Products/EditProductPage";
+import AddProduct from "./Pages/Products/AddProduct";
+import ChatPage from "./Pages/Inbox/ChatPage";
+import OrderDetails from "./Pages/Orders/OrderDetails";
+import ProductDetails from "./Pages/Products/ProductDetails";
+import EditProfilePage from "./Pages/EditProfilePage";
+const Users = lazy(() => import("./Pages/Users"));
+const Products = lazy(() => import("./Pages/Products/Products"));
+const Inbox = lazy (()=>import("./Pages/Inbox/Inbox"))
+const Orders = lazy(() => import("./Pages/Orders/Orders"));
 
 let route = createBrowserRouter([
   {
