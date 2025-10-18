@@ -56,7 +56,6 @@ Note: Make sure Node.js v18+ is installed for compatibility with React 19 and Ta
 ---
 📁 Folder Structure
 <pre>
-```text
 Admin_Panel_Frontend/
 │
 ├── src/
