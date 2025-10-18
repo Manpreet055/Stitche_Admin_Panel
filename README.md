@@ -54,8 +54,9 @@ Or simply press o after starting to open it automatically in your browser.
 Note: Make sure Node.js v18+ is installed for compatibility with React 19 and Tailwind v4.
 
 ---
-
 📁 Folder Structure
+<pre>
+```text
 Admin_Panel_Frontend/
 │
 ├── src/
@@ -73,7 +74,7 @@ Admin_Panel_Frontend/
 ├── .env
 ├── package.json
 └── README.md
-
+</pre>
 ---
 
 📸 Screenshots
