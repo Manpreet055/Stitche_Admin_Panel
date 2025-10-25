@@ -1,7 +1,7 @@
 import { container } from "../../Animations/ListStagger";
 import { motion } from "framer-motion";
 import UserRow from "./UserRow";
-import UsersData from "./UsersData";
+import UsersData from "./UsersData.json";
 import Paginate from "../../ui/Pagination";
 
 const AllUsers = () => {
