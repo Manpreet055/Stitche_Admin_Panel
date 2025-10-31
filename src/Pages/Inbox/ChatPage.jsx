@@ -1,22 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import SendMessagesForm from "../../Layout/Inbox/SendMessagesForm";
 import { Star } from "lucide-react";
 import { useParams } from "react-router-dom";
-import inboxData from "../../Layout/Inbox/inbox.json";
 import ProfileDropDown from "../../Layout/Navbar/ProfileDropDown";
 import ChatDropdown from "../../Layout/Inbox/ChatDropdown";
 import BackButton from "../../ui/BackButton";
+import { getChatData } from "../../services/inbox";
+import { get } from "react-hook-form";
 const ChatPage = () => {
+  const [loadingState, setLoadingState] = useState(false);
+  const [error, setError] = useState("");
+  const [conversation, setConversation] = useState({});
   const { id } = useParams();
 
   if (!id) {
     console.log("Id is not valid or found...");
-    return;
+  }
+  const getData = async () => {
+    await getChatData(id, setLoadingState, setError, setConversation);
+  };
+
+  useEffect(() => {
+    if (!id) return;
+    getData();
+  }, [id]);
+
+  if (!conversation?.user || !conversation?.messages) {
+    return <div className="p-10 text-center">Loading chat...</div>;
   }
 
-  // ---------------------------------
-  // This entire block fetch users info
-  const conversation = inboxData.find((c) => String(c.conversationId) == id); //Finding the chat
   const {
     user,
     messages,

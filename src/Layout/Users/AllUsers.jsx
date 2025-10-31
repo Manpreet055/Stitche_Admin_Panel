@@ -1,10 +1,18 @@
 import { container } from "../../Animations/ListStagger";
 import { motion } from "framer-motion";
 import UserRow from "./UserRow";
-import UsersData from "./UsersData.json";
 import Paginate from "../../ui/Pagination";
+import {getAllUsers} from "../../services/users";
+import { useEffect, useState } from "react";
 
 const AllUsers = () => {
+  const [users, setUsers] = useState([]);
+  useEffect(() => {
+    const getusers = async () => {
+      setUsers(await getAllUsers());
+    };
+    getusers();
+  }, []);
   return (
     <div className=" pt-10 w-full overflow-y-scroll scrollbar-hidden ">
       <motion.ul
@@ -23,12 +31,12 @@ const AllUsers = () => {
           <li>Role</li>
           <li>Orders</li>
           <li>Last login</li>
-        </ul> 
-        <Paginate data={UsersData} ItemsPerPage={15}>
-          {UsersData.map((user, index) => (
+        </ul>
+        <Paginate data={users} ItemsPerPage={15}>
+          {users.map((user, index) => (
             <UserRow serial={index + 1} key={user.id} user={user} />
           ))}
-        </Paginate>
+        </Paginate>{" "}
       </motion.ul>
     </div>
   );

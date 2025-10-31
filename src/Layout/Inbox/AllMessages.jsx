@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MessageRow from "./MessageRow";
-import inboxData from "./inbox.json";
 import Pagination from "../../ui/Pagination";
 import { motion } from "framer-motion";
 import { container, item } from "../../Animations/ListStagger";
-
+import { fetchMessages } from "../../services/inbox";
 const AllMessages = () => {
+  const [loadingState,setLoadingState] = useState(false);
+  const [error,setError] = useState("");
+  const [allMessages,setAllMessages] = useState([]);
+  useEffect(()=>{
+    const inbox = async ()=>{
+      await fetchMessages(setLoadingState,setError,setAllMessages)
+    }
+    inbox()
+  },[])
   return (
     <div className="w-full overflow-x-auto">
       <motion.div
@@ -22,8 +30,8 @@ const AllMessages = () => {
           <li>Message</li>
           <li className="text-center">Notifications</li>
         </ul>
-        <Pagination data={inboxData}>
-          {inboxData.map((message, index) => (
+        <Pagination data={allMessages}>
+          {allMessages.map((message, index) => (
             <motion.li variants={item} key={index}>
               <MessageRow serial={index + 1} inbox={message} />
             </motion.li>

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import fetchChat from "../../Utilities/inbox/fetchChat";
 
 const MessageRow = ({ inbox, serial }) => {
-  const { conversationId, user, messages, subject } = inbox;
+  const { _id, user, messages, subject } = inbox;
   const { email: senderEmail, name: senderName } = user;
   const totalUnreadMessages = messages.filter((text) => text.isRead === false);
 
@@ -13,17 +13,12 @@ const MessageRow = ({ inbox, serial }) => {
 
   const navigate = useNavigate();
   const goToChat = () => {
-    navigate(`/inbox/chats/${conversationId}`);
+    navigate(`/inbox/chats/${_id}`);
   };
 
   return (
     <ul
-      onClick={async () => {
-        if (!loadingState) {
-          await fetchChat(read, conversationId, setLoadingState, setRead);
-          goToChat();
-        }
-      }}
+      onClick={goToChat}
       className={`py-2 w-full  border-b border-gray-300 grid grid-cols-[80px_250px_300px_1fr_230px] px-6 place-items-center  ${
         loadingState ? "cursor-progress" : "cursor-pointer"
       } text-lg`}
@@ -33,10 +28,10 @@ const MessageRow = ({ inbox, serial }) => {
       <li className="justify-self-start">{senderEmail}</li>
 
       <li className="w-full justify-self-start pl-10">
-          <h2 className="w-full">{subject}</h2>
-          <p className={`text-neutral-500 max-w-lg truncate `}>
-            {messages.at(-1).text}
-          </p>
+        <h2 className="w-full">{subject}</h2>
+        <p className={`text-neutral-500 max-w-lg truncate `}>
+          {messages.at(-1).text}
+        </p>
       </li>
 
       <li className="primary-bg w-7 rounded-full text-center  ">
