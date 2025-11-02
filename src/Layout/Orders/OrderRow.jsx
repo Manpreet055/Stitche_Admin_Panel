@@ -5,7 +5,7 @@ import capitalizeFirstLetter from "../../Utilities/capitalizeLetter";
 const OrderRow = ({ order }) => {
   const [loadingState, setLoadingState] = useState(false);
 
-  const { orderId, products, totalAmount, payment, shipping, status, user } =
+  const { _id, products, totalAmount, payment, shipping, status, user } =
     order;
   const { orderStatus } = status;
   const { method } = payment;
@@ -13,7 +13,7 @@ const OrderRow = ({ order }) => {
   const { firstName, lastName } = user;
   const navigate = useNavigate();
   const goToProduct = () => {
-    navigate(`/orders/${orderId}`);
+    navigate(`/orders/${_id}`);
   };
 
   const statusColor = {
@@ -28,15 +28,14 @@ const OrderRow = ({ order }) => {
     <ul
       onClick={async () => {
         if (!loadingState) {
-          await fetchOrder(orderId, setLoadingState);
+          await fetchOrder(_id, setLoadingState);
           goToProduct();
         }
       }}
-      className={`h-[70px] w-full grid grid-cols-[200px_200px_250px_200px_200px_100px_1fr] place-items-center text-lg border-b ${
+      className={`h-[70px] w-full grid grid-cols-[200px_250px_200px_200px_100px_1fr] place-items-center text-lg border-b ${
         loadingState ? "cursor-progress" : "cursor-pointer"
       } border-gray-300 `}
     >
-      <li>{orderId}</li>
       <li>
         {firstName} {lastName}
       </li>

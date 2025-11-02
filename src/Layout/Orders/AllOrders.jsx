@@ -3,13 +3,20 @@ import Pagination from "../../ui/Pagination";
 import OrderRow from "./OrderRow";
 import { container, item } from "../../Animations/ListStagger";
 import { motion } from "framer-motion";
-import {fetchOrders} from "../../services/orders"
+import { fetchAllData } from "../../services/fetchData";
 
 const AllOrders = () => {
   const [orders, setOrders] = useState([]);
+  const [loadingState, setLoadingState] = useState(false);
+  const [error, setError] = useState("");
   useEffect(() => {
     const getOrders = async () => {
-      setOrders(await fetchOrders());
+      try{
+        await fetchAllData("orders", setLoadingState, setError,setOrders);
+      setOrders(prev=>prev.orders);
+      }catch(err){
+        setError(err?.message ?? "Failed to load Orders")
+      }
     };
     getOrders();
   }, []);

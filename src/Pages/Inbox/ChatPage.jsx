@@ -5,24 +5,30 @@ import { useParams } from "react-router-dom";
 import ProfileDropDown from "../../Layout/Navbar/ProfileDropDown";
 import ChatDropdown from "../../Layout/Inbox/ChatDropdown";
 import BackButton from "../../ui/BackButton";
-import { getChatData } from "../../services/inbox";
-import { get } from "react-hook-form";
+import { fetchAllDataById } from "../../services/fetchData";
 const ChatPage = () => {
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
   const [conversation, setConversation] = useState({});
   const { id } = useParams();
 
-  if (!id) {
-    console.log("Id is not valid or found...");
-  }
-  const getData = async () => {
-    await getChatData(id, setLoadingState, setError, setConversation);
-  };
-
   useEffect(() => {
     if (!id) return;
-    getData();
+    const fetchChat = async () => {
+      try {
+        const data = await fetchAllDataById(
+          "inbox",
+          id,
+          setLoadingState,
+          setError
+        );
+        setConversation(data.chat);
+      } catch (err) {
+        setError(err?.message ?? err ?? "Failed to load Chat");
+      }
+    };
+
+    fetchChat();
   }, [id]);
 
   if (!conversation?.user || !conversation?.messages) {

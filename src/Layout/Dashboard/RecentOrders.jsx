@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
-import OrdersData from "../Orders/OrdersData.json";
 import OrderRow from "../Orders/OrderRow";
+import getRecentOrders from "../../services/fetchRecentOrders";
 import { NavLink } from "react-router-dom";
 
 const Orders = () => {
+  const [orders, setOrders] = useState([]);
+  const [loadingState, setLoadingState] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const getOrders = async () => {
+      try{
+      await getRecentOrders(setLoadingState, setError, setOrders,10);
+      }catch(err){
+        setError(err?.message ?? "Failed to load recent orders")
+      }
+    };
+    getOrders();
+  }, []);
   const header = {
     orderId: "Order Id",
     userId: "User Id",
@@ -29,7 +43,6 @@ const Orders = () => {
       lastName: "",
     },
   };
-  const slicedOrders = OrdersData.slice(1, 10);
   return (
     <div className="blur-bg w-full input-section rounded-xl my-5">
       <div className=" mb-2 text-3xl font-semibold w-full flex justify-between">
@@ -50,7 +63,7 @@ const Orders = () => {
           {" "}
           <OrderRow order={header} />
         </li>
-        {slicedOrders.map((order, index) => (
+        {orders.map((order, index) => (
           <li key={index}>{<OrderRow order={order} />}</li>
         ))}
       </ul>

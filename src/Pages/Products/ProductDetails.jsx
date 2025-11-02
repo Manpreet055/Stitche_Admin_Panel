@@ -1,43 +1,73 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import PDPHeader from "../../Layout/Products/ProductDetails/PDPHeader"
-import ProductsData from "../../Layout/Products/products.json";
+import PDPHeader from "../../Layout/Products/ProductDetails/PDPHeader";
 import ProductGallery from "../../Layout/Products/ProductDetails/ProductGallery";
 import ProductDesc from "../../Layout/Products/ProductDetails/ProductDesc";
 import PriceDetails from "../../Layout/Products/ProductDetails/PriceDetails";
 import MetaData from "../../Layout/Products/ProductDetails/MetaData";
+import { fetchAllDataById } from "../../services/fetchData";
+import ProductContext from "../../Context/products/productContext";
 
 const ProductDetails = () => {
-  const { productId } = useParams();
-  const product = ProductsData.find((p) => String(p.id) === String(productId));
-  const {
-    title,
-    id,
-    description,
-    category,
-    subCategory,
-    brand,
-    sku,
-    stock,
-    price,
-    discount,
-    rating,
-    media,
-    isFeatured,
-    timestamps,
-  } = product;
-  const { thumbnail, images } = media;
-  const { createdAt, updatedAt } = timestamps;
+  const { product, setProduct } = useContext(ProductContext);
+  const [loadingState, setLoadingState] = useState(false);
+  const [error, setError] = useState(null);
 
-  //
-  const [loadingState, setLoadingState] = useState(true);
+  const { productId } = useParams();
+
   const [imagesArr, setImages] = useState([]);
   const [thumbnails, setThumbnail] = useState("");
+
   useEffect(() => {
-    setImages(images);
-    setThumbnail(thumbnail);
-    setLoadingState(false);
+    if (!productId) return;
+
+    const fetchProductData = async () => {
+      try {
+        const data = await fetchAllDataById(
+          "products",
+          productId,
+          setLoadingState,
+          setError
+        );
+        const fetchedProduct = data?.product ?? data ?? null;
+        setProduct(fetchedProduct);
+
+        setImages(fetchedProduct?.media?.images ?? []);
+        setThumbnail(fetchedProduct?.media?.thumbnail ?? "");
+      } catch (err) {
+        setError(err?.message ?? "Failed to load product");
+      }
+    };
+
+    if (product) return;
+    fetchProductData();
   }, []);
+
+  const {
+    title = "",
+    _id = "",
+    description = "",
+    category = "",
+    subCategory = "",
+    brand = "",
+    sku = "",
+    stock = 0,
+    price = 0,
+    discount = {},
+    rating = 0,
+    media = {},
+    isFeatured = false,
+    timestamps = {},
+  } = product ?? {};
+
+  const { thumbnail = "", images = [] } = media;
+  const { createdAt = "", updatedAt = "" } = timestamps;
+  const discountPercentage = discount?.percentage ?? 0;
+
+  useEffect(() => {
+    setImages(images ?? []);
+    setThumbnail(thumbnail ?? "");
+  }, [images, thumbnail]);
 
   return (
     <section className="flex h-screen overflow-y-auto scrollbar-hidden pb-56 flex-col gap-6 p-4 w-full">
@@ -45,14 +75,10 @@ const ProductDetails = () => {
         title={title}
         category={category}
         subCategory={subCategory}
-        id={id}
+        id={_id}
         isFeatured={isFeatured}
       />
-      <ProductGallery
-        images={imagesArr}
-        thumbnail={thumbnails}
-        loadingState={loadingState}
-      />
+      <ProductGallery images={imagesArr} thumbnail={thumbnails} />
       <ProductDesc
         description={description}
         brand={brand}
@@ -61,9 +87,9 @@ const ProductDetails = () => {
         isFeatured={isFeatured}
       />
       <div className="flex min-h-64 gap-y-6 justify-between flex-wrap">
-        <PriceDetails price={price} discount={discount.percentage} />
+        <PriceDetails price={price} discount={discountPercentage} />
         <MetaData
-          id={id}
+          id={_id}
           sku={sku}
           createdAt={createdAt}
           updatedAt={updatedAt}

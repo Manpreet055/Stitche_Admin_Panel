@@ -1,17 +1,16 @@
 import { FormProvider, useForm } from "react-hook-form";
 import ImageUploader from "../../Layout/Products/ProductForm/ImageUploader";
-import Products from "../../Layout/Products/products.json";
-import { useParams } from "react-router-dom";
 import BasicInfo from "../../Layout/Products/ProductForm/BasicInfo";
 import PricingInfo from "../../Layout/Products/ProductForm/PricingInfo";
 import CategorySelect from "../../Layout/Products/ProductForm/CategorySelect";
 import StockDetails from "../../Layout/Products/ProductForm/StockDetails";
 import BackButton from "../../ui/BackButton";
 import editProduct from "../../Utilities/Product/editProduct"
+import ProductContext from "../../Context/products/productContext";
+import { useContext } from "react";
 
 const EditProductPage = () => {
-  const { productId } = useParams();
-  const product = Products.find((p) => String(p.id) === String(productId));
+  const {product} = useContext(ProductContext)
   const methods = useForm({
     defaultValues: {
       name: product.title,

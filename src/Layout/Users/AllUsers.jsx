@@ -2,17 +2,25 @@ import { container } from "../../Animations/ListStagger";
 import { motion } from "framer-motion";
 import UserRow from "./UserRow";
 import Paginate from "../../ui/Pagination";
-import {getAllUsers} from "../../services/users";
 import { useEffect, useState } from "react";
-
+import { fetchAllData } from "../../services/fetchData";
 const AllUsers = () => {
+  const [loadingState, setLoadingState] = useState(false);
+  const [error, setError] = useState("");
   const [users, setUsers] = useState([]);
+
   useEffect(() => {
     const getusers = async () => {
-      setUsers(await getAllUsers());
+      try {
+        await fetchAllData("users", setLoadingState, setError, setUsers);
+        setUsers((prev) => prev.users);
+      } catch (err) {
+        setError(err?.message ?? "Failed to load Users..");
+      }
     };
     getusers();
   }, []);
+
   return (
     <div className=" pt-10 w-full overflow-y-scroll scrollbar-hidden ">
       <motion.ul

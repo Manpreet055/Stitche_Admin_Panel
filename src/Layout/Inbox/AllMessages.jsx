@@ -3,17 +3,22 @@ import MessageRow from "./MessageRow";
 import Pagination from "../../ui/Pagination";
 import { motion } from "framer-motion";
 import { container, item } from "../../Animations/ListStagger";
-import { fetchMessages } from "../../services/inbox";
+import { fetchAllData } from "../../services/fetchData";
 const AllMessages = () => {
-  const [loadingState,setLoadingState] = useState(false);
-  const [error,setError] = useState("");
-  const [allMessages,setAllMessages] = useState([]);
-  useEffect(()=>{
-    const inbox = async ()=>{
-      await fetchMessages(setLoadingState,setError,setAllMessages)
-    }
-    inbox()
-  },[])
+  const [loadingState, setLoadingState] = useState(false);
+  const [error, setError] = useState("");
+  const [allMessages, setAllMessages] = useState([]);
+  useEffect(() => {
+    const inbox = async () => {
+      try{
+        await fetchAllData("inbox", setLoadingState, setError, setAllMessages);
+      setAllMessages((prev) => prev.messages);
+      }catch(err){
+        setError(err?.message ?? "Failed to load Messages")
+      }
+    };
+    inbox();
+  }, []);
   return (
     <div className="w-full overflow-x-auto">
       <motion.div

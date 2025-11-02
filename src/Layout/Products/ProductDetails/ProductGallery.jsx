@@ -1,15 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Spinner } from "flowbite-react";
 
-const ProductGallery = ({ images, thumbnail,loadingState }) => {
-  
-  if (loadingState) {
-    return (
-      <div className="flex border border-gray-300 rounded-lg justify-center items-center h-64 ">
-        <Spinner></Spinner>
-      </div>
-    );
-  }
+const ProductGallery = ({ images, thumbnail }) => {
   return (
     <>
       <div className="flex border border-gray-300  rounded-lg items-center p-6 justify-evenly flex-wrap">

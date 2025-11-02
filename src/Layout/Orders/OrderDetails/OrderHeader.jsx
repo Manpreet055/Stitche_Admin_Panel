@@ -21,7 +21,7 @@ const OrderHeader = ({ orderId, createdAt, orderStatus }) => {
         </h2>
         <button
           className={`${
-            statusColor[orderStatus.toLowerCase()]
+            statusColor[String(orderStatus).toLowerCase()]
           } py-4 px-6 h-fit rounded-2xl`}
         >
           {CapitalizeFirstLetter(orderStatus)}

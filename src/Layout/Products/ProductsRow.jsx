@@ -2,12 +2,12 @@ import { useNavigate } from "react-router-dom";
 
 const ProductRow = ({ product, serial = "Sr. No." }) => {
   //Destructring the product data from product prop
-  const { id, title, brand, price, stock, category, rating } = product;
+  const { _id, title, brand, price, stock, category, rating } = product;
 
   // navigate to the PDP
   const navigate = useNavigate();
   const navProduct = () => {
-    navigate(`/products/${id}`);
+    navigate(`/products/${_id}`);
   };
 
   return (

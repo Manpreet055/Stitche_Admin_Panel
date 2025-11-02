@@ -1,10 +1,23 @@
-import React from "react";
-import Products from "./products.json";
+import React, { useEffect, useState } from "react";
 import ProductRow from "./ProductsRow";
 import Paginate from "../../ui/Pagination";
 import { motion } from "framer-motion";
 import { container, item } from "../../Animations/ListStagger";
+import { fetchAllData } from "../../services/fetchData";
+
 const AllProducts = () => {
+  const [loadingState, setLoadingState] = useState(false);
+  const [error, setError] = useState("");
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+     await fetchAllData("products", setLoadingState, setError,setProducts)
+     setProducts(prev=>prev.products)
+    };
+    fetchProducts();
+  },[]);
+
   const header = {
     title: "Product Name",
     brand: "Brand",
@@ -28,8 +41,8 @@ const AllProducts = () => {
           {" "}
           <ProductRow isHeader={true} product={header} />
         </li>
-        <Paginate data={Products} ItemsPerPage={15}>
-          {Products.map((product, index) => (
+        <Paginate data={products} ItemsPerPage={15}>
+          {products.map((product, index) => (
             <motion.li variants={item} className="text-lg" key={index}>
               <ProductRow product={product} serial={index + 1} />
             </motion.li>
