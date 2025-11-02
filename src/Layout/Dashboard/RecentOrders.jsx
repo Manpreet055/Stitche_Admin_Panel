@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import OrderRow from "../Orders/OrderRow";
-import getRecentOrders from "../../services/fetchRecentOrders";
+import { fetchAllData } from "../../services/fetchData";
 import { NavLink } from "react-router-dom";
 
 const Orders = () => {
   const [orders, setOrders] = useState([]);
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
-
+  const limit = 10;
   useEffect(() => {
     const getOrders = async () => {
-      try{
-      await getRecentOrders(setLoadingState, setError, setOrders,10);
-      }catch(err){
-        setError(err?.message ?? "Failed to load recent orders")
+      try {
+        await fetchAllData("orders", setLoadingState, setError, setOrders);
+        setOrders((prev) => prev.orders);
+      } catch (err) {
+        setError(err?.message ?? "Failed to load recent orders");
       }
     };
     getOrders();

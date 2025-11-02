@@ -6,6 +6,8 @@ import ProfileDropDown from "../../Layout/Navbar/ProfileDropDown";
 import ChatDropdown from "../../Layout/Inbox/ChatDropdown";
 import BackButton from "../../ui/BackButton";
 import { fetchAllDataById } from "../../services/fetchData";
+import AsyncBoundary from "../../ui/AsyncBoundary";
+
 const ChatPage = () => {
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
@@ -31,8 +33,18 @@ const ChatPage = () => {
     fetchChat();
   }, [id]);
 
-  if (!conversation?.user || !conversation?.messages) {
-    return <div className="p-10 text-center">Loading chat...</div>;
+  if (loadingState) {
+    return <AsyncBoundary loadingState={true} errorState={null} />;
+  }
+  if (error) {
+    return <AsyncBoundary loadingState={false} errorState={error} />;
+  }
+
+  if (
+    typeof conversation !== "object" ||
+    Object.keys(conversation).length === 0
+  ) {
+    return <AsyncBoundary customMessage="No Chat found." />;
   }
 
   const {
@@ -66,10 +78,9 @@ const ChatPage = () => {
     month: "short",
     day: "numeric",
   });
-  // ------------------------------------------------
+
   return (
     <section className="h-screen flex flex-col  w-full p-4 ">
-      {!id && <div className="absolute inset-0">Loading</div>}
       <div className="flex items-center justify-between  border-b border-gray-500 w-full p-2">
         <div className="flex items-center gap-4">
           <BackButton />

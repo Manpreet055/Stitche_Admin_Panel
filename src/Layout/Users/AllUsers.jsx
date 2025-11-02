@@ -4,22 +4,45 @@ import UserRow from "./UserRow";
 import Paginate from "../../ui/Pagination";
 import { useEffect, useState } from "react";
 import { fetchAllData } from "../../services/fetchData";
+import AsyncBoundary from "../../ui/AsyncBoundary";
 const AllUsers = () => {
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
   const [users, setUsers] = useState([]);
+  const [page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const limit = 15;
 
   useEffect(() => {
     const getusers = async () => {
       try {
-        await fetchAllData("users", setLoadingState, setError, setUsers);
+        const data = await fetchAllData(
+          "users",
+          setLoadingState,
+          setError,
+          setUsers,
+          page,
+          limit
+        );
         setUsers((prev) => prev.users);
+        setTotalPages(data.totalPages);
       } catch (err) {
         setError(err?.message ?? "Failed to load Users..");
       }
     };
     getusers();
-  }, []);
+  }, [page]);
+
+  if (loadingState) {
+    return <AsyncBoundary loadingState={true} errorState={null} />;
+  }
+  if (error) {
+    return <AsyncBoundary loadingState={false} errorState={error} />;
+  }
+
+  if (!Array.isArray(users) || users.length === 0) {
+    return <AsyncBoundary customMessage="No User found." />;
+  }
 
   return (
     <div className=" pt-10 w-full overflow-y-scroll scrollbar-hidden ">
@@ -40,11 +63,14 @@ const AllUsers = () => {
           <li>Orders</li>
           <li>Last login</li>
         </ul>
-        <Paginate data={users} ItemsPerPage={15}>
-          {users.map((user, index) => (
-            <UserRow serial={index + 1} key={user.id} user={user} />
-          ))}
-        </Paginate>{" "}
+        {users.map((user, index) => (
+          <UserRow serial={index + 1} key={user.id} user={user} />
+        ))}
+        <Paginate
+          setPage={setPage}
+          totalPages={totalPages}
+          currentPage={page}
+        />
       </motion.ul>
     </div>
   );

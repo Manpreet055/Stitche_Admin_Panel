@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import OrderHeader from "../../Layout/Orders/OrderDetails/OrderHeader";
+import OrderHeader from "../../Layout/OrderDetails/OrderHeader";
 import { useParams } from "react-router-dom";
-import CustomerInfo from "../../Layout/Orders/OrderDetails/CustomerInfo";
-import OrderGallery from "../../Layout/Orders/OrderDetails/OrderGallery";
+import CustomerInfo from "../../Layout/OrderDetails/CustomerInfo";
+import OrderGallery from "../../Layout/OrderDetails/OrderGallery";
 import { fetchAllDataById } from "../../services/fetchData";
-import { Spinner } from "flowbite-react";
+import AsyncBoundary from "../../ui/AsyncBoundary";
 
 const OrderDetails = () => {
   const { id } = useParams();
@@ -30,20 +30,15 @@ const OrderDetails = () => {
     if (id) fetchOrderData();
   }, [id]);
 
-  if (loadingState || !order || Object.keys(order).length === 0) {
-    return (
-      <div className="flex items-center justify-center h-screen">
-        <Spinner size="xl" />
-      </div>
-    );
+  if (loadingState) {
+    return <AsyncBoundary loadingState={true} errorState={null} />;
+  }
+  if (error) {
+    return <AsyncBoundary loadingState={false} errorState={error} />;
   }
 
-  if (error) {
-    return (
-      <div className="flex flex-col items-center justify-center h-screen text-center">
-        <p className="text-red-500 text-lg font-semibold">{error}</p>
-      </div>
-    );
+  if (typeof order !== "object" || Object.keys(order).length === 0) {
+    return <AsyncBoundary customMessage="No order found." />;
   }
 
   const { orderId, products, status, createdAt } = order ?? {};

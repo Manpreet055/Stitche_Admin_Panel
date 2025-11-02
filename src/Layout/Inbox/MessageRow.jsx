@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import fetchChat from "../../Utilities/inbox/fetchChat";
 
-const MessageRow = ({ inbox, serial }) => {
+const MessageRow = ({ inbox }) => {
   const { _id, user, messages, subject } = inbox;
   const { email: senderEmail, name: senderName } = user;
   const totalUnreadMessages = messages.filter((text) => text.isRead === false);
@@ -19,11 +19,10 @@ const MessageRow = ({ inbox, serial }) => {
   return (
     <ul
       onClick={goToChat}
-      className={`py-2 w-full  border-b border-gray-300 grid grid-cols-[80px_250px_300px_1fr_230px] px-6 place-items-center  ${
+      className={`py-2 w-full  border-b border-gray-300 grid grid-cols-[250px_300px_1fr_230px] px-6 place-items-center  ${
         loadingState ? "cursor-progress" : "cursor-pointer"
       } text-lg`}
     >
-      <li>{serial}</li>
       <li>{senderName}</li>
       <li className="justify-self-start">{senderEmail}</li>
 

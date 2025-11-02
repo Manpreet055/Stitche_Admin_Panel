@@ -4,8 +4,7 @@ import "./index.css";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
-import { Spinner } from "flowbite-react";
-import ErrorPage from "./Pages/ErrorPage"
+import ErrorPage from "./Pages/ErrorPage";
 import EditProductPage from "./Pages/Products/EditProductPage";
 import AddProduct from "./Pages/Products/AddProduct";
 import ChatPage from "./Pages/Inbox/ChatPage";
@@ -14,7 +13,7 @@ import ProductDetails from "./Pages/Products/ProductDetails";
 import EditProfilePage from "./Pages/EditProfilePage";
 const Users = lazy(() => import("./Pages/Users"));
 const Products = lazy(() => import("./Pages/Products/Products"));
-const Inbox = lazy (()=>import("./Pages/Inbox/Inbox"))
+const Inbox = lazy(() => import("./Pages/Inbox/Inbox"));
 const Orders = lazy(() => import("./Pages/Orders/Orders"));
 
 let route = createBrowserRouter([
@@ -30,14 +29,7 @@ let route = createBrowserRouter([
       {
         path: "products",
         element: (
-          <Suspense
-            fallback={
-              <div className="flex justify-center items-center text-xl blur-bg p-10 rounded flex-col w-full h-screen">
-                <Spinner size="xl" />
-                Loading...
-              </div>
-            }
-          >
+          <Suspense>
             <Products />
           </Suspense>
         ),
@@ -57,14 +49,7 @@ let route = createBrowserRouter([
       {
         path: "users",
         element: (
-          <Suspense
-            fallback={
-              <div className="flex justify-center items-center text-xl blur-bg p-10 rounded flex-col w-full h-screen">
-                <Spinner size="xl" />
-                Loading...
-              </div>
-            }
-          >
+          <Suspense>
             <Users />
           </Suspense>
         ),
@@ -72,14 +57,7 @@ let route = createBrowserRouter([
       {
         path: "inbox",
         element: (
-          <Suspense
-            fallback={
-              <div className="flex justify-center items-center text-xl blur-bg p-10 rounded flex-col w-full h-screen">
-                <Spinner size="xl" />
-                Loading...
-              </div>
-            }
-          >
+          <Suspense>
             <Inbox />
           </Suspense>
         ),
@@ -91,14 +69,7 @@ let route = createBrowserRouter([
       {
         path: "orders",
         element: (
-          <Suspense
-            fallback={
-              <div className="flex justify-center items-center text-xl blur-bg p-10 rounded flex-col w-full h-screen">
-                <Spinner size="xl" />
-                Loading...
-              </div>
-            }
-          >
+          <Suspense>
             <Orders />
           </Suspense>
         ),

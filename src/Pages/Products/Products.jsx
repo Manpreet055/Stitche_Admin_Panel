@@ -58,7 +58,7 @@ const Products = () => {
         filter={<FilterItems fieldArr={filterUsers} />}
       >
         {
-          <NavLink to="/products/add" className="button-style primary-bg">
+          <NavLink to="/products/add" className="button-style">
             Add Product +
           </NavLink>
         }

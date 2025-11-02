@@ -1,6 +1,6 @@
 import React from "react";
-import CapitalizeFirstLetter from "../../../Utilities/capitalizeLetter";
-import BackButton from "../../../ui/BackButton";
+import CapitalizeFirstLetter from "../../Utilities/capitalizeLetter";
+import BackButton from "../../ui/BackButton";
 const OrderHeader = ({ orderId, createdAt, orderStatus }) => {
   const statusColor = {
     cancelled: "bg-red-100 text-red-800",

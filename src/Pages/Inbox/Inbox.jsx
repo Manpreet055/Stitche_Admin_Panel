@@ -42,12 +42,14 @@ const Inbox = () => {
     },
   ];
   return (
-    <section className="px-4 py-5">
+    <section className="overlflow-scroll h-screen p-4 w-full scrollbar-hidden">
       <SearchNavbar
         searchBar={<SearchBar />}
         filter={<FilterItems fieldArr={filterMessages} />}
       />
+      <div className="overflow-auto scrollbar-hidden  h-full w-full mb-56  ">
         <AllMessages />
+      </div>
     </section>
   );
 };

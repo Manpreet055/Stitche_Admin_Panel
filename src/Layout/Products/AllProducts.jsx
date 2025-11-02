@@ -4,19 +4,31 @@ import Paginate from "../../ui/Pagination";
 import { motion } from "framer-motion";
 import { container, item } from "../../Animations/ListStagger";
 import { fetchAllData } from "../../services/fetchData";
+import AsyncBoundary from "../../ui/AsyncBoundary";
 
 const AllProducts = () => {
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
   const [products, setProducts] = useState([]);
+  const [page, setPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const limit = 15;
 
   useEffect(() => {
     const fetchProducts = async () => {
-     await fetchAllData("products", setLoadingState, setError,setProducts)
-     setProducts(prev=>prev.products)
+      const data = await fetchAllData(
+        "products",
+        setLoadingState,
+        setError,
+        setProducts,
+        page,
+        limit
+      );
+      setProducts((prev) => prev.products);
+      setTotalPages(data.totalPages);
     };
     fetchProducts();
-  },[]);
+  }, [page]);
 
   const header = {
     title: "Product Name",
@@ -29,6 +41,18 @@ const AllProducts = () => {
       count: "Reviews",
     },
   };
+
+  if (loadingState) {
+    return <AsyncBoundary loadingState={true} errorState={null} />;
+  }
+  if (error) {
+    return <AsyncBoundary loadingState={false} errorState={error} />;
+  }
+
+  if (!Array.isArray(products) || products.length === 0) {
+    return <AsyncBoundary customMessage="No product found." />;
+  }
+
   return (
     <div className="w-full overflow-auto">
       <motion.ul
@@ -41,13 +65,18 @@ const AllProducts = () => {
           {" "}
           <ProductRow isHeader={true} product={header} />
         </li>
-        <Paginate data={products} ItemsPerPage={15}>
-          {products.map((product, index) => (
-            <motion.li variants={item} className="text-lg" key={index}>
-              <ProductRow product={product} serial={index + 1} />
-            </motion.li>
-          ))}
-        </Paginate>
+
+        {products.map((product, index) => (
+          <motion.li variants={item} className="text-lg" key={index}>
+            <ProductRow product={product} serial={index + 1} />
+          </motion.li>
+        ))}
+
+        <Paginate
+          setPage={setPage}
+          totalPages={totalPages}
+          currentPage={page}
+        />
       </motion.ul>
     </div>
   );

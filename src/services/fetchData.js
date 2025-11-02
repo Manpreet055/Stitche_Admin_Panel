@@ -2,10 +2,10 @@ import axios from "axios";
 const uri = import.meta.env.VITE_BASE_URI;
 import handleApiError from "./handleApiError";
 
-export const fetchAllData = async (path,setLoadingState, setError,setData) => {
+export const fetchAllData = async (path,setLoadingState, setError,setData,page = 1,limit = 10,) => {
   try {
     setLoadingState(true);
-    const response = await axios.get(`${uri}/${path}`);
+    const response = await axios.get(`${uri}/${path}/?page=${page}&limit=${limit}`);
     const data = response.data;
     setData(data)
     return data;

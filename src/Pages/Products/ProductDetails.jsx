@@ -1,12 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import PDPHeader from "../../Layout/Products/ProductDetails/PDPHeader";
-import ProductGallery from "../../Layout/Products/ProductDetails/ProductGallery";
-import ProductDesc from "../../Layout/Products/ProductDetails/ProductDesc";
-import PriceDetails from "../../Layout/Products/ProductDetails/PriceDetails";
-import MetaData from "../../Layout/Products/ProductDetails/MetaData";
+import PDPHeader from "../../Layout/ProductDetails/PDPHeader";
+import ProductGallery from "../../Layout/ProductDetails/ProductGallery";
+import ProductDesc from "../../Layout/ProductDetails/ProductDesc";
+import PriceDetails from "../../Layout/ProductDetails/PriceDetails";
+import MetaData from "../../Layout/ProductDetails/MetaData";
 import { fetchAllDataById } from "../../services/fetchData";
 import ProductContext from "../../Context/products/productContext";
+import AsyncBoundary from "../../ui/AsyncBoundary";
 
 const ProductDetails = () => {
   const { product, setProduct } = useContext(ProductContext);
@@ -31,9 +32,6 @@ const ProductDetails = () => {
         );
         const fetchedProduct = data?.product ?? data ?? null;
         setProduct(fetchedProduct);
-
-        setImages(fetchedProduct?.media?.images ?? []);
-        setThumbnail(fetchedProduct?.media?.thumbnail ?? "");
       } catch (err) {
         setError(err?.message ?? "Failed to load product");
       }
@@ -69,6 +67,16 @@ const ProductDetails = () => {
     setThumbnail(thumbnail ?? "");
   }, [images, thumbnail]);
 
+  if (loadingState) {
+    return <AsyncBoundary loadingState={true} errorState={null} />;
+  }
+  if (error) {
+    return <AsyncBoundary loadingState={false} errorState={error} />;
+  }
+
+  if (typeof product !== "object" || Object.keys(product).length === 0) {
+    return <AsyncBoundary customMessage="No Product found." />;
+  }
   return (
     <section className="flex h-screen overflow-y-auto scrollbar-hidden pb-56 flex-col gap-6 p-4 w-full">
       <PDPHeader

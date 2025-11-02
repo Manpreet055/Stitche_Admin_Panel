@@ -1,9 +1,9 @@
 import { FormProvider, useForm } from "react-hook-form";
-import ImageUploader from "../../Layout/Products/ProductForm/ImageUploader";
-import BasicInfo from "../../Layout/Products/ProductForm/BasicInfo";
-import PricingInfo from "../../Layout/Products/ProductForm/PricingInfo";
-import CategorySelect from "../../Layout/Products/ProductForm/CategorySelect";
-import StockDetails from "../../Layout/Products/ProductForm/StockDetails";
+import ImageUploader from "../../Layout/ProductForm/ImageUploader";
+import BasicInfo from "../../Layout/ProductForm/BasicInfo";
+import PricingInfo from "../../Layout/ProductForm/PricingInfo";
+import CategorySelect from "../../Layout/ProductForm/CategorySelect";
+import StockDetails from "../../Layout/ProductForm/StockDetails";
 import BackButton from "../../ui/BackButton";
 import editProduct from "../../Utilities/Product/editProduct"
 import ProductContext from "../../Context/products/productContext";

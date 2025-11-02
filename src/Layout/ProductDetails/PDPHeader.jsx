@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Trash2, Pen, Star, StarOff } from "lucide-react";
-import deleteRequest from "../../../Utilities/deleteRequest";
-import toggleStarred from "../../../Utilities/toggleStarred";
-import BackButton from "../../../ui/BackButton";
+import deleteRequest from "../../Utilities/deleteRequest";
+import toggleStarred from "../../Utilities/toggleStarred";
+import BackButton from "../../ui/BackButton";
 
 const PDPHeader = ({ id, title, category, subCategory, isFeatured }) => {
   const [loadingState, setLoadingState] = useState(false);
