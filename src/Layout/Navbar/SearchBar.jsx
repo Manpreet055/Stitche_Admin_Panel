@@ -3,26 +3,26 @@ import clickEvent from "../../Animations/onClick";
 import { Search} from "lucide-react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
-import handleSearches from "../../Utilities/handleSearches";
+import searchData from "../../services/searchData";
 import useDebounce from "../../Hooks/useDebounce"
 
-const SearchBar = ({ ApiPath }) => {
+const SearchBar = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting },
+    formState: {isSubmitting },
   } = useForm();
 
   // Creating Debounce Variable function
   const debounceSearch = useDebounce({
-    callBack: handleSearches,
+    callBack: searchData,
     delay: 500,
   });
 
   return (
     <form
-      onSubmit={handleSubmit(handleSearches)}
-      className="h-full w-full max-w-screen grow flex items-center gap-2"
+      onSubmit={handleSubmit((data)=>searchData(data.searches))}
+      className="h-full w-full max-w-xl  grow flex items-center gap-2"
     >
           <input
             autoComplete="off"
@@ -34,7 +34,7 @@ const SearchBar = ({ ApiPath }) => {
             placeholder="Search here.."
             onChange={(event) =>
               event.target.value.length > 2 &&
-              debounceSearch({ searches: event.target.value })
+              debounceSearch(event.target.value)
             }
           />
         <motion.button

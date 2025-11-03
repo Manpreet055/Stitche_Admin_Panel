@@ -3,6 +3,8 @@ import { Menu, X, Bell } from "lucide-react";
 import ProfileDropDown from "./ProfileDropDown";
 import SidebarContext from "../../Context/sidebar/SidebarContext";
 import { NavLink, useLocation } from "react-router-dom";
+import SearchBar from "./SearchBar";
+import FilterItems from "./FilterItems";
 
 const Navbar = () => {
   // Check the current Path and set that path Name to the Navbar
@@ -40,6 +42,7 @@ const Navbar = () => {
   if (!title) title = "Unknown Page";
   const { sidebar, showSidebar } = useContext(SidebarContext);
   return (
+    <>
     <div className="w-full md:h-20 flex justify-between items-center pl-3 lg:px-2 py-2">
       <h1 className="text-2xl md:text-4xl font-medium">{title} </h1>
       <div className=" flex items-center">
@@ -60,6 +63,10 @@ const Navbar = () => {
         </button>
       </div>
     </div>
+    <div className="w-full flex flex-wrap items-centerlg:px-5 h-auto">
+      <SearchBar />
+    </div>
+    </>
   );
 };
 

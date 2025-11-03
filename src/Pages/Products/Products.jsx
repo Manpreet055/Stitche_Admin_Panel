@@ -53,16 +53,6 @@ const Products = () => {
   ];
   return (
     <section className="overlflow-scroll h-screen p-4 w-full scrollbar-hidden">
-      <SearchNavbar
-        searchBar={<SearchBar />}
-        filter={<FilterItems fieldArr={filterUsers} />}
-      >
-        {
-          <NavLink to="/products/add" className="button-style">
-            Add Product +
-          </NavLink>
-        }
-      </SearchNavbar>
       <RenderProducts />
     </section>
   );
