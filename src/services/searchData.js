@@ -4,8 +4,8 @@ const uri = import.meta.env.VITE_BASE_URI;
 
 const searchData = async (query) => {
   try {
-    const response = await axios.get(`${uri}/products/search?query=${query}`);
-    const data = response.data.products;
+    const response = await axios.get(`${uri}/api/search?query=${query}`);
+    const data = response.data.results;
     console.log(data);
   } catch (error) {
     handleApiError(error);

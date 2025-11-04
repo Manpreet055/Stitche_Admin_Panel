@@ -1,12 +1,7 @@
 import React from "react";
 import RenderProducts from "../../Layout/Products/AllProducts";
-import SearchNavbar from "../../Layout/Navbar/SearchNavbar";
-import { NavLink} from "react-router-dom";
-import SearchBar from "../../Layout/Navbar/SearchBar";
-import FilterItems from "../../Layout/Navbar/FilterItems";
 const Products = () => {
-
-   // Filters options array for "Filters" componenet 
+  // Filters options array for "Filters" componenet
   const filterUsers = [
     {
       name: "Category",
@@ -51,7 +46,7 @@ const Products = () => {
       ],
     },
   ];
-  return (
+  return ( 
     <section className="overlflow-scroll h-screen p-4 w-full scrollbar-hidden">
       <RenderProducts />
     </section>
