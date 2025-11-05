@@ -2,10 +2,10 @@ import React from "react";
 
 const OrderGallery = ({ products }) => {
   return (
-      <div className="flex flex-col w-full  ">
-        <h3 className="title">Products Orderded</h3>
-        <div className="w-full overflow-x-auto">
-          <ul className="text-lg flex flex-col gap-3 p-4 min-w-[990px] border border-gray-300 rounded-lg ">
+    <div className="flex flex-col w-full  ">
+      <h3 className="title">Products Orderded</h3>
+      <div className="w-full overflow-x-auto">
+        <ul className="text-lg flex flex-col gap-3 p-4 min-w-[990px] border border-gray-300 rounded-lg ">
           <li className=" text-xl border-b py-4 mb-5  font-semibold grid grid-cols-5 w-full place-items-center">
             <div>Images</div>
             <div>Product Id</div>
@@ -26,8 +26,8 @@ const OrderGallery = ({ products }) => {
             </li>
           ))}
         </ul>
-        </div>
       </div>
+    </div>
   );
 };
 

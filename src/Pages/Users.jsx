@@ -4,7 +4,7 @@ import UserDetailsContext from "../Context/UserDetailsContext";
 import UserDetailsCard from "../Layout/Users/UserDetailsCard";
 
 const Users = () => {
-  const { details} = useContext(UserDetailsContext);
+  const { details } = useContext(UserDetailsContext);
   const fieldArr = [
     {
       name: "Status",

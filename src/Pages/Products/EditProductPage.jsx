@@ -5,17 +5,17 @@ import PricingInfo from "../../Layout/ProductForm/PricingInfo";
 import CategorySelect from "../../Layout/ProductForm/CategorySelect";
 import StockDetails from "../../Layout/ProductForm/StockDetails";
 import BackButton from "../../ui/BackButton";
-import editProduct from "../../Utilities/Product/editProduct"
+import editProduct from "../../Utilities/Product/editProduct";
 import ProductContext from "../../Context/products/productContext";
 import { useContext } from "react";
 
 const EditProductPage = () => {
-  const {product} = useContext(ProductContext)
+  const { product } = useContext(ProductContext);
   const methods = useForm({
     defaultValues: {
       name: product.title,
       description: product.description,
-      category: product.category  ,
+      category: product.category,
       subCategory: product.subCategory,
       "discount-type": product.discount.type,
       brand: product.brand,
@@ -26,7 +26,7 @@ const EditProductPage = () => {
       discount: product.discount.percentage,
       priceAfterDiscount: product.discount.priceAfterDiscount,
       stock: product.stock,
-      isFeatured:product.isFeatured ? "yes" : "no"
+      isFeatured: product.isFeatured ? "yes" : "no",
     },
   });
 
@@ -40,7 +40,7 @@ const EditProductPage = () => {
           action=""
           method="POST"
           onSubmit={methods.handleSubmit((value) =>
-            editProduct(value, product.id)
+            editProduct(value, product.id),
           )}
           className=" rounded-3xl flex gap-y-6 justify-evenly flex-wrap w-full"
         >

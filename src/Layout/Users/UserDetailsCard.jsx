@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Trash2 } from "lucide-react";
 import deleteRequest from "../../Utilities/deleteRequest";
-import UserDetailsContext from "../../Context/UserDetailsContext"
+import UserDetailsContext from "../../Context/UserDetailsContext";
 import { X } from "lucide-react";
 
 const UserDetailsCard = ({ user }) => {
@@ -24,14 +24,12 @@ const UserDetailsCard = ({ user }) => {
   const { city, country } = address;
   return (
     <div className=" w-full h-fit max-w-xl user-card bg-white/30 backdrop-blur-2xl flex flex-col p-6 ">
-     
       <button
         onClick={() => showDetails({ value: false, Info: {} })}
         className="flex justify-end button-style"
       >
         <X size={28} />
       </button>
-
 
       <div className=" p-4 flex items-center w-full justify-between  gap-8 ">
         <h3 className="text-3xl font-medium">{Username}</h3>

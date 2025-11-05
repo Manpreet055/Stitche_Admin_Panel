@@ -8,7 +8,7 @@ const ProfileDropDown = ({
   userEmail = "not available",
   profilePic = "/src/assets/avatar.png",
   options = false,
-  children
+  children,
 }) => {
   const [isDropDownOpen, setIsDropDownOpen] = useState(false);
 

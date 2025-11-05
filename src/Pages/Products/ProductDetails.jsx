@@ -28,7 +28,7 @@ const ProductDetails = () => {
           "products",
           productId,
           setLoadingState,
-          setError
+          setError,
         );
         const fetchedProduct = data?.product ?? data ?? null;
         setProduct(fetchedProduct);

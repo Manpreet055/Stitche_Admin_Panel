@@ -1,8 +1,6 @@
 import React from "react";
 
-const PaymentInfo = ({ payment,discount,products }) => {
-
-
+const PaymentInfo = ({ payment, discount, products }) => {
   return (
     <div className=" flex  w-full  justify-between items-end flex-wrap">
       {" "}

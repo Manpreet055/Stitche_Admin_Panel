@@ -15,11 +15,11 @@ const MetaData = ({ id, sku, createdAt, updatedAt }) => {
         </li>
         <li className="flex gap-6">
           <span className="text-lg font font-medium">Created</span>
-          {createdAt.slice(0,10)} {createdAt.slice(11,16)}
+          {createdAt.slice(0, 10)} {createdAt.slice(11, 16)}
         </li>
         <li className="flex gap-6">
           <span className="text-lg font font-medium">Updated</span>
-          {updatedAt.slice(0,10)} {updatedAt.slice(11,16)}
+          {updatedAt.slice(0, 10)} {updatedAt.slice(11, 16)}
         </li>
       </ul>
     </div>

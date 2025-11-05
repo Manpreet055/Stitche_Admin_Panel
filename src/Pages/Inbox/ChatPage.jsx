@@ -22,7 +22,7 @@ const ChatPage = () => {
           "inbox",
           id,
           setLoadingState,
-          setError
+          setError,
         );
         setConversation(data.chat);
       } catch (err) {
@@ -59,7 +59,7 @@ const ChatPage = () => {
   const latestMessage = messages.reduce(
     (latest, msg) =>
       new Date(msg.timestamp) > new Date(latest.timestamp) ? msg : latest,
-    messages[0]
+    messages[0],
   );
 
   // Convert to Date object

@@ -9,7 +9,7 @@ const ChatDropdown = ({ conversationId, initialStarred }) => {
 
   const [starred, setStarred] = useState(initialStarred);
   const [options, showOptions] = React.useState(false);
-  
+
   // to show option on hover
   const timeref = useRef(null);
   const handleHoverStart = () => {
@@ -48,7 +48,7 @@ const ChatDropdown = ({ conversationId, initialStarred }) => {
                     !starred,
                     conversationId,
                     setStarred,
-                    setLoadingState
+                    setLoadingState,
                   )
                 }
               >

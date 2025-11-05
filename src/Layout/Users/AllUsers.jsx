@@ -22,7 +22,7 @@ const AllUsers = () => {
           setError,
           setUsers,
           page,
-          limit
+          limit,
         );
         setUsers((prev) => prev.users);
         setTotalPages(data.totalPages);

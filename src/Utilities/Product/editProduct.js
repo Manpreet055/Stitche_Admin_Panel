@@ -17,7 +17,7 @@ const editProduct = async (data, id) => {
               url: img,
               type: "existing",
             }
-          : { file: img, type: "new" }
+          : { file: img, type: "new" },
       ),
       thumbnail: Array.of(data.thumbnail).map((t) =>
         typeof t === "string"
@@ -25,7 +25,7 @@ const editProduct = async (data, id) => {
           : {
               file: t,
               type: "new",
-            }
+            },
       ),
       stock: data.stock,
       price: data.price,

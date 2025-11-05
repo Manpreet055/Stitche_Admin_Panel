@@ -22,7 +22,7 @@ const AllProducts = () => {
         setError,
         setProducts,
         page,
-        limit
+        limit,
       );
       setProducts((prev) => prev.products);
       setTotalPages(data.totalPages);

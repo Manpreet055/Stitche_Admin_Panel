@@ -2,8 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { Pen } from "lucide-react";
 import updateProfile from "../Utilities/Profile/updateProfile";
-import BackButton from "../ui/BackButton"
-
+import BackButton from "../ui/BackButton";
 
 const EditProfilePage = () => {
   const defaultUser = {
@@ -32,7 +31,7 @@ const EditProfilePage = () => {
   const { id, username, fullName, email, phone, bio, avatarUrl, dob } =
     defaultUser;
 
-  const handleFormData = async(data) => {
+  const handleFormData = async (data) => {
     await updateProfile(id, data);
   };
 
@@ -56,7 +55,7 @@ const EditProfilePage = () => {
   return (
     <section className=" flex h-screen flex-col items-center p-4 ">
       <div className="w-full flex justify-start">
-          <BackButton />
+        <BackButton />
       </div>
       <form
         className="flex h-full overflow-y-auto pb-56 scrollbar-hidden flex-col w-full max-w-xl md:max-w-3xl gap-2  "

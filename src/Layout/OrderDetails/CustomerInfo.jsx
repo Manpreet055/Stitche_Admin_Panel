@@ -35,7 +35,7 @@ const CustomerInfo = ({ order }) => {
         </div>
 
         <div className="flex flex-col text-lg gap-2 w-fit ">
-          <h3 className="title border-b py-2">Payment  Info</h3>
+          <h3 className="title border-b py-2">Payment Info</h3>
 
           <div className="text-lg font-medium">
             {" "}

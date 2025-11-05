@@ -8,34 +8,35 @@ This project is designed for managing users, products, orders, and inbox data wi
 
 ## 🚀 Features
 
-- 🧑‍💼 **User Management** – Add, edit, delete, and view users  
-- 🛒 **Product Management** – Full CRUD with multiple image uploads  
-- 📦 **Order Tracking** – Manage and monitor orders efficiently  
-- 🔍 **Filtering & Search** – Smart filters with live suggestions for data tables  
-- 🌗 **Dark / Light Theme** – Custom theme toggle with `localStorage` support  
-- ⚙️ **Form Validation** – Seamless form handling via React Hook Form  
-- 📊 **Dashboard Analytics** – Visual charts and KPIs with Recharts  
+- 🧑‍💼 **User Management** – Add, edit, delete, and view users
+- 🛒 **Product Management** – Full CRUD with multiple image uploads
+- 📦 **Order Tracking** – Manage and monitor orders efficiently
+- 🔍 **Filtering & Search** – Smart filters with live suggestions for data tables
+- 🌗 **Dark / Light Theme** – Custom theme toggle with `localStorage` support
+- ⚙️ **Form Validation** – Seamless form handling via React Hook Form
+- 📊 **Dashboard Analytics** – Visual charts and KPIs with Recharts
 
 ---
 
 ## 🧰 Tech Stack
 
-| Category | Tools / Libraries |
-|-----------|------------------|
-| **Frontend** | React, Tailwind CSS, Flowbite, Axios |
-| **State Management** | Context API |
-| **Forms** | React Hook Form |
-| **Routing** | React Router DOM |
-| **Charts** | Recharts |
-| **Icons** | Lucide React |
-| **Animation** | Framer Motion |
-| **Backend (In Progress)** | Node.js + Express + MongoDB |
+| Category                  | Tools / Libraries                    |
+| ------------------------- | ------------------------------------ |
+| **Frontend**              | React, Tailwind CSS, Flowbite, Axios |
+| **State Management**      | Context API                          |
+| **Forms**                 | React Hook Form                      |
+| **Routing**               | React Router DOM                     |
+| **Charts**                | Recharts                             |
+| **Icons**                 | Lucide React                         |
+| **Animation**             | Framer Motion                        |
+| **Backend (In Progress)** | Node.js + Express + MongoDB          |
 
 ---
 
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
+
 git clone https://github.com/Manpreet055/Admin_Panel_Project.git
 cd Admin_Panel_Frontend
 
@@ -45,7 +46,6 @@ npm install
 3️⃣ Run the Project
 npm run dev
 
-
 Your app will run at:
 👉 http://localhost:5173
 
@@ -54,7 +54,9 @@ Or simply press o after starting to open it automatically in your browser.
 Note: Make sure Node.js v18+ is installed for compatibility with React 19 and Tailwind v4.
 
 ---
+
 📁 Folder Structure
+
 <pre>
 Admin_Panel_Frontend/
 │
@@ -74,6 +76,7 @@ Admin_Panel_Frontend/
 ├── package.json
 └── README.md
 </pre>
+
 ---
 
 📸 Screenshots
@@ -117,7 +120,6 @@ Admin_Panel_Frontend/
 
 ---
 
-
 🤝 Contributing
 
 1.Fork the repo 🍴
@@ -126,11 +128,9 @@ Admin_Panel_Frontend/
 
 git checkout -b feature-name
 
-
 3.Commit your changes:
 
 git commit -m "Added feature-name"
-
 
 4.Push and open a Pull Request 🚀
 
@@ -140,7 +140,7 @@ git commit -m "Added feature-name"
 
 This project is licensed under the MIT License – free to use and modify.
 
-🧑‍💻 Author : Manpreet Singh 
+🧑‍💻 Author : Manpreet Singh
 
 🌍 GitHub : https://github.com/Manpreet055
 

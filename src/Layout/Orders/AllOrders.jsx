@@ -22,7 +22,7 @@ const AllOrders = () => {
           setError,
           setOrders,
           page,
-          limit
+          limit,
         );
         setOrders((prev) => prev.orders);
         setTotalPages(data.totalPages);

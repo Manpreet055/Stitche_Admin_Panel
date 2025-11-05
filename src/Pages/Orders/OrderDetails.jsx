@@ -19,7 +19,7 @@ const OrderDetails = () => {
           "orders",
           id,
           setLoadingState,
-          setError
+          setError,
         );
         setOrder(data?.order ?? {});
       } catch (err) {

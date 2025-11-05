@@ -23,7 +23,7 @@ const AsyncBoundary = ({
         ) : error ? (
           error
         ) : (
-          customMessage ?? "Something Went Wrong"
+          (customMessage ?? "Something Went Wrong")
         )}
       </div>
     </div>

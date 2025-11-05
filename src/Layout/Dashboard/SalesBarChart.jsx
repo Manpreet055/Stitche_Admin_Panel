@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// using dummy data to show SalesBarChart 
+// using dummy data to show SalesBarChart
 const data = [
   { day: "Mon", Sales: "19", InStore: "33" },
   { day: "Tue", Sales: "28", InStore: "44" },
@@ -34,11 +34,10 @@ const SalesBarChart = () => {
 
         {/* Used Recharts's  built-in responsive container to build a responsive chart*/}
         <ResponsiveContainer width="100%" height="85%">
-          
           {/* As we are creating bar chart so we used Barchart components of Recharts */}
           <BarChart data={data} margin={{ bottom: 20, right: 20 }}>
             {/* Grids */}
-            <CartesianGrid vertical={false} strokeDasharray="3 3" /> 
+            <CartesianGrid vertical={false} strokeDasharray="3 3" />
             <Bar fill="#edcfb1" dataKey="InStore" />
             <Bar fill="#554840" dataKey="Sales" />
             <XAxis tick={{ dy: 15 }} dataKey="day" />

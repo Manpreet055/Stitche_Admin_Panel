@@ -22,7 +22,7 @@ const AllMessages = () => {
           setError,
           setAllMessages,
           page,
-          limit
+          limit,
         );
         setAllMessages((prev) => prev.messages);
         setTotalPages(data?.totalPages ?? 1);

@@ -5,8 +5,7 @@ import capitalizeFirstLetter from "../../Utilities/capitalizeLetter";
 const OrderRow = ({ order }) => {
   const [loadingState, setLoadingState] = useState(false);
 
-  const { _id, products, totalAmount, payment, shipping, status, user } =
-    order;
+  const { _id, products, totalAmount, payment, shipping, status, user } = order;
   const { orderStatus } = status;
   const { method } = payment;
   const { city, country } = shipping;

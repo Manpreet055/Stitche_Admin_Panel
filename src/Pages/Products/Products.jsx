@@ -46,7 +46,7 @@ const Products = () => {
       ],
     },
   ];
-  return ( 
+  return (
     <section className="overlflow-scroll h-screen p-4 w-full scrollbar-hidden">
       <RenderProducts />
     </section>

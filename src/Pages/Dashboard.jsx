@@ -34,8 +34,7 @@ const Dashboard = () => {
       <div className="flex flex-col items-center  w-full">
         <RevenueAreaChart />
         <div className=" overflow-x-auto w-full max-w-screen scrollbar-hidden">
-                  <RecentOrders />
-
+          <RecentOrders />
         </div>
       </div>
     </section>

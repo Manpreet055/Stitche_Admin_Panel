@@ -3,8 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import clickEvent from "../Animations/onClick";
 const ErrorPage = () => {
-
-// Navigation button's Functions
+  // Navigation button's Functions
   const navigate = useNavigate();
   const GoBack = () => {
     navigate(-1);

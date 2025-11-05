@@ -31,8 +31,8 @@ const RevenueAreaChart = () => {
       <h2 className="text-2xl font-medium p-4 mb-3">Revenue</h2>
       <div className="w-full min-w-[700px] h-[400px]  pb-4">
         <ResponsiveContainer width="100%" height="100%">
-          <AreaChart data={revenueData} margin={{ bottom: 20,right:25 }}>
-          <CartesianGrid vertical={false} strokeDasharray="3 3" />
+          <AreaChart data={revenueData} margin={{ bottom: 20, right: 25 }}>
+            <CartesianGrid vertical={false} strokeDasharray="3 3" />
             <Area
               dataKey="Revenue"
               stroke="#554840"
@@ -40,7 +40,7 @@ const RevenueAreaChart = () => {
               fillOpacity={0.4}
               // type="monotone"
             />
-            <XAxis tick={{dy:15,dx:5}} dataKey="month" />
+            <XAxis tick={{ dy: 15, dx: 5 }} dataKey="month" />
             <YAxis />
             <Tooltip />
           </AreaChart>
