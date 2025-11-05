@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import clickEvent from "../../Animations/onClick";
 import { Search } from "lucide-react";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import searchData from "../../services/searchData";
 import useDebounce from "../../Hooks/useDebounce";
+import { useNavigate } from "react-router-dom";
 
 const SearchBar = () => {
+  const navigate = useNavigate();
   const {
     register,
     handleSubmit,
@@ -21,7 +23,7 @@ const SearchBar = () => {
 
   return (
     <form
-      onSubmit={handleSubmit((data) => searchData(data.searches))}
+      onSubmit={handleSubmit((data) => navigate(`/search?q=${data.searches}`))}
       className="h-full w-full max-w-xl  grow flex items-center gap-2"
     >
       <input
@@ -32,9 +34,9 @@ const SearchBar = () => {
         type="text"
         className={`w-full py-3  border-b lg:min-w-xl h-full sm:px-4 px-2 active:border-none`}
         placeholder="Search here.."
-        onChange={(event) =>
-          event.target.value.length > 2 && debounceSearch(event.target.value)
-        }
+        onChange={(event) => {
+          event.target.value.length > 2 && debounceSearch(event.target.value);
+        }}
       />
       <motion.button
         disabled={isSubmitting ? true : false}

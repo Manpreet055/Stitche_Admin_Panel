@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import capitalizeFirstLetter from "../../Utilities/capitalizeLetter";
 import UserDetailsContext from "../../Context/UserDetailsContext";
 
-const UserRow = ({ serial, user }) => {
+const UserRow = ({ user, serial }) => {
   const { showDetails } = useContext(UserDetailsContext);
   const { Username, role, email, status, orders, lastLogin } = user;
 

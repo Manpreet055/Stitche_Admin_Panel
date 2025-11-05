@@ -17,6 +17,7 @@ const Navbar = () => {
     "/inbox": "Inbox",
     "/orders": "Orders",
     "/profile": "Profile",
+    "/search": "Search",
   };
 
   const dynamicMap = {

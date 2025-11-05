@@ -15,6 +15,7 @@ const Users = lazy(() => import("./Pages/Users"));
 const Products = lazy(() => import("./Pages/Products/Products"));
 const Inbox = lazy(() => import("./Pages/Inbox/Inbox"));
 const Orders = lazy(() => import("./Pages/Orders/Orders"));
+const SearchItems = lazy(() => import("./Pages/SearchItems"));
 
 let route = createBrowserRouter([
   {
@@ -26,6 +27,14 @@ let route = createBrowserRouter([
         index: true,
         element: <Dashboard />,
       }, //Dashboard
+      {
+        path: "search",
+        element: (
+          <Suspense>
+            <SearchItems />
+          </Suspense>
+        ),
+      }, //All Products
       {
         path: "products",
         element: (

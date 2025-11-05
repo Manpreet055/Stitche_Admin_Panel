@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Trash2, Pen, Star, StarOff } from "lucide-react";
 import deleteRequest from "../../Utilities/deleteRequest";
 import toggleFeatured from "../../services/toggleFeatured";
 import BackButton from "../../ui/BackButton";
 
-const PDPHeader = ({ id, title, category, subCategory, isFeatured }) => {
+const PDPHeader = ({ title, category, subCategory, isFeatured }) => {
   const [loadingState, setLoadingState] = useState(false);
+  const { productId } = useParams();
 
-  const [starred, setStarred] = useState(isFeatured);
+  const [featured, setFeatured] = useState(Boolean(isFeatured));
   const navigate = useNavigate();
   return (
     <>
@@ -22,20 +23,22 @@ const PDPHeader = ({ id, title, category, subCategory, isFeatured }) => {
         </div>
         <div className="flex items-center gap-4">
           <button
-            onClick={() => toggleFeatured(id, !starred, setLoadingState)}
-            className=" flex gap-2 items-center hover:underline md:text-lg border border-gray-400 rounded-lg h p-3"
+            onClick={() =>
+              toggleFeatured(productId, !featured, setLoadingState, setFeatured)
+            }
+            className={`flex gap-2 items-center hover:underline md:text-lg border border-gray-400 rounded-lg  p-3 ${loadingState ? "cursor-progress" : "cursor-pointer"}`}
           >
-            {isFeatured ? <StarOff /> : <Star />} Feature
+            {featured ? <StarOff /> : <Star />} Feature
           </button>
           <button
-            onClick={() => navigate(`/products/${id}/edit`)}
+            onClick={() => navigate(`/products/${productId}/edit`)}
             className=" flex gap-2 items-center hover:underline md:text-lg border border-gray-400 rounded-lg h p-3"
           >
             <Pen />
             Edit
           </button>
           <button
-            onClick={() => deleteRequest(id, setLoadingState)}
+            onClick={() => deleteRequest(productId, setLoadingState)}
             className={`flex gap-2 items-center md:text-lg hover:underline border border-gray-400 rounded-lg p-3 ${
               loadingState ? "cursor-progress" : "cursor-pointer"
             }`}
