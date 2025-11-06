@@ -29,7 +29,20 @@ const EditProductPage = () => {
       isFeatured: product.isFeatured ? "yes" : "no",
     },
   });
+const [loadingState, setLoadingState] = useState(false);
+	const [error, setError] = useState("");
 
+	const onsubmit = async (formData) =>{
+		  const {dirtyFields}=formState()
+		  const allValues = getValues()
+		  
+		  const changedData = Object.keys(dirtyFields).reduce((acc,key)=>(
+			      acc[key] = allValues[key]
+			      return acc
+			      ),{})
+		    
+		  editProduct(_id,changedData,setLoadingState,setError)
+	}
   return (
     <section className="overflow-y-scroll scrollbar-hidden px-5  h-screen pb-56 w-full">
       <div className="w-full flex justify-start">
@@ -40,7 +53,8 @@ const EditProductPage = () => {
           action=""
           method="POST"
           onSubmit={methods.handleSubmit((value) =>
-            editProduct(value, product.id),
+		  onSubmit(value)
+            ),
           )}
           className=" rounded-3xl flex gap-y-6 justify-evenly flex-wrap w-full"
         >
