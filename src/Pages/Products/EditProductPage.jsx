@@ -1,3 +1,4 @@
+import React, { useContext, useState, useEffect } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 import ImageUploader from "../../Layout/ProductForm/ImageUploader";
 import BasicInfo from "../../Layout/ProductForm/BasicInfo";
@@ -7,17 +8,19 @@ import StockDetails from "../../Layout/ProductForm/StockDetails";
 import BackButton from "../../ui/BackButton";
 import editProduct from "../../Utilities/Product/editProduct";
 import ProductContext from "../../Context/products/productContext";
-import { useContext } from "react";
+import { useParams } from "react-router-dom";
 
 const EditProductPage = () => {
   const { product } = useContext(ProductContext);
+  const {productId} = useParams()
+  console.log(productId)
   const methods = useForm({
     defaultValues: {
-      name: product.title,
+      title: product.title,
       description: product.description,
       category: product.category,
       subCategory: product.subCategory,
-      "discount-type": product.discount.type,
+      "discount.type": product.discount.type,
       brand: product.brand,
       barcode: product.barcode,
       price: Math.ceil(product.price),
@@ -29,20 +32,40 @@ const EditProductPage = () => {
       isFeatured: product.isFeatured ? "yes" : "no",
     },
   });
-const [loadingState, setLoadingState] = useState(false);
-	const [error, setError] = useState("");
+  const [loadingState, setLoadingState] = useState(false);
+  const [error, setError] = useState("");
 
-	const onsubmit = async (formData) =>{
-		  const {dirtyFields}=formState()
-		  const allValues = getValues()
-		  
-		  const changedData = Object.keys(dirtyFields).reduce((acc,key)=>(
-			      acc[key] = allValues[key]
-			      return acc
-			      ),{})
-		    
-		  editProduct(_id,changedData,setLoadingState,setError)
-	}
+  useEffect(() => {
+    if (!product) return;
+    methods.reset({
+      title: product.title ?? "",
+      description: product.description ?? "",
+      category: product.category ?? "",
+      subCategory: product.subCategory ?? "",
+      "discount.type": product.discount?.type ?? 0,
+      brand: product.brand ?? "",
+      barcode: product.barcode ?? "",
+      price: Math.ceil(product.price ?? 0),
+      images: product.media?.images ?? [],
+      thumbnail: product.media?.thumbnail ?? "",
+      discount: product.discount?.percentage ?? 0,
+      priceAfterDiscount: product.discount?.priceAfterDiscount ?? 0,
+      stock: product.stock ?? 0,
+      isFeatured: product.isFeatured ? "yes" : "no",
+    });
+  }, [product]);
+
+  const onsubmit = async (data) => {
+    console.log(data)
+    const { dirtyFields } = methods.formState;
+    const currentValues = methods.getValues();
+    const changedData = Object.keys(dirtyFields).reduce((acc, key) => {
+      acc[key] = currentValues[key];
+      return acc;
+    }, {});
+    editProduct(productId,changedData)
+    console.log(changedData);
+  };
   return (
     <section className="overflow-y-scroll scrollbar-hidden px-5  h-screen pb-56 w-full">
       <div className="w-full flex justify-start">
@@ -50,12 +73,7 @@ const [loadingState, setLoadingState] = useState(false);
       </div>
       <FormProvider {...methods}>
         <form
-          action=""
-          method="POST"
-          onSubmit={methods.handleSubmit((value) =>
-		  onSubmit(value)
-            ),
-          )}
+          onSubmit={methods.handleSubmit(onsubmit)}
           className=" rounded-3xl flex gap-y-6 justify-evenly flex-wrap w-full"
         >
           <div className="flex-col gap-6 flex w-full max-w-2xl">

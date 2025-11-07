@@ -15,7 +15,7 @@ const BasicInfo = () => {
         <label htmlFor="title">Product Name</label>
         <input
           type="text"
-          {...register("name", {
+          {...register("title", {
             required: "Name is required",
             minLength: { value: 4, message: "Minimum length should be 4" },
           })}

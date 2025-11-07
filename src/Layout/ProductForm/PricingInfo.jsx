@@ -64,7 +64,7 @@ const PricingInfo = () => {
             <select
               className=" form-input-sections text-gray-500"
               id="discount-type"
-              {...register("discount-type", {
+              {...register("discount.type", {
                 required: true,
               })}
             >
