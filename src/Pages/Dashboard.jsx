@@ -4,7 +4,29 @@ import SalesOverviewChart from "../Layout/Dashboard/SalesOverviewChart";
 import RevenueAreaChart from "../Layout/Dashboard/RevenueAreaChart";
 import { HandCoins, BookText, Users, Clock } from "lucide-react";
 import RecentOrders from "../Layout/Dashboard/RecentOrders";
+import { useEffect, useState } from "react";
+import axios from "axios";
+const uri = import.meta.env.VITE_BASE_URI;
 const Dashboard = () => {
+  const [stats, setStats] = useState({
+    usersCount: 0,
+    ordersCount: 0,
+  });
+  useEffect(() => {
+    try {
+      axios
+        .get(`${uri}/api/stats`)
+        .then((res) => res.data)
+        .then((data) => {
+          setStats({
+            usersCount: data.usersCount,
+            ordersCount: data.ordersCount,
+          });
+        });
+    } catch (err) {
+      console.log(err.message);
+    }
+  }, []);
   return (
     <section className=" w-full lg:px-12 py-6 h-screen overflow-scroll scrollbar-hidden ">
       {/* This is the Overview Card Container which show KPI's information like Revenue ,Users etc. */}
@@ -19,8 +41,16 @@ const Dashboard = () => {
           <KpiCard icon={<BookText />} number="2690" title="Sales" />
         </div>
         <div className="flex w-full gap-3 justify-around">
-          <KpiCard icon={<Users />} number="1453" title="Users" />
-          <KpiCard icon={<Clock />} number="187" title="Orders" />
+          <KpiCard
+            icon={<Users />}
+            number={Math.floor(stats.usersCount * 23)}
+            title="Users"
+          />
+          <KpiCard
+            icon={<Clock />}
+            number={Math.floor(stats.ordersCount * 23)}
+            title="Orders"
+          />
         </div>
       </div>
 

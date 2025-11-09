@@ -1,22 +1,23 @@
+import React from "react";
 import { lazy, StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import React from "react";
 import App from "./App";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Dashboard from "./Pages/Dashboard";
 import ErrorPage from "./Pages/ErrorPage";
-import EditProductPage from "./Pages/Products/EditProductPage";
-import AddProduct from "./Pages/Products/AddProduct";
-import ChatPage from "./Pages/Inbox/ChatPage";
-import OrderDetails from "./Pages/Orders/OrderDetails";
-import ProductDetails from "./Pages/Products/ProductDetails";
-import EditProfilePage from "./Pages/EditProfilePage";
-const Users = lazy(() => import("./Pages/Users"));
+const EditProfilePage = lazy(() => import("./Pages/EditProfilePage"));
+const AddProduct = lazy(() => import("./Pages/Products/AddProduct"));
+const ChatPage = lazy(() => import("./Pages/Inbox/ChatPage"));
+const OrderDetails = lazy(() => import("./Pages/Orders/OrderDetails"));
+const ProductDetails = lazy(() => import("./Pages/Products/ProductDetails"));
 const Products = lazy(() => import("./Pages/Products/Products"));
+const Users = lazy(() => import("./Pages/Users/Users"));
+const EditProductPage = lazy(() => import("./Pages/Products/EditProductPage"));
 const Inbox = lazy(() => import("./Pages/Inbox/Inbox"));
 const Orders = lazy(() => import("./Pages/Orders/Orders"));
 const SearchItems = lazy(() => import("./Pages/SearchItems"));
+const UserDetails = lazy(() => import("./Pages/Users/UserDetails"));
 
 let route = createBrowserRouter([
   {
@@ -35,7 +36,7 @@ let route = createBrowserRouter([
             <SearchItems />
           </Suspense>
         ),
-      }, //All Products
+      }, //Search Page
       {
         path: "products",
         element: (
@@ -46,16 +47,36 @@ let route = createBrowserRouter([
       }, //All Products
       {
         path: "products/:productId/edit",
-        element: <EditProductPage />,
+        element: (
+          <Suspense>
+            <EditProductPage />
+          </Suspense>
+        ),
       }, //Edit product
       {
         path: "products/:productId",
-        element: <ProductDetails />,
+        element: (
+          <Suspense>
+            <ProductDetails />
+          </Suspense>
+        ),
       }, //PDP
       {
         path: "products/add",
-        element: <AddProduct />,
+        element: (
+          <Suspense>
+            <AddProduct />
+          </Suspense>
+        ),
       }, //Add Product
+      {
+        path: "users/:userId",
+        element: (
+          <Suspense>
+            <UserDetails />
+          </Suspense>
+        ),
+      }, //All Users
       {
         path: "users",
         element: (
@@ -74,7 +95,11 @@ let route = createBrowserRouter([
       }, //All Inbox
       {
         path: "inbox/chats/:id",
-        element: <ChatPage />,
+        element: (
+          <Suspense>
+            <ChatPage />
+          </Suspense>
+        ),
       }, //Chat Page
       {
         path: "orders",
@@ -86,11 +111,19 @@ let route = createBrowserRouter([
       }, //All Orders
       {
         path: "orders/:id",
-        element: <OrderDetails />,
+        element: (
+          <Suspense>
+            <OrderDetails />
+          </Suspense>
+        ),
       }, //Order Detail Page (ODP)
       {
         path: "profile",
-        element: <EditProfilePage />,
+        element: (
+          <Suspense>
+            <EditProfilePage />
+          </Suspense>
+        ),
       }, //Profile Edit
     ],
   },
@@ -98,5 +131,5 @@ let route = createBrowserRouter([
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={route} />
-  </StrictMode>
+  </StrictMode>,
 );

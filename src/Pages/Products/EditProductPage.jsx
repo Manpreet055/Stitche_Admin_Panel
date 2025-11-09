@@ -12,8 +12,7 @@ import { useParams } from "react-router-dom";
 
 const EditProductPage = () => {
   const { product } = useContext(ProductContext);
-  const {productId} = useParams()
-  console.log(productId)
+  const { productId } = useParams();
   const methods = useForm({
     defaultValues: {
       title: product.title,
@@ -24,10 +23,10 @@ const EditProductPage = () => {
       brand: product.brand,
       barcode: product.barcode,
       price: Math.ceil(product.price),
-      images: product.media.images,
-      thumbnail: product.media.thumbnail,
-      discount: product.discount.percentage,
-      priceAfterDiscount: product.discount.priceAfterDiscount,
+      "media.images": product.media.images,
+      "media.thumbnail": product.media.thumbnail,
+      "discount.percentage": product.discount.percentage,
+      "dicount.priceAfterDiscount": product.discount.priceAfterDiscount,
       stock: product.stock,
       isFeatured: product.isFeatured ? "yes" : "no",
     },
@@ -46,24 +45,24 @@ const EditProductPage = () => {
       brand: product.brand ?? "",
       barcode: product.barcode ?? "",
       price: Math.ceil(product.price ?? 0),
-      images: product.media?.images ?? [],
-      thumbnail: product.media?.thumbnail ?? "",
-      discount: product.discount?.percentage ?? 0,
-      priceAfterDiscount: product.discount?.priceAfterDiscount ?? 0,
-      stock: product.stock ?? 0,
-      isFeatured: product.isFeatured ? "yes" : "no",
+      "media.images": product.media?.images ?? [],
+      "media.thumbnail": product.media?.thumbnail ?? "",
+      "discount.percentage": product.discount?.percentage ?? 0,
+      "dicount.priceAfterDiscount": product.discount?.priceAfterDiscount ?? 0,
+      quantity: product.quantity ?? 0,
+      isFeatured: product.isFeatured ? true : false,
     });
   }, [product]);
 
   const onsubmit = async (data) => {
-    console.log(data)
+    console.log(data);
     const { dirtyFields } = methods.formState;
     const currentValues = methods.getValues();
     const changedData = Object.keys(dirtyFields).reduce((acc, key) => {
       acc[key] = currentValues[key];
       return acc;
     }, {});
-    editProduct(productId,changedData)
+    editProduct(productId, changedData);
     console.log(changedData);
   };
   return (

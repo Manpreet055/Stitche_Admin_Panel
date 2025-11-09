@@ -73,8 +73,8 @@ const StockDetails = () => {
                 required: true,
               })}
             >
-              <option value="yes">Yes</option>
-              <option value="no">No</option>
+              <option value={true}>Yes</option>
+              <option value={false}>No</option>
             </select>
           </div>
         </div>

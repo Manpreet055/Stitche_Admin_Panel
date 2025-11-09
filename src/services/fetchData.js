@@ -13,7 +13,7 @@ export const fetchAllData = async (
   try {
     setLoadingState(true);
     const response = await axios.get(
-      `${uri}/${path}/?page=${page}&limit=${limit}`,
+      `${uri}/api/${path}/?page=${page}&limit=${limit}`,
     );
     const data = response.data;
     setData(data);
@@ -30,7 +30,7 @@ export const fetchAllData = async (
 export const fetchAllDataById = async (path, id, setLoadingState, setError) => {
   try {
     setLoadingState(true);
-    const response = await axios.get(`${uri}/${path}/${id}`);
+    const response = await axios.get(`${uri}/api/${path}/${id}`);
     const data = response.data;
     return data;
   } catch (error) {

@@ -26,6 +26,7 @@ const Navbar = () => {
     edit: "Edit product",
     orders: "Order Details",
     products: "Product Details",
+    users: "User Info",
   };
 
   let title = pathMap[path];

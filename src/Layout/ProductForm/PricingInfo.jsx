@@ -44,7 +44,7 @@ const PricingInfo = () => {
             </label>
             <input
               type="number"
-              {...register("discount", {
+              {...register("discount.percentage", {
                 valueAsNumber: true,
               })}
               id="discount"
