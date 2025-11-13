@@ -14,23 +14,18 @@ const AllUsers = () => {
   const limit = 15;
 
   useEffect(() => {
-    const getusers = async () => {
-      try {
-        const data = await fetchAllData(
-          "users",
-          setLoadingState,
-          setError,
-          setUsers,
-          page,
-          limit,
-        );
-        setUsers((prev) => prev.users);
-        setTotalPages(data.totalPages);
-      } catch (err) {
-        setError(err?.message ?? "Failed to load Users..");
-      }
-    };
-    getusers();
+    try {
+      fetchAllData(
+        "users",
+        setLoadingState,
+        setError,
+        setUsers,
+        page,
+        limit,
+      ).then((data) => setTotalPages(data.totalPages));
+    } catch (err) {
+      setError(err?.message ?? "Failed to load Users..");
+    }
   }, [page]);
 
   if (loadingState) {

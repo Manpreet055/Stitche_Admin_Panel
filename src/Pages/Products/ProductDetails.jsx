@@ -22,24 +22,16 @@ const ProductDetails = () => {
   useEffect(() => {
     if (!productId) return;
 
-    const fetchProductData = async () => {
-      try {
-        const data = await fetchAllDataById(
-          "products",
-          productId,
-          setLoadingState,
-          setError,
-        );
-        const fetchedProduct = data?.product ?? data ?? null;
-        setProduct(fetchedProduct);
-      } catch (err) {
-        setError(err?.message ?? "Failed to load product");
-      }
-    };
+    try {
+      fetchAllDataById("products", productId, setLoadingState, setError).then(
+        (data) => setProduct(data),
+      );
+    } catch (err) {
+      setError(err?.message ?? "Failed to load product");
+    }
 
     if (product) return;
-    fetchProductData();
-  }, []);
+  }, [productId]);
 
   const {
     title = "",

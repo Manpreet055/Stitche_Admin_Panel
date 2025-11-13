@@ -10,15 +10,11 @@ const Orders = () => {
   const [error, setError] = useState("");
   const limit = 10;
   useEffect(() => {
-    const getOrders = async () => {
-      try {
-        await fetchAllData("orders", setLoadingState, setError, setOrders);
-        setOrders((prev) => prev.orders);
-      } catch (err) {
-        setError(err?.message ?? "Failed to load recent orders");
-      }
-    };
-    getOrders();
+    try {
+      fetchAllData("orders", setLoadingState, setError, setOrders);
+    } catch (err) {
+      setError(err?.message ?? "Failed to load recent orders");
+    }
   }, []);
   const header = {
     orderId: "Order Id",

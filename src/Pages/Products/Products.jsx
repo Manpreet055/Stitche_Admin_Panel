@@ -16,19 +16,14 @@ const AllProducts = () => {
   const limit = 15;
 
   useEffect(() => {
-    const fetchProducts = async () => {
-      const data = await fetchAllData(
-        "products",
-        setLoadingState,
-        setError,
-        setProducts,
-        page,
-        limit,
-      );
-      setProducts((prev) => prev.products);
-      setTotalPages(data.totalPages);
-    };
-    fetchProducts();
+    fetchAllData(
+      "products",
+      setLoadingState,
+      setError,
+      setProducts,
+      page,
+      limit,
+    ).then((data) => setTotalPages(data.totalPages));
   }, [page]);
 
   const header = {

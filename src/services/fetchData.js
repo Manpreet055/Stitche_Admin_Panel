@@ -16,7 +16,7 @@ export const fetchAllData = async (
       `${uri}/api/${path}/?page=${page}&limit=${limit}`,
     );
     const data = response.data;
-    setData(data);
+    setData(data.data);
     return data;
   } catch (error) {
     handleApiError(error);
@@ -31,7 +31,7 @@ export const fetchAllDataById = async (path, id, setLoadingState, setError) => {
   try {
     setLoadingState(true);
     const response = await axios.get(`${uri}/api/${path}/${id}`);
-    const data = response.data;
+    const data = response.data.data;
     return data;
   } catch (error) {
     handleApiError(error);

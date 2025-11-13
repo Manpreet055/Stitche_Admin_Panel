@@ -14,23 +14,18 @@ const AllMessages = () => {
   const [totalPages, setTotalPages] = useState(1);
   const limit = 15;
   useEffect(() => {
-    const inbox = async () => {
-      try {
-        const data = await fetchAllData(
-          "inbox",
-          setLoadingState,
-          setError,
-          setAllMessages,
-          page,
-          limit,
-        );
-        setAllMessages((prev) => prev.messages);
-        setTotalPages(data?.totalPages ?? 1);
-      } catch (err) {
-        setError(err?.message ?? "Failed to load Messages");
-      }
-    };
-    inbox();
+    try {
+      fetchAllData(
+        "inbox",
+        setLoadingState,
+        setError,
+        setAllMessages,
+        page,
+        limit,
+      ).then((data) => setTotalPages(data?.totalPages ?? 1));
+    } catch (err) {
+      setError(err?.message ?? "Failed to load Messages");
+    }
   }, [page]);
 
   if (loadingState) {

@@ -13,21 +13,13 @@ const UserDetails = () => {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const fetchUserData = async () => {
-      try {
-        const data = await fetchAllDataById(
-          "users",
-          userId,
-          setLoadingState,
-          setError,
-        );
-        setUser(data?.user ?? {});
-      } catch (err) {
-        setError(err?.message ?? "Failed to load Order Details");
-      }
-    };
-
-    if (userId) fetchUserData();
+    try {
+      fetchAllDataById("users", userId, setLoadingState, setError).then(
+        (data) => setUser(data),
+      );
+    } catch (err) {
+      setError(err?.message ?? "Failed to load Order Details");
+    }
   }, [userId]);
 
   if (loadingState) {

@@ -16,19 +16,13 @@ const ChatPage = () => {
 
   useEffect(() => {
     if (!id) return;
-    const fetchChat = async () => {
-      try {
-        const data = await fetchAllDataById(
-          "inbox",
-          id,
-          setLoadingState,
-          setError,
-        );
-        setConversation(data.chat);
-      } catch (err) {
-        setError(err?.message ?? err ?? "Failed to load Chat");
-      }
-    };
+    try {
+      fetchAllDataById("inbox", id, setLoadingState, setError).then((data) =>
+        setConversation(data),
+      );
+    } catch (err) {
+      setError(err?.message ?? err ?? "Failed to load Chat");
+    }
 
     fetchChat();
   }, [id]);

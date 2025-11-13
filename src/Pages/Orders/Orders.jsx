@@ -14,23 +14,18 @@ const AllOrders = () => {
   const [totalPages, setTotalPages] = useState(1);
   const limit = 15;
   useEffect(() => {
-    const getOrders = async () => {
-      try {
-        const data = await fetchAllData(
-          "orders",
-          setLoadingState,
-          setError,
-          setOrders,
-          page,
-          limit,
-        );
-        setOrders((prev) => prev.orders);
-        setTotalPages(data.totalPages);
-      } catch (err) {
-        setError(err?.message ?? "Failed to load Orders");
-      }
-    };
-    getOrders();
+    try {
+      fetchAllData(
+        "orders",
+        setLoadingState,
+        setError,
+        setOrders,
+        page,
+        limit,
+      ).then((data) => setTotalPages(data.totalPages));
+    } catch (err) {
+      setError(err?.message ?? "Failed to load Orders");
+    }
   }, [page]);
 
   const header = {
