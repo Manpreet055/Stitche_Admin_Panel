@@ -1,15 +1,16 @@
 import React, { useState, useRef } from "react";
 import toggleStarred from "../../Utilities/toggleStarred";
-import deleteRequest from "../../Utilities/deleteRequest";
 import { Trash2, EllipsisVertical, Star, StarOff } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
+import deleteRequest from "../../services/deleteRequest";
+import { useNavigate, useParams } from "react-router-dom";
 
 const ChatDropdown = ({ conversationId, initialStarred }) => {
   const [loadingState, setLoadingState] = React.useState(false);
-
+  const { id } = useParams();
   const [starred, setStarred] = useState(initialStarred);
   const [options, showOptions] = React.useState(false);
-
+  const navigate = useNavigate();
   // to show option on hover
   const timeref = useRef(null);
   const handleHoverStart = () => {
@@ -48,7 +49,7 @@ const ChatDropdown = ({ conversationId, initialStarred }) => {
                     !starred,
                     conversationId,
                     setStarred,
-                    setLoadingState,
+                    setLoadingState
                   )
                 }
               >
@@ -56,10 +57,14 @@ const ChatDropdown = ({ conversationId, initialStarred }) => {
                 {starred ? "Unstar" : "Starred"}
               </button>
               <button
-                onClick={() => deleteRequest(conversationId, setLoadingState)}
-                className={`flex gap-2 items-center    ${
+                onClick={() => {
+                  if (confirm("Do you really want to delete the Chat ??")) {
+                    deleteRequest("inbox", id).then(navigate(-1));
+                  }
+                }}
+                className={`flex gap-2 items-center md:text-lg hover:underline border border-gray-400 rounded-lg p-3 ${
                   loadingState ? "cursor-progress" : "cursor-pointer"
-                } `}
+                }`}
               >
                 {" "}
                 <Trash2 />

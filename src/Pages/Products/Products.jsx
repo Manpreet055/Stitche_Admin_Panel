@@ -5,8 +5,7 @@ import { motion } from "framer-motion";
 import { container, item } from "../../Animations/ListStagger";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 import { fetchAllData } from "../../services/fetchData";
-import ProductsFilter from "../../Layout/Products/ProductsFilter";
-
+import SortProducts from "../../Layout/Products/SortProducts";
 const AllProducts = () => {
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
@@ -52,7 +51,7 @@ const AllProducts = () => {
   return (
     <div className="w-full overflow-auto">
       <div className="p-4 justify-evenly items-center flex border">
-        <ProductsFilter />
+        <SortProducts />
       </div>
       <motion.ul
         initial="hidden"

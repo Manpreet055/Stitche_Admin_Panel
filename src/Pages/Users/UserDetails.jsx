@@ -1,21 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { fetchAllDataById } from "../../services/fetchData";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 import BackButton from "../../ui/BackButton";
-import { Check, X } from "lucide-react";
+import { Check, X, Trash2 } from "lucide-react";
 import capitalizeFirstLetter from "../../Utilities/capitalizeLetter";
 import convertDate from "../../Utilities/convertDate";
+import deleteRequest from "../../services/deleteRequest";
+
 const UserDetails = () => {
   const { userId } = useParams();
   const [user, setUser] = useState({});
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
-
+  const navigate = useNavigate();
   useEffect(() => {
     try {
       fetchAllDataById("users", userId, setLoadingState, setError).then(
-        (data) => setUser(data),
+        (data) => setUser(data)
       );
     } catch (err) {
       setError(err?.message ?? "Failed to load Order Details");
@@ -53,7 +55,23 @@ const UserDetails = () => {
       <div className="flex w-full shadow-md rounded-2xl h-fit p-4 justify-evenly ">
         <img className="h-30 lg:h-50 rounded-full" src={avatar} alt="UserPic" />
         <div className="flex flex-col gap-4  justify-center">
-          <span className="text-xl ">{fullName}</span>
+          <div className="text-xl flex gap-4 items-center w-full justify-between ">
+            {fullName}{" "}
+            <button
+              onClick={() => {
+                if (confirm("Do you really want to delete the User ??")) {
+                  deleteRequest("users", userId).then(navigate(-1));
+                }
+              }}
+              className={`flex gap-2 items-center md:text-lg hover:underline border border-gray-400 rounded-lg p-3 ${
+                loadingState ? "cursor-progress" : "cursor-pointer"
+              }`}
+            >
+              {" "}
+              <Trash2 />
+              Delete
+            </button>
+          </div>
           <span className="text-xl ">{email}</span>
           <div>
             {isVerified ? (

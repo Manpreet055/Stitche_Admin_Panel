@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Trash2, Pen, Star, StarOff } from "lucide-react";
-import deleteRequest from "../../Utilities/deleteRequest";
 import toggleFeatured from "../../services/toggleFeatured";
 import BackButton from "../../ui/BackButton";
+import deleteRequest from "../../services/deleteRequest";
 
 const PDPHeader = ({ title, category, subCategory, isFeatured }) => {
   const [loadingState, setLoadingState] = useState(false);
@@ -38,7 +38,11 @@ const PDPHeader = ({ title, category, subCategory, isFeatured }) => {
             Edit
           </button>
           <button
-            onClick={() => deleteRequest(productId, setLoadingState)}
+            onClick={() => {
+              if (confirm("Do you really want to delete the Product ??")) {
+                deleteRequest("products", productId).then(navigate(-1));
+              }
+            }}
             className={`flex gap-2 items-center md:text-lg hover:underline border border-gray-400 rounded-lg p-3 ${
               loadingState ? "cursor-progress" : "cursor-pointer"
             }`}

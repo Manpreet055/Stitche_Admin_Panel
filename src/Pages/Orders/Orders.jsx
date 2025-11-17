@@ -75,7 +75,7 @@ const AllOrders = () => {
         >
           <li className="text-2xl md:text-3xl w-full font-semibold primary-bg rounded-t-2xl">
             {" "}
-            <OrderRow order={header} />
+            <OrderRow isHeader={true} order={header} />
           </li>
           {orders.map((order, index) => (
             <motion.li variants={item} key={index}>

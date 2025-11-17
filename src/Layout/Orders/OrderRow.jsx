@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import fetchOrder from "../../Utilities/Orders/fetchOrder";
 import capitalizeFirstLetter from "../../Utilities/capitalizeLetter";
-const OrderRow = ({ order }) => {
+const OrderRow = ({ order,isHeader = false}) => {
   const [loadingState, setLoadingState] = useState(false);
 
   const { _id, products, totalAmount, payment, shipping, status, user } = order;
@@ -26,7 +26,7 @@ const OrderRow = ({ order }) => {
   return (
     <ul
       onClick={async () => {
-        if (!loadingState) {
+        if (!loadingState && !isHeader) {
           await fetchOrder(_id, setLoadingState);
           goToProduct();
         }

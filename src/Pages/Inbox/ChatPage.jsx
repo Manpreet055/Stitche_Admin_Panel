@@ -13,7 +13,6 @@ const ChatPage = () => {
   const [error, setError] = useState("");
   const [conversation, setConversation] = useState({});
   const { id } = useParams();
-
   useEffect(() => {
     if (!id) return;
     try {
@@ -24,7 +23,6 @@ const ChatPage = () => {
       setError(err?.message ?? err ?? "Failed to load Chat");
     }
 
-    fetchChat();
   }, [id]);
 
   if (loadingState) {
