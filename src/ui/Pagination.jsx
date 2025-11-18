@@ -1,9 +1,13 @@
 import { useState } from "react";
 
-const Paginate = ({ setPage, currentPage, totalPages }) => {
+const Paginate = ({ currentPage, setCurrentPage, totalPages }) => {
   const nextPage = () => {
     if (currentPage === totalPages) return;
-    setPage((prev) => prev + 1);
+    setCurrentPage((prev) => prev + 1);
+  };
+  const prevPage = () => {
+    if (currentPage === 1) return;
+    setCurrentPage((prev) => prev - 1);
   };
 
   return (
@@ -11,7 +15,7 @@ const Paginate = ({ setPage, currentPage, totalPages }) => {
       <div className="flex my-6 justify-center items-center gap-10">
         <button
           disabled={currentPage === 1}
-          onClick={() => setPage((prev) => Math.max(1, prev - 1))}
+          onClick={prevPage}
           className="button-style primary-bg"
         >
           Prev

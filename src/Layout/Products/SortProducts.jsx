@@ -1,37 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { Dropdown, DropdownItem } from "flowbite-react";
 
-const SortProducts = ({ sortingState }) => {
-  const [sortConfig, setSortConfig] = useState({
-    order: "asc",
-    field: "name",
-  });
-
-  useEffect(() => {
-    if (typeof sortingState === "function") sortingState(sortConfig);
-  }, [sortConfig,sortingState]);
-
+const SortProducts = ({ query, setQuery }) => {
+  const applySort = (field, order) => {
+    setQuery({
+      ...query,
+      sort: {
+        sortField: field,
+        sortingOrder: order,
+      },
+      page: 1,
+    });
+  };
   return (
-    <div>                                         
+    <div>
       <Dropdown label="Sort">
-        <DropdownItem
-          onClick={() => setSortConfig({ order: "desc", field: "price" })}
-        >
+        <DropdownItem onClick={() => applySort("price", "desc")}>
           Price High to Low
         </DropdownItem>
-        <DropdownItem
-          onClick={() => setSortConfig({ order: "asc", field: "price" })}
-        >
+        <DropdownItem onClick={() => applySort("price", "asc")}>
           Price Low to High
         </DropdownItem>
-        <DropdownItem
-          onClick={() => setSortConfig({ order: "desc", field: "stock" })}
-        >
+        <DropdownItem onClick={() => applySort("stock", "desc")}>
           Stock High to Low
         </DropdownItem>
-        <DropdownItem
-          onClick={() => setSortConfig({ order: "asc", field: "stock" })}
-        >
+        <DropdownItem onClick={() => applySort("stock", "asc")}>
           Stock Low to High
         </DropdownItem>
       </Dropdown>

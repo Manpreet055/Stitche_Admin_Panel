@@ -4,26 +4,20 @@ import Paginate from "../../ui/Pagination";
 import { motion } from "framer-motion";
 import { container, item } from "../../Animations/ListStagger";
 import AsyncBoundary from "../../ui/AsyncBoundary";
-import { fetchAllData } from "../../services/fetchData";
 import SortProducts from "../../Layout/Products/SortProducts";
-const AllProducts = () => {
-  const [loadingState, setLoadingState] = useState(false);
-  const [error, setError] = useState("");
-  const [products, setProducts] = useState([]);
-  const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  const limit = 15;
+import useProducts from "../../Hooks/useProducts";
 
-  useEffect(() => {
-    fetchAllData(
-      "products",
-      setLoadingState,
-      setError,
-      setProducts,
-      page,
-      limit,
-    ).then((data) => setTotalPages(data.totalPages));
-  }, [page]);
+const AllProducts = () => {
+  const {
+    products,
+    loadingState,
+    error,
+    query,
+    setQuery,
+    currentPage,
+    setCurrentPage,
+    totalPages,
+  } = useProducts();
 
   const header = {
     title: "Product Name",
@@ -51,7 +45,7 @@ const AllProducts = () => {
   return (
     <div className="w-full overflow-auto">
       <div className="p-4 justify-evenly items-center flex border">
-        <SortProducts />
+        <SortProducts query={query} setQuery={setQuery} />
       </div>
       <motion.ul
         initial="hidden"
@@ -70,11 +64,7 @@ const AllProducts = () => {
           </motion.li>
         ))}
 
-        <Paginate
-          setPage={setPage}
-          totalPages={totalPages}
-          currentPage={page}
-        />
+        <Paginate currentPage={currentPage} setCurrentPage={setCurrentPage} totalPages={totalPages} />
       </motion.ul>
     </div>
   );
