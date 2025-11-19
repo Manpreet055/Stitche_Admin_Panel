@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import fetchOrder from "../../Utilities/Orders/fetchOrder";
 import capitalizeFirstLetter from "../../Utilities/capitalizeLetter";
-const OrderRow = ({ order,isHeader = false}) => {
+const OrderRow = ({ order, isHeader = false }) => {
   const [loadingState, setLoadingState] = useState(false);
 
   const { _id, products, totalAmount, payment, shipping, status, user } = order;
@@ -22,15 +21,9 @@ const OrderRow = ({ order,isHeader = false}) => {
     confirmed: "bg-indigo-100 text-indigo-800",
     shipped: "bg-purple-100 text-purple-800",
   };
-
   return (
     <ul
-      onClick={async () => {
-        if (!loadingState && !isHeader) {
-          await fetchOrder(_id, setLoadingState);
-          goToProduct();
-        }
-      }}
+      onClick={goToProduct}
       className={`h-[70px] w-full grid grid-cols-[200px_250px_200px_200px_100px_1fr] place-items-center text-lg border-b ${
         loadingState ? "cursor-progress" : "cursor-pointer"
       } border-gray-300 `}

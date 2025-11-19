@@ -9,7 +9,7 @@ const sortData = async (
   setError,
   setProducts,
   page,
-  limit
+  limit,
 ) => {
   try {
     setLoadingState(true);

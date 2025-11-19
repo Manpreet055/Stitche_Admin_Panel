@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { item } from "../../Animations/ListStagger";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import capitalizeFirstLetter from "../../Utilities/capitalizeLetter";
 const UserRow = ({ user, serial }) => {
   const { _id, role, email, profile } = user;
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ const UserRow = ({ user, serial }) => {
       <li className={`px-2 py-2 w-[90%] text-center  rounded`}>
         {profile.address.city}
       </li>
-      <li>{role}</li>
+      <li>{capitalizeFirstLetter()}</li>
       <li>{profile.phone}</li>
     </motion.ul>
   );

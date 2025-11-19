@@ -19,7 +19,7 @@ const useProducts = () => {
   });
 
   const fetchProducts = async () => {
-    const { page, limit, sort, filters } = query;
+    const { limit, sort, filters } = query;
     try {
       setLoadingState(true);
       const response = await axios.get(`${uri}/api/products`, {
@@ -45,7 +45,7 @@ const useProducts = () => {
 
   useEffect(() => {
     fetchProducts();
-  }, [query,currentPage]);
+  }, [query, currentPage]);
 
   return {
     limit: query.limit,

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import fetchChat from "../../Utilities/inbox/fetchChat";
 
 const MessageRow = ({ inbox }) => {
   const { _id, user, messages, subject } = inbox;

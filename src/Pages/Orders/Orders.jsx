@@ -3,30 +3,43 @@ import Paginate from "../../ui/Pagination";
 import OrderRow from "../../Layout/Orders/OrderRow";
 import { container, item } from "../../Animations/ListStagger";
 import { motion } from "framer-motion";
-import { fetchAllData } from "../../services/fetchData";
 import AsyncBoundary from "../../ui/AsyncBoundary";
-
+import useOrders from "../../Hooks/useOrders";
+import SortData from "../../ui/SortData";
 const AllOrders = () => {
-  const [orders, setOrders] = useState([]);
-  const [loadingState, setLoadingState] = useState(false);
-  const [error, setError] = useState("");
-  const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  const limit = 15;
-  useEffect(() => {
-    try {
-      fetchAllData(
-        "orders",
-        setLoadingState,
-        setError,
-        setOrders,
-        page,
-        limit,
-      ).then((data) => setTotalPages(data.totalPages));
-    } catch (err) {
-      setError(err?.message ?? "Failed to load Orders");
-    }
-  }, [page]);
+  const {
+    loadingState,
+    error,
+    orders,
+    currentPage,
+    totalPages,
+    query,
+    setQuery,
+    setCurrentPage,
+  } = useOrders();
+
+  const sortOptions = [
+    {
+      title: "Total High to Low",
+      field: "totalAmount",
+      order: "desc",
+    },
+    {
+      title: "Total Low to High",
+      field: "totalAmount",
+      order: "asc",
+    },
+    {
+      title: "Latest Created ",
+      field: "createdAt",
+      order: "desc",
+    },
+    {
+      title: "Latest Updated",
+      field: "UpdatedAt",
+      order: "asc",
+    },
+  ];
 
   const header = {
     orderId: "Order Id",
@@ -66,6 +79,7 @@ const AllOrders = () => {
 
   return (
     <div className="overflow-auto h-screen  w-full scrollbar-hidden">
+      <SortData sortOptions={sortOptions} query={query} setQuery={setQuery} />
       <div className="w-full overflow-auto h-full pb-56 scrollbar-hidden ">
         <motion.ul
           variants={container}
@@ -83,9 +97,9 @@ const AllOrders = () => {
             </motion.li>
           ))}
           <Paginate
-            setPage={setPage}
+            setCurrentPage={setCurrentPage}
             totalPages={totalPages}
-            currentPage={page}
+            currentPage={currentPage}
           />
         </motion.ul>
       </div>

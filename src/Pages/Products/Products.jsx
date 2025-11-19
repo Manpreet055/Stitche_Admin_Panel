@@ -4,7 +4,7 @@ import Paginate from "../../ui/Pagination";
 import { motion } from "framer-motion";
 import { container, item } from "../../Animations/ListStagger";
 import AsyncBoundary from "../../ui/AsyncBoundary";
-import SortProducts from "../../Layout/Products/SortProducts";
+import SortData from "../../ui/SortData";
 import useProducts from "../../Hooks/useProducts";
 
 const AllProducts = () => {
@@ -31,6 +31,29 @@ const AllProducts = () => {
     },
   };
 
+  const sortOptions = [
+    {
+      title: "Price High to Low",
+      field: "price",
+      order: "desc",
+    },
+    {
+      title: "Price Low to High",
+      field: "price",
+      order: "asc",
+    },
+    {
+      title: "Stock High to Low",
+      field: "stock",
+      order: "desc",
+    },
+    {
+      title: "Stock Low to High",
+      field: "stock",
+      order: "asc",
+    },
+  ];
+
   if (loadingState) {
     return <AsyncBoundary loadingState={true} errorState={null} />;
   }
@@ -44,9 +67,7 @@ const AllProducts = () => {
 
   return (
     <div className="w-full overflow-auto">
-      <div className="p-4 justify-evenly items-center flex border">
-        <SortProducts query={query} setQuery={setQuery} />
-      </div>
+      <SortData sortOptions={sortOptions} query={query} setQuery={setQuery} />
       <motion.ul
         initial="hidden"
         animate="show"
@@ -64,7 +85,11 @@ const AllProducts = () => {
           </motion.li>
         ))}
 
-        <Paginate currentPage={currentPage} setCurrentPage={setCurrentPage} totalPages={totalPages} />
+        <Paginate
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+          totalPages={totalPages}
+        />
       </motion.ul>
     </div>
   );

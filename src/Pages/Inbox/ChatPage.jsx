@@ -22,7 +22,6 @@ const ChatPage = () => {
     } catch (err) {
       setError(err?.message ?? err ?? "Failed to load Chat");
     }
-
   }, [id]);
 
   if (loadingState) {

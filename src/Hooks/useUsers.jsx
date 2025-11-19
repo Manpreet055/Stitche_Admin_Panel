@@ -1,25 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import handleApiError from "../services/handleApiError";
+import axios from "axios";
+const uri = import.meta.env.VITE_BASE_URI;
 
 const useUsers = () => {
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
-  const [products, setProducts] = useState([]);
+  const [users, setUsers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [query, setQuery] = useState({
     limit: 10,
     sort: {
-      sortField: "name",
+      sortField: "profile.fullName",
       sortingOrder: "asc",
     },
     filters: {},
   });
 
-  const fetchProducts = async () => {
-    const { page, limit, sort, filters } = query;
+  const fetchUsers = async () => {
+    const { limit, sort, filters } = query;
     try {
       setLoadingState(true);
-      const response = await axios.get(`${uri}/api/products`, {
+      const response = await axios.get(`${uri}/api/users`, {
         params: {
           page: currentPage,
           limit,
@@ -29,7 +32,7 @@ const useUsers = () => {
         },
       });
       const data = response.data;
-      setProducts(data.data);
+      setUsers(data.data);
       setTotalPages(data.totalPages);
     } catch (error) {
       handleApiError(error);
@@ -40,9 +43,9 @@ const useUsers = () => {
     }
   };
 
-//   useEffect(() => {
-//     fetchProducts();
-//   }, [query,currentPage]);
+  useEffect(() => {
+    fetchUsers();
+  }, [query, currentPage]);
 
   return {
     limit: query.limit,
@@ -50,11 +53,11 @@ const useUsers = () => {
     setCurrentPage,
     loadingState,
     error,
-    products,
+    users,
     setQuery,
     query,
     totalPages,
   };
 };
 
-export default useUsers
+export default useUsers;

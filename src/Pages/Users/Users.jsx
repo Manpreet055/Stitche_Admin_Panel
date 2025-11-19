@@ -1,33 +1,45 @@
+import React from "react";
 import { container } from "../../Animations/ListStagger";
 import { motion } from "framer-motion";
 import UserRow from "../../Layout/Users/UserRow";
 import Paginate from "../../ui/Pagination";
-import { useEffect, useState } from "react";
-import { fetchAllData } from "../../services/fetchData";
 import AsyncBoundary from "../../ui/AsyncBoundary";
+import useUsers from "../../Hooks/useUsers";
+import SortData from "../../ui/SortData";
 const AllUsers = () => {
-  const [loadingState, setLoadingState] = useState(false);
-  const [error, setError] = useState("");
-  const [users, setUsers] = useState([]);
-  const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-  const limit = 15;
+  const {
+    loadingState,
+    error,
+    users,
+    currentPage,
+    totalPages,
+    query,
+    setQuery,
+    setCurrentPage,
+  } = useUsers();
 
-  useEffect(() => {
-    try {
-      fetchAllData(
-        "users",
-        setLoadingState,
-        setError,
-        setUsers,
-        page,
-        limit,
-      ).then((data) => setTotalPages(data.totalPages));
-    } catch (err) {
-      setError(err?.message ?? "Failed to load Users..");
-    }
-  }, [page]);
-
+  const sortOptions = [
+    {
+      title: "A to Z",
+      field: "profile.fullName",
+      order: "desc",
+    },
+    {
+      title: "Z to A",
+      field: "profile.fullName",
+      order: "asc",
+    },
+    {
+      title: "Verified",
+      field: "isVerified",
+      order: "desc",
+    },
+    {
+      title: "Active",
+      field: "isActive",
+      order: "desc",
+    },
+  ];
   if (loadingState) {
     return <AsyncBoundary loadingState={true} errorState={null} />;
   }
@@ -41,6 +53,7 @@ const AllUsers = () => {
 
   return (
     <div className="overflow-auto h-screen  w-full scrollbar-hidden ">
+      <SortData sortOptions={sortOptions} query={query} setQuery={setQuery} />
       <div className=" pt-10 w-full h-full pb-56 overflow-auto scrollbar-hidden ">
         <motion.ul
           initial="hidden"
@@ -63,9 +76,9 @@ const AllUsers = () => {
             <UserRow serial={index + 1} key={user.id} user={user} />
           ))}
           <Paginate
-            setPage={setPage}
+            setCurrentPage={setCurrentPage}
             totalPages={totalPages}
-            currentPage={page}
+            currentPage={currentPage}
           />
         </motion.ul>
       </div>

@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import toggleStarred from "../../Utilities/toggleStarred";
 import { Trash2, EllipsisVertical, Star, StarOff } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import deleteRequest from "../../services/deleteRequest";
@@ -44,14 +43,6 @@ const ChatDropdown = ({ conversationId, initialStarred }) => {
                 className={`flex gap-2 items-center border-b py-2 ${
                   loadingState ? "cursor-progress" : "cursor-pointer"
                 } `}
-                onClick={() =>
-                  toggleStarred(
-                    !starred,
-                    conversationId,
-                    setStarred,
-                    setLoadingState
-                  )
-                }
               >
                 {starred ? <StarOff /> : <Star />}
                 {starred ? "Unstar" : "Starred"}

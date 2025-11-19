@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Send } from "lucide-react";
-import sendMessages from "../../Utilities/inbox/sendMessages";
 
 const SendMessagesForm = () => {
   const {
@@ -14,7 +13,6 @@ const SendMessagesForm = () => {
   // send chat to the Database
   const submitChat = (data) => {
     if (data.text.trim().length === 0) return;
-    sendMessages(id, data.text);
     reset();
   };
   return (

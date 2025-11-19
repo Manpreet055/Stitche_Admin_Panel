@@ -24,7 +24,7 @@ const ProductDetails = () => {
 
     try {
       fetchAllDataById("products", productId, setLoadingState, setError).then(
-        (data) => setProduct(data)
+        (data) => setProduct(data),
       );
     } catch (err) {
       setError(err?.message ?? "Failed to load product");

@@ -1,25 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import handleApiError from "../services/handleApiError";
+import axios from "axios";
+const uri = import.meta.env.VITE_BASE_URI;
 
 const useInbox = () => {
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
-  const [products, setProducts] = useState([]);
+  const [allMessages, setAllMessages] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [query, setQuery] = useState({
     limit: 10,
     sort: {
-      sortField: "name",
+      sortField: "user.name",
       sortingOrder: "asc",
     },
     filters: {},
   });
 
-  const fetchProducts = async () => {
-    const { page, limit, sort, filters } = query;
+  const fetchMessages = async () => {
+    const { limit, sort, filters } = query;
     try {
       setLoadingState(true);
-      const response = await axios.get(`${uri}/api/products`, {
+      const response = await axios.get(`${uri}/api/inbox`, {
         params: {
           page: currentPage,
           limit,
@@ -29,7 +32,7 @@ const useInbox = () => {
         },
       });
       const data = response.data;
-      setProducts(data.data);
+      setAllMessages(data.data);
       setTotalPages(data.totalPages);
     } catch (error) {
       handleApiError(error);
@@ -40,9 +43,9 @@ const useInbox = () => {
     }
   };
 
-  // useEffect(() => {
-  //   fetchProducts();
-  // }, [query,currentPage]);
+  useEffect(() => {
+    fetchMessages();
+  }, [query, currentPage]);
 
   return {
     limit: query.limit,
@@ -50,11 +53,11 @@ const useInbox = () => {
     setCurrentPage,
     loadingState,
     error,
-    products,
+    allMessages,
     setQuery,
     query,
     totalPages,
   };
 };
 
-export default useInbox
+export default useInbox;
