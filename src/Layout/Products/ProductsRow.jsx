@@ -1,8 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import capitalizeLetter from "../../Utilities/capitalizeLetter"
 
 const ProductRow = ({ product, isHeader = false, serial = "Sr. No." }) => {
   //Destructring the product data from product prop
-  const { _id, title, brand, price, stock, category, rating } = product;
+  const { _id, title, brand, price, quantity, category } = product;
 
   // navigate to the PDP
   const navigate = useNavigate();
@@ -17,12 +18,12 @@ const ProductRow = ({ product, isHeader = false, serial = "Sr. No." }) => {
     >
       <li>{serial}</li>
       <li className={`place-self-start  text-nowrap`}>{title}</li>
-      <li>{brand}</li>
+      <li>{capitalizeLetter(brand)}</li>
       <li>{typeof price != "string" ? Math.floor(price) : price}</li>
-      <li>{stock}</li>
+      <li>{quantity}</li>
       <li>{category}</li>
-      <li>{rating.average}</li>
-      <li>{rating.count}</li>
+      <li>{product?.rating?.average || 0}</li>
+      <li>{product?.rating?.count || 0}</li>
     </ul>
   );
 };

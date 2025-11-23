@@ -41,6 +41,33 @@ const StockDetails = () => {
               <p className="text-red-500">*{errors.barcode.message}</p>
             )}
           </div>
+
+          {/* sku Details */}
+          <div className="flex flex-col w-full max-w-lg">
+            <label htmlFor="sku" className="mb-2">
+              SKU{" "}
+            </label>
+            <input
+              {...register("sku", {
+                required: "SKU is required",
+                minLength: {
+                  value: 6,
+                  message: "SKU must be atleast 6 digits",
+                },
+              })}
+              className={`form-input-sections ${
+                errors.barcode
+                  ? "border border-red-500 focus:outline-red-500"
+                  : "border border-gray-300 focus:outline-gray-500"
+              }`}
+              id="sku"
+              placeholder="Type sku details"
+            />
+            {errors.sku && (
+              <p className="text-red-500">*{errors.sku.message}</p>
+            )}
+          </div>
+
           <div className="flex flex-col w-full max-w-lg">
             <label htmlFor="quantity" className="mb-2">
               Quantity
@@ -73,8 +100,8 @@ const StockDetails = () => {
                 required: true,
               })}
             >
-              <option value={true}>Yes</option>
-              <option value={false}>No</option>
+              <option value={Boolean(true)}>Yes</option>
+              <option value={Boolean(false)}>No</option>
             </select>
           </div>
         </div>

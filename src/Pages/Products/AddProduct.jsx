@@ -5,12 +5,17 @@ import PricingInfo from "../../Layout/ProductForm/PricingInfo";
 import BasicInfo from "../../Layout/ProductForm/BasicInfo";
 import CategorySelect from "../../Layout/ProductForm/CategorySelect";
 import BackButton from "../../ui/BackButton";
+import { createProduct } from "../../services/products";
+import { useState } from "react";
 
 const AddProduct = () => {
   const methods = useForm();
+  const [loadingState, setLoadingState] = useState(false);
+  const [error, setError] = useState(false);
 
   const onsubmit = (data) => {
     console.log(data);
+    // createProduct(data, setLoadingState, setError);
   };
 
   return (

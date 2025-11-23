@@ -5,10 +5,7 @@ const uri = import.meta.env.VITE_BASE_URI;
 const toggleFeatured = async (_id, isFeatured, loadingState, setFeatured) => {
   try {
     loadingState(true);
-    const response = await axios.patch(`${uri}/api/product`, {
-      _id,
-      isFeatured,
-    });
+    const response = await axios.patch(`${uri}/products`, { _id, isFeatured });
 
     const data = response.data;
     const newValue = data?.isFeatured ?? isFeatured;

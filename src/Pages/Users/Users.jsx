@@ -6,6 +6,8 @@ import Paginate from "../../ui/Pagination";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 import useUsers from "../../Hooks/useUsers";
 import SortData from "../../ui/SortData";
+import { USERS_SORTING_OPTIONS } from "../../Utilities/sortingOptions";
+
 const AllUsers = () => {
   const {
     loadingState,
@@ -18,28 +20,7 @@ const AllUsers = () => {
     setCurrentPage,
   } = useUsers();
 
-  const sortOptions = [
-    {
-      title: "A to Z",
-      field: "profile.fullName",
-      order: "desc",
-    },
-    {
-      title: "Z to A",
-      field: "profile.fullName",
-      order: "asc",
-    },
-    {
-      title: "Verified",
-      field: "isVerified",
-      order: "desc",
-    },
-    {
-      title: "Active",
-      field: "isActive",
-      order: "desc",
-    },
-  ];
+  
   if (loadingState) {
     return <AsyncBoundary loadingState={true} errorState={null} />;
   }
@@ -53,7 +34,7 @@ const AllUsers = () => {
 
   return (
     <div className="overflow-auto h-screen  w-full scrollbar-hidden ">
-      <SortData sortOptions={sortOptions} query={query} setQuery={setQuery} />
+      <SortData sortOptions={USERS_SORTING_OPTIONS} query={query} setQuery={setQuery} />
       <div className=" pt-10 w-full h-full pb-56 overflow-auto scrollbar-hidden ">
         <motion.ul
           initial="hidden"

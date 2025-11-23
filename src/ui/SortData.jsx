@@ -12,8 +12,8 @@ const SortOrders = ({ query, setQuery, sortOptions }) => {
     });
   };
   return (
-    <div className="p-4 justify-evenly items-center flex border">
-      <Dropdown label="Sort">
+    <div className="p-4 justify-evenly items-center flex">
+      <Dropdown label="Sort" inline>
         {sortOptions.map((option, index) => (
           <DropdownItem
             key={index}

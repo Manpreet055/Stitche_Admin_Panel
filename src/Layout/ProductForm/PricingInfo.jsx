@@ -44,9 +44,10 @@ const PricingInfo = () => {
             </label>
             <input
               type="number"
-              {...register("discount.percentage", {
+              {...register("discount.discount", {
                 valueAsNumber: true,
               })}
+              defaultValue={0}
               id="discount"
               className={`form-input-sections mt-2 ${
                 errors.discount

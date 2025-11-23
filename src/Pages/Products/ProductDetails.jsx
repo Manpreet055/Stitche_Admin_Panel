@@ -22,15 +22,9 @@ const ProductDetails = () => {
   useEffect(() => {
     if (!productId) return;
 
-    try {
-      fetchAllDataById("products", productId, setLoadingState, setError).then(
-        (data) => setProduct(data),
-      );
-    } catch (err) {
-      setError(err?.message ?? "Failed to load product");
-    }
-
-    if (product) return;
+    fetchAllDataById("products", productId, setLoadingState, setError).then(
+      (data) => setProduct(data)
+    );
   }, [productId]);
 
   const {
@@ -45,14 +39,15 @@ const ProductDetails = () => {
     price = 0,
     discount = {},
     rating = 0,
-    media = {},
+    media = "",
     isFeatured = false,
     timestamps = {},
   } = product ?? {};
 
   const { thumbnail = "", images = [] } = media;
   const { createdAt = "", updatedAt = "" } = timestamps;
-  const discountPercentage = discount?.percentage ?? 0;
+
+  const discountPercentage = discount?.discount ?? 0;
 
   useEffect(() => {
     setImages(images ?? []);

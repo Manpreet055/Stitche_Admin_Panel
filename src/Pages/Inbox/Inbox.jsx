@@ -6,6 +6,7 @@ import { container, item } from "../../Animations/ListStagger";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 import useInbox from "../../Hooks/useInbox";
 import SortData from "../../ui/SortData";
+import { INBOX_SORT_OPTIONS } from "../../Utilities/sortingOptions";
 const AllMessages = () => {
   const {
     loadingState,
@@ -18,13 +19,6 @@ const AllMessages = () => {
     setCurrentPage,
   } = useInbox();
 
-  const sortOptions = [
-    {
-      title: "Starred",
-      field: "isStarred",
-      order: "desc",
-    },
-  ];
   if (loadingState) {
     return <AsyncBoundary loadingState={true} errorState={null} />;
   }
@@ -37,7 +31,11 @@ const AllMessages = () => {
   }
   return (
     <div className="w-full h-full">
-      <SortData sortOptions={sortOptions} query={query} setQuery={setQuery} />
+      <SortData
+        sortOptions={INBOX_SORT_OPTIONS}
+        query={query}
+        setQuery={setQuery}
+      />
 
       <motion.div
         initial="hidden"

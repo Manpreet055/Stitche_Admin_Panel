@@ -6,8 +6,13 @@ import { container, item } from "../../Animations/ListStagger";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 import SortData from "../../ui/SortData";
 import useProducts from "../../Hooks/useProducts";
+import { PRODUCTS_SORTING_OPTIONS } from "../../Utilities/sortingOptions";
+import FilterData from "../../ui/FilterData";
+import { PRODUCTS_FILTER_OPTIONS } from "../../Utilities/filtersOptions";
+import { useNavigate } from "react-router-dom";
 
 const AllProducts = () => {
+  const navigate = useNavigate();
   const {
     products,
     loadingState,
@@ -23,36 +28,13 @@ const AllProducts = () => {
     title: "Product Name",
     brand: "Brand",
     price: "Price",
-    stock: "Stock",
+    quantity: "Stock",
     category: "Category",
     rating: {
       average: "Ratings",
       count: "Reviews",
     },
   };
-
-  const sortOptions = [
-    {
-      title: "Price High to Low",
-      field: "price",
-      order: "desc",
-    },
-    {
-      title: "Price Low to High",
-      field: "price",
-      order: "asc",
-    },
-    {
-      title: "Stock High to Low",
-      field: "stock",
-      order: "desc",
-    },
-    {
-      title: "Stock Low to High",
-      field: "stock",
-      order: "asc",
-    },
-  ];
 
   if (loadingState) {
     return <AsyncBoundary loadingState={true} errorState={null} />;
@@ -67,12 +49,29 @@ const AllProducts = () => {
 
   return (
     <div className="w-full overflow-auto">
-      <SortData sortOptions={sortOptions} query={query} setQuery={setQuery} />
+      <div className="w-full flex justify-around items-center">
+        <SortData
+          sortOptions={PRODUCTS_SORTING_OPTIONS}
+          query={query}
+          setQuery={setQuery}
+        />
+          <FilterData
+          query={query}
+          setQuery={setQuery}
+          filterOptions={PRODUCTS_FILTER_OPTIONS}
+        />
+        <button
+          onClick={() => navigate("/products/add")}
+          className=" p-6 rounded-2xl"
+        >
+          + Add Product
+        </button>
+      </div>
       <motion.ul
         initial="hidden"
         animate="show"
         variants={container}
-        className="h-screen min-w-fit pb-56 w-full overflow-scroll pt-10 scrollbar-hidden "
+        className="h-screen min-w-fit pb-56 w-full overflow-scroll scrollbar-hidden "
       >
         <li className="text-xl font-semibold primary-bg rounded-t-2xl">
           {" "}

@@ -10,7 +10,7 @@ const ImageUploader = () => {
     const files = Array.from(e.target.files);
     // Merge new files with old ones
     const existing = watchImages || [];
-    setValue("media.images", [...existing, ...files]);
+    setValue("media.images", [...existing, ...files],{shouldValidate:true});
   };
 
   const removeImage = (index) => {
@@ -97,7 +97,9 @@ const ImageUploader = () => {
           type="file"
           accept="image/*"
           className="hidden"
-          {...register("media.thumbnail")}
+          {...register("media.thumbnail",{
+            required:true,
+          })}
         />
       </div>
     </div>

@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 import useOrders from "../../Hooks/useOrders";
 import SortData from "../../ui/SortData";
+import { ORDERS_SORTING_OPTIONS } from "../../Utilities/sortingOptions";
+
 const AllOrders = () => {
   const {
     loadingState,
@@ -17,29 +19,6 @@ const AllOrders = () => {
     setQuery,
     setCurrentPage,
   } = useOrders();
-
-  const sortOptions = [
-    {
-      title: "Total High to Low",
-      field: "totalAmount",
-      order: "desc",
-    },
-    {
-      title: "Total Low to High",
-      field: "totalAmount",
-      order: "asc",
-    },
-    {
-      title: "Latest Created ",
-      field: "createdAt",
-      order: "desc",
-    },
-    {
-      title: "Latest Updated",
-      field: "UpdatedAt",
-      order: "asc",
-    },
-  ];
 
   const header = {
     orderId: "Order Id",
@@ -79,7 +58,7 @@ const AllOrders = () => {
 
   return (
     <div className="overflow-auto h-screen  w-full scrollbar-hidden">
-      <SortData sortOptions={sortOptions} query={query} setQuery={setQuery} />
+      <SortData sortOptions={ORDERS_SORTING_OPTIONS} query={query} setQuery={setQuery} />
       <div className="w-full overflow-auto h-full pb-56 scrollbar-hidden ">
         <motion.ul
           variants={container}

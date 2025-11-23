@@ -8,12 +8,12 @@ export const fetchAllData = async (
   setError,
   setData,
   page = 1,
-  limit = 10,
+  limit = 10
 ) => {
   try {
     setLoadingState(true);
     const response = await axios.get(
-      `${uri}/api/${path}/?page=${page}&limit=${limit}`,
+      `${uri}/api/${path}/?page=${page}&limit=${limit}`
     );
     const data = response.data;
     setData(data.data);
@@ -31,7 +31,15 @@ export const fetchAllDataById = async (path, id, setLoadingState, setError) => {
   try {
     setLoadingState(true);
     const response = await axios.get(`${uri}/api/${path}/${id}`);
-    const data = response.data.data;
+    let data = response.data.data;
+    data = {
+      ...data,
+      media: data.media ?? { thumbnail: "", images: [] },
+      discount: {
+        percentage: data?.discount?.discount ?? 0,
+        type: data?.discount?.type ?? "no-offers",
+      },
+    };
     return data;
   } catch (error) {
     handleApiError(error);

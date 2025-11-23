@@ -6,7 +6,7 @@ import PricingInfo from "../../Layout/ProductForm/PricingInfo";
 import CategorySelect from "../../Layout/ProductForm/CategorySelect";
 import StockDetails from "../../Layout/ProductForm/StockDetails";
 import BackButton from "../../ui/BackButton";
-import editProduct from "../../Utilities/Product/editProduct";
+import { editProduct } from "../../services/products";
 import ProductContext from "../../Context/products/productContext";
 import { useParams } from "react-router-dom";
 
