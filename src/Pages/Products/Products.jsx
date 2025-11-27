@@ -55,7 +55,7 @@ const AllProducts = () => {
           query={query}
           setQuery={setQuery}
         />
-          <FilterData
+        <FilterData
           query={query}
           setQuery={setQuery}
           filterOptions={PRODUCTS_FILTER_OPTIONS}

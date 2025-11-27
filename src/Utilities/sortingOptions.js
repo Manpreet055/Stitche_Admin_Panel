@@ -35,47 +35,47 @@ export const PRODUCTS_SORTING_OPTIONS = [
 ];
 
 export const USERS_SORTING_OPTIONS = [
-    {
-      title: "A to Z",
-      field: "profile.fullName",
-      order: "desc",
-    },
-    {
-      title: "Z to A",
-      field: "profile.fullName",
-      order: "asc",
-    },
-    {
-      title: "Verified",
-      field: "isVerified",
-      order: "desc",
-    },
-    {
-      title: "Active",
-      field: "isActive",
-      order: "desc",
-    },
-  ];
+  {
+    title: "A to Z",
+    field: "profile.fullName",
+    order: "desc",
+  },
+  {
+    title: "Z to A",
+    field: "profile.fullName",
+    order: "asc",
+  },
+  {
+    title: "Verified",
+    field: "isVerified",
+    order: "desc",
+  },
+  {
+    title: "Active",
+    field: "isActive",
+    order: "desc",
+  },
+];
 
-  export  const ORDERS_SORTING_OPTIONS = [
-    {
-      title: "Total High to Low",
-      field: "totalAmount",
-      order: "desc",
-    },
-    {
-      title: "Total Low to High",
-      field: "totalAmount",
-      order: "asc",
-    },
-    {
-      title: "Latest Created ",
-      field: "createdAt",
-      order: "desc",
-    },
-    {
-      title: "Latest Updated",
-      field: "UpdatedAt",
-      order: "asc",
-    },
-  ];
+export const ORDERS_SORTING_OPTIONS = [
+  {
+    title: "Total High to Low",
+    field: "totalAmount",
+    order: "desc",
+  },
+  {
+    title: "Total Low to High",
+    field: "totalAmount",
+    order: "asc",
+  },
+  {
+    title: "Latest Created ",
+    field: "createdAt",
+    order: "desc",
+  },
+  {
+    title: "Latest Updated",
+    field: "UpdatedAt",
+    order: "asc",
+  },
+];

@@ -4,19 +4,19 @@ import { useFormContext } from "react-hook-form";
 const ImageUploader = () => {
   const { register, watch, setValue } = useFormContext();
 
-  const watchImages = watch("media.images") || [];
-  const watchThumbnail = watch("media.thumbnail") || "";
+  const watchImages = watch("images") || [];
+  const watchThumbnail = watch("thumbnail") || "";
   const handleImageChange = (e) => {
     const files = Array.from(e.target.files);
     // Merge new files with old ones
     const existing = watchImages || [];
-    setValue("media.images", [...existing, ...files],{shouldValidate:true});
+    setValue("images", [...existing, ...files], { shouldValidate: true });
   };
 
   const removeImage = (index) => {
     const updated = [...watchImages];
     updated.splice(index, 1);
-    setValue("media.images", updated);
+    setValue("images", updated);
   };
 
   return (
@@ -62,6 +62,7 @@ const ImageUploader = () => {
           accept="image/*"
           multiple
           className="hidden"
+          name="images"
           onChange={handleImageChange}
         />
       </div>
@@ -94,11 +95,12 @@ const ImageUploader = () => {
         </label>
         <input
           id="thumbnail"
+          name="thumbnail"
           type="file"
           accept="image/*"
           className="hidden"
-          {...register("media.thumbnail",{
-            required:true,
+          {...register("thumbnail", {
+            required: true,
           })}
         />
       </div>

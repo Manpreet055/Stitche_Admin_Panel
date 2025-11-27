@@ -8,12 +8,12 @@ export const fetchAllData = async (
   setError,
   setData,
   page = 1,
-  limit = 10
+  limit = 10,
 ) => {
   try {
     setLoadingState(true);
     const response = await axios.get(
-      `${uri}/api/${path}/?page=${page}&limit=${limit}`
+      `${uri}/api/${path}/?page=${page}&limit=${limit}`,
     );
     const data = response.data;
     setData(data.data);

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import capitalizeLetter from "../../Utilities/capitalizeLetter"
+import capitalizeLetter from "../../Utilities/capitalizeLetter";
 
 const ProductRow = ({ product, isHeader = false, serial = "Sr. No." }) => {
   //Destructring the product data from product prop

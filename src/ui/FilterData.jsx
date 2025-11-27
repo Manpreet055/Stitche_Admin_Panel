@@ -16,9 +16,14 @@ const FilterData = ({ filterOptions, query, setQuery }) => {
 
   return (
     <div>
-      <button onClick={() => showFilters((prev) => !prev)} className=" flex items-center gap-3">
+      <button
+        onClick={() => showFilters((prev) => !prev)}
+        className=" flex items-center gap-3"
+      >
         Filters
-        <span className={`${!filters ? "rotate-180" : "rotate-0"} transition-all ease-in-out duration-300`}>
+        <span
+          className={`${!filters ? "rotate-180" : "rotate-0"} transition-all ease-in-out duration-300`}
+        >
           <ChevronUp />
         </span>
       </button>
@@ -45,7 +50,10 @@ const FilterData = ({ filterOptions, query, setQuery }) => {
                 </li>
               ))}
             </ul>
-            <button type="submit" className="hover:bg-[#edcfb1] hover:text-[#554840] scale-transition will-change-transform p-4 rounded-2xl">
+            <button
+              type="submit"
+              className="hover:bg-[#edcfb1] hover:text-[#554840] scale-transition will-change-transform p-4 rounded-2xl"
+            >
               Submit
             </button>
           </form>

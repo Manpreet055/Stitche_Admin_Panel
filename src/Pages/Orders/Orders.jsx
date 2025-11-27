@@ -58,7 +58,11 @@ const AllOrders = () => {
 
   return (
     <div className="overflow-auto h-screen  w-full scrollbar-hidden">
-      <SortData sortOptions={ORDERS_SORTING_OPTIONS} query={query} setQuery={setQuery} />
+      <SortData
+        sortOptions={ORDERS_SORTING_OPTIONS}
+        query={query}
+        setQuery={setQuery}
+      />
       <div className="w-full overflow-auto h-full pb-56 scrollbar-hidden ">
         <motion.ul
           variants={container}

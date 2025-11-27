@@ -5,9 +5,7 @@ const uri = import.meta.env.VITE_BASE_URI;
 export const createProduct = async (details, setLoadingState, setError) => {
   try {
     setLoadingState(true);
-    const response = await axios.post(`${uri}/products`, {
-      productDetails: details,
-    });
+    const response = await axios.post(`${uri}/products`, details);
     const createdProduct = response.data.createdProduct;
     console.log(createdProduct);
 

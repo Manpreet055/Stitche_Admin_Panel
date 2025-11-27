@@ -23,7 +23,7 @@ const ProductDetails = () => {
     if (!productId) return;
 
     fetchAllDataById("products", productId, setLoadingState, setError).then(
-      (data) => setProduct(data)
+      (data) => setProduct(data),
     );
   }, [productId]);
 

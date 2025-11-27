@@ -15,7 +15,7 @@ const AddProduct = () => {
 
   const onsubmit = (data) => {
     console.log(data);
-    // createProduct(data, setLoadingState, setError);
+    createProduct(data, setLoadingState, setError);
   };
 
   return (
@@ -25,8 +25,6 @@ const AddProduct = () => {
       </div>
       <FormProvider {...methods}>
         <form
-          action=""
-          method="POST"
           onSubmit={methods.handleSubmit(onsubmit)}
           className=" rounded-3xl flex gap-y-6 justify-evenly flex-wrap w-full"
         >

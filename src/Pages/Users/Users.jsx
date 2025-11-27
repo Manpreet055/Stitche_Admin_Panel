@@ -20,7 +20,6 @@ const AllUsers = () => {
     setCurrentPage,
   } = useUsers();
 
-  
   if (loadingState) {
     return <AsyncBoundary loadingState={true} errorState={null} />;
   }
@@ -34,7 +33,11 @@ const AllUsers = () => {
 
   return (
     <div className="overflow-auto h-screen  w-full scrollbar-hidden ">
-      <SortData sortOptions={USERS_SORTING_OPTIONS} query={query} setQuery={setQuery} />
+      <SortData
+        sortOptions={USERS_SORTING_OPTIONS}
+        query={query}
+        setQuery={setQuery}
+      />
       <div className=" pt-10 w-full h-full pb-56 overflow-auto scrollbar-hidden ">
         <motion.ul
           initial="hidden"
