@@ -4,7 +4,7 @@ import { useFormContext } from "react-hook-form";
 const ImageUploader = () => {
   const { register, watch, setValue } = useFormContext();
 
-  const watchImages = watch("images") || [];
+const watchImages = Array.isArray(watch("images")) ? watch("images") : [];
   const watchThumbnail = watch("thumbnail") || "";
   const handleImageChange = (e) => {
     const files = Array.from(e.target.files);
@@ -32,7 +32,7 @@ const ImageUploader = () => {
               key={index}
               className="relative border border-gray-300 w-fit max-w-[90px] max-h-[90px] lg:max-h-[150px] lg:max-w-[150px]"
             >
-              <button
+              <button 
                 type="button"
                 onClick={() => removeImage(index)}
                 className="top-0 left-0 rounded-full user-card absolute bg-white/80 hover:bg-white"
@@ -63,6 +63,7 @@ const ImageUploader = () => {
           multiple
           className="hidden"
           name="images"
+          {...register("images")}
           onChange={handleImageChange}
         />
       </div>
