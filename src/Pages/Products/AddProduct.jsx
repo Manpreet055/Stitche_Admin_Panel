@@ -7,7 +7,8 @@ import CategorySelect from "../../Layout/ProductForm/CategorySelect";
 import BackButton from "../../ui/BackButton";
 import { createProduct } from "../../services/products";
 import { useState } from "react";
-
+import ToastComp from "../../ui/ToastComp";
+import { Check } from "lucide-react";
 const AddProduct = () => {
   const methods = useForm();
   const [loadingState, setLoadingState] = useState(false);
@@ -20,6 +21,7 @@ const AddProduct = () => {
 
   return (
     <section className=" scrollbar-hidden w-full h-screen blur-bg flex-1 overflow-y-auto sm:pb-30 overflow-x-hidden">
+      <ToastComp text="Added New Product" icon={<Check />} />
       <div className="w-full flex justify-start">
         <BackButton />
       </div>

@@ -5,7 +5,7 @@ const ProductGallery = ({ images, thumbnail }) => {
   return (
     <>
       <div className="flex border border-gray-300  rounded-lg items-center p-6 justify-evenly flex-wrap">
-        <img src={thumbnail} className="h-64 w-96" alt="" />
+        {thumbnail && <img src={thumbnail} className="h-64 w-96" alt="" />}
         <ul className=" p-6 max-w-xs flex flex-col  gap-4">
           {images.map((img, index) => (
             <li key={index}>

@@ -5,36 +5,33 @@ const uri = import.meta.env.VITE_BASE_URI;
 export const createProduct = async (details, setLoadingState, setError) => {
   try {
     setLoadingState(true);
-
-    // Build FormData so files are sent correctly as multipart/form-data
     const formData = new FormData();
 
-    // Append fields. Handle files for `images` (array) and `thumbnail` (File or FileList)
-    for (const key in details) {
-      const value = details[key];
-
-      if (key === "images") {
-        if (Array.isArray(value)) {
-          value.forEach((item) => {
-            // If it's a File, append as file; otherwise append the value (string URL)
-            if (item instanceof File) formData.append("images", item);
-            else formData.append("images", item);
-          });
-        }
-      } else if (key === "thumbnail") {
-        // thumbnail can be a FileList or array or single File
-        if (value instanceof File) formData.append("thumbnail", value);
-        else if (value && value.length > 0)
-          formData.append("thumbnail", value[0]);
-      } else if (value !== undefined && value !== null) {
-        // For objects/arrays (except files), stringify to preserve structure
-        if (typeof value === "object")
-          formData.append(key, JSON.stringify(value));
-        else formData.append(key, value);
+    // normal text fields
+    Object.keys(details).forEach((key) => {
+      if (key !== "images" && key !== "thumbnail" && key !== "discount") {
+        formData.append(key, details[key]);
       }
+    });
+
+    // images (multiple)
+    if (details.images && details.images.length > 0) {
+      details.images.forEach((img) => {
+        formData.append("images", img);
+      });
     }
-    console.log(formData);
-    // Do NOT set Content-Type header manually; let the browser set the correct boundary
+
+    if (details.discount) {
+      formData.append("discount",details.discount.discount) 
+      formData.append("type",details.discount.type) 
+    }
+
+    // thumbnail (single)
+    if (details.thumbnail && details.thumbnail.length > 0) {
+      formData.append("thumbnail", details.thumbnail[0]);
+    }
+
+    console.log(formData)
     const response = await axios.post(`${uri}/products`, formData);
     const createdProduct = response.data.createdProduct;
     console.log(createdProduct);
