@@ -32,14 +32,6 @@ export const fetchAllDataById = async (path, id, setLoadingState, setError) => {
     setLoadingState(true);
     const response = await axios.get(`${uri}/api/${path}/${id}`);
     let data = response.data.data;
-    data = {
-      ...data,
-      media: data.media ?? { thumbnail: "", images: [] },
-      discount: {
-        percentage: data?.discount?.discount ?? 0,
-        type: data?.discount?.type ?? "no-offers",
-      },
-    };
     return data;
   } catch (error) {
     handleApiError(error);

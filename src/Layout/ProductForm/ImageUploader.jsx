@@ -1,29 +1,37 @@
 import { X } from "lucide-react";
+import { useEffect, useState } from "react";
 import { useFormContext } from "react-hook-form";
 
 const ImageUploader = () => {
   const { register, watch, setValue } = useFormContext();
-
-const watchImages = Array.isArray(watch("images")) ? watch("images") : [];
+  const [removedImages, setRemovedImages] = useState([]);
+  const watchImages = Array.isArray(watch("images")) ? watch("images") : [];
   const watchThumbnail = watch("thumbnail") || "";
+  const hasExistingThumbnail =
+    typeof watchThumbnail === "string" && watchThumbnail.length > 0;
   const handleImageChange = (e) => {
     const files = Array.from(e.target.files);
     // Merge new files with old ones
     const existing = watchImages || [];
-    setValue("images", [...existing, ...files], { shouldValidate: true });
+    setValue("images", [...existing, ...files], { shouldDirty: true });
   };
 
   const removeImage = (index) => {
     const updated = [...watchImages];
     updated.splice(index, 1);
-    setValue("images", updated);
+    setValue("images", updated, { shouldDirty: true });
+    setRemovedImages([...removedImages, watchImages[index]]);
   };
 
+  useEffect(() => {
+    setValue("removedImages", [...removedImages], { shouldDirty: true });
+  }, [removedImages]);
   return (
     <div className="flex flex-col gap-4">
+      <h3 className="title">Product Media</h3>
       {/* Product Media */}
       <div className="input-section items-center">
-        <h3 className="title">Product Media</h3>
+        <h3 className="title">Images</h3>
 
         {/* Uploaded Images Preview */}
         <div className="w-full gap-4 flex flex-wrap p-4">
@@ -32,7 +40,7 @@ const watchImages = Array.isArray(watch("images")) ? watch("images") : [];
               key={index}
               className="relative border border-gray-300 w-fit max-w-[90px] max-h-[90px] lg:max-h-[150px] lg:max-w-[150px]"
             >
-              <button 
+              <button
                 type="button"
                 onClick={() => removeImage(index)}
                 className="top-0 left-0 rounded-full user-card absolute bg-white/80 hover:bg-white"
@@ -101,7 +109,7 @@ const watchImages = Array.isArray(watch("images")) ? watch("images") : [];
           accept="image/*"
           className="hidden"
           {...register("thumbnail", {
-            required: true,
+            required: !hasExistingThumbnail,
           })}
         />
       </div>

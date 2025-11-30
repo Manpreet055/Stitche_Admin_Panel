@@ -56,7 +56,6 @@ const SearchItems = () => {
       try {
         const data = await searchData(query, setLoadingState, setError);
         setresults(data);
-        console.log(data);
       } catch (err) {
         setError(err.message);
       }

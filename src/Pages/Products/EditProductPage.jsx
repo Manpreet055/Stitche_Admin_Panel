@@ -6,52 +6,77 @@ import PricingInfo from "../../Layout/ProductForm/PricingInfo";
 import CategorySelect from "../../Layout/ProductForm/CategorySelect";
 import StockDetails from "../../Layout/ProductForm/StockDetails";
 import BackButton from "../../ui/BackButton";
-import { editProduct } from "../../services/products";
-import ProductContext from "../../Context/products/productContext";
+import { updateProduct } from "../../services/products";
 import { useParams } from "react-router-dom";
+import { fetchAllDataById } from "../../services/fetchData";
+import { Check, Clock, TriangleAlert } from "lucide-react";
+import ToastComp from "../../ui/ToastComp";
 
 const EditProductPage = () => {
-  const { product } = useContext(ProductContext);
   const { productId } = useParams();
-  const methods = useForm({
-    defaultValues: {
-      title: product.title,
-      description: product.description,
-      category: product.category,
-      subCategory: product.subCategory,
-      "discount.type": product.discount.type,
-      brand: product.brand,
-      barcode: product.barcode,
-      price: Math.ceil(product.price),
-      "media.images": product.media.images,
-      "media.thumbnail": product.media.thumbnail,
-      "discount.percentage": product.discount.percentage,
-      "dicount.priceAfterDiscount": product.discount.priceAfterDiscount,
-      stock: product.stock,
-      isFeatured: product.isFeatured ? "yes" : "no",
-    },
-  });
+  const [product, setProduct] = useState({});
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState("");
+  const [toast, setToast] = useState();
+
+  useEffect(() => {
+    try {
+      async function fetchData() {
+        const data = await fetchAllDataById(
+          "products",
+          productId,
+          setLoadingState,
+          setError,
+        );
+        setProduct(data);
+        // console.log(data);
+      }
+      fetchData();
+    } catch (error) {
+      setError(error.message);
+    }
+  }, [productId]);
+
+  const defaultValues = {
+    title: product.title ?? "",
+    description: product.description ?? "",
+    category: product.category ?? "",
+    subCategory: product.subCategory ?? "",
+    type: product.discount?.type ?? 0,
+    brand: product.brand ?? "",
+    barcode: product.barcode ?? "",
+    price: Math.ceil(product.price ?? 0),
+    images: product.media?.images ?? [],
+    thumbnail: product.media?.thumbnail ?? "",
+    value: product.discount?.discount || product.discount?.value || 0,
+    priceAfterDiscount: product.discount?.priceAfterDiscount ?? 0,
+    stock: product.stock ?? product.quantity ?? 0,
+    isFeatured: product.isFeatured ? true : false,
+    sku: product.sku,
+  };
+
+  const toastData = {
+    updating: {
+      text: "Updating Product",
+      icon: <Clock />,
+    },
+    updated: {
+      text: "Product Updated",
+      icon: <Check />,
+    },
+    error: {
+      text: error,
+      icon: <TriangleAlert />,
+    },
+  };
+
+  const methods = useForm({
+    defaultValues,
+  });
 
   useEffect(() => {
     if (!product) return;
-    methods.reset({
-      title: product.title ?? "",
-      description: product.description ?? "",
-      category: product.category ?? "",
-      subCategory: product.subCategory ?? "",
-      "discount.type": product.discount?.type ?? 0,
-      brand: product.brand ?? "",
-      barcode: product.barcode ?? "",
-      price: Math.ceil(product.price ?? 0),
-      "media.images": product.media?.images ?? [],
-      "media.thumbnail": product.media?.thumbnail ?? "",
-      "discount.percentage": product.discount?.percentage ?? 0,
-      "dicount.priceAfterDiscount": product.discount?.priceAfterDiscount ?? 0,
-      quantity: product.quantity ?? 0,
-      isFeatured: product.isFeatured ? true : false,
-    });
+    methods.reset(defaultValues);
   }, [product]);
 
   const onsubmit = async (data) => {
@@ -62,11 +87,15 @@ const EditProductPage = () => {
       acc[key] = currentValues[key];
       return acc;
     }, {});
-    editProduct(productId, changedData);
-    console.log(changedData);
+    updateProduct(productId, changedData, setLoadingState, setError, setToast);
   };
   return (
     <section className="overflow-y-scroll scrollbar-hidden px-5  h-screen pb-56 w-full">
+      {toast ? (
+        <ToastComp text={toastData[toast].text} icon={toastData[toast].icon} />
+      ) : (
+        error && <ToastComp text={error} icon={TriangleAlert} />
+      )}
       <div className="w-full flex justify-start">
         <BackButton />
       </div>
@@ -98,7 +127,7 @@ const EditProductPage = () => {
                 }`}
                 type="submit"
               >
-                {methods.formState.isSubmitting ? "Updating" : "Update"}
+                {loadingState ? "Updating Product" : "Update Product"}
               </button>
             </div>
           </div>

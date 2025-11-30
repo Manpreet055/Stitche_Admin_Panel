@@ -37,18 +37,18 @@ const PricingInfo = () => {
           <p className="text-red-500">*{errors.price.message}</p>
         )}
 
-        <div className=" flex flex-col  justify-evenly gap-6">
+        <div className="flex flex-col  justify-evenly gap-6">
           <div className="flex flex-col ">
-            <label htmlFor="discount">
+            <label htmlFor="value">
               Discount <i>(Optional)</i>
             </label>
             <input
               type="number"
-              {...register("discount.discount", {
+              {...register("value", {
                 valueAsNumber: true,
               })}
               defaultValue={0}
-              id="discount"
+              id="value"
               className={`form-input-sections mt-2 ${
                 errors.discount
                   ? "border border-red-500 focus:outline-red-500"
@@ -65,7 +65,7 @@ const PricingInfo = () => {
             <select
               className=" form-input-sections text-gray-500"
               id="discount-type"
-              {...register("discount.type", {
+              {...register("type", {
                 required: true,
               })}
             >
@@ -76,6 +76,23 @@ const PricingInfo = () => {
               <option value="Buy One Get 1">Buy One Get 1</option>
               <option value="Buy One Get 2">Buy One Get 2</option>
             </select>
+          </div>
+
+          {/* price after discount */}
+          <div className="flex flex-col ">
+            <label htmlFor="priceAfterDiscount">Price After Discount</label>
+            <input
+              readOnly
+              {...register("priceAfterDiscount", {
+                valueAsNumber: true,
+              })}
+              id="priceAfterDiscount"
+              className={`form-input-sections mt-2 ${
+                errors.discount
+                  ? "border border-red-500 focus:outline-red-500"
+                  : "border border-gray-300 focus:outline-gray-500"
+              }`}
+            />
           </div>
         </div>
       </div>

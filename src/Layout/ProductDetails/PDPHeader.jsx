@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Trash2, Pen, Star, StarOff } from "lucide-react";
-import toggleFeatured from "../../services/toggleFeatured";
+import { toggleFeatured } from "../../services/products";
 import BackButton from "../../ui/BackButton";
 import deleteRequest from "../../services/deleteRequest";
 

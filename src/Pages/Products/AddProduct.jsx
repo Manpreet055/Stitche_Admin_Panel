@@ -8,20 +8,42 @@ import BackButton from "../../ui/BackButton";
 import { createProduct } from "../../services/products";
 import { useState } from "react";
 import ToastComp from "../../ui/ToastComp";
-import { Check } from "lucide-react";
+import { Check, Clock, TriangleAlert } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 const AddProduct = () => {
+  const navigate = useNavigate();
   const methods = useForm();
-  const [loadingState, setLoadingState] = useState(false);
+
+  const [toast, setToast] = useState();
   const [error, setError] = useState(false);
 
   const onsubmit = (data) => {
     console.log(data);
-    createProduct(data, setLoadingState, setError);
+    createProduct(data, setToast, setError);
+  };
+
+  const toastData = {
+    submitting: {
+      text: "Creating New Product",
+      icon: <Clock />,
+    },
+    submitted: {
+      text: "New Product Created",
+      icon: <Check />,
+    },
+    error: {
+      text: error,
+      icon: <TriangleAlert />,
+    },
   };
 
   return (
     <section className=" scrollbar-hidden w-full h-screen blur-bg flex-1 overflow-y-auto sm:pb-30 overflow-x-hidden">
-      <ToastComp text="Added New Product" icon={<Check />} />
+      {toast ? (
+        <ToastComp text={toastData[toast].text} icon={toastData[toast].icon} />
+      ) : (
+        error && <ToastComp text={error} icon={TriangleAlert} />
+      )}{" "}
       <div className="w-full flex justify-start">
         <BackButton />
       </div>
@@ -53,9 +75,9 @@ const AddProduct = () => {
                 }`}
                 type="submit"
               >
-                {methods.formState.isSubmitting
-                  ? "Adding product "
-                  : "Add Product"}
+                {toastData[toast] === "submitting"
+                  ? "Creating product "
+                  : "Create Product"}
               </button>
             </div>
           </div>

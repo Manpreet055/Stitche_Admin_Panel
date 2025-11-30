@@ -69,13 +69,13 @@ const StockDetails = () => {
           </div>
 
           <div className="flex flex-col w-full max-w-lg">
-            <label htmlFor="quantity" className="mb-2">
+            <label htmlFor="stock" className="mb-2">
               Quantity
             </label>
             <input
               type="number"
-              id="quantity"
-              {...register("quantity", {
+              id="stock"
+              {...register("stock", {
                 valueAsNumber: true,
               })}
               defaultValue="0"
@@ -84,10 +84,10 @@ const StockDetails = () => {
                   ? "border border-red-500 focus:outline-red-500"
                   : "border border-gray-300 focus:outline-gray-500"
               }`}
-              placeholder="Type product Quantity"
+              placeholder="Type Stock Quantity"
             />
-            {errors.quantity && (
-              <p className="text-red-500">*{errors.quantity.message}</p>
+            {errors.stock && (
+              <p className="text-red-500">*{errors.stock.message}</p>
             )}
           </div>
           <div className="flex flex-col w-full gap-3 max-w-lg">

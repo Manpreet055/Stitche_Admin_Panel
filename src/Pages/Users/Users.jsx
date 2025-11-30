@@ -57,7 +57,7 @@ const AllUsers = () => {
             <li>Last login</li>
           </ul>
           {users.map((user, index) => (
-            <UserRow serial={index + 1} key={user.id} user={user} />
+            <UserRow serial={index + 1} key={index} user={user} />
           ))}
           <Paginate
             setCurrentPage={setCurrentPage}

@@ -6,11 +6,10 @@ import ProductDesc from "../../Layout/ProductDetails/ProductDesc";
 import PriceDetails from "../../Layout/ProductDetails/PriceDetails";
 import MetaData from "../../Layout/ProductDetails/MetaData";
 import { fetchAllDataById } from "../../services/fetchData";
-import ProductContext from "../../Context/products/productContext";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 
 const ProductDetails = () => {
-  const { product, setProduct } = useContext(ProductContext);
+  const [product, setProduct] = useState({});
   const [loadingState, setLoadingState] = useState(false);
   const [error, setError] = useState(null);
 
@@ -36,23 +35,24 @@ const ProductDetails = () => {
     brand = "",
     sku = "",
     stock = 0,
+    quantity = 0,
     price = 0,
     discount = {},
     rating = 0,
-    media = "",
+    media = {},
     isFeatured = false,
     timestamps = {},
   } = product ?? {};
 
-  const { thumbnail = "", images = [] } = media;
+  const { thumbnail = "", images = [] } = media || {};
   const { createdAt = "", updatedAt = "" } = timestamps;
 
-  const discountPercentage = discount?.discount ?? 0;
+  const discountPercentage = discount?.discount ?? discount?.value ?? 0;
 
   useEffect(() => {
-    setImages(images ?? []);
-    setThumbnail(thumbnail ?? "");
-  }, [images, thumbnail]);
+    setImages(images);
+    setThumbnail(thumbnail);
+  }, [media?.images, media?.thumbnail]);
 
   if (loadingState) {
     return <AsyncBoundary loadingState={true} errorState={null} />;
@@ -78,7 +78,7 @@ const ProductDetails = () => {
         description={description}
         brand={brand}
         rating={rating}
-        stock={stock}
+        stock={stock ?? quantity}
         isFeatured={isFeatured}
       />
       <div className="flex min-h-64 gap-y-6 justify-between flex-wrap">
