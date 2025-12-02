@@ -6,7 +6,9 @@ import { motion } from "framer-motion";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 import useOrders from "../../Hooks/useOrders";
 import SortData from "../../ui/SortData";
+import FilterData from "../../ui/FilterData";
 import { ORDERS_SORTING_OPTIONS } from "../../Utilities/sortingOptions";
+import { ORDERS_FILTER_OPTIONS } from "../../Utilities/filtersOptions";
 
 const AllOrders = () => {
   const {
@@ -15,7 +17,6 @@ const AllOrders = () => {
     orders,
     currentPage,
     totalPages,
-    query,
     setQuery,
     setCurrentPage,
   } = useOrders();
@@ -58,17 +59,17 @@ const AllOrders = () => {
 
   return (
     <div className="overflow-auto h-screen  w-full scrollbar-hidden">
-      <SortData
-        sortOptions={ORDERS_SORTING_OPTIONS}
-        query={query}
-        setQuery={setQuery}
-      />
+      <div className="w-full flex justify-around items-center py-3">
+        <SortData sortOptions={ORDERS_SORTING_OPTIONS} setQuery={setQuery} />
+        <FilterData setQuery={setQuery} filterOptions={ORDERS_FILTER_OPTIONS} />
+        <button disabled className=""></button>
+      </div>
       <div className="w-full overflow-auto h-full pb-56 scrollbar-hidden ">
         <motion.ul
           variants={container}
           initial="hidden"
           animate="show"
-          className="flex flex-col min-w-[1350px] h-screen pt-10 overflow-y-auto scrollbar-hidden"
+          className="flex flex-col min-w-[1350px] h-screen  overflow-y-auto scrollbar-hidden"
         >
           <li className="text-2xl md:text-3xl w-full font-semibold primary-bg rounded-t-2xl">
             {" "}

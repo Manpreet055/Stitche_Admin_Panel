@@ -6,7 +6,9 @@ import Paginate from "../../ui/Pagination";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 import useUsers from "../../Hooks/useUsers";
 import SortData from "../../ui/SortData";
+import FilterData from "../../ui/FilterData";
 import { USERS_SORTING_OPTIONS } from "../../Utilities/sortingOptions";
+import { USERS_FILTER_OPTIONS } from "../../Utilities/filtersOptions";
 
 const AllUsers = () => {
   const {
@@ -15,7 +17,6 @@ const AllUsers = () => {
     users,
     currentPage,
     totalPages,
-    query,
     setQuery,
     setCurrentPage,
   } = useUsers();
@@ -33,12 +34,12 @@ const AllUsers = () => {
 
   return (
     <div className="overflow-auto h-screen  w-full scrollbar-hidden ">
-      <SortData
-        sortOptions={USERS_SORTING_OPTIONS}
-        query={query}
-        setQuery={setQuery}
-      />
-      <div className=" pt-10 w-full h-full pb-56 overflow-auto scrollbar-hidden ">
+      <div className="w-full flex justify-around items-center py-3">
+        <SortData sortOptions={USERS_SORTING_OPTIONS} setQuery={setQuery} />
+        <FilterData setQuery={setQuery} filterOptions={USERS_FILTER_OPTIONS} />
+        <button disabled></button>
+      </div>
+      <div className="w-full h-full pb-56 overflow-auto scrollbar-hidden ">
         <motion.ul
           initial="hidden"
           animate="show"

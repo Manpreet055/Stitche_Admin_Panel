@@ -6,14 +6,15 @@ import { container, item } from "../../Animations/ListStagger";
 import AsyncBoundary from "../../ui/AsyncBoundary";
 import useInbox from "../../Hooks/useInbox";
 import SortData from "../../ui/SortData";
-import { INBOX_SORT_OPTIONS } from "../../Utilities/sortingOptions";
+import FilterData from "../../ui/FilterData";
+import { INBOX_SORTING_OPTIONS } from "../../Utilities/sortingOptions";
+import { INBOX_FILTER_OPTIONS } from "../../Utilities/filtersOptions";
 const AllMessages = () => {
   const {
     loadingState,
     error,
     allMessages,
     currentPage,
-    query,
     setQuery,
     totalPages,
     setCurrentPage,
@@ -31,17 +32,16 @@ const AllMessages = () => {
   }
   return (
     <div className="w-full h-full">
-      <SortData
-        sortOptions={INBOX_SORT_OPTIONS}
-        query={query}
-        setQuery={setQuery}
-      />
-
+      <div className="w-full flex justify-around items-center py-3">
+        <SortData sortOptions={INBOX_SORTING_OPTIONS} setQuery={setQuery} />
+        <FilterData setQuery={setQuery} filterOptions={INBOX_FILTER_OPTIONS} />
+        <button disabled></button>
+      </div>
       <motion.div
         initial="hidden"
         animate="show"
         variants={container}
-        className="h-screen min-w-fit pb-56 w-full overflow-scroll pt-10 scrollbar-hidden "
+        className="h-screen min-w-fit pb-56 w-full overflow-scroll scrollbar-hidden "
       >
         {/* Table headings */}
         <ul className="grid w-full text-xl font-semibold primary-bg px-4 py-5 rounded-t-2xl grid-cols-[300px_340px_1fr_230px]">

@@ -17,7 +17,6 @@ const AllProducts = () => {
     products,
     loadingState,
     error,
-    query,
     setQuery,
     currentPage,
     setCurrentPage,
@@ -50,13 +49,8 @@ const AllProducts = () => {
   return (
     <div className="w-full overflow-auto">
       <div className="w-full flex justify-around items-center">
-        <SortData
-          sortOptions={PRODUCTS_SORTING_OPTIONS}
-          query={query}
-          setQuery={setQuery}
-        />
+        <SortData sortOptions={PRODUCTS_SORTING_OPTIONS} setQuery={setQuery} />
         <FilterData
-          query={query}
           setQuery={setQuery}
           filterOptions={PRODUCTS_FILTER_OPTIONS}
         />

@@ -1,4 +1,4 @@
-export const INBOX_SORT_OPTIONS = [
+export const INBOX_SORTING_OPTIONS = [
   {
     title: "Starred",
     field: "isStarred",
@@ -25,6 +25,11 @@ export const PRODUCTS_SORTING_OPTIONS = [
   {
     title: "Stock Low to High",
     field: "stock",
+    order: "asc",
+  },
+  {
+    title: "Category",
+    field: "category",
     order: "asc",
   },
   {

@@ -9,9 +9,7 @@ import { createProduct } from "../../services/products";
 import { useState } from "react";
 import ToastComp from "../../ui/ToastComp";
 import { Check, Clock, TriangleAlert } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 const AddProduct = () => {
-  const navigate = useNavigate();
   const methods = useForm();
 
   const [toast, setToast] = useState();

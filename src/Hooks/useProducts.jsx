@@ -28,7 +28,7 @@ const useProducts = () => {
           limit,
           sortField: sort.sortField,
           sortingOrder: sort.sortingOrder,
-          filters,
+          ...filters,
         },
       });
       const data = response.data;

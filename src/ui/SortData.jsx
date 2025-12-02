@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Dropdown, DropdownItem } from "flowbite-react";
-const SortOrders = ({ query, setQuery, sortOptions }) => {
+const SortOrders = ({ setQuery, sortOptions }) => {
   const applySort = (field, order) => {
-    setQuery({
-      ...query,
+    setQuery((prev) => ({
+      ...prev,
       sort: {
         sortField: field,
         sortingOrder: order,
       },
       page: 1,
-    });
+    }));
   };
   return (
     <div className="p-4 justify-evenly items-center flex">
