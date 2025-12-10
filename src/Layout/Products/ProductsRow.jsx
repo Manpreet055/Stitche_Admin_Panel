@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import capitalizeLetter from "../../Utilities/capitalizeLetter";
+// import capitalizeLetter from "../../Utilities/capitalizeLetter";
+import { TableCell, TableRow } from "flowbite-react";
 
-const ProductRow = ({ product, isHeader = false, serial = "Sr. No." }) => {
+const ProductRow = ({ product }) => {
   //Destructring the product data from product prop
-  const { _id, title, brand, price, quantity, category } = product;
+  const { _id, title, brand, price, category } = product;
 
   // navigate to the PDP
   const navigate = useNavigate();
@@ -12,19 +13,13 @@ const ProductRow = ({ product, isHeader = false, serial = "Sr. No." }) => {
   };
 
   return (
-    <ul
-      onClick={() => !isHeader && navProduct()}
-      className="px-4 py-5 grid grid-cols-[100px_1fr__200px_150px_160px_200px_160px_230px] place-items-center w-full p-4 border-b border-gray-300 relative"
-    >
-      <li>{serial}</li>
-      <li className={`place-self-start  text-nowrap`}>{title}</li>
-      <li>{capitalizeLetter(brand)}</li>
-      <li>{typeof price != "string" ? Math.floor(price) : price}</li>
-      <li>{quantity}</li>
-      <li>{category}</li>
-      <li>{product?.rating?.average || 0}</li>
-      <li>{product?.rating?.count || 0}</li>
-    </ul>
+    <TableRow onClick={navProduct} className="bg-white dark:border-gray-700 ">
+      <TableCell className="whitespace-nowrap">{title}</TableCell>
+      <TableCell>{brand}</TableCell>
+      <TableCell>{category}</TableCell>
+      <TableCell>{price}</TableCell>
+      <TableCell>{product?.quantity ?? product?.stock}</TableCell>
+    </TableRow>
   );
 };
 

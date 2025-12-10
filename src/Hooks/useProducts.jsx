@@ -10,7 +10,7 @@ const useProducts = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [query, setQuery] = useState({
-    limit: 10,
+    limit: 15,
     sort: {
       sortField: "name",
       sortingOrder: "asc",

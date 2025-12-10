@@ -10,6 +10,14 @@ import { PRODUCTS_SORTING_OPTIONS } from "../../Utilities/sortingOptions";
 import FilterData from "../../ui/FilterData";
 import { PRODUCTS_FILTER_OPTIONS } from "../../Utilities/filtersOptions";
 import { useNavigate } from "react-router-dom";
+import { customTableTheme } from "../../Utilities/theme";
+import {
+  Table,
+  TableBody,
+  TableHead,
+  TableHeadCell,
+  TableRow,
+} from "flowbite-react";
 
 const AllProducts = () => {
   const navigate = useNavigate();
@@ -22,18 +30,6 @@ const AllProducts = () => {
     setCurrentPage,
     totalPages,
   } = useProducts();
-
-  const header = {
-    title: "Product Name",
-    brand: "Brand",
-    price: "Price",
-    quantity: "Stock",
-    category: "Category",
-    rating: {
-      average: "Ratings",
-      count: "Reviews",
-    },
-  };
 
   if (loadingState) {
     return <AsyncBoundary loadingState={true} errorState={null} />;
@@ -61,29 +57,34 @@ const AllProducts = () => {
           + Add Product
         </button>
       </div>
-      <motion.ul
+      <motion.div
         initial="hidden"
         animate="show"
         variants={container}
-        className="h-screen min-w-fit pb-56 w-full overflow-scroll scrollbar-hidden "
+        className="h-screen min-w-fit pb-56 w-full overflow-auto scrollbar-hidden px-2 "
       >
-        <li className="text-xl font-semibold primary-bg rounded-t-2xl">
-          {" "}
-          <ProductRow isHeader={true} product={header} />
-        </li>
-
-        {products.map((product, index) => (
-          <motion.li variants={item} className="text-lg" key={index}>
-            <ProductRow product={product} serial={index + 1} />
-          </motion.li>
-        ))}
-
+        <Table striped theme={customTableTheme}>
+          <TableHead>
+            <TableRow>
+              <TableHeadCell>Product name</TableHeadCell>
+              <TableHeadCell>Brand</TableHeadCell>
+              <TableHeadCell>Category</TableHeadCell>
+              <TableHeadCell>Price</TableHeadCell>
+              <TableHeadCell>Stock</TableHeadCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {products.map((product, index) => (
+              <ProductRow key={index} product={product} />
+            ))}
+          </TableBody>
+        </Table>
         <Paginate
           currentPage={currentPage}
           setCurrentPage={setCurrentPage}
           totalPages={totalPages}
         />
-      </motion.ul>
+      </motion.div>
     </div>
   );
 };
