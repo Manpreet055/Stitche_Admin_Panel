@@ -14,16 +14,16 @@ const UserRow = ({ user, serial }) => {
     >
       <li>{serial}</li>
       <li className="lg:pl-14 scrollbar-hidden overflow-x-scroll">
-        {profile.fullName}
+        {profile?.fullName}
       </li>
       <li className="overflow-x-scroll text-center scrollbar-hidden">
         {email}
       </li>
       <li className={`px-2 py-2 w-[90%] text-center  rounded`}>
-        {profile.address.city}
+        {profile?.address?.city}
       </li>
       <li>{capitalizeFirstLetter()}</li>
-      <li>{profile.phone}</li>
+      <li>{profile?.phone}</li>
     </motion.ul>
   );
 };

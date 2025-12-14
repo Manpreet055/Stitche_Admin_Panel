@@ -36,7 +36,7 @@ const UserDetails = () => {
   }
 
   const {
-    profile,
+    profile = "",
     isVerified,
     isActive,
     role,
@@ -46,7 +46,12 @@ const UserDetails = () => {
     updatedAt,
   } = user;
   const { fullName, avatar, phone, address } = profile;
-  const { city, country, postalCode, street } = address;
+  const {
+    city = "",
+    country = "",
+    postalCode = "",
+    street = "",
+  } = address || {};
   return (
     <div className="flex gap-6 flex-col w-full h-screen overflow-auto scrollbar-hidden p-4">
       <BackButton />
